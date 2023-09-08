@@ -133,6 +133,122 @@ const factorialTail = result => n =>
 const factorial = factorialTail(1)
 ```
 
-The JavaScript standard ([ECMAScript 6](https://webkit.org/blog/6240/ecmascript-6-proper-tail-calls-in-webkit/)) supports the tail call elimination (aka a proper tail call), but V8 and 
+The JavaScript standard ([ECMAScript 6](https://webkit.org/blog/6240/ecmascript-6-proper-tail-calls-in-webkit/)) 
+supports the tail call elimination (aka a proper tail call), but V8 and 
 SpiderMonkey do not. That means that Google Chrome, Microsoft Edge, Node.js, and Firefox do not support PTC. 
 So, de facto, JavaScript has no PTC.
+
+## Loops in FunctionalScript
+
+The problem is that FunctionalScript objects are immutable, and, as shown above, we can’t use recursion for 
+iterations.
+
+FunctionalScript allows reassigning of local variables declared with let as a workaround for this problem, and such 
+variables can only be used inside a function where the variables are declared.
+
+```js
+const factorial = n => {
+    let i = n
+    let result = 1
+    while (i > 1) {
+        result = result * i
+        i = i - 1
+    }
+    return result
+}
+```
+
+## WebAssembly
+
+[WebAssembly](https://en.wikipedia.org/wiki/WebAssembly) allows developers to create web applications using almost any programming language. It is derived from [asm.js](https://en.wikipedia.org/wiki/Asm.js), which is also a subset of JavaScript.
+
+Advantages:
+
+- near-native code execution speed,
+- different programming languages support compilation to WebAssembly.
+
+Disadvantages:
+
+- requires additional build steps and tools,
+- WebAssembly programs should interact with [DOM](https://en.wikipedia.org/wiki/Document_Object_Model) and
+  other JavaScript [API](https://en.wikipedia.org/wiki/API) using a
+  [language interoperability](https://en.wikipedia.org/wiki/Language_interoperability) layer.
+  
+asm.js inspired FunctionalScript as a subset of JavaScript. Compared to asm.js and WebAssembly, FunctionalScript is a high-level programming language. Theoretically, it is possible to create [JIT](https://en.wikipedia.org/wiki/Just-in-time_compilation) and [AOT](https://en.wikipedia.org/wiki/Ahead-of-time_compilation) compilers from FunctionalScript to WebAssembly, or any other assembly language.
+
+Compared to JavaScript, a compiler from FunctionalScript may generate more optimal code because similar FunctionalScript code is more deterministic.
+
+For example, FunctionalScript can use a reference counter instead of a proper garbage collector because immutable data can not have circular references.
+
+Also, other purely functional programming languages, such as Elm, can use FunctionalScript as a compilation target.
+
+## FunctionalScript API Limitations
+
+As was mentioned earlier, FunctionalScript can not directly call functions with side effects. Because JavaScript API has many impure functions, only a limited subset of JavaScript API is available to FunctionalScript.
+
+However, a JavaScript program can pass impure functions to FunctionalScript modules.
+
+## Typing
+
+FunctionalScript derived a 
+[dynamic type system](https://en.wikipedia.org/wiki/Type_system#Dynamic_type_checking_and_runtime_type_information) 
+from JavaScript. Nevertheless, it is possible to use [JSDoc type annotations](https://en.wikipedia.org/wiki/JSDoc) 
+and a [TypeScript](https://en.wikipedia.org/wiki/TypeScript) compiler as a validator. For example
+
+```js
+/** @type {(a: number) => (b: number) => number} */
+const add = a => b => a + b
+```
+
+See [TypeScript JSDoc Reference](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html) for more 
+details.
+
+TypeScript uses a [structural type system](https://en.wikipedia.org/wiki/Structural_type_system) instead of a 
+[nominal type system](https://en.wikipedia.org/wiki/Nominal_type_system). Languages with a nominal type system may 
+cause typecasting problems in big projects with many third-party modules. For example, two definitions of Vector3D 
+are not compatible, and [adapters](https://en.wikipedia.org/wiki/Adapter_pattern) are required. Because of this, 
+structural type systems enhance modularization and code reuse.
+
+## Modules and Packages
+
+FunctionalScript uses a [Node.js](https://en.wikipedia.org/wiki/Node.js) package manager 
+([npm](https://en.wikipedia.org/wiki/Npm)) and [CommonJS](https://en.wikipedia.org/wiki/CommonJS) as a module system. CommonJS is easy to implement even without a FunctionalScript parser.
+
+Because FunctionalScript is a purely functional language, a FunctionalScript module can only reference another 
+FunctionalScript module. But, a JavaScript module can reference any FunctionalScript module.
+
+Currently, FunctionalScript does not support ECMAScript Modules and asynchronous modules.
+
+## JSON Modules
+
+CommonJS supports loading JSON files as JavaScript modules. Because JSON contains only data, any JSON file is also 
+a FunctionalScript module.
+
+Note that the loading procedure differs for JSON and JavaScript files, even if JSON is a subset of JavaScript.
+
+A JSON module declares all public exports in the first expression.
+
+```json
+{
+   "a": "Hello",
+   "b": 42
+}
+```
+
+A JavaScript Common.js module declares all public exports in module.exports.
+
+```json
+module.exports = {
+   a: "Hello",
+   b: 42
+}
+```
+
+## Applications
+
+FunctionalScript code can be used in any JavaScript/TypeScript application. Because FunctionalScript code has no direct access to IO, the same code can be used on different platforms, for example, web-browser, Node.js.
+
+FunctionalScript is a superset of JSON. Because it has no side effects, it can be used as a JSON with pure functions and expressions, for example, in configuration files.
+
+Another application is a query language as an alternative to [SQL](https://en.wikipedia.org/wiki/SQL) and 
+[LINQ](https://en.wikipedia.org/wiki/Language_Integrated_Query).
