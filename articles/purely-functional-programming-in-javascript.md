@@ -94,7 +94,9 @@ One such example is the famous [Log4Shell](https://en.wikipedia.org/wiki/Log4She
 [Log4j](https://en.wikipedia.org/wiki/Log4j) is written in an impure language (Java), and users were not aware it 
 uses HTTPS to download and run code. A pure implementation of Log4j would require an HTTPS protocol as an argument.
 
-In this case, users have some level of control, and, most likely, they would provide a stub instead of an actual HTTPS protocol. Pure functions do not provide absolute protection, but they can significantly reduce the probability of vulnerabilities.
+In this case, users have some level of control, and, most likely, they would provide a 
+[stub](https://en.wikipedia.org/wiki/Method_stub) instead of an actual HTTPS protocol. Pure functions do not 
+provide absolute protection, but they can significantly reduce the probability of vulnerabilities.
 
 ## FunctionalScript
 
