@@ -81,3 +81,22 @@ The second table is a new table with SHA256. We can add new blocks to this table
 | sha256(A) | A     |
 | sha256(B) | B     |
 | sha256(C) | C     |
+
+## How can we reference such data blocks from other blocks?
+
+Most [URL schemas](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) specify a protocol, for example, `https://`. Even Web3 has URL-specific protocols, like `bitcoin://`. To reference a data block or a file, we don't have to use a specific protocol. Some URL schemas are protocol agnostic, such as the [URN family](https://en.wikipedia.org/wiki/Uniform_Resource_Name). Centralized registration authorities usually assign a URN for each resource. For example, [ISBN](https://en.wikipedia.org/wiki/ISBN) is used to assign unique numbers to commercial books.
+
+To reference a data block, we shouldn't have to use a registry authority, even if it's decentralized. The URN has no sub-schema for hash-based names, but there is a URL schema that is designed specifically for this being [RFC6920](https://www.rfc-editor.org/rfc/rfc6920.html). This RFC describes two schemas: `ni` and `nih`. To put it briefly, the ni schema is for a data block hash, like `ni://sha256;....` The `nih` is for a short form of the hash; it works similarly to a tiny URL.
+
+## Directed acyclic graph
+
+If a data block can reference another data block, then such storage can be presented as a [DAG](https://en.wikipedia.org/wiki/Directed_acyclic_graph). Assuming that our cryptographic hash is strong, it is almost impossible to create cycle references.
+
+Note: A tree is a special case of a DAG, and a blockchain is a special case of such a tree. When I want to create a new data block, I don't want to rely on a public blockchain like Bitcoin. Public blockchains are too expensive for such simple tasks.
+
+## Source of truth and cache
+
+A hash table storage should be considered a source of truth. It also can be used as a [source of events](https://martinfowler.com/eaaDev/EventSourcing.html). In hash table storages, we should only add new blocks but never delete old ones. If we want to delete an old block, we should add a new block that says the old one is deleted.
+
+The storage may contain a vast number of blocks, and if we would like to understand the current state of the storage, we would need to traverse all blocks. Although, it would not be an efficient algorithm for a big hash table, especially for a large amount of users. However, we can use a cache to store the current state of the storage. One of the good properties of a cache is that it can be easily recreated from the source of truth. A good cache-creating algorithm can also be scalable and distributed between multiple nodes using advanced techniques such as [MapReduce](https://en.wikipedia.org/wiki/MapReduce).
+
