@@ -114,3 +114,138 @@ If we would like to edit information, then we should add new blocks to the sourc
 graph LR;
     edit(Edit in Application)--add new blocks-->SourceOfTruth
 ```
+
+## User identity
+
+A user should not rely on centralized authorities to create an identity. Instead, they should be able to create a unique [digital signature](https://en.wikipedia.org/wiki/Digital_signature), publish its public key, and sign messages using the signature. A user may also publish associated centralized identities (for example, email addresses), but these identities should be considered [temporary](https://www.nbcnews.com/tech/tech-news/elon-musks-takes-x-handle-longtime-twitter-user-rcna96074).
+
+## Time stamping
+
+Sometimes, signing a data block with a digital signature is not enough. A user may need to prove that they are the first who created the data block. Otherwise, another user can sign the same data block with their own digital signature.
+
+To sign a data block with a time stamp, we need to publish a new data block that will reference the original one. The new data block would contain a signed time stamp using [trusted timestamping](https://en.wikipedia.org/wiki/Trusted_timestamping) services. There are also decentralized solutions, for example, using a blockchain. The timestamp can be used to prove that the data block was created before an event.
+
+## Building data block formats for different applications
+
+Here are some examples and thoughts about how we can make applications and services based on hash tables.
+
+### A file catalog
+
+Building a file catalog is very simple.
+
+```json
+{
+    "files": {
+        "a.jpg": "sha256:1234567890...",
+        "f/a.jpg": "sha256:1234567890..."
+    }
+}
+```
+
+You may extend this format to include additional file attributes, such as executables.
+
+### A source control system
+
+A source control system is built similarly to a file, but it references previous file systems.
+
+```json
+{
+    "previous": ["sha256:1234567890...", ""],
+    "message": "commit message",
+    "files": {
+        "a.jpg": "sha256:1234567890...",
+        "f/a.jpg": "sha256:1234567890..."
+    }
+}
+```
+
+Branches can be implemented either inside the data block (like in Mercurial) or outside (like in Git).
+
+### Building a private group chat (social network)
+
+Making a public group chat is quite easy. A private group chat may require additional thoughts.
+
+We assume that our network protocol is encrypted, and we will only focus on the data that users receive and store. We cannot control what users are doing with our messages. They can store it, and some of them can even share it with others.
+
+That leads us to the problem of how can we make sure that everyone receives the same information and if information is leaked how can we identify 
+the source of the leak? When Alice sends a new message into a group chat, she sends it to all members of the group chat. After that, 
+Alice sends different digital signatures for the message to each chat member. Each member of the group chat can verify that the message is signed 
+by Alice. However, if the message is leaked, to prove that the message was sent by Alice, a whistleblower needs to uncover his identity.
+
+### What else?
+
+Task manager, calendar, resume, etc. They all should have very simple formats and should be easy to edit. 
+Note, that the performance should be provided by the cache, not by the source of truth.
+
+## How do we know what's the format of the file?
+
+Unfortunately, there is no universal solution for this. We can try to parse the data with different readers/parsers and see if it's valid. Some applications may parse only a specific set of formats. We can also create a hint/container data block format, which will have an extension or MIME-type and a reference/contain to the data block.
+
+```json
+{
+    "format": "hint",
+    "extension": "jpg",
+    "mime-type": "image/jpeg",
+    "data": "sha256:1234567890..."
+}
+```
+
+```
+{
+    "format": "container",
+    "extension": "txt",
+    "mime-type": "text/plain",
+    "data": "Hello world!"
+}
+```
+
+However, because we store different types of blocks in one storage, the data can be shared between applications of different vendors and types, 
+for example between social networks, task managers, calendars, etc.
+
+## What happens if a user's private key is stolen?
+
+In this case, a user can publish a new public key and notify their friends. The friends can publish a block that confirms that they do not 
+accept new blocks signed by the old user's key and accept only blocks that are signed with the new one.
+
+## What I hope for
+
+I would like to store data in such hash-table storage. I may have multiple storages, like public, private, and shared. 
+Some of them may be in zero-knowledge encrypted storages, and some of them offline. Data blocks in the storage should still be able to reference each other. 
+Then I can control access to the different storages by different applications.
+
+Applications and services may have their own rules, and it's their right. If it is a social network, they may decide not to show some of my posts, 
+they may even decline service to me. However, they can never delete my data and I can still access my data using different applications and services.
+
+Also, I don't want to split my data between different services and applications. I would like to split my data by access, who can access the data.
+
+The current state of the internet reminds me of email hosting from internet providers. Then, you are stuck with this internet provider. 
+It's a data vendor lock-in. Our identity and data should not depend on the service provider, on a big or small company, 
+not even on a decentralized specific blockchain. Social network applications/services should use my data, not store it in proprietary storage. 
+I should be able to switch between different social networks without losing my data. I should be able to create my own social network application 
+that will browse my data. How many times we should start it from scratch and lose our data?
+
+- Hotmail, Gmail, ProtonMail,
+- ICQ, Skype, Viber, WhatsUp, Telegram, Signal,
+- Teams, Slack, Discord,
+- LiveJournal, Facebook, Twitter, Instagram, Threads, Mastodon,
+- SourceForge, BitBucket, GitHub, GitLab,
+- Wikipedia, Quora, Reddit, StackOverflow,
+- Google Drive, Dropbox, OneDrive, iCloud.
+- Google Calendar, Outlook Calendar, Apple Calendar.
+- Asana, Jira,
+- LinkedIn, Hired, Upwork, Freelancer,
+
+Please, stop! Enough! Really, it's enough! I like innovations, I like competitions, I like new start-ups, and 
+I'm happy to change my internet/storage provider and applications. I'm okay with changing a communication protocol, however, 
+I hate when I have to lose my data, my contacts, my communication, and other things. What is the point of sign-in to a new social network 
+if your friends are not there? Or do I have to post my blogs on every social network? The data vendor lock-in problem is the biggest problem in Web2. 
+Let's not carry it to Web3.
+
+In the end, I would like to highlight four main principles that we should follow when building a decentralized internet for people:
+- **Protocol agnostic storages.** It doesn't matter which protocol we use to transfer our data to storage.
+  As soon as the storage receives new data, it is able to accept the data without conflicts.
+- **Source of truth.** The user's data is a source of truth. Some services may store derived data, such as a cache,
+  but it should be possible to recreate it from the source of truth if the derived data is lost.
+- **No data vendor lock-in.** Applications and services should store user data in the storage of the user's choice.
+- **Identity is decentralized.** Anyone can create new identities. The process doesn't require any registration authority.
+  The identity is not tied to a specific service or application.
