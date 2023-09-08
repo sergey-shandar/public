@@ -53,3 +53,86 @@ const pureAddAndPrint = log => a => b => {
     return result
 }
 ```
+
+Pure functions are much more flexible. A developer may use the `pureAddAndPrint` function with either pure or 
+impure arguments, such as `console.log`. Some platforms may not have `console.log`, and in that case, a developer 
+could provide a replacement for it.
+
+Another use case is unit testing, and a developer may create a mock function and pass it as an argument.
+
+## Currying
+
+You may notice function declarations in this article use currying. In most purely functional programming languages, a function can accept only one argument, and currying is a way to provide multiple arguments to a function.
+
+Another way is to use a [tuple](https://en.wikipedia.org/wiki/Tuple) as an argument:
+
+```js
+const tupleAddAndPrint = ([log, a, b]) => {
+    const result = a + b
+    log(result)
+    return result
+}
+```
+
+However, currying can simplify partial function applications:
+
+```js
+// using currying
+const consoleLogAddCurry = pureAddAndPrint(console.log)
+// using tuples
+const consoleLogAddTuple = ([a, b]) => 
+    tupleAddAndPrint([console.log, a, b])
+```
+
+## Safety
+
+Usually, purely functional languages provide better safety. A pure function can’t access data outside passed 
+arguments. On the contrary, an impure function can access almost anything, which increases the probability of 
+vulnerabilities.
+
+One such example is the famous [Log4Shell](https://en.wikipedia.org/wiki/Log4Shell). 
+[Log4j](https://en.wikipedia.org/wiki/Log4j) is written in an impure language (Java), and users were not aware it 
+uses HTTPS to download and run code. A pure implementation of Log4j would require an HTTPS protocol as an argument.
+
+In this case, users have some level of control, and, most likely, they would provide a stub instead of an actual HTTPS protocol. Pure functions do not provide absolute protection, but they can significantly reduce the probability of vulnerabilities.
+
+## FunctionalScript
+
+It is possible to write purely functional code in an impure language. 
+[FunctionalScript](https://github.com/functionalscript/functionalscript) is an attempt to create a purely 
+functional subset of JavaScript, and the subset should not have the ability to create a function with side effects.
+
+Because FunctionalScript is a subset of JavaScript, we do not need to develop compilers, transpilers, debuggers, 
+IDEs, and other development tools for the language.
+
+Also, developers do not need to learn an entirely new programming language and how it interacts with other systems 
+and languages. FunctionalScript is an open specification and has no risk of vendor lock-in.
+
+Even if the FunctionalScript specification disappears completely, any FunctionalScript code will still work like 
+any other JavaScript code.
+
+## Recursion Problem
+
+Most purely functional programming languages have no loops because all data is immutable.
+
+Instead, developers use recursion:
+
+```js
+const factorial = n => n <= 0 ? 1 : n * factorial(n - 1)
+```
+
+Recursion consumes stack, and it can cause a stack overflow in case of too many recursive calls. Functional languages solve this problem by [tail call](https://en.wikipedia.org/wiki/Tail_call) elimination. Note that a compiler can only eliminate a call if it’s the last call or operation.
+
+For example, a tail call elimination can not be applied to our factorial function because the last operation is 
+multiplication instead of factorial. However, we can change the function so that the tail call elimination can 
+be applied.
+
+```js
+const factorialTail = result => n =>
+    n <= 0 ? result : factorialTail(result * n)(n - 1)
+const factorial = factorialTail(1)
+```
+
+The JavaScript standard ([ECMAScript 6](https://webkit.org/blog/6240/ecmascript-6-proper-tail-calls-in-webkit/)) supports the tail call elimination (aka a proper tail call), but V8 and 
+SpiderMonkey do not. That means that Google Chrome, Microsoft Edge, Node.js, and Firefox do not support PTC. 
+So, de facto, JavaScript has no PTC.
