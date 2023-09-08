@@ -24,7 +24,7 @@ a blockchain could be pretty expensive. I don't want to pay for every message th
 
 Another problem with Web3 technologies, like blockchain, is that they are not designed for sub-networks. For example, often, a blockchain doesn't allow forking. 
 How will it work if we would like to run the same internet on another planet while only having occasional synchronization? For example, a signal to Mars takes 
-from 5 to 20 minutes. I know we are probably far away from this, but there can still be other examples of isolated sub-networks that need to be synchronized 
+from 5 to 20 minutes. I know we are probably far away from this, but still, there can be other examples of isolated sub-networks that need to be synchronized 
 occasionally.
 
 So, instead of centralized data vendor lock-in, we now have decentralized data vendor lock-in. It's better but doesn't completely solve the problem at hand 
