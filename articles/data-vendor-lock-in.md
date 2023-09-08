@@ -100,3 +100,17 @@ A hash table storage should be considered a source of truth. It also can be used
 
 The storage may contain a vast number of blocks, and if we would like to understand the current state of the storage, we would need to traverse all blocks. Although, it would not be an efficient algorithm for a big hash table, especially for a large amount of users. However, we can use a cache to store the current state of the storage. One of the good properties of a cache is that it can be easily recreated from the source of truth. A good cache-creating algorithm can also be scalable and distributed between multiple nodes using advanced techniques such as [MapReduce](https://en.wikipedia.org/wiki/MapReduce).
 
+```mermaid
+graph LR;
+    SourceOfTruth--blocks-->Cache
+    Cache--response to a query-->view(View in Application)
+```
+
+The arrows show the direction of the data flow. SourceOfTruth is read-only for the Cache, and the Cache is read-only for View in Application.
+
+If we would like to edit information, then we should add new blocks to the source of truth:
+
+```mermaid
+graph LR;
+    edit(Edit in Application)--add new blocks-->SourceOfTruth
+```
