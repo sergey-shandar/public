@@ -7,4 +7,4 @@
 - [Medium](https://medium.com/@sergeyshandar)
 - [LinkedIn](https://www.linkedin.com/in/sergeyshandar/)
 - [Mastodon](https://techhub.social/@functionalscript)
-- [dev.to](https://dev.to/sergeyshandar)
+- [DEV Community](https://dev.to/sergeyshandar)
