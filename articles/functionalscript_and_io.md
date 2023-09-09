@@ -80,4 +80,41 @@ const optionMap = f => value => value === undefined ? undefined : f(value)
     A[application.js] --> B[lib.f.js]
     A --> C[IO: Node.js, Web Browser, Deno]
   ```
-  
+
+In this structure, application.js serves as the orchestrator, containing only the glue code that connects lib.f.js (the core business logic) with the platform-specific I/O. Here is an example of a simple application:
+
+### logic.f.js
+
+```js
+/** @typedef {(text: string) => undefined} ConsoleOut */
+
+/** @type {(out: ConsoleOut) => undefined} */
+const main = out => out('Hello world!')
+
+module.exports = { main }
+```
+
+### application.js
+
+```js
+const logic = require('logic.f.js')
+
+logic.main(console.log)
+```
+
+FunctionalScript can be utilized in various types of applications, including:
+
+- Front-end applications (Web, Mobile)
+- Back-end applications (Node.js, Deno, Bun)
+- JSON extensions for scripting languages, like build and deployment tools
+- Sophisticated query languages for distributed systems
+
+By using FunctionalScript in these scenarios, you can ensure better separation of concerns, easier code maintenance, and greater adaptability to different IO systems or requirements.
+
+As mentioned before, the main target is to have scalable and reusable components. Users who formally describe a business logic should not have to rewrite it for a new distributed computation system, nor should they have to learn a new programming language.
+
+## Current State
+
+FunctionalScript is an open-source project released under the MIT license. The project is still in its early stages of development, and we are actively working on creating a parser and other essential modules.
+
+All the code is written in FunctionalScript, which is a testament to the language’s capabilities. Once the parser is complete, it could be used to build different linter tools and compilers. Until then, we manually check our code using FunctionalScript as a code convention.
