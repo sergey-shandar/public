@@ -239,7 +239,7 @@ A JSON module declares all public exports in the first expression.
 
 A JavaScript Common.js module declares all public exports in module.exports.
 
-```json
+```js
 module.exports = {
    a: "Hello",
    b: 42
