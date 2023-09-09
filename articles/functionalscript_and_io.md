@@ -7,8 +7,8 @@ For example, it can go through the following stages:
 2. Implementing the same business logic in a custom program with a user interface and serializing data to JSON or XML.
 3. Rewriting the program to support multithreading or asynchronous processing.
 4. Rewriting the program to use SQL database.
-5. Rewriting the program to Java to use distributed systems like Hadoop.
-6. Rewriting the program to Scala for compatibility with Spark.
+5. Rewriting the program to Java to use distributed systems like [Hadoop](https://en.wikipedia.org/wiki/Apache_Hadoop).
+6. Rewriting the program to Scala for compatibility with [Spark](https://en.wikipedia.org/wiki/Apache_Spark).
 7. Creating a small program to handle a subset of data on a workstation for a specific department.
 8. Rewriting part of the business logic in JavaScript to make it available for front-end applications.
 
