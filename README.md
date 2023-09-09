@@ -1,6 +1,6 @@
 # Sergey Shandar
 
-- [Articles](./articles).
+- [Articles](./articles)
 - Some open source projects:
   - [FunctionalScript](https://github.com/functionalscript/functionalscript)
   - [GetBoost](https://github.com/sergey-shandar/getboost)
