@@ -103,4 +103,4 @@ To solve it, we can transform a root hash into another hash before publishing it
 
 ## No Shift Resistance
 
-Merkle Tree is a very good idea to split data blocks into parts. We even can reduce traffic if some parts are the same. Or, we don't need to download some parts if we already have them in our hash table.  However, it only works if the same data parts are aligned with Merkle Tree parts. This is a big limitation of Merkle Tree.
+Merkle Tree is a very good idea to split data blocks into parts. We can even reduce traffic if some parts are the same. Or, we don't need to download some parts if we already have them in our hash table.  However, it only works if the same data parts are aligned with Merkle Tree parts. This is a big limitation of Merkle Tree.
