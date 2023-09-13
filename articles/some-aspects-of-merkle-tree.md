@@ -8,7 +8,7 @@ We wouldn't have such a problem if we could validate small parts of the data blo
 
 `f` is a [cryptographic compress hash function](https://en.wikipedia.org/wiki/One-way_compression_function) that accepts two digests and returns one. For example, `h01 = f(h0, h1)`.
 
-We split a data block into a list of digests `[h0, h1, ..., hN]`. Let's assume that `N` is `2^P`, where `P` is the height of the corresponding Merkle tree. Our tree will look like this:
+We split a data block into a list of digests `[d0, d1, ..., dN]`. Let's assume that `N` is `2^P`, where `P` is the height of the corresponding Merkle tree. Our tree will look like this:
 
 ```mermaid
 graph
