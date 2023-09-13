@@ -28,7 +28,7 @@ graph
   h23 --> d3
 ```
 
-## Secondary Preimage Attack
+## Second Preimage Attack
 
 If we know data for a specific hash, we can create a collision because the tree doesn't distinguish between hash digest and data digests. So, it's possible to send hash digests instead of actual data. In this case, the validation will succeed, but the data will differ.
 
@@ -45,7 +45,7 @@ graph
   end
 ```
 
-The solution to prevent such attacks is to separate data from hashes.
+It's called [second preimage attack](https://en.wikipedia.org/wiki/Preimage_attack). To prevent such attacks, we need to separate data from hashes.
 
 We can use another hash function for the data blocks to convert them into hash digests. Let's call it `g`.
 
