@@ -5,7 +5,7 @@
 - [Rust](https://www.rust-lang.org/tools/install).
   - [Tarpaulin](https://lib.rs/crates/cargo-tarpaulin): `cargo install cargo-tarpaulin`. Run `cargo tarpaulin --out Html`. It will create a `tarpaulin-report.html` file,
   - [Binstall](https://github.com/cargo-bins/cargo-binstall): `cargo install binstall`,
-  - [Nextest](https://nexte.st/): `cargo binstall carg-nexttest --secure`. Run `cargo nextest run`.
+  - [Nextest](https://nexte.st/): `cargo binstall carg-nextest --secure`. Run `cargo nextest run`.
 - JavaScript
   - [Node.js](https://nodejs.org/en),
   - [Deno](https://deno.com/),
