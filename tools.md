@@ -4,6 +4,10 @@
 
 - [Rust](https://www.rust-lang.org/tools/install).
   - Tarpaulin: `cargo install cargo-tarpaulin`. Run `cargo tarpaulin --out Html`. It will create a `tarpaulin-report.html` file.
+- JavaScript
+  - [Node.js](https://nodejs.org/en),
+  - [Deno](https://deno.com/),
+  - [Bun](https://bun.sh/).
 
 ### IDE
 
