@@ -3,7 +3,9 @@
 ## Programming Languages
 
 - [Rust](https://www.rust-lang.org/tools/install).
-  - Tarpaulin: `cargo install cargo-tarpaulin`. Run `cargo tarpaulin --out Html`. It will create a `tarpaulin-report.html` file.
+  - [Tarpaulin](https://lib.rs/crates/cargo-tarpaulin): `cargo install cargo-tarpaulin`. Run `cargo tarpaulin --out Html`. It will create a `tarpaulin-report.html` file,
+  - [Binstall](https://github.com/cargo-bins/cargo-binstall): `cargo install binstall`,
+  - [Nextest](https://nexte.st/): `cargo binstall carg-nexttest --secure`. Run `cargo nextest run`.
 - JavaScript
   - [Node.js](https://nodejs.org/en),
   - [Deno](https://deno.com/),
