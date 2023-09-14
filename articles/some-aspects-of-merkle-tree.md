@@ -30,7 +30,7 @@ graph
 
 ## Second Preimage Attack
 
-If we know data for a specific hash, we can create a collision because the tree doesn't distinguish between hash digest and data digests. So, it's possible to send hash digests instead of actual data. In this case, the validation will succeed, but the data will differ.
+If we know data for a specific hash, we can create a collision because the tree doesn't distinguish between hash and data digests. So, it's possible to send hash digests instead of actual data. In this case, the validation will succeed, but the data will differ.
 
 ```mermaid
 graph
