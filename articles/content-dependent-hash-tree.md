@@ -24,7 +24,7 @@ One simple idea to have content-dependant grouping is to group numbers until the
 - `s0`: `[[7, 0], [5, 1], [2, 4, 6, 1], [7, 0], [4, 7, 3], [4, 6, 2]]`,
 - `s1`: `[[7, 0], [5, 1], [2, 5, 4], [6, 1], [7, 0], [4, 7, 3], [4, 6]]`.
 
-One important rule is the autonomy of each group, akin [context-free grammar](https://en.wikipedia.org/wiki/Context-free_grammar). Grouping should only depend on items within the group. Extracting an element from a sequence mandates its inclusion in the current group. There's no going back. Sorry, "No Return Policy". An item may end the current group, and we will create a new one for the following items. Context-free grouping is suitable for validation because we can always validate a group without knowledge of surrounding groups.
+One important rule is the autonomy of each group, akin [context-free grammar](https://en.wikipedia.org/wiki/Context-free_grammar). Grouping should only depend on items within the group. Extracting an element from a sequence mandates its inclusion in the current group. There's no going back. Sorry, "No Return Policy". An item may end the current group, and we will create a new one for the following numbers. Context-free grouping is suitable for validation because we can always validate a group without knowledge of surrounding groups.
 
 This algorithm can create the same groups of numbers in both sequences despite a shift in the middle: `[7, 0]` - 4 times, `[5, 1]` - 2 times, `[4, 7, 3]` - 2 times. The next step is to convert each group into a number and repeat the process. To create a good function that will convert a group into a number, we need to research the properties of the groups.
 
@@ -79,15 +79,17 @@ The level 1 has 5 groups. Each group forms a new number id for the next level.
 
 - `N = 5`
 - `S = 8`
-- Min size: 2 bits.
-- Max size: 3 bits.
+- Min size: 2 bits. For example: `00`.
+- Max size: 3 bits. For example: `011`.
 
 ### Level 2
 
+We use 5 numbers from the previous level as input for this level.
+
 - `N = 4*2^5 + 1 = 129`
 - `S = 256`
-- Min size: 4 bits.
-- Max size: 15 bits. For example: `101100110100101`.
+- Min size: 4 bits. For example, `00` of level 1 numbers or `0000` as a bit sequence.
+- Max size: 15 bits. For example, `012341` of level 1 numbers or `00_010_011_10_11_010` as a bit sequence.
 
 ### Level 3
 
