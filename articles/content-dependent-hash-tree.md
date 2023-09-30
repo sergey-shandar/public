@@ -24,7 +24,7 @@ One simple idea to have content-dependant grouping is to group numbers until the
 - `s0`: `[[7, 0], [5, 1], [2, 4, 6, 1], [7, 0], [4, 7, 3], [4, 6, 2]]`,
 - `s1`: `[[7, 0], [5, 1], [2, 5, 4], [6, 1], [7, 0], [4, 7, 3], [4, 6]]`.
 
-One important rule is the autonomy of each group, akin [context-free grammar](https://en.wikipedia.org/wiki/Context-free_grammar). Grouping should only depend on items within the group. Extracting an element from a sequence mandates its inclusion in the current group. There's no going back. Sorry, "No Return Policy". An item may end the current group, and we will create a new one for the following items. Context-free grouping is suitable for validation because we can always validate a group without knowledge of surrounding groups.
+One important rule is the autonomy of each group, akin [context-free grammar](https://en.wikipedia.org/wiki/Context-free_grammar). Grouping should only depend on items within the group. Extracting an element from a sequence mandates its inclusion in the current group. There's no going back. Sorry, "No Return Policy". An item may end the current group, and we will create a new one for the following numbers. Context-free grouping is suitable for validation because we can always validate a group without knowledge of surrounding groups.
 
 This algorithm can create the same groups of numbers in both sequences despite a shift in the middle: `[7, 0]` - 4 times, `[5, 1]` - 2 times, `[4, 7, 3]` - 2 times. The next step is to convert each group into a number and repeat the process. To create a good function that will convert a group into a number, we need to research the properties of the groups.
 
