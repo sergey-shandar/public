@@ -1,5 +1,11 @@
 # Sergey Shandar
 
+I'm building a data block set tailored for individual use, inspired by [CAS](https://en.wikipedia.org/wiki/Content-addressable_storage). A universal personal data block set is long overdue in the industry, and I firmly believe we need one ASAP. It unlocks so many possibilities, like decentralized protocol-agnostic social networks, seamless data synchronization, affordable data backup, better version control systems, deterministic build systems, and much much more.
+
+I'm working on multiple projects and algorithms that can help build the block set and supporting applications. Including 
+- A data block set for personal use.
+- A programming language for usage in deterministic distributed computation. The [FunctionaScript](https://github.com/functionalscript/functionalscript) programming language is a subset of JavaScript, so you don't need to learn yet another programming language.
+
 - [Articles](./articles)
 - Some open source projects:
   - [FunctionalScript](https://github.com/functionalscript/functionalscript)
