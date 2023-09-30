@@ -5,7 +5,7 @@ I'm building a data block set tailored for individual use, inspired by [CAS](htt
 Currently, my primary focus areas include:
 
 - **Personal Data Block Set**: a specialized data storage approach that places individuals at the helm of their data.
-- **FunctionalScript**: a programming language for usage in deterministic distributed computation. The [FunctionaScript](https://github.com/functionalscript/functionalscript) programming language is a subset of JavaScript, so you don't need to learn yet another programming language.
+- **[FunctionalScript]((https://github.com/functionalscript/functionalscript))**: An optimized subset of ECMAScript (aka JavaScript), devised to tackle the challenges of distributed computing without adding to the learning burden.
 
 - [Articles](./articles)
 - Some open source projects:
