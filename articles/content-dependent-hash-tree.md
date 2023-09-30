@@ -26,22 +26,7 @@ One simple idea to have content-dependant grouping is to group numbers until the
 
 One important rule is the autonomy of each group, akin [context-free grammar](https://en.wikipedia.org/wiki/Context-free_grammar). Grouping should only depend on items within the group. Extracting an element from a sequence mandates its inclusion in the current group. There's no going back. Sorry, "No Return Policy". An item may end the current group, and we will create a new one for the following items. Context-free grouping is suitable for validation because we can always validate a group without knowledge of surrounding groups.
 
-This algorithm can create the same groups of numbers in both sequences despite a shift in the middle: `[7, 0]` - 4 times, `[5, 1]` - 2 times, `[4, 7, 3]` - 2 times. The next step is to convert each group into a number and repeat the process for the new sequence. Let's create a new sequence of numbers from groups by concatenating the numbers as strings and converting them back to numbers. Level 1:
-
-- `s0`: `[70, 51, 2461, 70, 473, 462]`,
-- `s1`: `[70, 51, 254, 61, 70, 473, 46]`.
-
-Repeat the grouping process until only one number is left: the tree's root. Level 2:
-
-- `s0`: `[7051, 246170, 473462]`,
-- `s1`: `[7051, 25461, 7047346]`.
-
-Level 3:
-
-- `s0`: `[7051246170473462]`,
-- `s1`: `[7051254617047346]`.
-
-To create a good function that will convert a group into a number, we need to research the properties of the groups.
+This algorithm can create the same groups of numbers in both sequences despite a shift in the middle: `[7, 0]` - 4 times, `[5, 1]` - 2 times, `[4, 7, 3]` - 2 times. The next step is to convert each group into a number and repeat the process. To create a good function that will convert a group into a number, we need to research the properties of the groups.
 
 ## Group Properties
 
