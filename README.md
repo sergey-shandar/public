@@ -10,8 +10,7 @@ Currently, my primary focus areas include:
 See also
 
 - [Articles](./articles)
-- Some open source projects:
-  - [FunctionalScript](https://github.com/functionalscript/functionalscript)
+- Other open source projects:
   - [GetBoost](https://github.com/sergey-shandar/getboost)
   - [SHA2 on C++](https://github.com/sergey-shandar/sha2)
   - [NatFoam Rust Libraries](https://github.com/natfoam/lib)
