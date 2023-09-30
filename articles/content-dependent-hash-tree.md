@@ -1,6 +1,6 @@
 # Content-Dependent Hash Tree
 
-In our [early discussion](some-aspects-of-merkle-tree.md), we highlighted the advantages of using a cryptographic hash function based on a [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree) for data transferring in [CAN](https://en.wikipedia.org/wiki/Content-addressable_storage). However, the Merkle tree is not shift-resistant, leading to potential redundancies in our block set or [CAS](https://en.wikipedia.org/wiki/Content-addressable_storage). Here, we delve deeper to tackle this challenge.
+In our [early discussion](some-aspects-of-merkle-tree.md), we highlighted the advantages of using a cryptographic hash function based on a [Merkle tree](https://en.wikipedia.org/wiki/Merkle_tree) for data transferring in [CAN](https://en.wikipedia.org/wiki/Content-addressable_network). However, the Merkle tree is not shift-resistant, leading to potential redundancies in our block set or [CAS](https://en.wikipedia.org/wiki/Content-addressable_storage). Here, we delve deeper to tackle this challenge.
 
 The main reason why I publish the algorithm is because I firmly believe that we can't solve the [data vendor lock-in problem](data-vendor-lock-in.md) if we keep our data in proprietary formats. 
 
