@@ -16,4 +16,5 @@
 - we would like to build application and services based on protocol abstraction layer with decentralized identities. The applications and services shouldn't depend on any specific protocol.
 - data-block set computations. We can have deterministic programming languages which can operate on content-addressable data. It opens a lot possibilities.
 
-The main principle: we would like to collaborate instead of compete in the ecosystem. At least in the current momemnt, the ecosystem is its infancy, and there is a lot of space to grow.
+The main principle: we would like to collaborate instead of compete in the ecosystem. If IPFS implements the hash functions, we will be glad to use IPFS as one of the protocol. 
+At least in the current momemnt, the ecosystem is its infancy, and there is a lot of space to growth.
