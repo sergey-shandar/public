@@ -7,6 +7,8 @@ Currently, my primary focus areas include:
 - **Personal Data Block Set**: a specialized data storage approach that places individuals at the helm of their data.
 - **[FunctionalScript]((https://github.com/functionalscript/functionalscript))**: An optimized subset of ECMAScript (aka JavaScript), devised to tackle the challenges of distributed computing without adding to the learning burden.
 
+See also
+
 - [Articles](./articles)
 - Some open source projects:
   - [FunctionalScript](https://github.com/functionalscript/functionalscript)
