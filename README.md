@@ -1,13 +1,13 @@
 # Sergey Shandar
 
-I'm building a data block set tailored for individual use, inspired by [CAS](https://en.wikipedia.org/wiki/Content-addressable_storage). A universal personal data block set is long overdue in the industry, and I firmly believe we need one ASAP. It unlocks so many possibilities, like decentralized protocol-agnostic social networks, seamless data synchronization, affordable data backup, better version control systems, deterministic build systems, and much much more.
+I'm building a data block set tailored for individual use, inspired by [CAS](https://en.wikipedia.org/wiki/Content-addressable_storage). While CAS systems have found a place in some companies, many individuals remain sidelined. I aim to democratize this tech, ensuring universal accessibility and paving the way for a new ecosystem of applications and services. It unlocks so many possibilities, like decentralized protocol-agnostic social networks, seamless data synchronization, affordable data backup, better version control systems, deterministic build systems, and much more.
 
 Currently, my primary focus areas include:
 
 - **Personal Data Block Set**: a specialized data storage approach that places individuals at the helm of their data.
 - **[FunctionalScript](https://github.com/functionalscript/functionalscript)**: An optimized subset of ECMAScript (aka JavaScript), devised to tackle the challenges of distributed computing without adding to the learning burden.
 
-Sorry, I'm not hiring. However, if you want to build your own services and applications on top of a data block set, don't hesitate to contact me. The ecosystem is almost empty, so there is a lot of space for growth. 
+Sorry, I'm not hiring. However, if you want to build your own services and applications on top of a data block set, don't hesitate to contact me. The ecosystem is in its infancy, so there is a lot of space for growth. 
 
 See also
 
