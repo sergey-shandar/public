@@ -79,15 +79,17 @@ The level 1 has 5 groups. Each group forms a new number id for the next level.
 
 - `N = 5`
 - `S = 8`
-- Min size: 2 bits.
-- Max size: 3 bits.
+- Min size: 2 bits. For example: `00`.
+- Max size: 3 bits. For example: `011`.
 
 ### Level 2
 
+We use 5 numbers from the previous level as input for this level.
+
 - `N = 4*2^5 + 1 = 129`
 - `S = 256`
-- Min size: 4 bits.
-- Max size: 15 bits. For example: `101100110100101`.
+- Min size: 4 bits. For example, `00` of level 1 numbers or `0000` as a bit sequence.
+- Max size: 15 bits. For example, `012341` of level 1 numbers or `00_010_011_10_11_010` as a bit sequence.
 
 ### Level 3
 
