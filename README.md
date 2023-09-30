@@ -1,6 +1,6 @@
 # Sergey Shandar
 
-I'm building a data block set, also known as [CAS](https://en.wikipedia.org/wiki/Content-addressable_storage), mostly for individual use. A universal standard personal data block set is something long overdue in the industry, and I firmly believe we need one ASAP. It unlocks so many possibilities, like decentralized protocol-agnostic social networks, seamless data synchronization, affordable data backup, better version control systems, deterministic build systems, and much much more.
+I'm building a data block set tailored for individual use, inspired by [CAS](https://en.wikipedia.org/wiki/Content-addressable_storage). A universal personal data block set is long overdue in the industry, and I firmly believe we need one ASAP. It unlocks so many possibilities, like decentralized protocol-agnostic social networks, seamless data synchronization, affordable data backup, better version control systems, deterministic build systems, and much much more.
 
 I'm working on multiple projects and algorithms that can help build the block set and supporting applications. Including 
 - A data block set for personal use.
