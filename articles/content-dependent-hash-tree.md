@@ -12,7 +12,7 @@ Using N=8 as an example, consider these similar sequences:
 - `s0 = [7, 0, 5, 1, 2, 4, 6, 1, 7, 0, 4, 7, 3, 4, 6, 2]` and
 - `s1 = [7, 0, 5, 1, 2, 5, 4, 6, 1, 7, 0, 4, 7, 3, 4, 6]`.
 
-At a glance, shared groupings [7, 0, 5, 1, 2] and [6, 1, 7, 0, 4, 7, 3, 4, 6] are evident. You may notice that these sequences both have these groups `[7, 0, 5, 1, 2]` and `[6, 1, 7, 0, 4, 7, 3, 4, 6]`. But what about handling mammoth data streams in the range of gigabytes or terabytes? Some algorithms require `O(n^2)` operations, where `n` is the length of the sequences. We need something close to `O(n)`. To achieve this, we should split our sequences into groups without knowledge of other sequences.
+At a glance, shared groupings `[7, 0, 5, 1, 2]` and `[6, 1, 7, 0, 4, 7, 3, 4, 6]` are evident. But what about handling mammoth data streams in the range of gigabytes or terabytes? Some algorithms require `O(n^2)` operations, where `n` is the length of the sequences. We need something close to `O(n)`. To achieve this, we should split our sequences into groups without knowledge of other sequences.
 
 If we group the numbers by pairs, like Merkle Tree does, we will have
 - `s0`: `[[7, 0], [5, 1], [2, 4], [6, 1], [7, 0], [4, 7], [3, 4], [6, 2]]`,
