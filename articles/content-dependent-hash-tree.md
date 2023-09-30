@@ -67,6 +67,8 @@ We can start building our tree from any `N`. The smallest possible `N` is `2`, a
 
 ### Level 1
 
+The level 1 has 5 groups. Each group forms a new number id for the next level.
+
 |group|id|
 |-----|--|
 |00   | 0|
