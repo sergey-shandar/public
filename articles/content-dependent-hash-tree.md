@@ -20,17 +20,17 @@ If we group the numbers by pairs, like Merkle Tree does, we will have
 
 As you can see, initially, we have the same groups `[7, 0]`, `[5, 1]`, but after that our groups are all different. The problem with such an approach is that the group size is fixed and independent of the group's content.
 
-One simple idea to have content-dependant grouping is to group numbers until they stop growing:
-- `s0`: `[[7, 0], [5, 1], [2, 4, 6, 1], [7, 0], [4, 7, 3], [4, 6, 2]]`,
-- `s1`: `[[7, 0], [5, 1], [2, 5, 4], [6, 1], [7, 0], [4, 7, 3], [4, 6]]`.
+One simple idea to have content-dependant grouping is to group numbers until they stop descending:
+- `s0`: `[[7, 0, 5], [1, 2], [4, 6], [1, 7], [0, 4], [7, 3, 4], [6, 2]]`,
+- `s1`: `[[7, 0, 5], [1, 2], [5, 4, 6], [1, 7], [0, 4], [7, 3, 4], [6]]`.
 
 One important rule is the autonomy of each group, akin [context-free grammar](https://en.wikipedia.org/wiki/Context-free_grammar). Grouping should only depend on items within the group. Extracting an element from a sequence mandates its inclusion in the current group. There's no going back. Sorry, "No Return Policy". An item may end the current group, and we will create a new one for the following numbers. Context-free grouping is suitable for validation because we can always validate a group without knowledge of surrounding groups.
 
-This algorithm can create the same groups of numbers in both sequences despite a shift in the middle: `[7, 0]` - 4 times, `[5, 1]` - 2 times, `[4, 7, 3]` - 2 times. The next step is to convert each group into a number and repeat the process. To create a good function that will convert a group into a number, we need to research the properties of the groups.
+This algorithm can create the same groups of numbers in both sequences despite a shift in the middle: `[7, 0, 5]` - 2 times, `[1, 2]` - 2 times, `[1, 7]` - 2 times, `[0, 4]` - 2 times, `[7, 3, 4]` - 2 times. The next step is to convert each group into a number and repeat the process. To create a good function that will convert a group into a number, we need to research the properties of the groups.
 
 ## Group Properties
 
-A group can have a maximum of `N+1` items. For example, the longest groups for `N=8` will be `[0, 1, 2, 3, 4, 5, 6, 7, x]`, where `x` is any number from `0` to `7`.
+A group can have a maximum of `N+1` items. For example, the longest groups for `N=8` will be `[7, 6, 5, 4, 3, 2, 1, 0, x]`, where `x` is any number from `0` to `7`.
 A group can be partitioned into:
 - **Body**, all items in the group except the last one.
 - **Tail**, the last item in the group.
@@ -72,15 +72,15 @@ The level 1 has 5 groups. Each group forms a new number id for the next level.
 |group|id|
 |-----|--|
 |00   | 0|
-|010  | 1|
-|011  | 2|
-|10   | 3|
-|11   | 4|
+|01   | 1|
+|11   | 2|
+|100  | 3|
+|101  | 4|
 
 - `N = 5`
 - `S = 8`
 - Min size: 2 bits. For example: `00`.
-- Max size: 3 bits. For example: `011`.
+- Max size: 3 bits. For example: `101`.
 
 ### Level 2
 
@@ -89,7 +89,7 @@ We use 5 numbers from the previous level as input for this level.
 - `N = 4*2^5 + 1 = 129`
 - `S = 256`
 - Min size: 4 bits. For example, `00` of level 1 numbers or `0000` as a bit sequence.
-- Max size: 15 bits. For example, `012341` of level 1 numbers or `00_010_011_10_11_010` as a bit sequence.
+- Max size: 15 bits. For example, `432104` of level 1 numbers or `101_100_11_01_00_101` as a bit sequence.
 
 ### Level 3
 
@@ -100,6 +100,6 @@ We use 5 numbers from the previous level as input for this level.
 
 ### Level 4 and up
 
-For levels four and up we use hashes instead of actual data due to the explosive growth in `N`. As we discussed before, the average length of the group is `e`, but, the maximal length of the groups for a big `N` could be very long. I would like to discuss splitting the groups into smaller parts in one of the following articles. 
+For levels four and up, we use hashes instead of actual data due to the explosive growth in `N`. As we discussed before, the average length of the group is `e`, but the maximal length of the groups for a big `N` could be very long. I would like to discuss splitting the groups into smaller parts in one of the following articles. 
 
 In essence, the content-dependent hash tree optimizes the identification of identical groups, catering well to both CAS and CAN applications. However, crafting a CAS on such a tree requires its own in-depth exploration.
