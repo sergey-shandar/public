@@ -26,7 +26,22 @@ One simple idea to have content-dependant grouping is to group numbers until the
 
 One important rule is the autonomy of each group, akin [context-free grammar](https://en.wikipedia.org/wiki/Context-free_grammar). Grouping should only depend on items within the group. Extracting an element from a sequence mandates its inclusion in the current group. There's no going back. Sorry, "No Return Policy". An item may end the current group, and we will create a new one for the following numbers. Context-free grouping is suitable for validation because we can always validate a group without knowledge of surrounding groups.
 
-This algorithm can create the same groups of numbers in both sequences despite a shift in the middle: `[7, 0, 5]` - 2 times, `[1, 2]` - 2 times, `[1, 7]` - 2 times, `[0, 4]` - 2 times, `[7, 3, 4]` - 2 times. The next step is to convert each group into a number and repeat the process. To create a good function that will convert a group into a number, we need to research the properties of the groups.
+This algorithm can create the same groups of numbers in both sequences despite a shift in the middle: `[7, 0, 5]` - 2 times, `[1, 2]` - 2 times, `[1, 7]` - 2 times, `[0, 4]` - 2 times, `[7, 3, 4]` - 2 times. The next step is to convert each group into a number and repeat the process. T
+
+Let's try a simple approach, our function will convert numbers to string and then concatenate them:
+
+`s0 = ['705', '12', '46', '17', '04', '734', '62']`,
+`s1 = ['705', '12', '546', '17', '04', '734', '6']`.
+
+`s0 = ['7051246', '1704', '73462']`
+`s1 = ['70512546', '1704', '7346']`
+
+Here, we have one same group `1704`.
+
+`s0 = ['7051246170473462']`
+`s1 = ['7051254617047346']`
+
+This functions works for small sequences but to create a good function for big data, we need to research the properties of the groups.
 
 ## Group Properties
 
