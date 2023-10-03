@@ -38,7 +38,7 @@ The next level of grouping will have the same group `1704`:
 - `s0 = ['7051246', '1704', '73462']`,
 - `s1 = ['70512546', '1704', '7346']`,
 
-And the root of the tree:
+And the roots of the trees:
 
 - `s0 = ['7051246170473462']`
 - `s1 = ['7051254617047346']`
