@@ -28,20 +28,130 @@ One important rule is the autonomy of each group, akin [context-free grammar](ht
 
 This algorithm can create the same groups of numbers in both sequences despite a shift in the middle: `[7, 0, 5]` - 2 times, `[1, 2]` - 2 times, `[1, 7]` - 2 times, `[0, 4]` - 2 times, `[7, 3, 4]` - 2 times. The next step is to convert each group into a number and repeat the process. T
 
-Let's try a simple approach, our function will convert numbers to string and then concatenate them:
+Let's try a simple approach: our function will convert numbers to strings and then concatenate them:
 
-`s0 = ['705', '12', '46', '17', '04', '734', '62']`,
-`s1 = ['705', '12', '546', '17', '04', '734', '6']`.
+- `s0 = ['705', '12', '46', '17', '04', '734', '62']`,
+- `s1 = ['705', '12', '546', '17', '04', '734', '6']`.
 
-`s0 = ['7051246', '1704', '73462']`
-`s1 = ['70512546', '1704', '7346']`
+The next level of grouping will have the same group `1704`: 
 
-Here, we have one same group `1704`.
+- `s0 = ['7051246', '1704', '73462']`,
+- `s1 = ['70512546', '1704', '7346']`,
 
-`s0 = ['7051246170473462']`
-`s1 = ['7051254617047346']`
+And the root of the tree:
 
-This functions works for small sequences but to create a good function for big data, we need to research the properties of the groups.
+- `s0 = ['7051246170473462']`
+- `s1 = ['7051254617047346']`
+
+```mermaid
+flowchart TD
+  subgraph leaves
+    7((7))
+    0((0))
+    5((5))
+    1((1))
+    2((2))
+    4((4))
+    6((6))
+    a1((1))
+    a7((7))
+    a0((0))
+    a4((4))
+    b7((7))
+    b3((3))
+    b4((4))
+    b6((6))
+    b2((2))
+  end
+  subgraph level 1
+    705((705))-->7
+    705-->0
+    705-->5
+    12((12))-->1
+    12-->2
+    46-->4
+    46-->6
+    17((17))-->a1
+    17-->a7
+    04((04))-->a0
+    04-->a4
+    734((734))-->b7
+    734-->b3
+    734-->b4
+    62-->b6
+    62-->b2
+  end
+  subgraph level 2
+    7051246-->705
+    7051246-->12
+    7051246-->46
+    1704((1704))-->17
+    1704-->04
+    73462-->734
+    73462-->62
+  end
+  subgraph s0
+    7051246170473462-->7051246
+    7051246170473462-->1704
+    7051246170473462-->73462
+  end
+```
+
+```mermaid
+flowchart TD
+  subgraph leaves
+    7((7))
+    0((0))
+    5((5))
+    1((1))
+    2((2))
+    a5((5))
+    4((4))
+    6((6))
+    a1((1))
+    a7((7))
+    a0((0))
+    a4((4))
+    b7((7))
+    b3((3))
+    b4((4))
+    b6((6))
+    b2((2))
+  end
+  subgraph level 1
+    705((705))-->7
+    705-->0
+    705-->5
+    12((12))-->1
+    12-->2
+    546-->a5
+    546-->4
+    546-->6
+    17((17))-->a1
+    17-->a7
+    04((04))-->a0
+    04-->a4
+    734((734))-->b7
+    734-->b3
+    734-->b4
+  end
+  subgraph level 2
+    70512546-->705
+    70512546-->12
+    70512546-->546
+    1704((1704))-->17
+    1704-->04
+    7346-->734
+    7346-->b6
+  end
+  subgraph s1
+    70512546170473462-->70512546
+    70512546170473462-->1704
+    70512546170473462-->7346
+  end
+```
+
+This function works for small sequences, but to create a good function for big data blocks, we need to research the properties of the groups.
 
 ## Group Properties
 
