@@ -19,7 +19,8 @@ See also
 
 ## Contacts
 
-- [Medium](https://medium.com/@sergeyshandar)
-- [LinkedIn](https://www.linkedin.com/in/sergeyshandar/)
-- [Mastodon](https://techhub.social/@functionalscript)
-- [DEV Community](https://dev.to/sergeyshandar)
+- Nostr: `npub1p6ndu22fnguh9cuvkyd5l37ze0fu8ntav740vnzkuscjm723h2ls5n23gt`,
+- [Medium](https://medium.com/@sergeyshandar),
+- [LinkedIn](https://www.linkedin.com/in/sergeyshandar/),
+- [Mastodon](https://techhub.social/@functionalscript),
+- [DEV Community](https://dev.to/sergeyshandar).
