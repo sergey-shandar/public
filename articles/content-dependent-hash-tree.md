@@ -6,7 +6,7 @@ The main reason I publish the algorithm is because I firmly believe that we can'
 
 ## Deciphering a Sequence of Numbers
 
-Imagine intercepting messages from extraterrestrials. We don't know their language, but we assume that they use a sequential language unless they are from the [Arrival](https://en.wikipedia.org/wiki/Arrival_(film)) film. The messages manifest as a sequence of numbers. We know that each number can be a finite number between `0` and `N-1`. How can we structure this stream without any linguistic reference points? How do we identify repetitive segments?
+Imagine intercepting messages from extraterrestrials. We don't know their language, but we assume that they use a sequential language unless they are from the [Arrival](https://en.wikipedia.org/wiki/Arrival_(film)) film. The messages manifest as a sequence of numbers. We only know that each number is a finite number between `0` and `N-1`. How can we structure this stream without any linguistic reference points? How do we identify repetitive segments?
 
 Using N=8 as an example, consider these similar sequences:
 - `s0 = [7, 0, 5, 1, 2, 4, 6, 1, 7, 0, 4, 7, 3, 4, 6, 2]` and
