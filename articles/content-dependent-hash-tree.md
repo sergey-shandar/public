@@ -155,7 +155,7 @@ This function works for small sequences, but to create a good function for big d
 
 ## Group Properties
 
-If `N` is a number of possible items then one group can have a maximum of `N+1` items. For example, the longest groups for `N` equals `8` will be `[7, 6, 5, 4, 3, 2, 1, 0, x]`, where `x` is any number from `0` to `7`. A group can be partitioned into:
+If `N` is a number of possible items, then one group can have a maximum of `N+1` items. For example, the longest groups for `N` equals `8` will be `[7, 6, 5, 4, 3, 2, 1, 0, x]`, where `x` is any number from `0` to `7`. A group can be partitioned into:
 - **Body**, all items in the group except the last one.
 - **Tail**, the last item in the group.
 
