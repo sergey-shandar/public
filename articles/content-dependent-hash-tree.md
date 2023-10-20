@@ -164,13 +164,13 @@ Properties of a body:
 - a body has at least one item,
 - numbers in the body never repeat,
 - numbers are arranged in ascending order,
-- the total number of unique bodies equals `2^N - 1`. The proof of this is your homework.
+- the total number of unique bodies equals `2^N - 1`.
 
 Properties of a tail:
 - it's always one item,
 - the item is less than or equal to the last number of the body.
 
-So the total group count will be `M = N*2^(N-1) + (N-1)*2^(N-2) + ... + 3*2^2 + 2*2 + 1 = (N-1)*2^N+1`. Additional homework!
+So the total group count will be `M = N*2^(N-1) + (N-1)*2^(N-2) + ... + 3*2^2 + 2*2 + 1 = (N-1)*2^N+1`.
 
 The number of internal states during group assembling is `S = (N-1)*2^(N+1)`.
 
@@ -184,7 +184,7 @@ The number of internal states during group assembling is `S = (N-1)*2^(N+1)`.
 |7  |769 |1536|
 |8  |1793|3584|
 
-The average length of the group is [e](https://en.wikipedia.org/wiki/E_(mathematical_constant)), ~2.71828 or less for small `N`. Another homework.
+The average length of the group is [e](https://en.wikipedia.org/wiki/E_(mathematical_constant)), ~2.71828 or less for small `N`.
 
 ## Bit Stream
 
