@@ -26,7 +26,7 @@ One simple idea to have content-dependant grouping is to group numbers until the
 
 One important rule is the autonomy of each group, akin [context-free grammar](https://en.wikipedia.org/wiki/Context-free_grammar). Grouping should only depend on items within the group. Extracting an element from a sequence mandates its inclusion in the current group. There's no going back. Sorry, "No Return Policy". An item may end the current group, and we will create a new one for the following numbers. Context-free grouping is suitable for validation because we can always validate a group without knowledge of surrounding groups.
 
-This algorithm can create the same groups of numbers in both sequences despite a shift in the middle: `[7, 0, 5]` - 2 times, `[1, 2]` - 2 times, `[1, 7]` - 2 times, `[0, 4]` - 2 times, `[7, 3, 4]` - 2 times. The next step is to convert each group into a number and repeat the process. T
+This algorithm can create the same groups of numbers in both sequences despite a shift in the middle: `[7, 0, 5]` - 2 times, `[1, 2]` - 2 times, `[1, 7]` - 2 times, `[0, 4]` - 2 times, `[7, 3, 4]` - 2 times. The next step is to convert each group into a number and repeat the process.
 
 Let's try a simple approach: our function will convert numbers to strings and then concatenate them:
 
@@ -225,5 +225,7 @@ We use 5 numbers from the previous level as input for this level.
 ### Level 4 and up
 
 For levels four and up, we use hashes instead of actual data due to the explosive growth in `N`. As we discussed before, the average length of the group is `e`, but the maximal length of the groups for a big `N` could be very long. I would like to discuss splitting the groups into smaller parts in one of the following articles. 
+
+## Conclusion
 
 In essence, the content-dependent hash tree optimizes the identification of identical groups, catering well to both CAS and CAN applications. However, crafting a CAS on such a tree requires its own in-depth exploration.
