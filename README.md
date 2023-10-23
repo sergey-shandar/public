@@ -7,7 +7,7 @@ Currently, my primary focus areas include:
 - **[Personal Data Block Set](https://github.com/datablockset/blockset)**: a specialized data storage approach that places individuals at the helm of their data.
 - **[FunctionalScript](https://github.com/functionalscript/functionalscript)**: an optimized subset of ECMAScript (aka JavaScript), devised to tackle the challenges of distributed computing without adding to the learning burden.
 
-Sorry, I'm not hiring. However, if you want to build your own services and applications on top of a data block set, don't hesitate to contact me. The ecosystem is in its infancy, so there is a lot of space for growth. 
+Sorry, I'm not hiring. However, if you want to build your own services and applications on top of a data block set, don't hesitate to contact me. The ecosystem is in its infancy, so there is much room for growth. 
 
 See also
 
@@ -19,7 +19,9 @@ See also
 
 ## Contacts
 
-- Nostr: [sergeyshandar@iris.to](https://iris.to/sergeyshandar) or `npub1p6ndu22fnguh9cuvkyd5l37ze0fu8ntav740vnzkuscjm723h2ls5n23gt`,
+- Nostr: `npub1p6ndu22fnguh9cuvkyd5l37ze0fu8ntav740vnzkuscjm723h2ls5n23gt`.
+  - [sergeyshandar@iris.to](https://iris.to/sergeyshandar),
+  - [Articles](https://yakihonne.com/users/nprofile1qqsqafk799ye5wtjuwxtzx60clpvh57re47k02hkf3twgvfdl9gm40cpr3mhxue69uhkummnw3ez6vp39eukz6mfdphkumn99e3k7mgpremhxue69uhkummnw3ez6vpj9ejx7unpveskxar0wfujummjvuq3gamnwvaz7tmjv4kxz7fwv3sk6atn9e5k7n3jyjm).
 - [Medium](https://medium.com/@sergeyshandar),
 - [LinkedIn](https://www.linkedin.com/in/sergeyshandar/),
 - [Mastodon](https://techhub.social/@functionalscript),
