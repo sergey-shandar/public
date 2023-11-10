@@ -150,7 +150,7 @@ flowchart TD
   end
 ```
 
-The string concatenation function works well for small sequences, but to create a good function for big data blocks, we need to research the properties of the groups.
+The string concatenation function works well for small sequences, but to create a good function for large data blocks, we need to research the properties of the groups.
 
 ## Group Properties
 
