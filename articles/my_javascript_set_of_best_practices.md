@@ -57,7 +57,7 @@ import { a, b } from './export.mjs'
 
 ## Avoid third-party dependencies without a good reason
 
-Development dependencies such as TypeScript or ESLint are ok if they don't require additional build steps. Try to avoid libraries and frameworks that use direct I/O or platform specific. They will make your code very hard to test.
+Development dependencies such as TypeScript or [ESLint](https://en.wikipedia.org/wiki/ESLint) are okay if they don't require additional build steps. Try to avoid libraries and frameworks that use direct I/O or platform specific. They will make your code very hard to test.
 
 ## Endnotes
 
