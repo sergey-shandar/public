@@ -4,7 +4,7 @@ The article shares my set of rules to follow when coding JavaScript. But, before
 
 ## TypeScript as a linter
 
-While I'm a big fan of [static typing](https://en.wikipedia.org/wiki/Type_system#Static_type_checking) and am impressed by the [TypeScript](https://en.wikipedia.org/wiki/TypeScript) project, I don't use TypeScript `.ts` files in my project anymore. The main reason is to avoid building steps. A project should be ready to use without any build steps. However, I use a TypeScript compiler as a linter and [JSDoc](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html) as type definitions. To use the TypeScript compiler as a linter, you will need to set these properties in your `tsconfig.json` file:
+While I'm a big fan of [static typing](https://en.wikipedia.org/wiki/Type_system#Static_type_checking) and am impressed by the [TypeScript](https://en.wikipedia.org/wiki/TypeScript) project, I no longer use TypeScript `.ts` files in my projects. The main reason is to avoid building steps. A project should be ready to use without any build steps. However, I use a TypeScript compiler as a linter and [JSDoc](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html) as type definitions. To use the TypeScript compiler as a linter, you will need to set these properties in your `tsconfig.json` file:
 
 ```json
 {
