@@ -25,7 +25,7 @@ Hopefully, one day, we will see the [Type Annotation proposal](https://github.co
 
 I think that user's defined nominal types have no future in deterministic distributed systems. There are two main problems with JavaScript classes:
 
-1. Classes are part of a JavaScript [nominal type system], in contrast to TypeScript [structural type system](https://en.wikipedia.org/wiki/Structural_type_system). Nominal typing is location-based instead of content-based, like structural typing. It means a class is identified by where or when it's defined instead of its content. Location-based identifiers are very difficult to scale and create dependency hell.
+1. Classes are part of the JavaScript [nominal type system](https://en.wikipedia.org/wiki/Nominal_type_system), in contrast to the TypeScript [structural type system](https://en.wikipedia.org/wiki/Structural_type_system). Nominal typing is location-based instead of content-based, like structural typing. It means a class is identified by where or when it's defined instead of its content. Location-based identifiers are very difficult to scale and create dependency hell.
 2. Serialization and deserialization of classes require additional code. This code, usually, doesn't have any semantic meaning and is an anti-pattern. Use standard JavaScript objects and arrays instead; they can be serialized and deserialized with just one function call.
 
 [JavaScript Symbols](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) have the same scalability problems as classes. 
