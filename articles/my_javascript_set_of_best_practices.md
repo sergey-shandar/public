@@ -42,7 +42,7 @@ You can read more about functional programming in JavaScript in [this article](h
 
 ## Use ECMAScript modules
 
-ECMAScript modules are supported by most of the modern JavaScript engines and browsers. Currently, I'm using only `export default` because it's consistent with loading JSON files and [CommonJS](https://en.wikipedia.org/wiki/CommonJS) system. I want to use only one `export` method and prefer simplicity over syntax sugar.
+ECMAScript modules are supported by most of the modern JavaScript engines and browsers. Currently, I'm using only `export default` because it's consistent with loading JSON files and the [CommonJS](https://en.wikipedia.org/wiki/CommonJS) system. I want to use only one `export` method and prefer simplicity over syntax sugar.
 
 ```js
 import my from './export-default.mjs'
