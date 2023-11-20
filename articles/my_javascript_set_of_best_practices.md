@@ -1,4 +1,4 @@
-# My JavaScript Set of "Best Practices"
+# My JavaScript Set of Best Practices
 
 The article shares my set of rules to follow when coding JavaScript. But, before we go deep into them, I must let you know that the way how I use JavaScript is a little bit unusual. My main purpose in using JavaScript is to use only one programming language for high-level development, instead of C#, F#, Java, Scala, Python, etc. So, I'm trying to avoid non-generic JavaScript frameworks and platform-specific tools. For low-level and system programming, I'm using [Rust](https://en.wikipedia.org/wiki/Rust_(programming_language)), and considering [Zig](https://en.wikipedia.org/wiki/Zig_(programming_language)) programming language.
 
