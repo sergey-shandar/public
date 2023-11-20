@@ -34,7 +34,7 @@ I think that user's defined nominal types have no future in deterministic distri
 
 Use functional programming and pure functions as much as possible. For example:
 
-- Don't use direct I/O. Direct I/O is the main source of side effects. You can use dependency injection. Instead of writing to a file directly, use a passed function that should write to a file. It will allow you to test your code much easier.
+- Don't use direct I/O. Direct I/O is the primary source of side effects. You can use dependency injection. Instead of writing to a file directly, use a passed function that should write to a file. It will allow you to test your code much more effortlessly.
 - Avoid mutability or try to localize data mutations.
 - Use arrow functions and currying instead of multiple parameters.
 
