@@ -3,3 +3,11 @@
 - IPFS Merkle DAG https://docs.ipfs.tech/concepts/merkle-dag/#further-resources
   - visualizator https://dag.ipfs.tech/ 
 - Search engine https://kagi.com/
+
+## Poblishers
+
+- [Medium](https://medium.com/)
+- [Dev.to](https://dev.to/)
+- [SubStack](https://substack.com/)
+- [Ghost](https://ghost.org/)
+- [beehiiv](https://www.beehiiv.com/)
