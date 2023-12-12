@@ -13,7 +13,9 @@
     - [Bun](https://bun.sh/).
   - Packages:
     - [TypeScript](https://www.npmjs.com/package/typescript),
-    - [FunctionalScript](https://www.npmjs.com/package/functionalscript). 
+    - [FunctionalScript](https://www.npmjs.com/package/functionalscript).
+- WASM
+  - [wasmtime](https://github.com/bytecodealliance/wasmtime).
 
 ### IDE
 
