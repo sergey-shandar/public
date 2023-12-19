@@ -1,10 +1,20 @@
-## Generic Info
+# Generic Info
 
 - Buy-in: 1000 
 - Add-on: 1000, maximum 2.
 - Rebuy: 1000, unlimited.
 - Level time: 20 minutes
 - Constant speed: 10 times in 2 hours
+
+## Stack
+
+|nominal|count|sum|total|
+|-------|-----|---|-----|
+|1      |10   |10 |10   |
+|5      |8    |40 |50   |
+|25     |6    |150|200  |
+|50     |6    |300|500  |
+|100    |5    |500|1000 |
 
 ## Time Table
 
