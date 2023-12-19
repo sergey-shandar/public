@@ -1,8 +1,8 @@
 # Generic Info
 
 - Buy-in: 1000 
-- Add-on: 1000, maximum 2.
-- Rebuy: 1000, unlimited.
+- Add-on: 1000. Maximum 2 after the first 2 hours.
+- Rebuy: 1000. Unlimited during the first 2 hours.
 - Level time: 20 minutes
 - Constant speed: 10 times in 2 hours
 
