@@ -3,9 +3,7 @@ struct Closure<F> {
     func: F,
 }
 
-impl<F> Closure<F>
-    where F: Fn(&(u8, u16)) -> &u8,
-{
+impl<F: Fn(&(u8, u16)) -> &u8> Closure<F> {
     fn call_0(&self) -> &u8 {
         (self.func)(&self.data)
     }
@@ -13,30 +11,28 @@ impl<F> Closure<F>
 
 // HRTB with explicit lifetime
 
-impl<F> Closure<F>
-    where for<'a> F: Fn(&'a (u8, u16)) -> &'a u8,
-{
+impl<F: for<'a> Fn(&'a (u8, u16)) -> &'a u8> Closure<F> {
     fn call_1(&self) -> &u8 {
         (self.func)(&self.data)
     }
 }
 
-// HRTB for my own trait
+// HRTB for MyFn trait
 
 trait MyFn<Args> {
     type Output;
     fn call(&self, args: Args) -> Self::Output;
 }
 
-impl<F> Closure<F>
-    where for<'a> F: MyFn<&'a (u8, u16), Output = &'a u8>
-{
+impl<F: for<'a> MyFn<&'a (u8, u16), Output = &'a u8>> Closure<F> {
     fn call_2(&self) -> &u8 {
         self.func.call(&self.data)
     }
 }
 
-fn do_it(data: &(u8, u16)) -> &u8 { &data.0 }
+fn do_it(data: &(u8, u16)) -> &u8 {
+    &data.0
+}
 
 struct DoIt();
 
@@ -49,12 +45,18 @@ impl<'a> MyFn<&'a (u8, u16)> for DoIt {
 
 fn main() {
     {
-        let clo = Closure { data: (0, 1), func: do_it };
+        let clo = Closure {
+            data: (0, 1),
+            func: do_it,
+        };
         println!("{}", clo.call_0());
         println!("{}", clo.call_1());
     }
     {
-        let clo = Closure { data: (0, 1), func: DoIt() };
+        let clo = Closure {
+            data: (0, 1),
+            func: DoIt(),
+        };
         println!("{}", clo.call_2());
     }
 }
