@@ -1,0 +1,3 @@
+[workspace]
+members = ['hrtb']
+resolver = "2"
