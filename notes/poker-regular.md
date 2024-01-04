@@ -32,17 +32,17 @@
   - 10/20
   - 15/30
   - 20/40
-- break 10, color-up 5
+- break 15, color-up 5
 - hour # 4
   - 25/50
   - 50/100
   - 75/150
-- break 10, color-up 25
+- break 15, color-up 25
 - hour # 5
   - 100/200
   - 150/300
   - 200/400
-- break 10, color-up 50
+- break 15, color-up 50
 - hour # 6
   - 300/600
   - 500/1000
