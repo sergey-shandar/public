@@ -25,7 +25,7 @@
 - break 15
 - hour # 2
   - 5/10
-  - 8/16
+  - 7/14
   - 10/20
   - 15/30
 - break 30, color-up 1, add-on 500 x2, no more rebuys.
