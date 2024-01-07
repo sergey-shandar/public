@@ -2,7 +2,7 @@
 
 - Buy-in: 1000 
 - Rebuy: 1000. Unlimited during the first 2 hours.
-- Add-on: 500. Maximum 2 after the first 2 hours.
+- Add-on: 1000. Maximum 2 after the first 2 hours.
 - Level time: 15 minutes
 - Constant speed: 10 times in 1.5 hours
 
@@ -28,7 +28,7 @@
   - 7/14
   - 10/20
   - 15/30
-- break 30, color-up 1, add-on 500 x2, no more rebuys.
+- break 30, color-up 1, add-on 1000 x2, no more rebuys.
 - hour # 3
   - 20/40
   - 30/60
