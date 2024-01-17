@@ -1,8 +1,8 @@
-const SOME_CONSTANT: u32 = 42;
+const ANSWER_TO_QUESTION: u32 = 42;
 
 fn main() {
     match 5 {
-        SOME_CONSTAT => println!("5 == 42"),
+        ANSWER_TO_QESTION => println!("5 is not the answer!"),
         _ => println!("Ok"),
     }
 }
@@ -12,7 +12,7 @@ mod test {
     #[test]
     fn test() {
         match 5 {
-            SOME_CONSTANT => panic!("5 == 42"),
+            ANSWER_TO_QUESTION => panic!("5 is not the answer!"),
             _ => (),
         }
     }
