@@ -1,0 +1,23 @@
+{
+  "name": "public",
+  "version": "0.0.0",
+  "description": "I'm building a data block set tailored for individual use, inspired by [CAS](https://en.wikipedia.org/wiki/Content-addressable_storage). While CAS systems have found a place in some companies, many individuals remain sidelined. I aim to democratize this tech, ensuring universal accessibility and paving the way for a new ecosystem of applications and services. It unlocks so many possibilities, like decentralized protocol-agnostic social networks, seamless data synchronization, affordable data backup, better version control systems, deterministic build systems, and much more.",
+  "main": "index.mjs",
+  "scripts": {
+    "tsc": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergey-shandar/public.git"
+  },
+  "author": "Sergey Shandar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergey-shandar/public/issues"
+  },
+  "homepage": "https://github.com/sergey-shandar/public#readme",
+  "devDependencies": {
+    "typescript": "^5.4.2"
+  }
+}
