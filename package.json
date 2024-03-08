@@ -5,6 +5,7 @@
   "main": "index.mjs",
   "scripts": {
     "tsc": "tsc",
+    "run": "node index.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
