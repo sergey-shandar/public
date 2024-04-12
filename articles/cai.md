@@ -11,3 +11,7 @@ Then, we can keep the private key and use it to sign our messages.
 ### Level 1.1
 
 Trusted time stamps.
+
+## Level 2
+
+Relative names.
