@@ -20,7 +20,7 @@ Then, we can keep the private key and use it to sign our messages.
 
 ### Layer 1.1
 
-Applying a digital signature is not enough to claim IP rights because someone else also can create a digital signature. The solution is to apply trusted timestamp. Creating a trusted time stamp requires trusted centralized services or consensus of many users, like in blockchain.
+Applying a digital signature is not enough to claim IP rights because someone else also can create a digital signature. The solution is to apply trusted timestamp. Creating a trusted time stamp requires trusted centralized services or consensus of many users, like in blockchain. These services can be not free but we can reduce cost of trusted timestamp by signing a DAG of documents. If a document A references a document B, then a document B is also signed. Before we publish any content, we should signed it, take a hash of the signature and timestamp it. After that we can publish our content.
 
 ## Layer 2
 
