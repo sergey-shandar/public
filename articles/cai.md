@@ -20,7 +20,7 @@ Then, we can keep the private key and use it to sign our messages.
 
 ### Layer 1.1
 
-Trusted time stamps. Requires trusted centralized services or consensus of many users, like in blockchain.
+Applying a digital signature is not enough to claim IP rights because someone else also can create a digital signature. The solution is to apply trusted timestamp. Creating a trusted time stamp requires trusted centralized services or consensus of many users, like in blockchain.
 
 ## Layer 2
 
