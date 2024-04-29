@@ -25,3 +25,9 @@ Trusted time stamps. Requires trusted centralized services or consensus of many 
 ## Layer 2
 
 Relative names.
+
+## State
+
+You may notice that some software already works this way, for example P2P networks, block chains, etc. So what is the fundamental difference between decentralized services and CAI. There is no difference except that CAI put all of these existing and future services together and doesn't dictate requirements such as cryptocurrency fee to include your data to their network (e.g. block chain). You may use multiple different centralized or decentralized service and pay for them, for example to promote your content, but it is not required. And, at any time you can leave these services and keep your data. No vendor lock in when you create, share and store your data.
+
+Diagram which shows current Web2, decentralized networks with different storages, CAI: combined storage with multiple protocols. 
