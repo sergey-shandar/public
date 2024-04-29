@@ -22,9 +22,15 @@ Then, we can keep the private key and use it to sign our messages.
 
 Applying a digital signature is not enough to claim IP rights because someone else also can create a digital signature. The solution is to apply trusted timestamp. Creating a trusted time stamp requires trusted centralized services or consensus of many users, like in blockchain. These services can be not free but we can reduce cost of trusted timestamp by signing a DAG of documents. If a document A references a document B, then a document B is also signed. Before we publish any content, we should signed it, take a hash of the signature and timestamp it. After that we can publish our content.
 
-## Layer 2
+## Layer 2. Everyone is a center of Universe
 
-Relative names.
+Using hash values and DId as URLs are not convenient, it similar to using IP addresses instead of DNS names.
+
+Currently, to name things we either use centralized services (like DNS) or consensus based services, like block chains (decentralized domain name services). In both cases, it requires payments, prone to cybersquatting and not scalable solutions.
+
+But, why  can't I have my own catalog of names?
+
+I can create a catalog of names and corresponding public keys. This catalog can include names for different DId including my. Then, I can reference identities and documents using my catalog as a root. 
 
 ## State
 
