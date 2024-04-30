@@ -1,18 +1,18 @@
 # What the heck is content-addressable internet?
 
-In the previous articles, I highlighted some problems with Web2 and the current location-based Internet. The main idea of the CAI is to use a result of different cryptographic functions of content as an address instead of a location (like an IP address).
+In the previous [article], I highlighted some problems with the current location-based Internet. The main idea of the content-addressable Internet (CAI) is to use a result of different cryptographic functions of data as an address instead of a network location (like an IP address).
 
 One of the main properties of content-addressable Internet is protocol agnosticism. Protocol agnosticism means that it doesn't matter how we receive data; as soon as we can validate and prove some vital hypothesis about the nature of the data offline. For example, we can do these operations offline: check a hash value, validate a digital signature, and decrypt messages using asymmetric cryptography.
 
-in the next sections I would like to describe an architecture of CAI. It contains multiple layers. To implement a layer we should implement all lower layers.
+In the next sections, I described the architecture of CAI. It contains multiple layers. To implement a particular layer, we should implement all lower layers.
 
 ## Layer 0
 
-The layer works with immutable data blocks. If we would like to reference a data block from our document, we can use NI RFC. Such addressing allows global addressing without name conflicts and cybersquatting.
+This is the foundation of CAI. The layer works with immutable data blocks. If we would like to reference a data block from our document, we can use [NI RFC]. Such addressing allows global addressing without name conflicts.
 
-CAI doesn't specify which hash function we should use, and good CAI software should support multiple hash functions. The main requirement to the hash function is that should be cryptographically strong. I wouldn't recommend to use SHA1, for example. However some hash functions are better for CAI because they can reduce traffic and storage by detecting duplicate parts. Blockset implements such hash function which is called CDT0, but it can be extended to support other hash functions.
+CAI doesn't specify which hash function we should use, and good CAI software should support multiple hash functions. The main requirement of the CAI hash functions is that they should be cryptographically secure. I wouldn't recommend to use SHA1, for example. However, some hash functions are better for CAI because they can reduce traffic and storage by detecting duplicate parts. [Blockset] implements a hash function which is called CDT0 and allows to reduce traffic, but it can be extended to support other hash functions. You can read more about the content-dependent tree hash (CDT) in the [article].
 
-Such immutable documents which reference to other immutable documents form a DAG. If our hash function is cryptographically strong, it is almost impossible to from cycles.
+Any document can references to other existing immutable documents using their hashes. Such links form a directed acyclic graph (DAG). If our hash function is cryptographically secure, it is almost impossible to form cycles in the graph.
 
 ## Layer 1
 
