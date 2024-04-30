@@ -6,29 +6,60 @@ One of the main properties of content-addressable Internet is protocol agnostici
 
 In the next sections, I described the architecture of CAI. It contains multiple layers. To implement a particular layer, we should implement all lower layers.
 
-## Layer 0
+## Layer 0. A DAG of immutable data
 
-This is the foundation of CAI. The layer works with immutable data blocks. If we would like to reference a data block from our document, we can use [NI RFC]. Such addressing allows global addressing without name conflicts.
+This is the foundation of CAI. The layer works with immutable data blocks. If we would like to reference a data block from our document, we can use [NI RFC]. For example, `ni:///sha256;980...`. Such addressing allows global addressing without name conflicts.
 
-CAI doesn't specify which hash function we should use, and good CAI software should support multiple hash functions. The main requirement of the CAI hash functions is that they should be cryptographically secure. I wouldn't recommend to use SHA1, for example. However, some hash functions are better for CAI because they can reduce traffic and storage by detecting duplicate parts. [Blockset] implements a hash function which is called CDT0 and allows to reduce traffic, but it can be extended to support other hash functions. You can read more about the content-dependent tree hash (CDT) in the [article].
+CAI doesn't specify which hash function we should use, and good CAI software should support multiple hash functions. The main requirement of the CAI hash functions is that they should be cryptographically secure. I wouldn't recommend to use SHA1, for example. However, some hash functions are better for CAI because they can reduce traffic and storage by detecting duplicate parts. [Blockset] implements a hash function called CDT0, which allows traffic reduction but can be extended to support other hash functions. You can read more about the content-dependent tree hash (CDT) in the [article].
 
-Any document can references to other existing immutable documents using their hashes. Such links form a directed acyclic graph (DAG). If our hash function is cryptographically secure, it is almost impossible to form cycles in the graph.
+Any document can reference other existing immutable documents using their hashes. Such links form a directed acyclic graph (DAG). If our hash function is cryptographically secure, then it is almost impossible to form cycles in the graph.
 
-## Layer 1
+```mermaid
+flowchart TD
+  Document3 --> Document2 --> Document1
+  Document3 --> Document1
+```
 
-A cryptographic function that converts a private key to a public key creates a decentralized identity.
+## Layer 1. Decentralized identity
 
-Then, we can keep the private key and use it to sign our messages.
+The previous section describes a cryptographic hash function that converts content to hash value. This works well for immutable data. This section describes a function that creates a [decentralized identity] using [public key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography). Such decentralized identity (DID) using private and public keys allows the creation of a digital signature for any document. 
 
-### Layer 1.1
+However, creating a digital signature is not enough to claim intellectual property (IP) rights because someone else can also create their own digital signature. The solution is to apply a [trusted timestamp]. Creating a trusted time stamp requires trusted centralized services or the consensus of many users, like in blockchain. Now, even if someone else signs your document, they will have difficulty creating a trusted time stamp that precedes yours.
 
-Applying a digital signature is not enough to claim IP rights because someone else also can create a digital signature. The solution is to apply trusted timestamp. Creating a trusted time stamp requires trusted centralized services or consensus of many users, like in blockchain. These services can be not free but we can reduce cost of trusted timestamp by signing a DAG of documents. If a document A references a document B, then a document B is also signed. Before we publish any content, we should signed it, take a hash of the signature and timestamp it. After that we can publish our content.
+```mermaid
+flowchart RL
+  TrustedTimeStamp --> DigitalSignature --> Document 
+```
 
-## Layer 2. Everyone is a center of Universe
+Note that we should always apply a trusted time stamp to a digital signature before publishing the chain of data blocks.
 
-Using hash values and DId as URLs are not convenient, it similar to using IP addresses instead of DNS names.
+Applying a trusted time stamp for each document or message could be expensive, but we can reduce the cost of a trusted timestamp by signing only a top-level document referencing other unsigned documents.
 
-Currently, to name things we either use centralized services (like DNS) or consensus based services, like block chains (decentralized domain name services). In both cases, it requires payments, prone to cybersquatting and not scalable solutions.
+```mermaid
+flowchart RL
+  TrustedTimeStamp --> DigitalSignature --> Document3
+  Document3 --> Document2 --> Document1
+  Document3 --> Document1
+```
+
+Decentralized identifiers can be referenced from documents using [DID URL](https://www.w3.org/TR/did-core/#did-url-syntax).
+
+## Layer 2. Everyone is the center of the universe
+
+
+
+If someone with a public key (`method:345...`) named a document (`my-document.txt`), then we can use the name to reference the document. For example, `did:method:345.../my-document.txt`. This is a reference on a mutable document because the user may create a new version of the document with the same name at any time.
+
+```mermaid
+flowchart RL
+  TrustedTimeStamp --> DigitalSignature --> name[name:my-document.txt] --> Document
+```
+
+Public key cryptography also allows secure communication with two or more parties without sending private keys or passwords to each other. 
+
+Using hash values and public keys as URLs is not convenient; it is similar to using IP addresses instead of DNS names.
+
+Currently, to name things we either use centralized services (like DNS) or consensus based services, like blockchains (decentralized domain name services). In both cases, it requires payments, prone to cybersquatting and not scalable solutions.
 
 But, why  can't I have my own catalog of names?
 
