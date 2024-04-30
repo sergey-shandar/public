@@ -4,6 +4,8 @@ In the previous articles, I highlighted some problems with Web2 and the current 
 
 One of the main properties of content-addressable Internet is protocol agnosticism. Protocol agnosticism means that it doesn't matter how we receive data; as soon as we can validate and prove some vital hypothesis about the nature of the data offline. For example, we can do these operations offline: check a hash value, validate a digital signature, and decrypt messages using asymmetric cryptography.
 
+in the next sections I would like to describe an architecture of CAI. It contains multiple layers. To implement a layer we should implement all lower layers.
+
 ## Layer 0
 
 The layer works with immutable data blocks. If we would like to reference a data block from our document, we can use NI RFC. Such addressing allows global addressing without name conflicts and cybersquatting.
