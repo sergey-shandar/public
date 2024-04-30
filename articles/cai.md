@@ -46,7 +46,15 @@ Decentralized identifiers can be referenced from documents using [DID URL](https
 
 ## Layer 2. Everyone is the center of the universe
 
-
+```json
+{
+  "names": {
+    "my-document.txt": "ni:///sha256;980...",
+    "my-friend": "did:method:246...",
+    "Microsoft": "https://microsoft.com"
+  }
+}
+```
 
 If someone with a public key (`method:345...`) named a document (`my-document.txt`), then we can use the name to reference the document. For example, `did:method:345.../my-document.txt`. This is a reference on a mutable document because the user may create a new version of the document with the same name at any time.
 
