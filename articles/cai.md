@@ -74,7 +74,7 @@ Bob has his own document:
 }
 ```
 
-Then, anyone can use these aliases to reference other documents. For example, we can reference the `ni:///sha256;980...` document like this: `did:method:345.../Alice-article.txt`. Note that this refers to a mutable document because Alice may create and publish a new version of the `aliases` document at any time, and the new `aliases` document can override the previous value for `Alice-article.txt`. In this example, we still use non-human readable `did:method:345...`; however, we can use relative links, which are much friendlier. For example, if Bob has an alias for Alice, he can reference the document like `/Alice/Alice-article.txt`, and Alice can reference the document like this `/Alice-article.txt`.
+Then, anyone can use these aliases to reference other documents. For example, we can reference the `ni:///sha256;980...` document like this: `did:method:345.../Alice-article.txt`. Note that this refers to a mutable document because Alice may create and publish a new version of the `aliases` document at any time, and the new `aliases` document can override the previous value for `Alice-article.txt`. In this example, we still use non-human readable `did:method:345...`; however, we can use relative links, which are much friendlier. For example, Bob can reference the document like `/Alice/Alice-article.txt`, and Alice can reference the document like `/Alice-article.txt`.
 
 ## Summary
 
