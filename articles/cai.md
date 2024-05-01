@@ -48,34 +48,24 @@ Public key cryptography also allows secure communication with two or more partie
 
 ## Layer 2. Everyone is the center of the universe
 
-Imagine if we have a user Alice with a public key `method:345...`. She published and signed a document which contains aliases to some documents and her contacts
+
+Using hash values and public keys as URLs is not convenient; it is similar to using IP addresses instead of DNS names. Currently, to have friendly human-readable names for URLs, we either use centralized services (like DNS) or decentralized consensus-based services, like blockchains. In both cases, the solutions require payments, are prone to cybersquatting, and are not scalable for subnetworks.
+
+Imagine if everyone could publish a document that contains aliases for other documents and users. For example, Alice has a public key `method:345...` and Bob has a public key `method:246...`. Alice has published and signed a document that contained aliases for other documents and her contacts.
 
 ```json
 {
   "aliases": {
-    "my-document.txt": "ni:///sha256;980...",
-    "my-friend": "did:method:246...",
+    "Alice-article.txt": "ni:///sha256;980...",
     "Alice": "did:method:345...",
-    "Microsoft": "https://microsoft.com"
+    "Bob": "did:method:246...",
+    "Microsoft": "https://microsoft.com/"
   }
 }
 ```
 
-Then we can use the aliases to reference the `ni:///sha256;980...` document like this `did:method:345.../my-document.txt`. Note, this is a reference on a mutable document because Alice may create a new version of the `aliases` document at any time, and the new `aliases` document can override previous value for `my-document.txt`.
+Then, anyone can use these aliases to reference other documents. For example, we can reference the `ni:///sha256;980...` document like this: `did:method:345.../Alice-article.txt`. Note that this refers to a mutable document because Alice may create and publish a new version of the `aliases` document at any time, and the new `aliases` document can override the previous value for `Alice-article.txt`. In this example, we still use non-human readable `did:method:345...`; however, we can use relative links, which are much friendlier. For example, if Bob has an alias for Alice, he can reference the document like `/Alice/Alice-article.txt`, and Alice can reference the document like this `/Alice-article.txt`.
 
-Using hash values and public keys as URLs is not convenient; it is similar to using IP addresses instead of DNS names.
+## Summary
 
-Currently, to name things we either use centralized services (like DNS) or consensus based services, like blockchains (decentralized domain name services). In both cases, it requires payments, prone to cybersquatting and not scalable solutions.
-
-But, why  can't I have my own catalog of names?
-
-I can create a catalog of names and corresponding public keys. This catalog can include names for different DId including my. Then, I can reference identities and documents using my catalog as a root. 
-
-## State
-
-You may notice that some software already works this way, for example P2P networks, block chains, etc. So what is the fundamental difference between decentralized services and CAI. There is no difference except that CAI put all of these existing and future services together and doesn't dictate requirements such as cryptocurrency fee to include your data to their network (e.g. block chain). You may use multiple different centralized or decentralized service and pay for them, for example to promote your content, but it is not required. And, at any time you can leave these services and keep your data. No vendor lock in when you create, share and store your data.
-
-How is it different to GIT and other version control systems?
-
-
-Diagram which shows current Web2, decentralized networks with different storages, CAI: combined storage with multiple protocols. 
+You may notice that some software already works simillar way, such as P2P networks, decentralized source control systems, blockchains, etc. So, what is the fundamental difference between decentralized services and CAI? There is no difference except that CAI puts all these existing and future services together and doesn't dictate requirements, such as cryptocurrency fees, to include your data in a network (e.g., blockchain). You may still use multiple different centralized or decentralized services and pay for them, for example, to promote your content, but it is not required. At any time, you can leave these services and keep your data compatible with CAI services. No vendor lock-in when you create, share, and store your data.
