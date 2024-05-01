@@ -8,7 +8,7 @@ In the next sections, I described the architecture of CAI. It contains multiple 
 
 ## Layer 0. A DAG of immutable data
 
-This is the foundation of CAI. The layer works with immutable data blocks. If we would like to reference a data block from our document, we can use [NI RFC]. For example, `ni:///sha256;980...`. Such addressing allows global addressing without name conflicts.
+This is the foundation of CAI. The layer works with immutable data blocks. If we would like to reference a data block from our document, we can use [NI RFC]. For example, `ni:///sha256;980...`. Such links allow global addressing without name conflicts.
 
 CAI doesn't specify which hash function we should use, and good CAI software should support multiple hash functions. The main requirement of the CAI hash functions is that they should be cryptographically secure. I wouldn't recommend to use SHA1, for example. However, some hash functions are better for CAI because they can reduce traffic and storage by detecting duplicate parts. [Blockset] implements a hash function called CDT0, which allows traffic reduction but can be extended to support other hash functions. You can read more about the content-dependent tree hash (CDT) in the [article].
 
