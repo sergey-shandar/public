@@ -1,4 +1,4 @@
-# What the heck is content-addressable internet?
+# What the heck is content-addressable Internet?
 
 In [one of my previous articles](https://medium.com/@sergeyshandar/web3-foundation-e48a475139c2), I highlighted some problems with the current location-based Internet. The main idea of the content-addressable Internet (CAI) is to use a result of different cryptographic functions of data as an address instead of a resource location (like an IP address).
 
