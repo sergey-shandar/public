@@ -44,26 +44,24 @@ flowchart RL
 
 Decentralized identifiers can be referenced from documents using [DID URL](https://www.w3.org/TR/did-core/#did-url-syntax).
 
+Public key cryptography also allows secure communication with two or more parties without sending private keys or passwords to each other. 
+
 ## Layer 2. Everyone is the center of the universe
+
+Imagine if we have a user Alice with a public key `method:345...`. She published and signed a document which contains aliases to some documents and her contacts
 
 ```json
 {
-  "names": {
+  "aliases": {
     "my-document.txt": "ni:///sha256;980...",
     "my-friend": "did:method:246...",
+    "Alice": "did:method:345...",
     "Microsoft": "https://microsoft.com"
   }
 }
 ```
 
-If someone with a public key (`method:345...`) named a document (`my-document.txt`), then we can use the name to reference the document. For example, `did:method:345.../my-document.txt`. This is a reference on a mutable document because the user may create a new version of the document with the same name at any time.
-
-```mermaid
-flowchart RL
-  TrustedTimeStamp --> DigitalSignature --> name[name:my-document.txt] --> Document
-```
-
-Public key cryptography also allows secure communication with two or more parties without sending private keys or passwords to each other. 
+Then we can use the aliases to reference the `ni:///sha256;980...` document like this `did:method:345.../my-document.txt`. Note, this is a reference on a mutable document because Alice may create a new version of the `aliases` document at any time, and the new `aliases` document can override previous value for `my-document.txt`.
 
 Using hash values and public keys as URLs is not convenient; it is similar to using IP addresses instead of DNS names.
 
