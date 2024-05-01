@@ -1,6 +1,6 @@
 # What the heck is content-addressable internet?
 
-In the previous [article], I highlighted some problems with the current location-based Internet. The main idea of the content-addressable Internet (CAI) is to use a result of different cryptographic functions of data as an address instead of a network location (like an IP address).
+In [one of my previous articles](https://medium.com/@sergeyshandar/web3-foundation-e48a475139c2), I highlighted some problems with the current location-based Internet. The main idea of the content-addressable Internet (CAI) is to use a result of different cryptographic functions of data as an address instead of a network location (like an IP address).
 
 One of the main properties of content-addressable Internet is protocol agnosticism. Protocol agnosticism means that it doesn't matter how we receive data; as soon as we can validate and prove some vital hypothesis about the nature of the data offline. For example, we can do these operations offline: check a hash value, validate a digital signature, and decrypt messages using asymmetric cryptography.
 
