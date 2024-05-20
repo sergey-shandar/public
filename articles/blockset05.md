@@ -51,4 +51,8 @@ Then, we add all files by running three different Blockset processes simultaneou
 
 ```
 
+Note that the `new/cdt0/` repository has a comparable size with the `Boost-1.85` directory, while `old/cdt0` has a size of only ...MB more than `Boost-1.83` because Blockset detects duplicates in data. 
+
+TODO: Add a tar file.
+
 Authors of the demonstration: Sergey Shandar and Alex Fedin.
