@@ -18,12 +18,14 @@ We created 2 repositories in two directories:
 - `old` is for Boost 1.83 and 1.84.
 - `new` is for Boost 1.85.
 
+The Blockset repository is the `cdt0/` directory in the current directory. If the current directory doesn't have `cdt0/`, Blockset will create one. 
+
 ```
 > mkdir old
 > mkdir new
 ```
 
-Then, we add all files by running three different Blockset processes from three different terminals. Two of them add files to the same repository, `old/cdt0/`. 
+Then, we add all files by running three different Blockset processes simultaneously from three different terminals. Two processes add files to the same repository, `old/cdt0/`. 
 
 ```
 > cd old/
