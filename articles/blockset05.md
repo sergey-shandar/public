@@ -35,28 +35,28 @@ Then, we add all files by running two different Blockset processes simultaneousl
 
 ```
 > cd old/
-> blockset add ../boost-1.83/
+> blockset add ../boost-1_83_0/
 kksm7szr978j0gedz3c07adr06kc0nb04jarnbgkqktah
 > blockset info
 size: 706470318 B
-> blockset add ../boost-1.84/
+> blockset add ../boost-1_84_0/
 z275ny8h3qvrpakn182we5zen4kxdc87ygymex5ya9bca
 > blockset info
 size: 774344159 B
 ```
 
-As you can see, after we added `boost-1.84`, the size of the repository is increased by only 68 M.
+As you can see, after we added `boost-1.84.0`, the size of the repository is increased by only 68 M.
 
 ```
 > cd new/
-> blockset add ../boost-1.85/
+> blockset add ../boost-1_85_0/
 c1mjsv60hjqf89yagx53ya8bvg9d2b0t9vrkkbcn0jkrq
 > blockset info
 size: 717116556 B
->
+> blockset add ~/Downloads/boost-1_85_0.tar
 ```
 
-Note that the `new/cdt0/` repository has a comparable size with the `Boost-1.85` directory, while `old/cdt0` has a size of only ...MB more than `Boost-1.83` because Blockset detects duplicates in data. 
+Note that the `new/cdt0/` repository has a comparable size with the `Boost-1.85` directory, while `old/cdt0` has a size of only ...MB more than `Boost-1.83` because Blockset detects duplicates in data. Some tools, like Git, can also detect the same file but further we will show you that Blockset can detect the same data parts inside big files, like in `boost-1_85_0.tar`.
 
 TODO: Add a tar file.
 
