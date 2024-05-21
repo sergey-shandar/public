@@ -10,30 +10,26 @@ Install [Rust](https://www.rust-lang.org/tools/install) and then [BlockSet](http
 cargo install blockset
 ```
 
-We've downloaded and unpacked Boost 1.83.0, 1.84.0, and 1.85.0.
+We've downloaded and unpacked [Boost](https://www.boost.org/) [1.83.0](https://www.boost.org/users/history/version_1_83_0.html), [1.84.0](https://www.boost.org/users/history/version_1_84_0.html), and [1.85.0](https://www.boost.org/users/history/version_1_85_0.html).
 
-|Directory   |Tar File Size|Directory Size|
+|Version     |Tar File Size|Directory Size|
 |------------|-------------|--------------|
-|boost-1.83.0|1,588 MB     |888 MB        |
-|boost-1.84.0|1,586 MB     |888 MB        |
-|boost-1.85.0|1,609 MB     |900 MB        |
+|boost-1_83_0|1,588 MB     |888 MB        |
+|boost-1_84_0|1,586 MB     |888 MB        |
+|boost-1_85_0|1,609 MB     |900 MB        |
 
-## 2. Creating Repositories
+## 2. Creating BlockSet Repositories
 
-We created 2 repositories in two directories: 
+We've created 2 repositories in two directories: 
 - `old` is for Boost 1.83 and 1.84.
 - `new` is for Boost 1.85.
 
 The Blockset repository is the `cdt0/` directory in the current directory. If the current directory doesn't have `cdt0/`, Blockset will create one. 
 
+Let's create the 'old' repository and add files. 
+
 ```shell
 > mkdir old
-> mkdir new
-```
-
-Then, we add all files by running two different Blockset processes simultaneously from two different terminals. 
-
-```shell
 > cd old/
 > blockset add ../boost-1_83_0/
 kksm7szr978j0gedz3c07adr06kc0nb04jarnbgkqktah
@@ -45,9 +41,12 @@ z275ny8h3qvrpakn182we5zen4kxdc87ygymex5ya9bca
 size: 774344159 B
 ```
 
-As you can see, after we added `boost-1.84.0`, the size of the repository is increased by only 68 M. Some tools, like Git, can also detect the same file but further we will show that Blockset can detect the same data parts inside big files, like in `boost-1_85_0.tar`.
+As you can see, after we added `boost-1.84.0`, the size of the repository is increased by only 68 M. Some tools, like Git, can also detect the same file but further we will show that Blockset can detect the same data parts inside big files.
+
+Let's create the `new` repositories.
 
 ```shell
+> mkdir new
 > cd new/
 > blockset add ../boost-1_85_0/
 c1mjsv60hjqf89yagx53ya8bvg9d2b0t9vrkkbcn0jkrq
@@ -59,7 +58,7 @@ zqtrr3t2mbk9h8cshntsrs2ba8mat8ek56af2mrfw46aq
 size: 1041867039 B
 ```
 
-The original `boost-1_85_0.tar` file is about 1.6 GB. But after we added this file to the repository, it's increased by about 287 MB. It means, Blockset finds the same parts of data **inside** the `tar` file because it uses [Content Dependent Tree](). 
+The original `boost-1_85_0.tar` file is about 1.6 GB. But after we added this file to the repository, the repositiry increased by about 287 MB. It means, Blockset finds the same parts of data **inside** the `tar` file because it uses [Content Dependent Tree](). 
 
 |Repository|Content                               |Size   |
 |----------|--------------------------------------|-------|
