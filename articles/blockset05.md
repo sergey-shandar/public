@@ -1,6 +1,6 @@
 # BlockSet 0.5
 
-One of Blockset 0.5's main new features is the possibility of adding and retrieving directories recursively. In this demonstration, we use this feature and also show how to merge Blockset repositories using simple file copying. We use Boost source files and directories of different versions as samples.
+The main new feature of the Blockset 0.5 is the possibility of adding and retrieving directories recursively. In this demonstration, we use this feature and also show how to merge Blockset repositories using simple file copying. We use Boost source files and directories of different versions as samples.
 
 ## 1. Preparation
 
