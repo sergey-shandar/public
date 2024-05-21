@@ -36,7 +36,7 @@ Then, we add all files by running two different Blockset processes simultaneousl
 ```
 > cd old/
 > blockset add ../boost-1.83/
-
+kksm7szr978j0gedz3c07adr06kc0nb04jarnbgkqktah
 > blockset info
 
 > blockset add ../boost-1.84/
@@ -48,7 +48,7 @@ Then, we add all files by running two different Blockset processes simultaneousl
 ```
 > cd new/
 > blockset add ../boost-1.85/
-
+c1mjsv60hjqf89yagx53ya8bvg9d2b0t9vrkkbcn0jkrq
 > blockset info
 
 ```
