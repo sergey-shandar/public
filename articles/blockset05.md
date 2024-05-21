@@ -71,8 +71,12 @@ The original `boost-1_85_0.tar` file is about 1.6 GB. But after we added this fi
 We can merge to repositories by copying all files from one repository into another one.
 
 ```shell
-> cd new/
-> cp -R cdt0/ ../old/cdt0/
+> cd old/
+> cp -R ../new/cdt0/ cdt0/
+> blockset info
+size: 1191986590 B.
 ```
+
+Now, the `old/` repository is valid and contains `boost-1_83_0/`, `boost-1_84_0/`, `boost_1_85_0/`, and `boost_1_85_0.tar` and the size of the repository is about 1.2 GB.
 
 Authors of the demonstration: Sergey Shandar and Alex Fedin.
