@@ -41,7 +41,7 @@ z275ny8h3qvrpakn182we5zen4kxdc87ygymex5ya9bca
 size: 774344159 B
 ```
 
-As you can see, after we added `boost-1.84.0`, the size of the repository is increased by only 68 M. Some tools, like Git, can also detect the same file but further we will show that Blockset can detect the same data parts inside big files.
+As you can see, after we added `boost-1.84.0`, the size of the repository is increased by only 68 M. Some tools, like Git, can also detect the same files but further we will show that Blockset can detect the same data **parts** inside big files.
 
 Let's create the `new` repositories.
 
@@ -65,7 +65,7 @@ The original `boost-1_85_0.tar` file is about 1.6 GB. But after we added this fi
 |old       |`boost-1_83_0/` and `boost-1_84_0/`   |774 MB |
 |new       |`boost-1_85_0/` and `boost-1_85_0.tar`|1042 MB|
 
-## Merging Repositories
+## 3. Merging Repositories
 
 We can merge repositories by simply copying all files from one repository into another one.
 
