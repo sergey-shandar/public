@@ -4,7 +4,7 @@ The main new feature of the Blockset 0.5 is the possibility of adding and retrie
 
 ## 1. Preparation
 
-Install Rust and then BlockSet:
+Install [Rust](https://www.rust-lang.org/tools/install) and then [BlockSet](https://crates.io/crates/blockset):
 
 ```shell
 cargo install blockset
