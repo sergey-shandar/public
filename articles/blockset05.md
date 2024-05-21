@@ -79,4 +79,18 @@ size: 1191986590 B.
 
 Now, the `old/` repository is valid and contains `boost-1_83_0/`, `boost-1_84_0/`, `boost_1_85_0/`, and `boost_1_85_0.tar` and the size of the repository is about 1.2 GB.
 
+We can extract files and directories using `blockset get` command. For example
+
+```shell
+> cd old/
+> blockset get zqtrr3t2mbk9h8cshntsrs2ba8mat8ek56af2mrfw46aq boost-1_85_0.tar
+> blockset get c1mjsv60hjqf89yagx53ya8bvg9d2b0t9vrkkbcn0jkrq boost-1_85_0.json
+> blockset get kksm7szr978j0gedz3c07adr06kc0nb04jarnbgkqktah boost-1_83_0/
+> ls boost-1_83_0/
+INSTALL		      boost		        boostcpp.jam	index.htm	  rst.css
+Jamroot	      	boost-build.jam	bootstrap.bat	index.html	status
+LICENSE_1_0.txt	boost.css	      bootstrap.sh	libs		    tools
+README.md	      boost.png	doc		more
+```
+
 Authors of the demonstration: Sergey Shandar and Alex Fedin.
