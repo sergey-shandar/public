@@ -61,4 +61,18 @@ size: 1041867039 B
 
 The original `boost-1_85_0.tar` file is about 1.6 GB. But after we added this file to the repository, it's increased by about 287 MB. It means, Blockset finds the same parts of data **inside** the `tar` file because it uses [Content Dependent Tree](). 
 
+|Repository|Content                               |Size   |
+|----------|--------------------------------------|-------|
+|old       |`boost-1_83_0/` and `boost-1_84_0/`   |774 MB |
+|new       |`boost-1_85_0/` and `boost-1_85_0.tar`|1042 MB|
+
+## Merging Repositories
+
+We can merge to repositories by copying all files from one repository into another one.
+
+```shell
+> cd new/
+> cp -R cdt0/ ../old/cdt0/
+```
+
 Authors of the demonstration: Sergey Shandar and Alex Fedin.
