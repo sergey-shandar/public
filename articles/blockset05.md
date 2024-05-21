@@ -45,7 +45,7 @@ z275ny8h3qvrpakn182we5zen4kxdc87ygymex5ya9bca
 size: 774344159 B
 ```
 
-As you can see, after we added `boost-1.84.0`, the size of the repository is increased by only 68 M. Some tools, like Git, can also detect the same file but further we will show you that Blockset can detect the same data parts inside big files, like in `boost-1_85_0.tar`.
+As you can see, after we added `boost-1.84.0`, the size of the repository is increased by only 68 M. Some tools, like Git, can also detect the same file but further we will show that Blockset can detect the same data parts inside big files, like in `boost-1_85_0.tar`.
 
 ```
 > cd new/
