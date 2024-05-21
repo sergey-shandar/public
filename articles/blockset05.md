@@ -45,7 +45,7 @@ z275ny8h3qvrpakn182we5zen4kxdc87ygymex5ya9bca
 size: 774344159 B
 ```
 
-As you can see, after we added `boost-1.84.0`, the size of the repository is increased by only 68 M.
+As you can see, after we added `boost-1.84.0`, the size of the repository is increased by only 68 M. Some tools, like Git, can also detect the same file but further we will show you that Blockset can detect the same data parts inside big files, like in `boost-1_85_0.tar`.
 
 ```
 > cd new/
@@ -55,10 +55,10 @@ c1mjsv60hjqf89yagx53ya8bvg9d2b0t9vrkkbcn0jkrq
 size: 717116556 B
 > blockset add ~/Downloads/boost-1_85_0.tar
 zqtrr3t2mbk9h8cshntsrs2ba8mat8ek56af2mrfw46aq
+> blockset info
+size: 1041867039 B
 ```
 
-Note that the `new/cdt0/` repository has a comparable size with the `Boost-1.85` directory, while `old/cdt0` has a size of only ...MB more than `Boost-1.83` because Blockset detects duplicates in data. Some tools, like Git, can also detect the same file but further we will show you that Blockset can detect the same data parts inside big files, like in `boost-1_85_0.tar`.
-
-TODO: Add a tar file.
+The original `boost-1_85_0.tar` file is about 1.6 GB. But after we added this file to the repository, it's increased by about 287 MB. It means, Blockset finds the same parts of data **inside** the `tar` file because it uses [Content Dependent Tree](). 
 
 Authors of the demonstration: Sergey Shandar and Alex Fedin.
