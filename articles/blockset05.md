@@ -40,10 +40,12 @@ kksm7szr978j0gedz3c07adr06kc0nb04jarnbgkqktah
 > blockset info
 size: 706470318 B
 > blockset add ../boost-1.84/
-
+z275ny8h3qvrpakn182we5zen4kxdc87ygymex5ya9bca
 > blockset info
-
+size: 774344159 B
 ```
+
+As you can see, after we added `boost-1.84`, the size of the repository is increased by only 68 M.
 
 ```
 > cd new/
@@ -51,6 +53,7 @@ size: 706470318 B
 c1mjsv60hjqf89yagx53ya8bvg9d2b0t9vrkkbcn0jkrq
 > blockset info
 size: 717116556 B
+>
 ```
 
 Note that the `new/cdt0/` repository has a comparable size with the `Boost-1.85` directory, while `old/cdt0` has a size of only ...MB more than `Boost-1.83` because Blockset detects duplicates in data. 
