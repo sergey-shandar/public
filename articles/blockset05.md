@@ -4,13 +4,19 @@ One of Blockset 0.5's main new features is the possibility of adding and retriev
 
 ## 1. Preparation
 
+Install Rust and then BlockSet:
+
+```shell
+cargo install blockset
+```
+
 We've downloaded and unpacked Boost 1.83.0, 1.84.0, and 1.85.0. So, our directory structure is
 
-|Directory   |Size|
-|------------|----|
-|boost-1.83.0|    |
-|boost-1.84.0|    |
-|boost-1.85.0|    |
+|Directory   |Tar Size|Directory Size|
+|------------|--------|--------------|
+|boost-1.83.0|1,588 MB|888 MB        |
+|boost-1.84.0|1,586 MB|888 MB        |
+|boost-1.85.0|1,609 MB|900 MB        |
 
 ## 2. Creating Repositories
 
@@ -25,7 +31,7 @@ The Blockset repository is the `cdt0/` directory in the current directory. If th
 > mkdir new
 ```
 
-Then, we add all files by running three different Blockset processes simultaneously from three different terminals. Two processes add files to the same repository, `old/cdt0/`. 
+Then, we add all files by running two different Blockset processes simultaneously from two different terminals. 
 
 ```
 > cd old/
@@ -33,10 +39,6 @@ Then, we add all files by running three different Blockset processes simultaneou
 
 > blockset info
 
-```
-
-```
-> cd old/
 > blockset add ../boost-1.84/
 
 > blockset info
