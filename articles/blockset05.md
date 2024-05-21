@@ -68,7 +68,7 @@ The original `boost-1_85_0.tar` file is about 1.6 GB. But after we added this fi
 
 ## Merging Repositories
 
-We can merge to repositories by copying all files from one repository into another one.
+We can merge repositories by simply copying all files from one repository into another one.
 
 ```shell
 > cd old/
