@@ -54,6 +54,7 @@ c1mjsv60hjqf89yagx53ya8bvg9d2b0t9vrkkbcn0jkrq
 > blockset info
 size: 717116556 B
 > blockset add ~/Downloads/boost-1_85_0.tar
+zqtrr3t2mbk9h8cshntsrs2ba8mat8ek56af2mrfw46aq
 ```
 
 Note that the `new/cdt0/` repository has a comparable size with the `Boost-1.85` directory, while `old/cdt0` has a size of only ...MB more than `Boost-1.83` because Blockset detects duplicates in data. Some tools, like Git, can also detect the same file but further we will show you that Blockset can detect the same data parts inside big files, like in `boost-1_85_0.tar`.
