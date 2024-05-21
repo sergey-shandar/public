@@ -10,13 +10,13 @@ Install [Rust](https://www.rust-lang.org/tools/install) and then [BlockSet](http
 cargo install blockset
 ```
 
-We've downloaded and unpacked Boost 1.83.0, 1.84.0, and 1.85.0. So, our directory structure is
+We've downloaded and unpacked Boost 1.83.0, 1.84.0, and 1.85.0.
 
-|Directory   |Tar Size|Directory Size|
-|------------|--------|--------------|
-|boost-1.83.0|1,588 MB|888 MB        |
-|boost-1.84.0|1,586 MB|888 MB        |
-|boost-1.85.0|1,609 MB|900 MB        |
+|Directory   |Tar File Size|Directory Size|
+|------------|-------------|--------------|
+|boost-1.83.0|1,588 MB     |888 MB        |
+|boost-1.84.0|1,586 MB     |888 MB        |
+|boost-1.85.0|1,609 MB     |900 MB        |
 
 ## 2. Creating Repositories
 
