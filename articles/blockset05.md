@@ -26,14 +26,14 @@ We created 2 repositories in two directories:
 
 The Blockset repository is the `cdt0/` directory in the current directory. If the current directory doesn't have `cdt0/`, Blockset will create one. 
 
-```
+```shell
 > mkdir old
 > mkdir new
 ```
 
 Then, we add all files by running two different Blockset processes simultaneously from two different terminals. 
 
-```
+```shell
 > cd old/
 > blockset add ../boost-1_83_0/
 kksm7szr978j0gedz3c07adr06kc0nb04jarnbgkqktah
@@ -47,7 +47,7 @@ size: 774344159 B
 
 As you can see, after we added `boost-1.84.0`, the size of the repository is increased by only 68 M. Some tools, like Git, can also detect the same file but further we will show that Blockset can detect the same data parts inside big files, like in `boost-1_85_0.tar`.
 
-```
+```shell
 > cd new/
 > blockset add ../boost-1_85_0/
 c1mjsv60hjqf89yagx53ya8bvg9d2b0t9vrkkbcn0jkrq
@@ -87,10 +87,10 @@ We can extract files and directories using `blockset get` command. For example
 > blockset get c1mjsv60hjqf89yagx53ya8bvg9d2b0t9vrkkbcn0jkrq boost-1_85_0.json
 > blockset get kksm7szr978j0gedz3c07adr06kc0nb04jarnbgkqktah boost-1_83_0/
 > ls boost-1_83_0/
-INSTALL		      boost		        boostcpp.jam	index.htm	  rst.css
-Jamroot	      	boost-build.jam	bootstrap.bat	index.html	status
-LICENSE_1_0.txt	boost.css	      bootstrap.sh	libs		    tools
-README.md	      boost.png	doc		more
+INSTALL         boost           boostcpp.jam    index.htm       rst.css
+Jamroot         boost-build.jam bootstrap.bat   index.html      status
+LICENSE_1_0.txt boost.css       bootstrap.sh    libs            tools
+README.md       boost.png	doc   more
 ```
 
 Authors of the demonstration: Sergey Shandar and Alex Fedin.
