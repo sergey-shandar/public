@@ -58,7 +58,7 @@ zqtrr3t2mbk9h8cshntsrs2ba8mat8ek56af2mrfw46aq
 size: 1041867039 B
 ```
 
-The original `boost-1_85_0.tar` file is about 1.6 GB. But after we added this file to the repository, the repositiry increased by about 287 MB. It means, Blockset finds the same parts of data **inside** the `tar` file because it uses [Content Dependent Tree](). 
+The original `boost-1_85_0.tar` file is about 1.6 GB. But after we added this file to the repository, the repositiry increased by about 287 MB. It means, Blockset finds the same parts of data **inside** the `tar` file because it uses [Content Dependent Tree](https://medium.com/@sergeyshandar/content-dependent-hash-tree-9e0f60859415). 
 
 |Repository|Content                               |Size   |
 |----------|--------------------------------------|-------|
