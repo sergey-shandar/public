@@ -6,11 +6,11 @@ The main new feature of the Blockset 0.5 is the possibility of adding and retrie
 
 Install [Rust](https://www.rust-lang.org/tools/install) and then [BlockSet](https://crates.io/crates/blockset):
 
-```shell
+``` shell
 cargo install blockset
 ```
 
-We've downloaded and unpacked [Boost](https://www.boost.org/) [1.83.0](https://www.boost.org/users/history/version_1_83_0.html), [1.84.0](https://www.boost.org/users/history/version_1_84_0.html), and [1.85.0](https://www.boost.org/users/history/version_1_85_0.html).
+Then download and unpacked [Boost](https://www.boost.org/) [1.83.0](https://www.boost.org/users/history/version_1_83_0.html), [1.84.0](https://www.boost.org/users/history/version_1_84_0.html), and [1.85.0](https://www.boost.org/users/history/version_1_85_0.html).
 
 |Version     |Tar File Size|Directory Size|
 |------------|-------------|--------------|
@@ -20,9 +20,9 @@ We've downloaded and unpacked [Boost](https://www.boost.org/) [1.83.0](https://w
 
 ## 2. Creating BlockSet Repositories
 
-We've created 2 repositories in two directories: 
+Create two repositories in the two directories: 
 - `old` is for Boost 1.83 and 1.84.
-- `new` is for Boost 1.85.
+- `new` is for Boost 1.85 and its `tar` file.
 
 The Blockset repository is the `cdt0/` directory in the current directory. If the current directory doesn't have `cdt0/`, Blockset will create one. 
 
@@ -41,7 +41,7 @@ z275ny8h3qvrpakn182we5zen4kxdc87ygymex5ya9bca
 size: 774344159 B
 ```
 
-As you can see, after we added `boost-1.84.0`, the size of the repository is increased by only 68 M. Some tools, like Git, can also detect the same files but further we will show that Blockset can detect the same data **parts** inside big files.
+As you can see, after we added `boost-1_84_0`, the repository's size increased by only 68 M. Some tools, like [Git](https://en.wikipedia.org/wiki/Git), can also detect the same files, but we will show that Blockset can detect the same data **parts** inside big files.
 
 Let's create the `new` repositories.
 
@@ -58,7 +58,7 @@ zqtrr3t2mbk9h8cshntsrs2ba8mat8ek56af2mrfw46aq
 size: 1041867039 B
 ```
 
-The original `boost-1_85_0.tar` file is about 1.6 GB. But after we added this file to the repository, the repositiry increased by about 287 MB. It means, Blockset finds the same parts of data **inside** the `tar` file because it uses [Content Dependent Tree](https://medium.com/@sergeyshandar/content-dependent-hash-tree-9e0f60859415). 
+The original `boost-1_85_0.tar` file is about 1.6 GB. However, after we added this file to the repository, the repository increased by about 287 MB. This means Blockset finds the same parts of data **inside** the `tar` file because it uses [Content Dependent Tree](https://medium.com/@sergeyshandar/content-dependent-hash-tree-9e0f60859415). 
 
 |Repository|Content                               |Size   |
 |----------|--------------------------------------|-------|
