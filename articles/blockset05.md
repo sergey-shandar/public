@@ -92,4 +92,6 @@ LICENSE_1_0.txt boost.css       bootstrap.sh    libs            tools
 README.md       boost.png	doc   more
 ```
 
+---
+
 Authors of the demonstration: Sergey Shandar and Alex Fedin.
