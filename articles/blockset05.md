@@ -1,16 +1,16 @@
 # BlockSet 0.6
 
-The main new feature of the Blockset 0.6 is the possibility of adding and retrieving directories recursively. In this demonstration, we use this feature and also show how to merge Blockset repositories using simple file copying. We use Boost source files and directories of different versions as samples.
+The main new feature of the Blockset 0.6 is the ability to add and retrie directories recursively. In this demonstration, we use this feature and also show how to merge Blockset repositories using simple file copying. We use Boost source files and directories of different versions as samples.
 
 ## 1. Preparation
 
-Install [Rust](https://www.rust-lang.org/tools/install) and then [BlockSet](https://crates.io/crates/blockset):
+Firstly, we need to install [Rust](https://www.rust-lang.org/tools/install) and [BlockSet](https://crates.io/crates/blockset):
 
 ``` shell
 cargo install blockset
 ```
 
-Then download and unpacked [Boost](https://www.boost.org/) [1.83.0](https://www.boost.org/users/history/version_1_83_0.html), [1.84.0](https://www.boost.org/users/history/version_1_84_0.html), and [1.85.0](https://www.boost.org/users/history/version_1_85_0.html).
+Then we download and unpack [Boost](https://www.boost.org/) [1.83.0](https://www.boost.org/users/history/version_1_83_0.html), [1.84.0](https://www.boost.org/users/history/version_1_84_0.html), and [1.85.0](https://www.boost.org/users/history/version_1_85_0.html).
 
 |Version     |Tar File Size|Directory Size|
 |------------|-------------|--------------|
@@ -20,7 +20,7 @@ Then download and unpacked [Boost](https://www.boost.org/) [1.83.0](https://www.
 
 ## 2. Creating BlockSet Repositories
 
-Create two repositories in the two directories: 
+We create two repositories in the two directories: 
 - `old` is for Boost 1.83 and 1.84.
 - `new` is for Boost 1.85 and its `tar` file.
 
