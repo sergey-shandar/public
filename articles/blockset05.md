@@ -1,4 +1,4 @@
-# BlockSet 0.6
+# BlockSet 0.6. Working With Directories and Sync By Copy
 
 The main new feature of the Blockset 0.6 is the ability to add and retrieve directories recursively. In this demonstration, we use this feature and also show how to merge Blockset repositories using simple file copying. We use Boost source files and directories of different versions as samples.
 
