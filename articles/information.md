@@ -38,4 +38,6 @@ The difference is quite significant if we try more bits. For example, for 10 bit
 
 That means, that this grows of a number of states is related to order/relations between these bits instead of the values of these bits.
 
-physics 
+--- Physics
+
+--- Conservation of information law
