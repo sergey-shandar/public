@@ -40,7 +40,9 @@ That means, that this grows of a number of states is related to order/relations 
 
 --- Operation on systems
 
+If we have two undistinguishable systems with the same number of states S, then the total number of states are ...
 
+For two distinguishable systems with state S0 and S1, the number of states are S0 * S1.
 
 --- Physics
 
