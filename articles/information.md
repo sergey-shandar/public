@@ -38,7 +38,7 @@ That means that the growth of the number of states is attributed more to the ord
 
 In next sections, by default, we will use only distinguishable systems.
 
---- Operation on systems
+## Operation on systems
 
 The number of states for two distinguishable systems with states S0 and S1 is S0 * S1. If we measure information in bits, then it's N0 + N1, where N0 is log2(S0), and N1 is log2(S1). Note: that we can use another `log` base instead of two to measure information. Some may even use `e`.
 
@@ -49,6 +49,6 @@ An interesting property: If we have systems with a number of states that are not
 
 If 'base' and 'N' are natural numbers then 'S' is also a natural number.
 
---- Physics
+## Physics
 
---- Conservation of information law
+## Conservation of information law
