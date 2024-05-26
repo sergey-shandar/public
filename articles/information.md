@@ -49,6 +49,6 @@ An interesting property: If we have systems with a number of states that are not
 
 If 'base' and 'N' are natural numbers then 'S' is also a natural number.
 
-## Physics
+## Conservation of information
 
-## Conservation of information law
+You may use different compression programs like zip and most likely seen how effective they are. Some text files can be compressed 10 times. So what happen if we rename zip file to text and try to compress again? No surprise, the new zip file will be bigger than original.
