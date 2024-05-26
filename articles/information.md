@@ -47,8 +47,14 @@ An interesting property: If we have systems with a number of states that are not
 `S` is an integer value, but we use `*` when we merge systems.
 `N` could be a noninteger, but we can use `+` when we merge systems.
 
-If 'base' and 'N' are natural numbers then 'S' is also a natural number.
+If 'base' and 'N' are natural numbers, then 'S' is also a natural number.
 
 ## Conservation of information
 
-You may use different compression programs like zip and most likely seen how effective they are. Some text files can be compressed 10 times. So what happen if we rename zip file to text and try to compress again? No surprise, the new zip file will be bigger than original.
+You may use different compression programs like Zip and most likely see their effectiveness. Some text files can be compressed more than 10 times. So what happens if we rename the zip file to text and try to compress it again? No surprise, the new zip file will be bigger than the original.
+
+Here is an old joke: I invited a compression algorithm that can compress files to one byte, and now I'm working on a decompression algorithm.
+
+Of course, the compression algorithm makes sense only if it is accompanied by a decompression algorithm that doesn't lose original information and can restore any compressed file to its original state.
+
+It means if we have a file of size `M` bits then in order to restore it, we have to have `2^M` different compressed files.
