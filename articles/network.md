@@ -40,17 +40,23 @@ graph TD;
 
 Requests: 
 ```
-- AA, AB, ...AZ,
-- BA, BB, ...BZ,
-- ...
-- A, B, ...Z,
+- AA
+- AB
+- ...AZ
+- BA
+- BB
+- ...BZ
+- ...ZZ
+- A
+- B
+- ...Z
 - Root
 ```
 
 Each request sends one hash to a remote server, asking if it exists. If the server responds with the answer no, then the client sends a corresponding data block to the server.
 
 In the worst case, if the server always answers `no,` we send slightly more information to the server than the original file. 
-In the best case, if the server always answers `yes`, we send only a small set of hashes and no data.
+In the best case, if the server always answers `yes`, we send only a tiny set of hashes and no data.
 
 ## Synchronizing Two Blocksets
 
@@ -64,12 +70,12 @@ Requests:
   - A
     - AA
     - AB
-    - ...
+    - ...AZ
   - B,
     - BA
     - BB
-    - ...
-  - ...
+    - ...BZ
+  - ...Z
 ```
 
 In the worst case, if the server always answers `no,` we send slightly more information to the server than the original file. 
