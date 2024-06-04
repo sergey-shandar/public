@@ -1,4 +1,4 @@
-# Designing Network Protocol for CAS
+# Network Protocol for CAS with CDT
 
 ## Internal Blockset Structure
 
