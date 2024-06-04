@@ -33,7 +33,7 @@ graph TD;
     BB-->BBD[BB Data]
 ```
 
-## Streaming
+## Adding a file to a remote repository
 
 - less local memory
 - more traffic
@@ -53,12 +53,12 @@ Requests:
 - Root
 ```
 
-Each request sends one hash to a remote server, asking if it exists. If the server responds with the answer no, then the client sends a corresponding data block to the server.
+Each request sends one hash to a remote server, asking if it exists. If the server responds with the answer no, the client sends a corresponding data block to the server.
 
 In the worst case, if the server always answers `no,` we send slightly more information to the server than the original file. 
 In the best case, if the server always answers `yes`, we send only a tiny set of hashes and no data.
 
-## Synchronizing Two Blocksets
+## Synchronizing a data block from a local repository
 
 - more local storage
 - less traffic
@@ -78,9 +78,9 @@ Requests:
   - ...Z
 ```
 
-In the worst case, if the server always answers `no,` we send slightly more information to the server than the original file. 
+In the worst case, if the server always answers `no`, we send slightly more information to the server than the original file. 
 In the best case, if the server always answers `yes`, we send only one `Root` hash.
 
-## Hybrid Solution
+## Synchronizing two repositories
 
-
+Similar techniques can be used when communicating a set of root hashes to a remote server. This kind of optimization is helpful for repositories with millions of root hashes. 
