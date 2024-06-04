@@ -53,10 +53,12 @@ Requests:
 - Root
 ```
 
-Each request sends one hash to a remote server, asking if it exists. If the server responds with the answer no, the client sends a corresponding data block to the server.
+Each request sends one hash to a remote server, asking if it exists. If the server responds no, the client sends a corresponding data block to the server.
 
 In the worst case, if the server always answers `no,` we send slightly more information to the server than the original file. 
 In the best case, if the server always answers `yes`, we send only a tiny set of hashes and no data.
+
+If we synchronize our repositories using file protocols (e.g., FTP) and copy, we will achieve the same level of traffic optimization. However, specialized protocols may further reduce traffic.
 
 ## Synchronizing a data block from a local repository
 
