@@ -37,7 +37,7 @@ In fact, some framework already use JavaScript as configuration files. However, 
 
 To avoid these security problems we can use only a subset of JavaScript. Such subsets already in development, for example FunctionalScript.
 
-FunctionalScript is good but, currently, JavaScript and its engines don't support function serialization. So it's a big challenge to write a serializer using current ECMAScript. So we developed a subset of JavaScript that has no functions.
+FunctionalScript is good but, currently, JavaScript and its engines don't support function serialization. So it's a big challenge to write a serializer using current ECMAScript. So we developed a subset of ECMAScript that has no functions.
 
 
 
