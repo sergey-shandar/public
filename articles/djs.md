@@ -16,7 +16,7 @@ Problems with current formats:
 - references to other objects for reusing common parts,
 - references to objects in other files,
 
-Because these formats doesn't solve the problem (including new fancy syntax sugar formats), people are creating their own eDSL on top of these formats. For example:
+Because these formats don't solve the problem (including new fancy syntax sugar formats), people are creating their own eDSL on top of these formats. For example:
 - JSON schema and REST API: ...
 - MSBuild
 - Cargo.toml
@@ -31,7 +31,7 @@ As mentioned before, JSON is based on JavaScript. Why we don't use other (well k
 
 code
 
-In fact, some framework already use JavaScript as configuration files. However, this could be dangerous, non-deterministic and with all sorts of side-effects because JavaScript is turning complete and has all sorts of IO access.
+In fact, some framework already use JavaScript as configuration files. However, this could be dangerous, non-deterministic and with all sorts of side-effects because JavaScript is turning complete and has access to all sorts of IO.
 
 ## DataScript or DJS
 
