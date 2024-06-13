@@ -4,7 +4,7 @@ I'm a developer and use multiple languages and frameworks. Most of them use some
 
 A long time ago, XML was the first candidate for configuration, communication, small databases, and DSLs. 
 
-Then, the industry mostly switched to JSON and similar formats. JSON uses a small subset of JavaScript basic types and syntax. Because of this, using JSON is much easier than XML, at least for me. I always know how the JSON data is [de]serialized since it maps to JavaScript one-to-one. Usually, it's not a problem for other languages as well. Most modern languages have JSON types: number, string, boolean, array, dictionary, and null. Currently, JSON is a defacto standard for communication between computers; for example, REST API uses it as a default data format.
+Then, the industry mostly switched to JSON. JSON uses a small subset of JavaScript basic types and syntax. Because of this, using JSON is much easier than XML, at least for me. I always know how the JSON data is [de]serialized since it maps to JavaScript one-to-one. Usually, it's not a problem for other languages as well. Most modern languages have JSON types: number, string, boolean, array, dictionary, and null. Currently, JSON is a defacto standard for communication between computers; for example, REST API uses it as a default data format.
 
 Of course people would like to simplify even further and now we have a zoo of different formats, such as YAML, TOML, GraphQL etc. These format could be easier to read for people who already learn them, otherwise, it may look like black magic. Most of them are trying to simplify syntax but still keep the same JSON data types.
 
