@@ -2,16 +2,16 @@
 
 $f((k_0, k_1)) = a_0 k_0 + a_1 k_1$.
 
-$f(v_i) = a_i$.
+$f(V_i) = a_i$.
 
 In particular:
-- $v_0 = (1, 0)$, $f(v_0) = a_0$,
-- $v_1 = (0, 1)$, $f(v_1) = a_1$.
+- $V_0 = (1, 0)$, $f(V_0) = a_0$,
+- $V_1 = (0, 1)$, $f(V_1) = a_1$.
 
 $a_i > a_{i+1}$
 
 Euclidian division: $a_i = a_{i-1} q_{i-2} + a_{i-2}$.
 
-Then $a_i = a_{i-2} - a_{i-1} q_i = f(v_{i-2}) - f(v_{i-1}) q_i = f(v_{i-i} - q_i v_i)$.
+Then $a_i = a_{i-2} - a_{i-1} q_i = f(V_{i-2}) - f(V_{i-1}) q_i = f(V_{i-i} - q_i V_i)$.
 
-Then $v_i = v_{i-1} - q_i v_i$
+Then $V_i = V_{i-1} - q_i V_i$
