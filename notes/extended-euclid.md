@@ -1,6 +1,6 @@
 # Extended Euclid's Algorithm
 
-$f((k_0, k_1)) = a_0 k_0 + a_1 k_1$.
+$f((x, y)) = a_0 x + a_1 y$.
 
 $f(V_i) = a_i$.
 
@@ -10,8 +10,8 @@ In particular:
 
 $a_i > a_{i+1}$
 
-Euclidian division: $a_i = a_{i-1} q_{i-2} + a_{i-2}$.
+Euclidian division defines $q_{i-2}$ and $a_{i-2}$ by $a_i = a_{i-1} q_{i-2} + a_{i-2}$.
 
-Then $a_i = a_{i-2} - a_{i-1} q_i = f(V_{i-2}) - f(V_{i-1}) q_i = f(V_{i-i} - q_i V_i)$.
+Then $a_i = a_{i-2} - a_{i-1} q_i = f(V_{i-2}) - f(V_{i-1}) q_i = f(V_{i-2} - q_i V_{i-1})$.
 
-Then $V_i = V_{i-1} - q_i V_i$
+Then $V_i = V_{i-2} - q_i V_{i-1}$
