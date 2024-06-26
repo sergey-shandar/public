@@ -2,12 +2,19 @@
 
 [Fermat's little theorem](https://en.wikipedia.org/wiki/Fermat%27s_little_theorem):
 
-- $a^p ≡ a \ (\text{mod} \ p)$,
-- $a^{p-1} ≡ 1 \ (\text{mod} \ p)$,
-- $a^{p-2} ≡ a^{-1} \ (\text{mod} \ p)$.
+- $a^p ≡ a \pmod p$,
+- $a^{p-1} ≡ 1 \pmod p$,
+- $a^{p-2} ≡ a^{-1} \pmod p$.
 
 $∀ a ∈ \{1, 2, …, p-1\}$.
 
 ## Equation
 
-$x^2 ≡ c \ (\text{mod} \ p)$, and $x$ is unknown.
+$x^2 ≡ c \pmod p$, and $x$ is unknown.
+
+- $x^{p+1}≡c^\frac{p+1}{2}\pmod p$,
+- $x^{p-1}x^2≡c^\frac{p+1}{2}\pmod p$,
+- $x^2≡c^\frac{p+1}{2}\pmod p$ because $x^{p-1} ≡ 1 \pmod p$.
+
+If $(p+1) \bmod 4 = 0$ then the roots are $c^\frac{p+1}{4}$ and $-c^\frac{p+1}{4}$.
+
