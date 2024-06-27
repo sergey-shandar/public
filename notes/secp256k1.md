@@ -4,7 +4,7 @@ $y^2 = x^3 + ax + b$.
 
 ## Derivative
 
-Let $z = y^2$, then $z = x^3 + 7$.
+Let $z = y^2$, then $z = x^3 + ax + b$.
 
 - $\frac{dz}{dy} = 2y$,
 - $\frac{dz}{dx} = 3x^2 + a$.
@@ -21,5 +21,3 @@ $$\begin{cases}
 ## Secp256k1
 
 $y^2 = x^3 + 7$
-
-## Derivative
