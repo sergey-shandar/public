@@ -11,7 +11,7 @@ Let $z = y^2$, then $z = x^3 + ax + b$.
 
 Then $\frac{dy}{dx} = \frac{3x^2 + a}{2y}$.
 
-Let $m = \frac{3x_0^2}{2y_0}$ and $c = y_0 - mx_0$. 
+Let $m = \frac{3x_0^2+a}{2y_0}$ and $y = mx + c$. 
 
 $$\begin{cases}
   y = mx + c\\
