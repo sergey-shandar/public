@@ -23,7 +23,7 @@ $$\begin{cases}
 ## Solution
 
 - $x_R=m^2-2x_P$
-- $y_R=mx_R+y_P=m(m^2-2x_P)+y_P=m^3-2mx_P+y_P$
+- $y_R=m(x_R-x_P)+y_P=m(m^2-3x_P)+y_P=m^3-2mx_P+y_P$
 
 https://andrea.corbellini.name/2015/05/17/elliptic-curve-cryptography-a-gentle-introduction/
 
