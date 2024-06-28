@@ -22,7 +22,8 @@ $$\begin{cases}
 
 ## Different Points
 
-
+- $x_R=m^2-x_P-x_Q$,
+- $y_R=m(x_R-x_P)+y_P$ or $y_R=m(x_R-x_Q)+y_Q$.
 
 ## Solution
 
