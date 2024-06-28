@@ -11,7 +11,7 @@ Let $z = y^2$, then $z = x^3 + ax + b$.
 
 Then $\frac{dy}{dx} = \frac{3x^2 + a}{2y}$.
 
-Assume we have a point $P = (x_P, y_P)$ so $y_P^3=x_P^2+ax_P+b$.
+Assume we have a point $P = (x_P, y_P)$ so $y_P^2=x_P^3+ax_P+b$.
 
 Let $m = \frac{3x_P^2+a}{2y_P}$ then 
 
