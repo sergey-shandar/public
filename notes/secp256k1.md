@@ -2,6 +2,12 @@
 
 $y^2 = x^3 + ax + b$.
 
+## Different Points
+
+- $x_R=m^2-x_P-x_Q$,
+- $y_R=m(x_R-x_P)+y_P$ or $y_R=m(x_R-x_Q)+y_Q$.
+
+
 ## Derivative
 
 Let $z = y^2$, then $z = x^3 + ax + b$.
@@ -19,11 +25,6 @@ $$\begin{cases}
   y = m(x-x_P) + y_P\\
   y^2 = x^3 + ax + b
 \end{cases}$$
-
-## Different Points
-
-- $x_R=m^2-x_P-x_Q$,
-- $y_R=m(x_R-x_P)+y_P$ or $y_R=m(x_R-x_Q)+y_Q$.
 
 ## Solution
 
