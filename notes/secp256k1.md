@@ -11,10 +11,12 @@ Let $z = y^2$, then $z = x^3 + ax + b$.
 
 Then $\frac{dy}{dx} = \frac{3x^2 + a}{2y}$.
 
-Let $m = \frac{3x_0^2+a}{2y_0}$ and $y = mx + c$. 
+Assume we have a point $P = (x_P, y_P)$ so $y_P^3=x_P^2+ax_P+b$.
+
+Let $m = \frac{3x_P^2+a}{2y_P}$ then 
 
 $$\begin{cases}
-  y = mx + c\\
+  y = m(x-x_P) + y_P\\
   y^2 = x^3 + ax + b
 \end{cases}$$
 
