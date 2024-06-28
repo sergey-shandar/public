@@ -20,6 +20,10 @@ $$\begin{cases}
   y^2 = x^3 + ax + b
 \end{cases}$$
 
+## Different Points
+
+
+
 ## Solution
 
 - $x_R=m^2-2x_P$
