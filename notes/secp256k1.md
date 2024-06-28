@@ -20,6 +20,11 @@ $$\begin{cases}
   y^2 = x^3 + ax + b
 \end{cases}$$
 
+## Solution
+
+- $x_R=m^2-2x_P$
+- $y_R=mx_R+y_P$
+
 https://andrea.corbellini.name/2015/05/17/elliptic-curve-cryptography-a-gentle-introduction/
 
 ## Secp256k1
