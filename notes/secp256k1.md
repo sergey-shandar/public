@@ -45,7 +45,7 @@ $$\begin{equation}\begin{aligned}
                    &= m^2x_Δ^2 + 2mx_Δy_P + y_P^2 \\
   x_R^3 + ax_R + b &= x_Δ^3 + 3x_Δ^2x_P + 3x_Δx_P^2 + x_P^3 + ax_Δ + ax_P + b = \\
                    &= (x_Δ + 3x_P)x_Δ^2 + 3x_Δx_P^2 + ax_Δ + y_P^2 = \\
-                   &= m^2x_Δ^2 + x_Δ(3x_P^2 + a) + y_P2
+                   &= m^2x_Δ^2 + x_Δ(3x_P^2 + a) + y_P^2
 \end{aligned}\end{equation}$$ 
 
 Now $2mx_Δy_P=x_Δ(3x_P^2 + a) ⇒ 2my_P=3x_P^2+a$.
