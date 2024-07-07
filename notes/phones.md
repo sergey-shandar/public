@@ -1,0 +1,4 @@
+- https://www.gsmarena.com/philips_savvy_db-151.php
+- https://www.gsmarena.com/siemens_m35i-reviews-94.php
+- https://en.wikipedia.org/wiki/Nokia_8210
+- https://en.wikipedia.org/wiki/Siemens_S55
