@@ -66,7 +66,7 @@ $$\begin{cases}
 
 ...
 
-## $x_P = x_Q$
+## $x_P = x_Q$ and $y_P = y_Q$
 
 $$y_P = mx_P + c$$
 
