@@ -57,6 +57,8 @@ Let $g = x_P + x_Q$, then $x_R = m^2 - g$
 
 $$(m^2 - g)^3 - m^2(m^2 - g)^2 + (m^2 - g)(a - 2mc) + (b - c^2) = 0$$
 
+$$m^6 - 3m^4g + 3m^2g^2 - g^3 - m^6 + 2m^4g - m^2g + (m^2 - g)(a - 2mc) + (b - c^2) = 0$$
+
 ## Derivative
 
 Let $z = y^2$, then $z = x^3 + ax + b$.
