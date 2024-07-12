@@ -33,7 +33,7 @@ If we know $x_P$ and $x_Q$ then $x_R = m^2 - x_P - x_Q$.
 
 $$\begin{cases}
   a - 2mc = x_Px_Q + m^2(x_P + x_Q) - (x_P + x_Q)^2\\
-  c^2 - b = x_Px_Q(m^2 - x_P + x_Q)
+  c^2 - b = x_Px_Q(m^2 - (x_P + x_Q))
 \end{cases}$$
 
 ## $x_P ≠ x_Q$
