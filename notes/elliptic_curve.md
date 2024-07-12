@@ -64,5 +64,4 @@ $$\begin{cases}
 
 ## $x_P = x_Q$
 
-
-
+$$a - 2mc = x_P^2 + 2m^2x_P - (2x_P)^2$$
