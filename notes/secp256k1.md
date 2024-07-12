@@ -23,7 +23,7 @@ Without dependencies on $a$ and $b$:
 
 $$\begin{cases}
   a = \frac{y_P^2 - y_Q^2 - x_P^3 + x_Q^3}{x_P - x_Q}\\
-  x_Py_Q^2 - x_Qy_P^2 - x_Px_Q^3 + x_Qx_P^3 = b(x_P - x_Q)
+  b = \frac{x_Py_Q^2 - x_Qy_P^2 - x_Px_Q^3 + x_Qx_P^3}{x_P - x_Q}
 \end{cases}$$ 
 
 ## Derivative
