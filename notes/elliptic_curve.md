@@ -31,7 +31,14 @@ $$\begin{cases}
 
 If we know $x_P$ and $x_Q$ then $x_R = m^2 - x_P - x_Q$.
 
+## Different $x_P$ and $x_Q$
+
 $$\begin{cases}
   y_P = mx_P + c\\
   y_Q = mx_Q + c
+\end{cases}$$
+
+$$\begin{cases}
+  m = \frac{y_P - y_Q}{x_P - x_Q}\\
+  c = \frac{x_Py_Q - x_Qy_P}{x_P - x_Q}
 \end{cases}$$
