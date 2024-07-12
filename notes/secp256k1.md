@@ -6,6 +6,10 @@ $y^2 = x^3 + ax + b$.
 
 Points $P$ and $Q$.
 
+### Solution
+
+$x_R=m^2-x_P-x_Q$
+
 ### Elliptic Equations
 
 $$\begin{cases}
@@ -34,16 +38,20 @@ $$\begin{cases}
   c = \frac{x_Py_Q - x_Qy_P}{x_P - x_Q}
 \end{cases}$$
 
-### Solution
-
-$x_R=m^2-x_P-x_Q$
-
-Proof
+### $R$ Equations
 
 $$\begin{cases}
   y_R=mx_R+c\\
   y_R^2=x_R^3 + ax_R + b
 \end{cases}$$
+
+$$x_R^3 + ax_R + b = m^2x_R^2 + 2mx_Rc + c^2$$
+
+$$x_R^3 - x_R^2m^2 + x_R(a - 2mc) + b - c^2 = 0$$
+
+### Applying the Solution
+
+$$(m^2 - x_P - x_Q)^3 - (m^2 - x_P - x_Q)^2m^2 + (m^2 - x_P - x_Q)(a - 2mc) + m - c^2 = 0$$
 
 ## Derivative
 
