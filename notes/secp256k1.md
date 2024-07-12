@@ -45,6 +45,8 @@ $$\begin{cases}
   y_R^2=x_R^3 + ax_R + b
 \end{cases}$$
 
+$$(mx_R+c)^2 = x_R^3 + ax_R + b$$
+
 $$m^2x_R^2 + 2mx_Rc + c^2 = x_R^3 + ax_R + b$$
 
 ### Applying the Solution
