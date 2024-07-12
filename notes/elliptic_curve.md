@@ -42,3 +42,13 @@ $$\begin{cases}
   m = \frac{y_P - y_Q}{x_P - x_Q}\\
   c = \frac{x_Py_Q - x_Qy_P}{x_P - x_Q}
 \end{cases}$$
+
+$$\begin{cases}
+  y_P^2 = x_P^3 + ax_P + b\\
+  y_Q^2 = x_Q^3 + ax_Q + b
+\end{cases}$$
+
+$$\begin{cases}
+  a = \frac{y_P^2 - y_Q^2 - x_P^3 + x_Q^3}{x_P - x_Q}\\
+  b = \frac{x_Py_Q^2 - x_Qy_P^2 - x_Px_Q^3 + x_Qx_P^3}{x_P - x_Q}
+\end{cases}$$
