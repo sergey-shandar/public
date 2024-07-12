@@ -36,7 +36,7 @@ $$\begin{cases}
   c^2 - b = x_Px_Q(m^2 - x_P + x_Q)
 \end{cases}$$
 
-## Different $x_P$ and $x_Q$
+## $x_P ≠ x_Q$
 
 $$\begin{cases}
   y_P = mx_P + c\\
@@ -59,6 +59,10 @@ $$\begin{cases}
 \end{cases}$$
 
 ### Check $a - 2mc = x_Px_Q + x_Px_R + x_Qx_R$
+
+...
+
+## $x_P = x_Q$
 
 
 
