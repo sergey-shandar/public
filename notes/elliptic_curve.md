@@ -62,7 +62,13 @@ $$\begin{cases}
 
 ...
 
+### Check $c^2 - b = x_Px_Q(m^2 - (x_P + x_Q))$
+
+...
+
 ## $x_P = x_Q$
+
+$$y_P = mx_P + c$$
 
 $$a - 2mc = x_P^2 + 2m^2x_P - (2x_P)^2$$
 
@@ -73,3 +79,7 @@ $$a - 2my_P = -3x_P$$
 $$2my_P = 3x_P + a$$
 
 $$m = \frac{3x_P + a}{2y_P}$$
+
+### Check $c^2 - b = x_P^2(m^2 - 2x_P)$
+
+...
