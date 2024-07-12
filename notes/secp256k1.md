@@ -9,22 +9,33 @@ Points $P$ and $Q$.
 - $x_R=m^2-x_P-x_Q$,
 - $y_R=m(x_R-x_P)+y_P$ or $y_R=m(x_R-x_Q)+y_Q$.
 
-### Equations
+### Elliptic Equations
 
-- $y_P^2 = x_P^3 + ax_P + b$
-- $y_Q^2 = x_Q^3 + ax_Q + b$
+$$\begin{cases}
+  y_P^2 = x_P^3 + ax_P + b\\
+  y_Q^2 = x_Q^3 + ax_Q + b
+\end{cases}$$
 
 Then
-
-- $b = y_P^2 - x_P^3 - ax_P = y_Q^2 - x_P^3 - ax_Q$
-- $a = \frac{y_P^2 - x_P^3 - b}{x_P} = \frac{y_P^2 - b}{x_P} - x_P^2 = \frac{y_Q^2 - x_Q^3 - b}{x_Q} = \frac{y_Q^2 - b}{x_Q} - x_Q^2$
-
-Without dependencies on $a$ and $b$:
 
 $$\begin{cases}
   a = \frac{y_P^2 - y_Q^2 - x_P^3 + x_Q^3}{x_P - x_Q}\\
   b = \frac{x_Py_Q^2 - x_Qy_P^2 - x_Px_Q^3 + x_Qx_P^3}{x_P - x_Q}
 \end{cases}$$ 
+
+### Line Equations
+
+$$\begin{cases}
+  y_P = mx_P + c\\
+  y_Q = mx_Q + c
+\end{cases}$$
+
+Then
+
+$$\begin{cases}
+  m = \frac{y_P - y_Q}{x_P - x_Q}\\
+  c = \frac{x_Py_Q - x_Qy_P}{x_P - x_Q}
+\end{cases}$$
 
 ## Derivative
 
