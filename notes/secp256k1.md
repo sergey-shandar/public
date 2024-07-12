@@ -6,9 +6,6 @@ $y^2 = x^3 + ax + b$.
 
 Points $P$ and $Q$.
 
-- $x_R=m^2-x_P-x_Q$,
-- $y_R=m(x_R-x_P)+y_P$ or $y_R=m(x_R-x_Q)+y_Q$.
-
 ### Elliptic Equations
 
 $$\begin{cases}
@@ -35,6 +32,17 @@ Then
 $$\begin{cases}
   m = \frac{y_P - y_Q}{x_P - x_Q}\\
   c = \frac{x_Py_Q - x_Qy_P}{x_P - x_Q}
+\end{cases}$$
+
+### Solution
+
+$x_R=m^2-x_P-x_Q$
+
+Proof
+
+$$\begin{cases}
+  y_R=mx_R+c\\
+  y_R^2=x_R^3 + ax_R + b
 \end{cases}$$
 
 ## Derivative
