@@ -31,6 +31,11 @@ $$\begin{cases}
 
 If we know $x_P$ and $x_Q$ then $x_R = m^2 - x_P - x_Q$.
 
+$$\begin{cases}
+  a - 2mc = x_Px_Q + m^2(x_P + x_Q) - (x_P + x_Q)^2\\
+  c^2 - b = x_Px_Q(m^2 - x_P + x_Q)
+\end{cases}$$
+
 ## Different $x_P$ and $x_Q$
 
 $$\begin{cases}
@@ -55,6 +60,5 @@ $$\begin{cases}
 
 ### Check $a - 2mc = x_Px_Q + x_Px_R + x_Qx_R$
 
-$$\frac{y_P^2 - y_Q^2 - x_P^3 + x_Q^3}{x_P - x_Q} - 2\frac{y_P - y_Q}{x_P - x_Q}\frac{x_Py_Q - x_Qy_P}{x_P - x_Q} = x_Px_Q + x_Px_R + x_Qx_R$$
 
 
