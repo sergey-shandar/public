@@ -30,3 +30,8 @@ $$\begin{cases}
 \end{cases}$$
 
 If we know $x_P$ and $x_Q$ then $x_R = m^2 - x_P - x_Q$.
+
+$$\begin{cases}
+  y_P = mx_P + c
+  y_Q = mx_Q + c
+\end{cases}$$
