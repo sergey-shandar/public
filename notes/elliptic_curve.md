@@ -67,3 +67,5 @@ $$\begin{cases}
 $$a - 2mc = x_P^2 + 2m^2x_P - (2x_P)^2$$
 
 $$a - 2m(y_P-mx_P) = 2m^2x_P - 3x_P^2$$
+
+$$a - 2my_P = -3x_P$$
