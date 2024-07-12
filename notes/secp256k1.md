@@ -49,7 +49,7 @@ $$(mx_R+c)^2 = x_R^3 + ax_R + b$$
 
 $$x_R^3 + ax_R + b - m^2x_R^2 - 2mx_Rc - c^2 = 0$$
 
-$$x_R^3 + ax_R + b = m^2
+$$x_R^3 - m^2x_R^2 + x_R(a - 2mc) + (b - c^2) = 0$$
 
 ### Applying the Solution
 
