@@ -45,13 +45,13 @@ $$\begin{cases}
   y_R^2=x_R^3 + ax_R + b
 \end{cases}$$
 
-$$x_R^3 + ax_R + b = m^2x_R^2 + 2mx_Rc + c^2$$
-
-$$x_R^3 - x_R^2m^2 + x_R(a - 2mc) + b - c^2 = 0$$
+$$m^2x_R^2 + 2mx_Rc + c^2 = x_R^3 + ax_R + b$$
 
 ### Applying the Solution
 
-$$(m^2 - x_P - x_Q)^3 - (m^2 - x_P - x_Q)^2m^2 + (m^2 - x_P - x_Q)(a - 2mc) + m - c^2 = 0$$
+Let $g = x_P + x_Q$, then $x_R = m^2 - g$
+
+$$m^2(m^2 - g)^2 + 2m(m^2 - g)c + c^2 = (m^2 - g)^3 + a(m^2 - g) + b$$
 
 ## Derivative
 
