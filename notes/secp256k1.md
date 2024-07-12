@@ -47,13 +47,13 @@ $$\begin{cases}
 
 $$(mx_R+c)^2 = x_R^3 + ax_R + b$$
 
-$$m^2x_R^2 + 2mx_Rc + c^2 = x_R^3 + ax_R + b$$
+$$x_R^3 + ax_R + b - m^2x_R^2 - 2mx_Rc - c^2 = 0$$
+
+$$x_R^3 + ax_R + b = m^2
 
 ### Applying the Solution
 
 Let $g = x_P + x_Q$, then $x_R = m^2 - g$
-
-$$m^2(m^2 - g)^2 + 2m(m^2 - g)c + c^2 = (m^2 - g)^3 + a(m^2 - g) + b$$
 
 ## Derivative
 
