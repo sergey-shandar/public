@@ -2,7 +2,7 @@
 
 - Motivation:
   - more earn => more received
-- An economic target for  society:
+- An economic target for  society (constant improvement):
   - generate more value
   - no poor people: a big chunk of the generated value is distributed to low and middle-income earners
   - criteria: the progress should benefit everyone.
