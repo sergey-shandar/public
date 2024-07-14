@@ -2,6 +2,9 @@
 
 - Motivation:
   - more earn => more received
+- An economic target for  society:
+  - generate more value
+  - no poor people: a big chunk of the generated value is distributed to low and middle-income earners
 - Balance: money is a power, so it must be limited:
   - Receiving is a logarithm from earning.
   - it also has a universal basic income.
@@ -11,5 +14,5 @@
   - `5,0,0,0,0` means a high tax on the first year and negative tax on the consequent years.
   - inheritance is treated as an income.
 - Real economic value.
-  - if two companies innovate and compete in the same industry and one wins, what is the total economic impact?
-  - Imagine we have multiple ways and don't know which is more profitable. Each business takes a different way, and only one of them survives. Is there value in a business that didn't survive? From a social point of view, yes. Because now we know which way is the best. 
+  - What is the total economic impact if two companies innovate and compete in the same industry and one wins?
+  - Imagine we have multiple ways and need to know which is more profitable. Each business takes a different way, and only one of them survives. Is there value in a business that didn't survive? From a social point of view, yes. Because now we know which way is the best. 
