@@ -5,7 +5,7 @@
 - An economic target for  society (constant improvement):
   - generate more value
   - no poor people: a big chunk of the generated value is distributed to low and middle-income earners
-  - Criteria: Progress should benefit everyone, but it doesn't mean it should benefit everyone equally. However, we should avoid situations when the progress benefits only a few and make it worse for others.
+  Criteria: Progress should benefit everyone, but that doesn't mean it should benefit everyone equally. We should avoid situations where progress benefits only a few and makes it worse for others.
     - if a person creates a product and then an AI-based automated factory crates the same product cheaper, they can lose their income if they try to sell the product for the same price. Assumptions: an AI-based factory and a person but resources for the same price.
 - Balance: money is a power, so it must be limited:
   - Receiving is a logarithm from earning.
