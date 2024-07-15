@@ -58,11 +58,11 @@ $$\begin{cases}
   b = \frac{x_Py_Q^2 - x_Qy_P^2 - x_Px_Q^3 + x_Qx_P^3}{x_P - x_Q}
 \end{cases}$$
 
-### Check $a - 2mc = x_Px_Q + x_Px_R + x_Qx_R$
+### Show that $a - 2mc = x_Px_Q + x_Px_R + x_Qx_R$
 
 ...
 
-### Check $c^2 - b = x_Px_Q(m^2 - (x_P + x_Q))$
+### Show that $c^2 - b = x_Px_Q(m^2 - (x_P + x_Q))$
 
 ...
 
@@ -80,7 +80,7 @@ $$2my_P = 3x_P + a$$
 
 $$m = \frac{3x_P + a}{2y_P}$$
 
-### Check $c^2 - b = x_P^2(m^2 - 2x_P)$
+### Show that $c^2 - b = x_P^2(m^2 - 2x_P)$
 
 ...
 
