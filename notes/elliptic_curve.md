@@ -83,3 +83,7 @@ $$m = \frac{3x_P + a}{2y_P}$$
 ### Check $c^2 - b = x_P^2(m^2 - 2x_P)$
 
 ...
+
+## Estimate $n$
+
+https://en.wikipedia.org/wiki/Hasse%27s_theorem_on_elliptic_curves
