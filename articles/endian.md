@@ -1,4 +1,4 @@
-A simple reason why you should use little-endian instead of big-endian in programming and mathematics.
+Unpopular opinion: we should use little-endian instead of big-endian in programming and mathematics.
 
 ## Little-Endian
 
