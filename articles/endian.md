@@ -8,6 +8,8 @@ An unpopular opinion about [endiannes](https://en.wikipedia.org/wiki/Endianness)
 
 $$v = a_0 + a_1b + a_2b^2 + ...$$
 
+Where $b = 256$.
+
 ## Big-Endian
 
 $$v = a_{N-1} + a_{N-2}b + a_{N-3}b^2 + ... + a_0b^{N-1}$$
