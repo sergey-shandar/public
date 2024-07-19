@@ -1,4 +1,4 @@
-Unpopular opinion: we should use little-endian instead of big-endian in programming and mathematics.
+Unpopular opinion about [endiannes](https://en.wikipedia.org/wiki/Endianness): we should use little-endian instead of big-endian in programming and mathematics.
 
 ## Little-Endian
 
