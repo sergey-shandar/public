@@ -1,21 +1,18 @@
 # Sergey Shandar
 
-I'm building a data block set tailored for individual use, inspired by [CAS](https://en.wikipedia.org/wiki/Content-addressable_storage). While CAS systems have found a place in some companies, many individuals remain sidelined. I aim to democratize this tech, ensuring universal accessibility and paving the way for a new ecosystem of applications and services. It unlocks so many possibilities, like decentralized protocol-agnostic social networks, seamless data synchronization, affordable data backup, better version control systems, deterministic build systems, and much more.
+I'm working on content-addressable internet (CAi). The main CAi principles are
+- Address by content for immutable data.
+- Address by decentralized identity for mutable data.
+- Protocol agnostic. It doesn't matter how we receive a message if we can validate it.
+- Future proof. CAi has a mechanism to support different hash functions and decentralize identities.
 
-Currently, my primary focus areas include:
+Current OSS projects that I'm working on 
+- [Blockset](https://github.com/datablockset/blockset) is a personal [CAS](https://en.wikipedia.org/wiki/Content-addressable_storage) with unique properties:
+  - Utilizes a unique hash function to detect data duplication and reduce storage size and traffic.
+  - Can be synchronized via file copy.
+- [FunctionalScript](https://github.com/functionalscript) is a purely functional subset of JavaScript. One of the goals of the language is to support CAi, similar to how JavaScript supports the current location-based internet.
 
-- **[Personal Data Block Set](https://github.com/datablockset/blockset)**: a specialized data storage approach that places individuals at the helm of their data.
-- **[FunctionalScript](https://github.com/functionalscript/functionalscript)**: an optimized subset of ECMAScript (aka JavaScript), devised to tackle the challenges of distributed computing without adding to the learning burden.
-
-Sorry, I'm not hiring. However, if you want to build your own services and applications on top of a data block set, don't hesitate to contact me. The ecosystem is in its infancy, so there is much room for growth. 
-
-See also
-
-- [Articles](./articles)
-- Other open source projects:
-  - [GetBoost](https://github.com/sergey-shandar/getboost),
-  - [SHA2 on C++](https://github.com/sergey-shandar/sha2),
-  - [NatFoam Rust Libraries](https://github.com/natfoam/lib).
+See also [Articles](./articles)
 
 ## Contacts
 
