@@ -1,6 +1,6 @@
 # Sergey Shandar
 
-I'm focued on developing the content-addressable internet (CAi). The core CAi principles are
+I'm focused on developing the content-addressable internet (CAi). The core CAi principles are
 - **Addressing Immutable Data:** Using cryptographic hashes of content as an address.
 - **Addressing Mutable Data:** Using decentralized identities and digital signatures.
 - **Protocol Agnostic:** Validating messages regardless of the protocol used to receive them.
