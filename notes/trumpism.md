@@ -8,7 +8,9 @@
 
 ## Disrespect to others and no empathy
 
-- a sexual abuser
+- a sexual abuser,
+- one of the biggest lier,
+- narcissism,
 - lack of understanding of other people's needs
 
 Hypothesy: One reason is that he's never worked as a servant to other people. He's always worked as a boss.
