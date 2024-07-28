@@ -6,11 +6,14 @@
 
 ## Lack of understanding of other people's needs
 
-He's never worked as a servant to other people. Always as a boss.
 
 ## Business without any value to society
 
 ## Disrespect to others and no empathy
+
+- a sexual abuser
+
+Hypothesy: One reason is that he's never worked as a servant to other people. He's always worked as a boss.
 
 ## Obscurantism
 
