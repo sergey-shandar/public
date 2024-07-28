@@ -1,10 +1,9 @@
 # Trumpism
 
-## Fraud
-
-- [Trump University](https://en.wikipedia.org/wiki/Trump_University).
-
 ## Business without any value to society
+
+**Fraud**:
+- [Trump University](https://en.wikipedia.org/wiki/Trump_University).
 
 ## Disrespect to others and no empathy
 
@@ -22,3 +21,7 @@ https://en.wikipedia.org/wiki/Obscurantism
 **Examples**:
 - https://www.youtube.com/watch?v=PAauiLx3AvQ
 - he denies climate change
+
+## Policies
+
+Reduce taxes for the rich. It means increasing financial pressure on all others, especially the middle class.
