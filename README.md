@@ -6,6 +6,7 @@ I'm focused on developing the content-addressable internet (CAi). The core CAi p
 - **Protocol Agnostic:** Validating messages regardless of the protocol used to receive them.
 - **Scalability:** Enhancing algorithms and software without altering the source of truth data.
 - **Future Proof:** Implementing mechanisms to support evolving hash functions and decentralized identities.
+- **Verifyible Social Connections:** New connections can be verified by the connection graph, and a trust rating can be assigned. Also, trusted connections can restore stolen or lost decentralized identity and revert fraud transactions.
 
 Current OSS projects that I'm working on 
 - [Blockset](https://github.com/datablockset/blockset) is a personal [CAS](https://en.wikipedia.org/wiki/Content-addressable_storage) with unique properties:
