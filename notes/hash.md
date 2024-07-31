@@ -3,8 +3,8 @@
 The compress function $y = f(x)$
 
 The function should satisfy these conditions:
-- it's impossible by using current knowledge to restore any part of $x$ from $f(x)$,
-- It's impossible to find two $x_0$ and $x_1$ using current knowledge, such that $f(x_0) = f(x_1)$.  
+- it's practically impossible to restore any part of $x$ from $f(x)$,
+- It's practically impossible to find two $x_0$ and $x_1$ such that $f(x_0) = f(x_1)$.  
 
 ## SHA2 (32bits)
 
