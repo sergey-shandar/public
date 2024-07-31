@@ -31,7 +31,7 @@ The last value $a_m$ should contain `data`, then `0...` bits.
 
 $h(s) = f([x_0, s])$, where $x_0$ is an initial value. 
 
-$y_{1,i}=f([h(s), a_{2i}, a_{2i+1}])$, where $s$ is a length of data in the sequence $a_{2i}, a_{2i+1}$.
+$y_{1,i}=f([h(s), a_{2i}, a_{2i+1}])$, where $s$ is a length of data $[0, 512]$ in the sequence $a_{2i}, a_{2i+1}$.
 
 $y_{j,i}=f([h(513), y_{j-1,2i}, y_{j-1,2i+1}])$
 
