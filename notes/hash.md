@@ -1,6 +1,10 @@
 # Hash
 
-Compress function $y = h(x)$
+The compress function $y = h(x)$
+
+The function should satisfy these conditions:
+- it's impossible by using current knowledge to restore any part of $x$ from $f(x)$,
+- it's impossible by using current knowledge to find two $x_0$ and $x_1$ such that $f(x_0) = f(x_1)$.  
 
 ## SHA2 (32bits)
 
@@ -16,4 +20,7 @@ The last value $a_n$ should contain `data`, then `10...` bits, then a 64bit leng
 $y_0$ is an initial 256bit of SHA2, For example, for SHA2 it's `0x_6a09e667_bb67ae85_3c6ef372_a54ff53a_510e527f_9b05688c_1f83d9ab_5be0cd19`.
 
 $y_{i+1} = f([y_i, a_i])$
-    
+
+### Merkle Tree
+
+
