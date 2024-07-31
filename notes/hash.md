@@ -4,7 +4,7 @@ The compress function $y = h(x)$
 
 The function should satisfy these conditions:
 - it's impossible by using current knowledge to restore any part of $x$ from $f(x)$,
-- it's impossible by using current knowledge to find two $x_0$ and $x_1$ such that $f(x_0) = f(x_1)$.  
+- It's impossible to find two $x_0$ and $x_1$ using current knowledge, such that $f(x_0) = f(x_1)$.  
 
 ## SHA2 (32bits)
 
@@ -13,7 +13,7 @@ The function should satisfy these conditions:
 
 ### Streaming
 
-First step, convert a bit stream into a list of 512bit values: $a_0, a_1, ..., a_n$.
+Convert a bit stream into a list of 512bit values: $a_0, a_1, ..., a_n$.
 
 The last value $a_n$ should contain `data`, then `10...` bits, then a 64bit length of the original data. All other $a_i$ contains only data. 
 
@@ -23,4 +23,15 @@ $y_{i+1} = f([y_i, a_i])$
 
 ### Merkle Tree
 
+Convert a bit stream into a list of 256bit values: $a_0, a_1, ..., a_{2^k}$.
 
+The last value $a_m$ should contain `data`, then `10...` bits. 
+- $a_i$ where $i &lt; m$ contains only data,
+- $a_i$ where $i>m$ contains zeros.
+
+- $h_{leaf}$ is a header for a leaf.
+- $h_{node}$ is a header for all other nodes.
+
+$y_{1,i}=f([h_{leaf}, a_{2i}, a_{2i+1}])$
+
+$y_{j,i}=f([h_{node}, y_{j-1,2i}, y_{j-1,2i+1}])$
