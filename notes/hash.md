@@ -1,6 +1,6 @@
 # Hash
 
-The compress function $y = h(x)$
+The compress function $y = f(x)$
 
 The function should satisfy these conditions:
 - it's impossible by using current knowledge to restore any part of $x$ from $f(x)$,
