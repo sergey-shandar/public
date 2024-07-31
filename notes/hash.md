@@ -29,7 +29,7 @@ The last value $a_m$ should contain `data`, then `0...` bits.
 - $a_i$ where $i &lt; m$ contains only data,
 - $a_i$ where $i>m$ contains zeros.
 
-$h(s) = f([x_0, s])$ 
+$h(s) = f([x_0, s])$, where $x_0$ is an initial value. 
 
 $y_{1,i}=f([h(s), a_{2i}, a_{2i+1}])$, where $s$ is a length of data in the sequence $a_{2i}, a_{2i+1}$.
 
