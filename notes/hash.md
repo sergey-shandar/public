@@ -35,3 +35,5 @@ The last value $a_m$ should contain `data`, then `10...` bits.
 $y_{1,i}=f([h_{leaf}, a_{2i}, a_{2i+1}])$
 
 $y_{j,i}=f([h_{node}, y_{j-1,2i}, y_{j-1,2i+1}])$
+
+To prevent a [length extension attack](https://en.wikipedia.org/wiki/Length_extension_attack), we can apply a hash function once more to the root hash.
