@@ -25,15 +25,15 @@ $y_{i+1} = f([y_i, a_i])$
 
 Convert a bit stream into a list of 256bit values: $a_0, a_1, ..., a_{2^k}$.
 
-The last value $a_m$ should contain `data`, then `10...` bits. 
+The last value $a_m$ should contain `data`, then `0...` bits. 
 - $a_i$ where $i &lt; m$ contains only data,
 - $a_i$ where $i>m$ contains zeros.
 
 - $h_{leaf}$ is a header for a leaf.
 - $h_{node}$ is a header for all other nodes.
 
-$y_{1,i}=f([h_{leaf}, a_{2i}, a_{2i+1}])$
+$y_{1,i}=f([h(s), a_{2i}, a_{2i+1}])$
 
-$y_{j,i}=f([h_{node}, y_{j-1,2i}, y_{j-1,2i+1}])$
+$y_{j,i}=f([h(513), y_{j-1,2i}, y_{j-1,2i+1}])$
 
 To prevent a [length extension attack](https://en.wikipedia.org/wiki/Length_extension_attack), we can apply a hash function once more to the root hash.
