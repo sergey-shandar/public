@@ -35,4 +35,4 @@ $y_{1,i}=f([h(s), a_{2i}, a_{2i+1}])$, where $s$ is a length of data in the sequ
 
 $y_{j,i}=f([h(513), y_{j-1,2i}, y_{j-1,2i+1}])$
 
-To prevent a [length extension attack](https://en.wikipedia.org/wiki/Length_extension_attack), we can apply a hash function once more to the root hash.
+$y_{k,0}=f([h(514), y_{k-1,0}, y_{k-1,1}])$
