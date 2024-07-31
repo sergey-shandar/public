@@ -29,10 +29,10 @@ The last value $a_m$ should contain `data`, then `0...` bits.
 - $a_i$ where $i &lt; m$ contains only data,
 - $a_i$ where $i>m$ contains zeros.
 
-$h(s) = f([x_0, s, 0])$ 
+$h(s) = f([x_0, s])$ 
 
 $y_{1,i}=f([h(s), a_{2i}, a_{2i+1}])$, where $s$ is a length of data in the sequence $a_{2i}, a_{2i+1}$.
 
-$y_{j,i}=f([h(513), y_{j-1,2i}, y_{j-1,2i+1}])$
+$y_{j,i}=f([h(u512::MAX), y_{j-1,2i}, y_{j-1,2i+1}])$
 
 To prevent a [length extension attack](https://en.wikipedia.org/wiki/Length_extension_attack), we can apply a hash function once more to the root hash.
