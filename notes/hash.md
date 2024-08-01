@@ -71,3 +71,16 @@ $$y_{j,i} = \begin{cases}
 \end{cases}$$
 
 Note, if $y_{j-1,2i}$ and $y_{j-1,2i+1}$ are both zero-bit headers, then $y_{j,i}$ is also a zero-bit header.
+
+```mermaid
+block-beta
+  columns 3
+  a0        space y0["y0=f(h(2,0)∥a0)"]
+  a1        space y1["y1=f(h(2,0)∥a1)"]
+  ai["..."] space yi["..."]
+  an        space yn["yn=f(h(1,0)∥a1)"] 
+  a0-->y0
+  a1-->y1
+  ai-->yi
+  an-->yn
+```
