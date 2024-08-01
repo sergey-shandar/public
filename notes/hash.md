@@ -21,6 +21,25 @@ $y_0$ is an initial 256bit of SHA2, For example, for SHA2 it's `0x_6a09e667_bb67
 
 $y_{i+1} = f([y_i, a_i])$
 
+```mermaid
+graph TD;
+  subgraph data
+    a0
+    a1
+    ai[...]
+    an
+  end
+  subgraph hash
+    y1["y_1=f(y0,a0)"]
+    y2["y2=f(y1,a1)"]
+    yi[...]
+    h["h=f(yn,an)"]
+  end
+  a0 --> y1
+  a1 --> y2
+  an --> h
+```
+
 ### Merkle Tree
 
 Convert a bit stream into a list of 256bit values: $a_0, a_1, ..., a_{2^k}$.
