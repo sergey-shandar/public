@@ -32,15 +32,15 @@ block-beta
   space:3
   ai["..."] space yi["..."]
   space:3
-  an        space h["h=f(yn∥an)"]
+  an        space r["r=f(yn∥an)"]
   y0-->y1
   a0-->y1
   y1-->y2
   a1-->y2
   y2-->yi
   ai-->yi
-  yi-->h
-  an-->h
+  yi-->r
+  an-->r
 ```
 
 ### Merkle Tree
@@ -79,7 +79,11 @@ block-beta
   space:5
   y00["y00=f(h20∥a0)"] y01["y01=f(h20∥a1)"]      y02["y02=f(h20∥a2)"] y03["y03=f(h20∥a3)"]      y04["y04=f(h10∥a4)"]
   space:5
-  space                y10["y10=f(h30∥y00∥y01)"] space                y11["y11=f(h30∥y02∥y03)"] y12["y12=y04"]             
+  space                y10["y10=f(h30∥y00∥y01)"] space                y11["y11=f(h30∥y02∥y03)"] space
+  space:5
+  space                space                     space                y20["y20=f(h30∥y10∥y11)"] space
+  space:5
+  space                space                     space                space                     r["r=f(h31∥y20∥y04)"]        
   a0-->y00
   a1-->y01
   a2-->y02
@@ -89,5 +93,8 @@ block-beta
   y01-->y10
   y02-->y11
   y03-->y11
-  y04-->y12
+  y10-->y20
+  y11-->y20
+  y20-->r
+  y04-->r
 ```
