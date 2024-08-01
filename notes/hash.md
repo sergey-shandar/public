@@ -35,7 +35,17 @@ The last value $a_m$ should contain `data`, then `10...` bits.
 - $r$ is either `0` (not a root), or `1` (a root).
 
 Nodes:
-- $y_{1,i}=f([h(s, k = 1), a_{2i}, a_{2i+1}])$, where $s$ depends on a length of data $1..512$ in the sequence $a_{2i}, a_{2i+1}$.
-- $y_{j,i}=f([h(3, k = j), y_{j-1,2i}, y_{j-1,2i+1}])$
+
+$$y_{1,i} = \begin{cases}
+  h(0, k = j) \text{ if } s = 0,\\
+  f([h(s, k = 1), a_{2i}, a_{2i+1}]) \text{ otherwise}.
+\end{cases}$$
+
+where $s$ is on a length of data $1..512$ in the sequence $a_{2i}, a_{2i+1}$.
+
+$$y_{j,i} = \begin{cases}
+  h(0, k = j) \text{ if } y_{j-1,2i} = y_{j-1,2i+1} = h(0, 0),\\
+  f([h(3, k = j), y_{j-1,2i}, y_{j-1,2i+1}]) \text{ otherwise}.
+\end{cases}$$
 
 Note, if $y_{j-1,2i}$ and $y_{j-1,2i+1}$ are both zero-bit headers, then $y_{j,i}$ is also a zero-bit header.
