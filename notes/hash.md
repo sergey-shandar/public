@@ -25,12 +25,15 @@ $y_{i+1} = f([y_i, a_i])$
 
 Convert a bit stream into a list of 256bit values: $a_0, a_1, ..., a_{2^k}$.
 
-The last value $a_m$ should contain `data`, then `0...` bits. 
+The last value $a_m$ should contain `data`, then `10...` bits.
 - $a_i$ where $i &lt; m$ contains only data,
 - $a_i$ where $i>m$ contains zeros.
 
-$h(s) = f([x_0, s])$, where $x_0$ is an initial value. 
-
+8 initial headers: $h(s, r) = f([x_0, s, r])$, where 
+- $x_0$ is an initial value;
+- $s$ is either `0` (0 bits), `1` (0..511 bits), `2` (512 bits), or `3` (merge);
+- $r$ is either `0` (not a root), or `1` (a root).
+  
 $y_{1,i}=f([h(s), a_{2i}, a_{2i+1}])$, where $s$ is a length of data $0..512$ in the sequence $a_{2i}, a_{2i+1}$.
 
 $y_{j,i}=f([h(513), y_{j-1,2i}, y_{j-1,2i+1}])$
