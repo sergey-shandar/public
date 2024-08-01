@@ -29,13 +29,11 @@ The last value $a_m$ should contain `data`, then `10...` bits.
 - $a_i$ where $i &lt; m$ contains only data,
 - $a_i$ where $i>m$ contains zeros.
 
-6 initial headers: $h(s, r) = f([x_0, s, r])$, where 
+8 initial headers: $h(s, r) = f([x_0, s, r])$, where 
 - $x_0$ is an initial value;
-- $s$ is either `0` (0..511 bits), `1` (512 bits), or `2` (merge);
+- $s$ is either `0`, `1` (1..511 bits), `2` (512 bits), or `3` (merge);
 - $r$ is either `0` (not a root), or `1` (a root).
-  
-$y_{1,i}=f([h(s), a_{2i}, a_{2i+1}])$, where $s$ is a length of data $0..512$ in the sequence $a_{2i}, a_{2i+1}$.
 
-$y_{j,i}=f([h(513), y_{j-1,2i}, y_{j-1,2i+1}])$
-
-$y_{k,0}=f([h(514), y_{k-1,0}, y_{k-1,1}])$
+Nodes:
+- $y_{1,i}=f([h(s, k = 1), a_{2i}, a_{2i+1}])$, where $s$ depends on a length of data $1..512$ in the sequence $a_{2i}, a_{2i+1}$.
+- $y_{j,i}=f([h(3, k = j), y_{j-1,2i}, y_{j-1,2i+1}])$
