@@ -74,13 +74,15 @@ Note, if $y_{j-1,2i}$ and $y_{j-1,2i+1}$ are both zero-bit headers, then $y_{j,i
 
 ```mermaid
 block-beta
-  columns 3
-  a0        space y00["y0=f(h(2,0)∥a0)"] 
-  a1        space y01["y1=f(h(2,0)∥a1)"]   
-  ai["..."] space y0i["..."]
-  an        space y0n["y0n=f(h(1,0)∥a1)"] 
+  columns 5
+  a0        space y00["y00=f(h(2,0)∥a0)"] space:2
+  a1        space y01["y01=f(h(2,0)∥a1)"] space   y10["y10=f(h(3,0)∥y00∥y01"]  
+  ai["..."] space y0i["..."]              space:2
+  an        space y0n["y0n=f(h(1,0)∥a1)"] space:2
   a0-->y00
   a1-->y01
   ai-->y0i
   an-->y0n
+  y00-->y10
+  y01-->y10
 ```
