@@ -25,7 +25,7 @@ $y_{i+1} = f([y_i, a_i])$
 
 Convert a bit stream into a list of 256bit values: $a_0, a_1, ..., a_{2^k}$.
 
-The last value $a_m$ should contain `data`, then `10...` bits.
+The last data value $a_m$ should contain `data`, then `10...` bits.
 - $a_i$ where $i &lt; m$ contains only data,
 - $a_i$ where $i>m$ contains zeros.
 
