@@ -37,7 +37,7 @@ The last value $a_m$ should contain `data`, then `10...` bits.
 Nodes:
 
 $$y_{1,i} = \begin{cases}
-  h(0, k = j) \text{ if } s = 0,\\
+  h(0, k = 1) \text{ if } s = 0,\\
   f([h(s, k = 1), a_{2i}, a_{2i+1}]) \text{ otherwise}.
 \end{cases}$$
 
