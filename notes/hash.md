@@ -79,7 +79,7 @@ block-beta
   space:5
   y00["y00=f(h20∥a0)"] y01["y01=f(h20∥a1)"]      y02["y02=f(h20∥a2)"] y03["y03=f(h20∥a3)"]      y04["y04=f(h10∥a4)"]
   space:5
-  space                y10["y10=f(h30∥y00∥y01)"] space                y11["y11=f(h30∥y02∥y03)"] y12["y12=f(h30∥y04∥h00)"]             
+  space                y10["y10=f(h30∥y00∥y01)"] space                y11["y11=f(h30∥y02∥y03)"] y12["y12=y04"]             
   a0-->y00
   a1-->y01
   a2-->y02
