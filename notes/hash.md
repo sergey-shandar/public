@@ -26,13 +26,13 @@ block-beta
   columns 3
   space     space y0
   space:3
-  a0        space y1["y1=f(y0,a0)"]
+  a0        space y1["y1=f(y0∥a0)"]
   space:3
-  a1        space y2["y2=f(y1,a1)"]
+  a1        space y2["y2=f(y1∥a1)"]
   space:3
   ai["..."] space yi["..."]
   space:3
-  an        space h["h=f(yn,an)"]
+  an        space h["h=f(yn∥an)"]
   y0-->y1
   a0-->y1
   y1-->y2
