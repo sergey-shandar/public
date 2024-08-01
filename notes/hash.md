@@ -30,7 +30,7 @@ graph TD;
     an
   end
   subgraph hash
-    y1["y_1=f(y0,a0)"]
+    y1["y1=f(y0,a0)"]
     y2["y2=f(y1,a1)"]
     yi[...]
     h["h=f(yn,an)"]
