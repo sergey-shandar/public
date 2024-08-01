@@ -31,7 +31,7 @@ The last value $a_m$ should contain `data`, then `10...` bits.
 
 8 initial headers: $h(s, r) = f([x_0, s, r])$, where 
 - $x_0$ is an initial value;
-- $s$ is either `0`, `1` (1..511 bits), `2` (512 bits), or `3` (merge);
+- $s$ is either `0` (zero bits), `1` (1..511 bits), `2` (512 bits), or `3` (merge);
 - $r$ is either `0` (not a root), or `1` (a root).
 
 Nodes:
