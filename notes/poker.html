@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<style>
+    * {
+        text-align: center;
+        font-family: monospace;
+        font-size: 200%;
+    }
+</style>
+
+<body>
+    <p id="header"></p>
+    <p id="time"></p>
+    <button id="button"></button>
+    <script>
+        const periodList = [
+            // 1 h
+            ['1/2', 15],
+            ['2/4', 15],
+            ['3/6', 15],
+            ['4/8', 15],
+            //
+            ['break', 15],
+            // 2 h
+            ['5/10', 15],
+            ['7/14', 15],
+            ['10/20', 15],
+            ['15/30', 15],
+            //
+            ['break, color-up 1, add-on 1000 x4', 15],
+            // 3 h
+            ['20/40', 15],
+            ['30/60', 15],
+            ['50/100', 15],
+            ['75/150', 15],
+            //
+            ['break, color-up 5'],
+            // 4 h
+            ['100/200', 15],
+            ['150/300', 15],
+            ['200/400', 15],
+            ['300/600', 15],
+            //
+            ['break, color-up 25'],
+            // 5 h
+            ['500/1000', 15],
+            ['700/1400', 15],
+            ['1000/2000', 15],
+            ['1500/3000', 15],
+            //
+            ['break, color-up 100'],
+            // 6 h
+            ['2000/4000', 15],
+            ['3000/6000', 15],
+            ['5000/10000', 15],
+            ['7500/15000', 15],
+        ]
+        //
+        const headerElement = document.getElementById('header')
+        const timeElement = document.getElementById('time')
+        const buttonElement = document.getElementById('button')
+        let timer
+        let i = 0
+        let time
+        const dr = a => b => [(a / b) | 0, a % b]
+        const showTime = () => {
+            const [m, s] = dr(time)(60)
+            const [s1, s0] = dr(s)(10)
+            timeElement.innerText = `${m}:${s1}${s0}`
+        }
+        const initHeader = () => {
+            const [header, totalTime] = periodList[i]
+            headerElement.innerText = header
+            time = totalTime * 60
+        }
+        const initButton = ({ text, onclick }) => {
+            buttonElement.innerText = text
+            buttonElement.onclick = onclick
+            showTime()
+        }
+        const stopInit = () => initButton({ text: 'Start', onclick: start })
+        const stop = () => {
+            stopInit()
+            clearInterval(timer)
+        }
+        const start = () => {
+            initButton({ text: 'Stop', onclick: stop })
+            timer = setInterval(() => {
+                --time
+                if (time === 0) {
+                    ++i
+                    initHeader()
+                }
+                showTime()
+            }, 1000)
+        }
+        //
+        initHeader()
+        stopInit()
+    </script>
+</body>
+
+</html>
