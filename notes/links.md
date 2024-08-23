@@ -4,6 +4,7 @@
   - visualizator https://dag.ipfs.tech/ 
 - Search engine https://kagi.com/
 - Standard curve database https://neuromancer.sk/std/search/
+- https://fhe.org/
 
 ## Poblishers
 
