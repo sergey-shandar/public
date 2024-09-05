@@ -32,4 +32,23 @@ To minimize the amount of traffic, we can use cryptographic hashes of the data b
 
 ## Step 2. Use a cryptographic hash function for the list of hashes
 
-Before sending a complete list, Alice and Bob can send each other hashes of their lists. If the hashes are the same, we don't need to synchronize the sets. **Note:** To ensure that we have the same hashes for the same sets, the lists of hashes have to be sorted.
+Before sending a complete list, Alice and Bob can send each other hashes of their lists. We don't need to synchronize the sets if the hashes are the same. **Note:** To ensure that we have identical hashes for the same sets, the lists of hashes must be sorted.
+
+## Step 3. Use a tree of hashes
+
+Tree structure for a list of hashes.
+
+### Example
+
+```
+22 38 41 56 63 6d 7d 7f 8f 9a 9b a8 ba c6 d0 da
+```
+
+```
+|0                      |8
+|0    |4                |8             |C
+|22|38|4    |6          |8       |A    |C
+      |41|56|6    |7    |8 |9    |A |B |C |D
+            |60|68|7D|7F|  |9A|9B|        |D0|D8
+```
+
