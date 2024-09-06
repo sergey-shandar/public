@@ -5,10 +5,10 @@ Imagine we have two sets of data blocks on two different computers connected thr
 ```mermaid
 graph LR
   subgraph APC[Alice's PC]
-    A
+    A((A))
   end
   subgraph BPC[Bob's PC]
-   B
+   B((B))
   end
   APC<-->BPC
 ```
@@ -18,10 +18,10 @@ Synchronize means that both computers have all data blocks from both original se
 ```mermaid
 graph LR
   subgraph APC[Alice's PC]
-    A[A∪B]
+    A((A∪B))
   end
   subgraph BPC[Bob's PC]
-   B[A∪B]
+   B((A∪B))
   end
   APC<-->BPC
 ```
