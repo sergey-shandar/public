@@ -38,6 +38,8 @@ Before sending a complete list, Alice and Bob can send each other hashes of thei
 
 If these two sets differ by only one item, we still need to send a complete list of hashes $O(n)$. However, we can divide a sorted list of hashes into two sublists. How we split the sorted lists should guarantee that if two lists differ by only one item, they should have one common sublist. To satisfy this condition, our split function should not depend on items already in the sublist but rather rely only on an item. $f(x)$ returns a sublist number, either $0$ or $1$; $x$ is an item hash. The simplest function is to take the highest bit of the hash.
 
+By removing the highest bit from the hash, we can recursively apply the same split function to resulted sublists.
+
 Tree structure for a sorted list of hashes.
 
 ### Example
