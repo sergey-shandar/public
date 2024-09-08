@@ -60,6 +60,10 @@ Tree structure for a sorted list of hashes.
 ### The worst case
 
 ```
+00 80 C0 E0 F0 F8 FC FE FF
+```
+
+```
 |0 
 |00|8
    |80|C
