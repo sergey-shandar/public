@@ -1,6 +1,6 @@
 # How to calculate a set difference?
 
-Imagine we have two sets of data blocks on two different computers connected through the Internet. How can we synchronize these two sets using as little traffic as possible? 
+Imagine we have two sets of data blocks on two computers connected through the Internet. How can we synchronize these two sets using as little traffic as possible? 
 
 ```mermaid
 graph LR
@@ -26,17 +26,19 @@ graph LR
   APC<-->BPC
 ```
 
-## Step 1. Use a cryptographic hash function to identify a block 
+## Step 1. A cryptographic hash function to identify blocks 
 
 To minimize the amount of traffic, we can use cryptographic hashes of the data blocks instead of the data blocks themselves. That's about 256 bits (32 bytes) per data block. Alice and Bob can send each other a list of their hashes and then request missing data blocks.
 
-## Step 2. Use a cryptographic hash function for the list of hashes
+## Step 2. A cryptographic hash function for the list of hashes
 
-Before sending a complete list, Alice and Bob can send each other hashes of their lists. We don't need to synchronize the sets if the hashes are the same. **Note:** To ensure that we have identical hashes for the same sets, the lists of hashes must be sorted.
+Before sending a complete list, Alice and Bob can send each other hashes of their lists. We don't need to synchronize the sets if the hashes are identical. **Note:** To ensure that we have identical hashes for the same sets, the lists of hashes must be sorted.
 
-## Step 3. Use a tree of hashes
+## Step 3. A tree of hashes
 
-Tree structure for a list of hashes.
+If these two sets differ by only one item, we still need to send a complete list of hashes $O(n)$. However, we can divide a sorted list of hashes into two sublists. How we split the sorted lists should guarantee that if two lists differ by only one item, they should have one common sublist. To satisfy this condition, our split function should not depend on items already in the sublist but rather rely only on an item. $f(x)$ returns a sublist number, either $0$ or $1$; $x$ is an item hash. The simplest function is to take the highest bit of the hash.
+
+Tree structure for a sorted list of hashes.
 
 ### Example
 
@@ -45,6 +47,7 @@ Tree structure for a list of hashes.
 ```
 
 ```
+|0
 |0                      |8
 |0    |4                |8             |C 
 |22|38|4    |6          |8       |A    |c6|D
@@ -52,3 +55,16 @@ Tree structure for a list of hashes.
             |63|6d|7d|7f   |9a|9b 
 ```
 
+### The worst case
+
+```
+|0 
+|00|8
+   |80|C
+      |C0|E
+         |E0|F0
+            |F0|F8
+               |F8|FC
+                  |FC|FE
+                     |FE|FF
+```
