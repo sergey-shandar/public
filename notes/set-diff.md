@@ -47,7 +47,7 @@ By removing the highest bit from the hash, we can recursively apply the same spl
 ### Example
 
 ```
-22 38 41 56 63 6d 7d 7f 8f 9a 9b a8 ba c6 d0 da
+22 38 41 56 63 6D 7D 7F 8F 9A 9B A8 BA C6 D0 DA
 ```
 
 ```mermaid
@@ -58,8 +58,9 @@ flowchart TD
   00 --> 38((38))
   01 --> 011["011[60..7F]"] --> 0110["0110[60..6F]"] --> 63((63))
   010 --> 56((56))
-  011 --> 0111["0111[70..7f]"]
-  0110 --> 6d((6d))
+  011 --> 0111["0111[70..7F]"] --> 7D((7D))
+  0110 --> 6D((6D))
+  0111 --> 7F((7F))
 ```
 
 ```
