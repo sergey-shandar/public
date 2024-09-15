@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
 <style>
+    span,
+    button {
+        font-size: 1000%
+    }
+
     * {
         text-align: center;
         font-family: monospace;
-        font-size: 200%;
     }
 </style>
-
 <body>
-    <p id="header"></p>
-    <p id="time"></p>
+    <p>
+        <button id="prev">&lt;</button>
+        <span id="header"></span>
+        <button id="next">&gt;</button>
+    </p>
+    <p>
+        <span id="time"></span>
+    </p>
     <button id="button"></button>
     <script>
         const periodList = [
@@ -62,6 +71,15 @@
         let timer
         let i = 0
         let time
+        document.getElementById('prev').onclick = () => {
+            --i
+            if (i < 0) { i = 0 }
+            initHeader()
+        }
+        document.getElementById('next').onclick = () => {
+            ++i
+            initHeader()
+        }
         const dr = a => b => [(a / b) | 0, a % b]
         const showTime = () => {
             const [m, s] = dr(time)(60)
