@@ -44,6 +44,8 @@ If these two sets differ by only one item, we still need to send a complete list
 
 By removing the highest bit from the hash, we can recursively apply the same split function to resulted sublists.
 
+The tree's structure is similar to a prefix tree, also known as [Trie](https://en.wikipedia.org/wiki/Trie).
+
 ### Example
 
 ```
@@ -96,3 +98,5 @@ flowchart LR
                   |FC|FE
                      |FE|FF
 ```
+
+Blockset uses this algorithm to create subtrees for ordered sequences in the CDT0 hash function.
