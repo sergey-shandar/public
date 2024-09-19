@@ -51,8 +51,8 @@ By removing the highest bit from the hash, we can recursively apply the same spl
 ```
 
 ```mermaid
-flowchart TD
-  root --> 0["0[00..7F]"] --> 001["001[20..3F]"] --> 22((22))
+flowchart LR
+  root["[00..FF]"] --> 0["0[00..7F]"] --> 001["001[20..3F]"] --> 22((22))
   root --> 1["1[80..FF]"] --> 10["10[80..BF]"] --> 100["100[80..9F]"] --> 8F((8F))
   0 --> 01["01[40..7F]"] --> 010["010[40..5F]"] --> 41((41))
   001 --> 38((38))
