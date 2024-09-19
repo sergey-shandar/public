@@ -38,13 +38,13 @@ Before sending a complete list, Alice and Bob can send each other hashes of thei
 
 ### A node
 
-If these two sets differ by only one item, we still need to send a complete list of hashes $O(n)$. However, we can divide a sorted list of hashes into two sublists. How we split the sorted lists should guarantee that if two lists differ by only one item, they should have one common sublist. To satisfy this condition, our split function should not depend on items already in the sublist but rather rely only on an item. $f(x)$ returns a sublist number, either $0$ or $1$; $x$ is an item hash. The simplest function is to take the highest bit of the hash.
+If these two sets differ by only one item, in our previous implementation, we still need to send a complete list of hashes $O(n)$. However, if we divide a sorted list of hashes into two sublists, we can only send half of the list. How we split the sorted lists should guarantee that if two lists differ by only one item, they should have one common sublist. To satisfy this condition, our split function should not depend on items already in the sublist but rather rely only on an item. $f(x)$ returns a sublist number, either $0$ or $1$; $x$ is an item hash. The simplest function is to take the highest bit of the hash.
 
 ### Recursion
 
 By removing the highest bit from the hash, we can recursively apply the same split function to resulted sublists.
 
-The tree's structure is similar to a prefix tree, also known as [Trie](https://en.wikipedia.org/wiki/Trie).
+The tree's structure is similar to a prefix tree, also known as [Trie](https://en.wikipedia.org/wiki/Trie), but it skips nodes with empty subnodes.
 
 ### Example
 
@@ -70,15 +70,6 @@ flowchart LR
   101 --> BA((BA))
   110 --> 1101["1101[D0..DF]"] --> D0((D0))
   1101 --> DA((DA))
-```
-
-```
-|0
-|0                      |8
-|0    |4                |8             |C 
-|22|38|4    |6          |8       |A    |c6|D
-      |41|56|6    |7    |8f|9    |a8|ba|  |d0|da
-            |63|6d|7d|7f   |9a|9b 
 ```
 
 ### The worst case
