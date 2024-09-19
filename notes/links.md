@@ -5,6 +5,7 @@
 - Search engine https://kagi.com/
 - Standard curve database https://neuromancer.sk/std/search/
 - https://fhe.org/
+- [UnisonLang](https://www.unison-lang.org/unison-forall-2024/)
 
 ## Poblishers
 
