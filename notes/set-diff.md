@@ -48,6 +48,8 @@ The tree's structure is similar to a prefix tree, also known as [Trie](https://e
 
 ### Example
 
+In this example, our hash function is only 8 bits.
+
 ```
 22 38 41 56 63 6D 7D 7F 8F 9A 9B A8 BA C6 D0 DA
 ```
