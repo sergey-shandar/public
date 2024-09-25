@@ -4,7 +4,7 @@
   - visualizator https://dag.ipfs.tech/ 
 - Search engine https://kagi.com/
 - Standard curve database https://neuromancer.sk/std/search/
-- https://fhe.org/
+- Fully Homomorphic Encryption (FHE): https://fhe.org/
 - [UnisonLang](https://www.unison-lang.org/unison-forall-2024/)
 
 ## Poblishers
