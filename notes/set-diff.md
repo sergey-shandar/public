@@ -92,12 +92,10 @@ flowchart LR
                      |FE|FF
 ```
 
-Blockset uses this algorithm to create subtrees for ordered sequences in the CDT0 hash function.
-
 ## Traffic
 
 Multiple nodes can be kept and sent together. For example, a server may respond with multiple levels or combine answers to multiple requests. The binary nature of the tree allows the grouping of nodes using different rules on demand.
 
 ## Summary
 
-If your set is ordered by different rules, you may consider to use [Merkle Search Tree](https://inria.hal.science/hal-02303490/document).
+Blockset uses this algorithm to create subtrees for ordered sequences in the CDT0 hash function. If your set is ordered by different rules, you may consider using [Merkle Search Tree](https://inria.hal.science/hal-02303490/document).
