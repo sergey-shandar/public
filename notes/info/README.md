@@ -28,4 +28,6 @@ Normal distribution on a plane. Form a circle?
 
 ## 137 Infinite Sequence
 
+CDT.
+
 Using the algorithm, we can build an infinite bit sequence that contains all possible finite bit sequences.
