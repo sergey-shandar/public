@@ -6,6 +6,9 @@
 - Standard curve database https://neuromancer.sk/std/search/
 - Fully Homomorphic Encryption (FHE): https://fhe.org/
 - [UnisonLang](https://www.unison-lang.org/unison-forall-2024/)
+- https://johnpconley.com/wp-content/uploads/2021/01/stellar-consensus-protocol.pdf
+- https://www.cursor.com/
+
 
 ## Poblishers
 
