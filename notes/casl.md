@@ -2,7 +2,7 @@
 
 Content-addressable System Language. 
 
-The programming language is content addressable for module and type system only, run-time is not content-addressable. For example, two types withe the same content are the same types.
+The programming language is content-addressable for modules, types, functions, and other immutable data known at compile-time; run-time is not content-addressable. For example, two types with the same content are the same types.
 
 ## Whish List
 
