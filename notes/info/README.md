@@ -25,3 +25,7 @@ To build a Universe with randomness, we can either build a pseudo-random functio
 We can use it to generate a normal distribution. However, it is not efficient because many paths lead to the same outcome.
 
 Normal distribution on a plane. Form a circle?
+
+## 137 Infinite Sequence
+
+Using the algorithm, we can build an infinite bit sequence that contains all possible finite bit sequences.
