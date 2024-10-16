@@ -10,6 +10,24 @@
  
 Note: Relations between systems can define a lot of information
 
+Product Of Types and Sum Of Types.
+
+### Arithmetic encoding:
+
+Multiplication. 3 systems by 3 state gives 27 states.
+
+### Probability encoding:
+
+3 states into 1 or 2 bits:
+
+state|encoding
+-----|--------
+0    | 0      
+1    | 10
+2    | 11
+
+`(1 + 4)/3 = 5/3 = 1 + 2/3` bits
+
 ## Probability
 
 It's a measure of our ignorance (0% and 100% - absolute knowledge, 50% - absolute ignorance), so it's subjective, not objective. For example, poker.
