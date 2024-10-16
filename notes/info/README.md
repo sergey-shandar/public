@@ -14,7 +14,7 @@ Product Of Types and Sum Of Types.
 
 ### Arithmetic encoding:
 
-Multiplication. 3 systems by 3 state gives 27 states.
+Multiplication. 3 systems with 3 states give 27 states. They can fit into 5 bits.
 
 ### Probability encoding:
 
