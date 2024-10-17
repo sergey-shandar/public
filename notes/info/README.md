@@ -44,6 +44,22 @@ We can use it to generate a normal distribution. However, it is not efficient be
 
 Normal distribution on a plane. Form a circle?
 
+## Finite Bit Sequences
+
+A set of all finite bit sequences is mapped to a set of natural numbers.
+
+Mapping: add `1` and then an infinite sequence of `0`s. Then calculate a number by `sequence.map((i, v) => v << i).sum()`. For example
+
+    |         |bin|hex|    
+----|---------|---|---|
+''  |'10...'  |1  |1  |
+'0' |'010...' |10 |2  |
+'1' |'110...' |11 |3  |
+'00'|'0010...'|100|4  |
+'10'|'1010...'|101|5  |
+'01'|'0110...'|110|6  |
+'11'|'1110...'|111|7  |
+
 ## 137 Infinite Sequence
 
 CDT.
