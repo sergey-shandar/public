@@ -9,3 +9,7 @@ version = "0.1.0"
 [[package]]
 name = "pm"
 version = "0.1.0"
+
+[[package]]
+name = "xor-hash-map"
+version = "0.1.0"
