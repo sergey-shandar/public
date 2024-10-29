@@ -36,13 +36,12 @@ const add = () => {
     const pack = (/** @type {Record} */[hi, lo]) => (hi << bits) | lo
 
     return (/** @type {number} */v) => {
+        const [, h] = unpack(v)
         const create = (/** @type {number} */i) => {
-            a[i] = pack([v, 0])
+            a[i] = pack([v, h])
             ++size
             return false
         }
-        const [, h] = unpack(v)
-        //
         const e = a[h]
         // not occupied.
         if (e === 0) {
@@ -59,20 +58,20 @@ const add = () => {
             while (true) {
                 const [fv, fn] = unpack(a[i])
                 // #i: fv[_, x], fn
-                const ni = i ^ fn
                 // #ni: [_, x], _
-                if (ni === h) {
-                    //    #i : fv[_, x], (ni ^ i)
-                    // #h #ni: ev[_, x], (en ^ h)
+                if (fn === h) {
+                    //    #i : fv[_, x], fn
+                    // #h #fn: ev[_, x], en
+                    //    #en:   [_, x], _
                     //    #n :   [0, 0], 0
-                    a[i] = pack([fv, n ^ i])
-                    a[n] = pack([ev, en === 0 ? 0 : en ^ h ^ n])
+                    a[i] = pack([fv, n])
+                    a[n] = e
                     return create(h)
                     //    #i : fv[_, x], (n ^ i)
                     // #h #ni:  v[_, h], 0
                     //    #n : ev[_, x], (en ^ n)
                 }
-                i = ni
+                i = fn
             }
         }
         // occupied by the same hash (i === h)
@@ -83,12 +82,12 @@ const add = () => {
                 return true
             }
             // no transition to the next item
-            if (en === 0) {
+            if (en === h) {
                 const n = findEmpty(h)
-                a[i] = pack([ev, i ^ n])
+                a[i] = pack([ev, n])
                 return create(n)
             }
-            i ^= en;
+            i = en;
             [ev, en] = unpack(a[i])
         }
     }
@@ -116,7 +115,7 @@ const print = () => {
     }
 }
 
-init(5)
+init(4)
 
 const a_add = add()
 
