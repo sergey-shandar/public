@@ -1,5 +1,7 @@
 /** @typedef {readonly[number, number]} Record */
 
+/** @typedef {readonly[number, number, number]} Record3 */
+
 /** @type {number[]} */
 let a = [0]
 let size = 0
@@ -24,109 +26,201 @@ const findEmpty = (/** @type {number} */i) => {
     }
 }
 
-const add = () => {
+const object = () => {
+    const b = bits
     const mask = (1 << bits) - 1
 
-    const unpack = (/** @type {number} */x) => [x >> bits, x & mask]
-    const unpack3 = (/** @type {number} */vhn) => {
-        const [vh, n] = unpack(vhn)
-        const [v, h] = unpack(vh)
-        return [v, h, n]
+    /** @type {(x: number) => Record} */
+    const unpack = x => [x >> b, x & mask]
+    const pack = (/** @type {Record} */[hi, lo]) => (hi << b) | lo
+    /** @type {(x: number) => Record3} */
+    const unpack3 = x => {
+        const [v, n] = unpack(x)
+        return [v, v & mask, n]
     }
-    const pack = (/** @type {Record} */[hi, lo]) => (hi << bits) | lo
 
-    return (/** @type {number} */v) => {
-        const [, h] = unpack(v)
-        const create = (/** @type {number} */i) => {
-            a[i] = pack([v, h])
-            ++size
-            return false
-        }
-        const e = a[h]
-        // not occupied.
-        if (e === 0) {
-            return create(h)
-        }
-        let [ev, en] = unpack(e)
-        let [, i] = unpack(ev)
-        // occupied by different hash
-        if (i !== h) {
-            // x = i
-            // #h: ev[_, x], en
-            const n = findEmpty(i)
-            // #n: 0, 0, 0
-            while (true) {
-                const [fv, fn] = unpack(a[i])
-                // #i: fv[_, x], fn
-                // #ni: [_, x], _
-                if (fn === h) {
-                    //    #i : fv[_, x], fn
-                    // #h #fn: ev[_, x], en
-                    //    #en:   [_, x], _
-                    //    #n :   [0, 0], 0
-                    a[i] = pack([fv, n])
-                    a[n] = e
-                    return create(h)
-                    //    #i : fv[_, x], (n ^ i)
-                    // #h #ni:  v[_, h], 0
-                    //    #n : ev[_, x], (en ^ n)
+    return {
+        mask,
+        unpack,
+        unpack3,
+        pack,
+        add: (/** @type {number} */v) => {
+            const [, h] = unpack(v)
+            const create = (/** @type {number} */i) => {
+                a[i] = pack([v, h])
+                ++size
+                return false
+            }
+            const e = a[h]
+            // not occupied.
+            if (e === 0) {
+                return create(h)
+            }
+            let [ev, i, en] = unpack3(e)
+            // occupied by different hash
+            if (i !== h) {
+                // x = i
+                // #h: ev[_, x], en
+                const n = findEmpty(i)
+                // #n: 0, 0, 0
+                while (true) {
+                    const [fv, fn] = unpack(a[i])
+                    // #i: fv[_, x], fn
+                    // #ni: [_, x], _
+                    if (fn === h) {
+                        //    #i : fv[_, x], fn
+                        // #h #fn: ev[_, x], en
+                        //    #en:   [_, x], _
+                        //    #n :   [0, 0], 0
+                        a[i] = pack([fv, n])
+                        a[n] = e
+                        return create(h)
+                        //    #i : fv[_, x], n
+                        // #h #fn:  v[_, h], 0
+                        //    #en:   [_, x], _
+                        //    #n : ev[_, x], en
+                    }
+                    i = fn
                 }
-                i = fn
             }
-        }
-        // occupied by the same hash (i === h)
-        // iterate through the list of the hashes
-        while (true) {
-            // found
-            if (ev === v) {
-                return true
+            // occupied by the same hash (i === h)
+            // iterate through the list of the hashes
+            while (true) {
+                // found
+                if (ev === v) {
+                    return true
+                }
+                // no transition to the next item
+                if (en === h) {
+                    const n = findEmpty(h)
+                    a[i] = pack([ev, n])
+                    return create(n)
+                }
+                i = en;
+                [ev, en] = unpack(a[i])
             }
-            // no transition to the next item
-            if (en === h) {
-                const n = findEmpty(h)
-                a[i] = pack([ev, n])
-                return create(n)
-            }
-            i = en;
-            [ev, en] = unpack(a[i])
         }
     }
 }
 
-const init = (/** @type {number} */b) => {
-    bits = b
-    size = 0
-    let len = 1 << b
-    a = []
-    while (len > 0) {
-        a.push(0)
-        --len
+const extend = () => {
+    const { unpack: oldUnpack, mask: oldMask } = object()
+    // resize
+    const oldLength = a.length
+    {
+        let i = oldLength
+        while (i !== 0) {
+            --i
+            a.push(0)
+        }
+    }
+    const high = 1 << bits
+    bits += 1
+    //
+    const { unpack, pack, unpack3 } = object()
+    // change format
+    {
+        let i = oldLength
+        while (i !== 0) {
+            --i
+            a[i] = pack(oldUnpack(a[i]))
+        }
+    }
+    //
+    {
+        const updateList = (/** @type {number} */h) => {
+            const hh = h | high
+            const addHigh = (/** @type {number} */v) => {
+                const x = a[hh]
+                let i;
+                if (x === 0) {
+                    i = hh
+                } else {
+                    i = findEmpty(hh)
+                    a[i] = x
+                }
+                a[hh] = pack([v, i])
+            }
+
+            let px = a[h]
+
+            if (px === 0) {
+                // an empty cell
+                return
+            }
+
+            let [pv, ph, i] = unpack3(px)
+            if (h !== (ph & oldMask)) {
+                // not a beginning of a list
+                return
+            }
+
+            // a beginning of a list
+
+            // move all high-bit items from #h position
+            if (ph !== h) {
+                do {
+                    addHigh(pv)
+                    if (i === h) {
+                        // no more items in the list `h`
+                        a[h] = 0
+                        return
+                    }
+                    px = a[i]
+                    a[i] = 0;
+                    [pv, ph, i] = unpack3(px)
+                } while (ph !== h)
+                a[h] = px
+            }
+
+            let p = h
+            while (i !== h) {
+                const [iv, ih, n] = unpack3(a[i])
+                if (ih === h) {
+                    p = i
+                    pv = iv
+                } else {
+                    addHigh(iv)
+                    a[p] = pack([pv, n])
+                    a[i] = 0
+                }
+                i = n
+            }
+        }
+
+        let h = oldLength
+        while (h !== 0) {
+            --h
+            updateList(h)
+        }
     }
 }
 
 const print = () => {
-    const mask = (1 << bits) - 1
+    const { unpack } = object()
     for (const e of a) {
-        const n = e & mask
-        const v = e >> bits
-        const h = v & mask
-        const x = v >> bits
-        console.log(x.toString(16), h.toString(16), n.toString(16))
+        const [vh, n] = unpack(e)
+        console.log(vh.toString(16), n.toString(16))
     }
 }
 
-init(4)
+const add = (/** @type {number} */x) => {
+    if (size === a.length) {
+        extend()
+    }
+    return object().add(x)
+}
 
-const a_add = add()
-
+//           x     x     x     x     x     x     x     x     x     x     x     x     x     x     x     x
 const t = [0x86, 0x7b, 0x8a, 0x80, 0xe6, 0xbe, 0x12, 0xb8, 0x82, 0x1e, 0x84, 0x2d, 0x1c, 0xb7, 0x71, 0x70]
 // const t = [0x86, 0xe6, 0xb7]
 // const t = [0x86, 0x7b, 0x8a, 0x80, 0xe6, 0xb6, 0x12, 0xb8, 0x82, 0x1e, 0x84, 0x2d, 0x1c, 0xb7, 0x71, 0x70]
 // const t = [0x86, 0x7b, 0x8a, 0x80, 0xe6, 0xb6, 0x12, 0xb8, 0x12, 0x1e, 0x84, 0x2d, 0x1c, 0xb7, 0x71, 0x71]
 
 for (const e of t) {
-    a_add(e)
-    console.log(e.toString(16))
+    add(e)
+    console.log()
+    console.log(`## ${e.toString(16)}`)
+    console.log()
     print()
 }
-// print()
