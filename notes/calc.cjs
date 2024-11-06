@@ -28,60 +28,65 @@
 /** @type {States} */
 const states = {
     Pennsylvania: {
-        "Philadelphia": {
-            voted: 67.3,
-            D: 406_602,
-            R: 112_018,
+        "Cambria": {
+            voted: 19.9,
+            D: 7_463,
+            R: 7_270,
         },
-        "Delaware": {
-            voted: 68.2,
-            D: 138_564,
-            R: 89_921
-        },
-        "Chester": {
-            voted: 47.5,
-            D: 90_209,
-            R: 59_116
-        },
-        "Montgomery": {
-            voted: 59.4,
-            D: 199_362,
-            R: 105_486,
+        Cameron: {
+            voted: 24.6,
+            R: 495,
+            D: 112
         },
         Bucks: {
-            voted: 63.1,
-            D: 124_094,
-            R: 121_808,
+            voted: 69.0,
+            R: 136_470,
+            D: 132_375,
         },
-        "Lehigh": {
-            voted: 83.5,
-            D: 81_188,
-            R: 73_801,
+        "Philadelphia": {
+            voted: 94.7,
+            D: 521_003,
+            R: 135_230,
         },
         "Dauphin": {
-            voted: 54.7,
-            D: 45_766,
-            R: 36_440,
+            voted: 78.7,
+            D: 64_268,
+            R: 52_353,
+        },
+        "Chester": {
+            voted: 85.3,
+            D: 147_903,
+            R: 120_020
+        },
+        "Montgomery": {
+            voted: 89.2,
+            D: 283_919,
+            R: 183_538,
+        },
+        "Delaware": {
+            voted: 92.6,
+            D: 194_923,
+            R: 121_148
+        },
+        "Lehigh": {
+            voted: 98.0,
+            D: 94_235,
+            R: 89_704,
         },
         Monroe: {
             voted: 98.0,
-            R: 40_654,
-            D: 40_460,
+            R: 42_168,
+            D: 41_258,
         },
         "Lackawanna": {
             voted: 98.0,
             D: 58_956,
             R: 55_744,
         },
-        "Cambria": {
-            voted: 20.3,
-            D: 7_463,
-            R: 7_270,
-        },
         "Allegheny": {
-            voted: 92.4,
-            D: 408_543,
-            R: 275_245,
+            voted: 94.4,
+            D: 419_051,
+            R: 279_292,
         },
         Erie: {
             voted: 98.0,
