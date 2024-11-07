@@ -1,36 +1,18 @@
 ```
-
-81f4.  *2ca3.   2ca3    .   2ca3    .   2ca3    .   2ca3    .   2ca3    .   2ca3        .  *29e7        .  *1e01        .   1e01        .  *0e19        .   0e19        .   0e19        .   0e19        .   0e19            .
-    .   81f4.  *    2cab.       2cab.       2cab.       2cab.       2cab.       2cab    .   2ca3        .       29e7    .       29e7    .   1e01        .   1e01        .   1e01        .   1e01        .   1e01            .
-    .       .   81f4    .   81f4    .   81f4||||.   81f4||||.  *338b||||.   338b    |   .       2cab    .   2ca3||||    .   2ca3    |   .       29e7    .       29e7    .       29e7    .       29e7    .       29e7        .
-    .       .           .  *e10b    .  *    8bea.       8bea.   81f4||||.   81f4    |   .   338b    |   .       2cab    .           2cab.   2ca3    |   .   2ca3    |   .   2ca3    |   .   2ca3    |   .   2ca3    |       .
-    .       .           .           .   e10b    .  *bd4f    .       8bea.           8bea.   81f4    |   .   338b    |   .   338b    ||||.           2cab.           2cab.           2cab.           2cab.           2cab    .
-    .       .           .           .           .   e10b    .   bd4f    .  *9b10    |   .           8bea.   81f4    |   .  *    38de||||.   338b    ||||.   338b    ||||.   338b    ||||.   338b    ||||.   338b    |   |   .
-    .       .           .           .           .           .   e10b    .       bd4f    .   9b10    |   .           8bea.   81f4    ||||.       38de||||.       38de||||.       38de||||.       38de||||.       38de    |   .
-    .       .           .           .           .           .           .   e10b        .       bd4f    .   9b10    |   .           8bea.   81f4    ||||.   81f4    ||||.   81f4    ||||.   81f4    ||||.   81f4        |   .
-    .       .           .           .           .           .           .               .       e10b    .       bd4f    .   9b10    |   .           8bea.           8bea.           8bea.           8bea.               8bea.
-    .       .           .           .           .           .           .               .               .       e10b    .       bd4f    .   9b10    |   .   9b10    |   .   9b10    |   .   9b10    |   .   9b10        |   .
-    .       .           .           .           .           .           .               .               .               .   e10b        .       bd4f    .  *a9b5    |   .   a9b5    |   .  *    a90b    .       a90b    |   .
-    .       .           .           .           .           .           .               .               .               .               .   e10b        .       bd4f    .       bd4f    .   a9b5||||    .   a9b5    |   |   .
-    .       .           .           .           .           .           .               .               .               .               .               .   e10b        .  *d92e        .       bd4f    .           bd4f    .
-    .       .           .           .           .           .           .               .               .               .               .               .               .   e10b        .   d92e        .   d92e    |       .
-    .       .           .           .           .           .           .               .               .               .               .               .               .               .   e10b        .  *    dc15        .
-    .       .           .           .           .           .           .               .               .               .               .               .               .               .               .   e10b            .
-
-
-53aa 23cf 6c5b 67df 2523 41b5 8330 8225 385d 860d d3a3 8b57 7f09 054b 264e 05f7
-d32f 0480 bfd9 a0bf 1102 0a14 cb7c fc48 64ba cbd4 6f0b f251 f9a1 db9b 7842 f3c6
-51d4 21ba e5f5 4eec 7d9b 9dc9 892d af5f 131c ea1f a415 0e84 cdd2 6196 e89d cce8
-9e51 2d7b d8aa cf05 da02 b872 0d21 db70 b7c6 53ca 007b e2a4 8654 fefb c3bc 86af
-46d6 e605 e583 7f93 ba56 4752 7d63 f5a7 c9c3 9932 3053 cc81 e7d9 e710 47bf 1764
-2ee3 0a81 1ee9 4f84 0b88 0a15 2a2f 43ff 4656 644e 0c29 2ddb 1156 ec6f e4b6 d201
-bbb2 9093 6938 4093 56ca 1a33 5b0e 0854 e3ef 3525 d793 8a15 3147 9596 c769 82d1
-8efc 1925 6fa1 30c2 2c92 4c02 952c 33a9 0a90 3d2c 9ea6 ee9d de6a c41d 1700 26e7
-1352 4de2 8822 ea89 d523 5779 7721 fae7 0953 afbf fdc7 d74c 4587 8765 d8c1 9297
-8fd1 6819 4d48 631f ac53 cf74 d28f 1470 6339 eaf7 66bd b3cb c56d 466c b279 7d64
-325b 0c11 6716 c546 88f1 446d e876 e73c 3d14 109f 35cf af51 97ba 1486 04e4 eec9
-c8ba 20d6 d161 f7ed e4ef 9b0e 90b3 88cc aab8 397e 37d9 8ec8 f1bb 312a b6ec 3ef9
-699e 7971 10d4 b117 79b1 f651 678c 40ac b4e5 6158 b84f e61d da34 4622 2040 eec5
-6d94 1093 d463 fe3e 141e 6b1e c5ea ef23 172c f77c 9ed6 5643 2565 8f04 e461 4963
-1d8b 8944 1eed 738e 62eb b299 4bbc 19e0 2325 3023 f50c 5b62 e4e7 b6e4 5014 2f32
+4212 bcc0 9cbe 7079 054c 058d 9626 2cc1 27b0 4b6c 278a 1c25 06c7 c643 af50 9a77
+2fb4 e8cc aeb1 f4f8 4ec9 9073 3e15 55ab 516a c2d5 27dd 0b27 d6df a878 4763 283e
+49c9 ec83 ede2 e9c7 ee4e ab13 71f0 b311 a9e4 ad4f 1769 28a7 a6f9 fb47 0216 c083
+2173 bea8 a374 e1c5 49f9 010b 031e bb58 795d 45ab d285 ab23 39d8 0fe4 e1ae 845f
+7507 25b2 55ca de70 ac21 08ad c500 a3ba ee72 d183 53c2 fa5d 2485 9e1b 9954 df63
+e5a2 2223 2e8c 4709 905d 2220 30f0 615e 2ca3 1f9f 94bd 698a df16 5edd ba0c 4908
+6aa8 fb65 5f8b ec9c 3800 e4cd ae4c 230e 0c74 10c6 dcd3 226f 5c75 35de 7326 3eef
+8ffb 5930 fa98 9fea fa98 5f6a 92d9 7e73 5c17 ca5c 7b8b ab2d ad05 d45a 54cd 5e65
+3bef dafe e725 85a0 a010 950f 5470 59a8 05a0 e673 d223 c789 f304 d5f5 c88c c51a
+8e09 b146 f0b2 edab 4652 a3f5 823f e611 d92c 048d 04be 3159 558b a67d 8af9 38d4
+a16d e564 8e37 5988 dd7f 79f5 90ac 631f 4fde 6774 7bba 237c d3be 0da8 f3fe 3dce
+820a 83c0 fb21 88b4 59a3 63f7 4d7d e6c8 c501 7d0c 68c6 6c07 408a 82d5 63b1 5956
+ecbd 3c26 7d2f 99d4 5f65 9c5c 2579 308c 132d 7435 40ef b7ea 67ba b49c 1ce1 278c
+c4c2 94d9 617b 94a9 cb6e 3aaf fe28 c705 dfc1 793d c083 8fee b54a 199e 1628 aafd
+f4dd 36b0 4d9e c05d 5bfa 3594 5410 fc1d 2d16 626b 1a31 2572 504b bebd 4e8d 9ad8
+d879 659a df14 504d 59aa 486a 8f8f 3ff5 84d9 3b33 b0df d8c9 27b2 291d ed2d 7c1a
 ```
