@@ -18,10 +18,9 @@ See also [Articles](./articles)
 
 ## Contacts
 
-- Nostr: `npub1p6ndu22fnguh9cuvkyd5l37ze0fu8ntav740vnzkuscjm723h2ls5n23gt`.
-  - [sergeyshandar@iris.to](https://iris.to/sergeyshandar),
 - [Medium](https://medium.com/@sergeyshandar),
 - [LinkedIn](https://www.linkedin.com/in/sergeyshandar/),
 - [Mastodon](https://techhub.social/@functionalscript),
 - [DEV Community](https://dev.to/sergeyshandar),
 - [Bluesky](https://bsky.app/profile/sergey-shandar.bsky.social)
+- Nostr: `npub1p6ndu22fnguh9cuvkyd5l37ze0fu8ntav740vnzkuscjm723h2ls5n23gt`.
