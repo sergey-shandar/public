@@ -11,4 +11,4 @@ Consequences:
 
 `Nostr` is better because it uses decentralized identity, but it doesn't have a concept of a content repository, like Git in software development. 
 
-To fix the problems, we are developing CAS (content-addressable storage) for content creators that can be synchronized using any protocol.
+To fix the problems, we are developing CAS (content-addressable storage) for content creators that can be synchronized using any protocol. CAS is a foundation for building such systems as Git. It's much more generic and allows different kinds of blocks and connections.
