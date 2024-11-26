@@ -17,4 +17,5 @@
   - inheritance is treated as an income.
 - Real economic value.
   - What is the total economic impact if two companies innovate and compete in the same industry and one wins?
-  - Imagine we have multiple ways and need to know which is more profitable. Each business takes a different way, and only one of them survives. Is there value in a business that didn't survive? From a social point of view, yes. Because now we know which way is the best. 
+  - Imagine we have multiple ways and need to know which is more profitable. Each business takes a different way, and only one of them survives. Is there value in a business that didn't survive? From a social point of view, yes. Because now we know which way is the best.
+- UBI is one of the simplest solutions that follows the motivation principle. Poor people can't afford good financial advisors, bookkeepers, and accountants to optimize and track their income, so they lose more on average. We need very, very simple rules for the poor and middle class.
