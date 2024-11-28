@@ -28,6 +28,6 @@ The safe subset of the JavaScript doesn't have side-effects and must be validate
 So, if we would like to have good security and still use third-party modules (even through HTTPS), we should do this:
 
 1. content-addressable infrastructure:
-    1. digital signature from multiple authors, CI/CDs, etc,
+    1. digital signature from multiple authors, reviewers, automated build tools, etc.
     2. hash lock and content-proof when deployed.
 2. a safe subset of JavaScript, no side-effects, no direct-access to I/O.
