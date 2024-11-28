@@ -1,5 +1,7 @@
 # Why we must have a safe subset of JavaScript
 
+The short answer: **security**.
+
 With ESM importing using HTTPS should simplify development, so you don't need to care about package managers etc. However, here's a problem.
 Major package managers, such as NPM and JSR, don't support it.
 
