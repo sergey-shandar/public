@@ -14,8 +14,6 @@ Current OSS projects that I'm working on
   - Can be synchronized via simple file copy.
 - [FunctionalScript](https://github.com/functionalscript) is a purely functional subset of JavaScript. One of the goals of the language is to support CAi, similar to how JavaScript supports the current location-based internet.
 
-See also [Articles](./articles)
-
 ## Contacts
 
 - [Medium](https://medium.com/@sergeyshandar),
