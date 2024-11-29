@@ -22,6 +22,15 @@ const mDefault = m.default
 
 Note, you can't import the whole module using `import from` but you can do it using `const m = import('module.mjs)`.
 
+```ts
+import { a } from 'module.mjs' // a = m.a
+```
+
+```ts
+import m from 'module.mjs'
+const { a } = m // a = m.default.a
+```
+
 JSON, CommonJS are using only the `default` property. That's the main reason why `export default` is the first choice for FunctionalScript
 
 ## Types
