@@ -1,4 +1,4 @@
-During conversion from CommonJS to ESM we learn a lot about how import works, especially cross import beetwen CommonJS and ESM. To understand ESM we need to firstly, understand an internal structure of a module. Without this understanding, we made a lot of mistakes. Actuallty it's quite simple:
+During conversion from CommonJS to ESM we learn a lot about how import works, especially cross import beetwen CommonJS and ESM. To understand ESM we need to firstly, understand an internal structure of a module. Without this understanding, we made a lot of mistakes. Actuallty it's quite simple as soon as we understood the mapping:
 
 ```ts
 type Module = {
