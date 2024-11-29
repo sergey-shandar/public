@@ -31,7 +31,8 @@ import m from 'module.mjs'
 const { a } = m // a = m.default.a
 ```
 
-JSON, CommonJS are using only the `default` property. That's the main reason why `export default` is the first choice for FunctionalScript
+JSON, CommonJS are using only the `default` property. That's the main reason why `export default` is the first choice for FunctionalScript.
+Currently, cross-loading is supported by `Bun`, `Node.js 23` and `Deno 2`.
 
 ## Types
 
