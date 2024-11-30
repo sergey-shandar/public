@@ -1,7 +1,7 @@
 During conversion from CommonJS to ESM we learn a lot about how import works, especially cross import beetwen CommonJS and ESM. To understand ESM we need to firstly, understand an internal structure of a module. Without this understanding, we made a lot of mistakes. Actuallty it's quite simple as soon as we understood the mapping:
 
 ```ts
-type Module = {
+type ESModule = {
     // properties in a format `export const x = 5`
     readonly [k in string]: unknown
     // A default property, in a form `export default 'Hello world!`
