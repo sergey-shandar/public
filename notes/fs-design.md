@@ -52,7 +52,7 @@ export default {
 }
 ```
 
-### 1.2. Syntax Sugar
+### 2.1. Syntax Sugar
 
 ```js
 // destruction
