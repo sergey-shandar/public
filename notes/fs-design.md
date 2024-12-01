@@ -35,7 +35,7 @@ export default {
   // strings with `'`
   'b': true,
   // property names
-  c: ["hello", -36.6]
+  c: ["hello", -36.6], // trailing comma
 }
 ```
 
@@ -44,12 +44,26 @@ export default {
 This feature allows to create a graph and deduplicate data. Also it is on of the possible outputs from a VM.
 
 ```js
+const a = ["Hello", 53]
+const b = "ok"
 export default {
-  
+  "a": a,
+  "b": "ok"
 }
 ```
 
-## 2. Import
+### 1.2. Syntax Sugar
+
+```js
+// destruction
+const [a, b] = [["Hello", 53], "ok"]
+export default {
+  a, // short name reference
+  "b": "ok"
+}
+```
+
+## 3. Import
 
 Now, we can add `import`:
 
