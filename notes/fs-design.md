@@ -57,6 +57,9 @@ export default {
 ```js
 // destruction
 const [a, b] = [["Hello", 53], "ok"]
+const { c, d } = { c: 5, d: 5 }
+// merge
+const m = { ...c, x: true }
 export default {
   a, // short name reference
   "b": "ok"
@@ -68,7 +71,7 @@ export default {
 Now, we can add `import`:
 
 ```js
-import x from './x.f.js'
+import x from "./x.f.js"
 export default {
   "a": null,
   "b": true,
