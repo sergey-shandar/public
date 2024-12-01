@@ -1,6 +1,6 @@
 # FS Design, step-by-step
 
-We start with JSON. JSON supports these types: `null`, `bool`, `string`, `number`, `object`, and `array`.
+We start with JSON, which supports the following types: `null`, `bool`, `string`, `number`, `object`, and `array`.
 
 ```json
 {
@@ -9,6 +9,8 @@ We start with JSON. JSON supports these types: `null`, `bool`, `string`, `number
   "c": ["hello", -36.6]
 }
 ```
+
+## 1. JSON as an ES module 
 
 JSON itself is not a valid ES module, so we need to add `export default` prefix:
 
@@ -20,7 +22,36 @@ export default {
 }
 ```
 
-Now, we cad add `import`:
+File extension `.d.mjs`
+
+### Syntax Sugar
+
+```js
+// comments
+export default {
+  /* block comments
+   */
+  "a": null,
+  // strings with `'`
+  'b': true,
+  // property names
+  c: ["hello", -36.6]
+}
+```
+
+## 2 Constants
+
+This feature allows to create a graph and deduplicate data. Also it is on of the possible outputs from a VM.
+
+```js
+export default {
+  
+}
+```
+
+## 2. Import
+
+Now, we can add `import`:
 
 ```js
 import x from './x.f.js'
