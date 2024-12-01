@@ -24,7 +24,7 @@ export default {
 
 File extension `.d.mjs`
 
-### Syntax Sugar
+### 1.1. Syntax Sugar
 
 ```js
 // comments
