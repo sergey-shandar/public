@@ -19,7 +19,12 @@ And if their products are better, I have found a solution for my personal proble
 - Social Networks:
   - [Nostr](https://nostr.com/) is very close, and we may use some of their formats, so our products will be able to post and get data from Nostr into CAS.
   - [BlueSky](https://bsky.social/), as far as I understood, their protocol works on content-addressable data and IPFS. I'm not sure if they support properly decentralized identities and public-private keys.
-  - [Matrix](https://matrix.org/), it looks like a Discord alternative rather than a public space. 
 - Decentralized Source Control Systems such as [Git], [Mercurial] are very cool. However, they have two major problems:
   1. They are not generic CAS systems, so we still rely on such centralized services as GitHub, GitLab, and BitBucket for tracking issues, PRs, project management, etc.
-  2. Digital identities are not the main features, and commit, and branches can be without digital signatures.
+  2. Digital identities are not the main feature; commits and branches can live without digital signatures. That is one of the leading causes of failures during synchronization. If all data were digitally signed (including branches), no name and synchronization conflicts would exist.
+- Decentralized Secure Communication/Messengers:
+  - [Matrix](https://matrix.org/),
+  - [Signal](https://signal.org/).
+- Blockchain. I will not 
+ 
+In general, all of these products follow some principles of CAI, but if they follow all, then they can be easily synchronized with each other using multiple transport layers.
