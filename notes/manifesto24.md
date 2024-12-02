@@ -25,6 +25,6 @@ And if their products are better, I have found a solution for my personal proble
 - Decentralized Secure Communication/Messengers:
   - [Matrix](https://matrix.org/),
   - [Signal](https://signal.org/).
-Blockchain. I will not analyze all of them because the biggest flow to using blockchain as a content-addressable space is consensus. It may sound controversial, but I don't need or care about consensus and anonymous signatures on my digital content. There are applications for blockchain, such as decentralized trusted time stamps, some DeFi. But, in general, please, don't build social networks on the blockchain; don't! Any blockchain satisfies CAI requirements, but blockchain is not foundation of CAI.
+- Blockchain. I will not analyze all of them because the biggest flow to using blockchain as a content-addressable space is consensus. It may sound controversial, but I don't need or care about consensus and anonymous signatures on my digital content. There are applications for blockchain, such as decentralized trusted time stamps, some DeFi. But, in general, please, don't build social networks on the blockchain; don't! Any blockchain satisfies CAI requirements, but blockchain is not foundation of CAI.
  
 In general, all of these products follow some principles of CAI, but if they follow all, then they can be easily synchronized with each other using multiple transport layers.
