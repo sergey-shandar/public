@@ -8,6 +8,10 @@ So, what are the problems with the digital space? For me, the most significant p
 
 ## Steps towards CAI
 
+## Risk for users
+
+What if we abandon the project, will you lose all your data, posts, connections? As soon as you keep it in one or more storages, your data can be accessed and reused with any other product or service. This is the main reason why we keep user's data on user's storages.
+
 ## Competitors
 
 Any real competitor is building products according to the CAI principles or better. This means people can use it with existing CAI products on the same data without risking losing everything. I would be glad to have more people working in this area and would love to use their products and services. Even better, I would be happy to help them. For me, they are not competitors; they are partners.
