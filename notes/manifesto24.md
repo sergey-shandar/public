@@ -10,7 +10,7 @@ So, what are the problems with the digital space? For me, the most significant p
 
 ## Risk for users
 
-What if we abandon the project, will you lose all your data, posts, connections? As soon as you keep it in one or more storages, your data can be accessed and reused with any other product or service. This is the main reason why we keep user's data on user's storages. This storages can be copied as normal files.
+What if we abandon the project, will you lose all your data, posts, connections? As soon as you keep it in one or more storages, your data can be accessed and reused with any other product or service. This is the main reason why we keep user's data on user's storages. This storages can be copied and synchronized as a set of files.
 
 ## Competitors
 
