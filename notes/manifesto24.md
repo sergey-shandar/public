@@ -2,7 +2,7 @@
 
 This manifesto is about digital freedom, digital rights and decentralization. However it is not about blockchain.
 
-Digital freedom, in this manifesto, means right to own data, digital identities, share and communicate with others without third parties. Also, a freedom to ignore information from others. Freedom to create decentralized communities without unelected centralized power. Freedom of choice to use different algorithms for searching and filtering information. Freedom for digital privacy, such as encrypted data storages and communication.
+Digital freedom, in this manifesto, means right to own data, digital identities, share and communicate with others without third parties. Also, a freedom to ignore information from others. Freedom to be left alone, as living offline, in subnetworks, or connections with rare frequencies. Freedom to create decentralized communities without unelected centralized power. Freedom of choice to use different algorithms for searching and filtering information. Freedom for digital privacy, such as encrypted data storages and communication.
 
 Also a freedom of businesses and communities to reject in service to anyone.
 
