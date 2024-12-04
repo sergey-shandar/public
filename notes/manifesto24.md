@@ -51,7 +51,7 @@ And if their products are better, I have found a solution for my personal proble
   - [Signal](https://signal.org/).
 - CAS:
   - generic CAS: IPFS
-  - specialized CAS: Decentray version control systems.
+  - specialized CAS: Decentray version control systems, Git, Mercurial.
 - Blockchain. I will not analyze all of them because the biggest flow to using blockchain as a content-addressable space is consensus. It may sound controversial, but I don't need or care about consensus and anonymous signatures on my digital content. There are applications for blockchain, such as decentralized trusted time stamps and some DeFi. But, in general, please, don't build social networks on the blockchain; don't! Any blockchain satisfies CAI requirements and can be stored in CAS, but blockchains are not the foundation of CAI. By the way, in theory, networks with decentralized trust ratings can build DeFi much more efficiently than blockchain consensus algorithms allow.  
  
 In general, all of these products follow some principles of CAI, but if they follow all, then they can be easily synchronized with each other using multiple transport layers. The main idea of a content-addressable internet is that you can use multiple applications and services on the same data.
