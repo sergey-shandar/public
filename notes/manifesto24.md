@@ -27,6 +27,9 @@ A. DID
 Q. I don't feel comfortable to work with such non human readable names, I would like to have address content and people using human readable names.
 A. relative names and paths.
 
+## Fragmentation Problem And Future Proof
+
+solution: generic CAS systems. If our CAS systems can be synchronized using different protocols and cryptographic hashes, then we can keep all sorts of information in different CAS systems on different machines and using different protocols to synchronize them without duplications.
 
 ## Risk for users
 
