@@ -6,7 +6,7 @@ Digital freedom, in this manifesto, means right to own data, digital identities,
 
 Also a freedom of businesses and communities to reject in service to anyone.
 
-It may look like that the last freedom could be in contradiction with previous personal digital rights. And it's true for centralized services. If you are using centralized service, I can lose your digital identity, your data and contacts if the centralized service reject service you. However, I will try to show that we can have both. You may lose some comfort and services but the cervice should not be able to take you digital identity, your data and connections.
+It may look like that the last freedom could be in contradiction with previous personal digital rights. And it's true for centralized services. If you are using centralized service, I can lose your digital identity, your data and contacts if the centralized service reject service you. However, I will try to show that we can have both. You may lose some comfort and services but the service will not be able to take you digital identity, your data and connections, if it uses the principles described above.
 
 At least in my mind, a manifesto is associated with something intrusive and aggressive. This one is more about problems and solutions in our digital life.
 
