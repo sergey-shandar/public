@@ -1,5 +1,7 @@
 # Manifesto
 
+Firstly, this manifesto is not about blockchain but it doesn't exclude blockchains.
+
 At least in my mind, a manifesto is associated with something intrusive and aggressive. This one is more about problems and solutions in our digital life.
 
 So, what are the problems with the digital space? For me, the most significant problems are data/identity ownership and trust.
