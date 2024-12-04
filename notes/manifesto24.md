@@ -6,6 +6,8 @@ So, what are the problems with the digital space? For me, the most significant p
 
 ## Vision
 
+without such decentralized systems people will not have ownership of knowledge based and AI.
+
 ## Steps towards CAI
 
 ## Risk for users
