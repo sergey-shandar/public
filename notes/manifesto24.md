@@ -1,6 +1,6 @@
 # Manifesto
 
-Firstly, this manifesto is not about blockchain but it doesn't exclude blockchains.
+This manifesto is about digital freedom, digital rights and decentralization. However it is not about blockchain.
 
 At least in my mind, a manifesto is associated with something intrusive and aggressive. This one is more about problems and solutions in our digital life.
 
