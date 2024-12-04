@@ -12,11 +12,21 @@ At least in my mind, a manifesto is associated with something intrusive and aggr
 
 So, what are the problems with the digital space? For me, the most significant problems are data/identity ownership and trust.
 
-## Vision
+## AI
 
 without such decentralized systems people will not have ownership of knowledge based and AI.
 
-## Steps towards CAI
+###
+
+Q. if we use multiple services for the same data how we can avoid duplications and how we can refernce data without specifiaing domain?
+A. it's possible to have a link on digital content using it's a cryptographic hash as an address.
+
+Q. How we can have an identity without central registration?
+A. DID
+
+Q. I don't feel comfortable to work with such non human readable names, I would like to have address content and people using human readable names.
+A. relative names and paths.
+
 
 ## Risk for users
 
