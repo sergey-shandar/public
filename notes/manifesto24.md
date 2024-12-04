@@ -4,6 +4,10 @@ This manifesto is about digital freedom, digital rights and decentralization. Ho
 
 Digital freedom, in this manifesto, means right to own data, digital identities, share and communicate with others without third parties. Also, a freedom to ignore information from others. Freedom to create decentralized communities without unelected centralized power. Freedom for digital privacy, such as encrypted communication.
 
+Also a freedom of businesses and communities to reject in service to anyone.
+
+It may look like that the last freedom could be in contradiction with previous personal digital rights. And it's true for centralized services but I will try to show that we can have both if we use decentralized services.
+
 At least in my mind, a manifesto is associated with something intrusive and aggressive. This one is more about problems and solutions in our digital life.
 
 So, what are the problems with the digital space? For me, the most significant problems are data/identity ownership and trust.
