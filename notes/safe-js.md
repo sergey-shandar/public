@@ -29,6 +29,10 @@ The safe subset of the JavaScript doesn't have side-effects and must be validate
 
 FunctionalScript allows building a much safer version of the structural type system and better type inference than TypeScript.
 
+## Hack Examples
+
+https://www.bleepingcomputer.com/news/security/solana-web3js-library-backdoored-to-steal-secret-private-keys/
+
 ## Conclusion
 
 So, if we would like to have good security and still use third-party modules (even through HTTPS), we should do this:
