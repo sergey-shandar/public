@@ -11,19 +11,19 @@ If we use a module in our software, we have two main options:
 
 1. package manager:
   - use it as an NPM/JSR package and then make a bundle.
-  - copy the module locale and then deploy it (and all dependencies) together with everything else, so it's still a kind of bundle.
+  - copy the module locally and then deploy it (and all dependencies) with everything else, so it's still a kind of bundle.
 2. reference on a third-party HTTPS.
 
-The second option has a benefits for internet infrastructure because browsers don't need to download the same packages again and again. It could be even better if `import` support content-addressable links but this is a subject to another bigger discussion. For example, when we deploy a content-addressable links and has to be verified.
+The second option benefits internet infrastructure because browsers don't need to download the same packages repeatedly. It could be even better if `import` supported content-addressable links, but this is a subject for another bigger discussion. For example, when we deploy content-addressable links, they have to be verified.
 
 1. An author of the script can have malicious code.
 2. An author or anyone who has access to the server may replace originally good code with malicious.
 
-As mention before, CA and digital-signatures can reduce the risk. But there is still a risk that even signed code and even content-proof code may contain security holes that we missed during our software development cycle.
+As mentioned before, CA and digital signatures can reduce the risk. However, there is still a risk that even signed and content-proof codes may contain security holes that we missed during our software development cycle.
 
 ## Safe subset
 
-The safe subset of the JavaScript doesn't have side-effects and must be validated that it doesn't have them before running. Of course, it doesn't guarantee that the code can't have security issues but it can significantly reduce risk and eliminate the whole class of attacks.
+The safe subset of JavaScript doesn't have side effects and must be validated that it doesn't have them before running. Of course, it doesn't guarantee that the code can't have security issues, but it can significantly reduce risk and eliminate the whole class of attacks.
 
 ## Typing
 
