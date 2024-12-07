@@ -1,6 +1,6 @@
 # Manifesto
 
-This manifesto is about digital freedom, digital rights, and decentralization. However, it is not about blockchain.
+This manifesto is about digital freedom, digital rights, and decentralization. However, it is not about blockchain. At least in my mind, a manifesto is associated with something intrusive and aggressive, that has no room for discussion. This one is more about problems in our digital life and possible solutions.
 
 Digital freedom, in this manifesto, means the right to own data and digital identities and share and communicate with others without third parties. It also means the freedom to ignore information from others. Freedom to be left alone, such as living offline, in subnetworks, or rare synchronization with the internet. Freedom to create decentralized communities without unelected centralized power. Freedom of choice to use different algorithms for searching and filtering information. Freedom for digital privacy, such as encrypted data storage and communication.
 
@@ -9,8 +9,6 @@ Also, businesses and communities should have the freedom to refuse services to a
 It may seem that the last freedom contradicts previous personal digital rights. And that's true for centralized services. If you are using a centralized service, I can lose your digital identity, data, and contacts if the centralized service rejects you. However, I will try to show that we can have both. You may lose some comfort and services, but the service will not be able to take your digital identity, data, and connections if it uses the principles described above. 
 
 Because of centralization and incompatabilities beetween decentralized networks (e.g. blockchains) we have huge fragmentation of our data. Currently, we have to have multiple accounts on different services and decentralized networks and my list of contacts is such a mess. Everytime you open an account on a new network you have to rebuild all your contacts again and again.  
-
-At least in my mind, a manifesto is associated with something intrusive and aggressive. This one is more about problems and solutions in our digital life.
 
 So, what are the problems with the digital space? For me, the most significant problems are data/identity ownership and trust.
 
