@@ -67,8 +67,9 @@ And if their products are better, I have found a solution for my personal proble
  
 In general, all of these products follow some principles of CAI, but if they follow all, then they can be easily synchronized with each other using multiple transport layers. The main idea of a content-addressable internet is that you can use multiple applications and services on the same data.
 
-See also https://emilyliu.me/blog/open-network, https://docs.bsky.app/docs/advanced-guides/resolving-identities
+See also https://emilyliu.me/blog/open-network, https://docs.bsky.app/docs/advanced-guides/resolving-identities, https://github.com/did-method-plc/did-method-plc?tab=readme-ov-file#how-it-works
 
 ## Next Step
 
 I will continue to work on solutions to the problems. If you are interested in sponsoring, investing, or helping to solve the problems in other ways, let me know.
+
