@@ -1,12 +1,12 @@
 # Manifesto
 
-This manifesto is about digital freedom, digital rights and decentralization. However it is not about blockchain.
+This manifesto is about digital freedom, digital rights, and decentralization. However, it is not about blockchain.
 
-Digital freedom, in this manifesto, means right to own data, digital identities, share and communicate with others without third parties. Also, a freedom to ignore information from others. Freedom to be left alone, as living offline, in subnetworks, or rare synchronization with internet. Freedom to create decentralized communities without unelected centralized power. Freedom of choice to use different algorithms for searching and filtering information. Freedom for digital privacy, such as encrypted data storages and communication.
+Digital freedom, in this manifesto, means the right to own data and digital identities and share and communicate with others without third parties. It also means the freedom to ignore information from others. Freedom to be left alone, such as living offline, in subnetworks, or rare synchronization with the internet. Freedom to create decentralized communities without unelected centralized power. Freedom of choice to use different algorithms for searching and filtering information. Freedom for digital privacy, such as encrypted data storage and communication.
 
-Also a freedom of businesses and communities to reject in service to anyone.
+Also, businesses and communities should have the freedom to refuse services to anyone.
 
-It may look like that the last freedom could be in contradiction with previous personal digital rights. And it's true for centralized services. If you are using centralized service, I can lose your digital identity, your data and contacts if the centralized service reject service you. However, I will try to show that we can have both. You may lose some comfort and services but the service will not be able to take you digital identity, your data and connections, if it uses the principles described above.
+It may seem that the last freedom contradicts previous personal digital rights. And that's true for centralized services. If you are using a centralized service, I can lose your digital identity, data, and contacts if the centralized service rejects you. However, I will try to show that we can have both. You may lose some comfort and services, but the service will not be able to take your digital identity, data, and connections if it uses the principles described above.
 
 At least in my mind, a manifesto is associated with something intrusive and aggressive. This one is more about problems and solutions in our digital life.
 
@@ -14,14 +14,14 @@ So, what are the problems with the digital space? For me, the most significant p
 
 ## AI
 
-without such decentralized systems people will not have ownership of knowledge based and AI.
+without such decentralized systems, people will not have ownership of knowledge-based and AI.
 
 ###
 
 Q. if we use multiple services for the same data how we can avoid duplications and how we can refernce data without specifiaing domain?
 A. it's possible to have a link on digital content using it's a cryptographic hash as an address.
 
-Q. How we can have an identity without central registration?
+Q. How can we have an identity without central registration?
 A. DID
 
 Q. I don't feel comfortable to work with such non human readable names, I would like to have address content and people using human readable names.
@@ -29,7 +29,7 @@ A. relative names and paths.
 
 ## Compatibility Problem
 
-solution: generic CAS systems. If our CAS systems can be synchronized using different protocols and cryptographic hashes, then we can keep all sorts of information in different CAS systems on different machines and using different protocols to synchronize them without duplications.
+Solution: generic CAS systems. If our CAS systems can be synchronized using different protocols and cryptographic hashes, then we can keep all sorts of information in different CAS systems on different machines and using different protocols to synchronize them without duplications.
 
 ## Future Proof
 
