@@ -2,7 +2,7 @@
 
 The short answer: **security**.
 
-With ESM importing using HTTPS should simplify development, so you don't need to care about package managers etc. However, here's a problem.
+With ESM importing using HTTPS should simplify development, so you don't need to worry about package managers, etc. However, there's a problem.
 Major package managers, such as NPM and JSR, don't support it.
 
 ## What do we download?
@@ -23,7 +23,7 @@ As mentioned before, CA and digital signatures can reduce the risk. However, the
 
 ## Safe subset
 
-The safe subset of JavaScript doesn't have side effects and must be validated that it doesn't have them before running. Of course, it doesn't guarantee that the code can't have security issues, but it can significantly reduce risk and eliminate the whole class of attacks.
+The safe subset of JavaScript doesn't have side effects and must be validated that it doesn't have them before running. Of course, it doesn't guarantee that the code can't have security issues, but it can significantly reduce risk and eliminate the whole class of attacks and bugs.
 
 ## Virtualization and Isolation
 
