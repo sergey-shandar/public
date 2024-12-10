@@ -14,7 +14,7 @@ If we use a module in our software, we have two main options:
   - copy the module locally and then deploy it (and all dependencies) with everything else, so it's still a kind of bundle.
 2. reference on a third-party HTTPS.
 
-The second option benefits internet infrastructure because browsers don't need to download the same packages repeatedly. It could be even better if `import` supported content-addressable links, but this is a subject for another bigger discussion. For example, when we deploy content-addressable links, they have to be verified.
+The second option benefits internet infrastructure because browsers don't need to download the same packages repeatedly. It could be even better if `import` supported content-addressable links, but this is a big topic for another article. For example, when we deploy content-addressable links, they have to be verified.
 
 1. An author of the script can have malicious code.
 2. An author or anyone who has access to the server may replace originally good code with malicious.
@@ -31,6 +31,10 @@ Removing direct access to I/O from a language also allows much better virtualiza
 That alone allows much better testing and mocking of scenarios, which is almost impossible with a program with direct access to I/O. We can also achieve 100% code coverage.
 - We can also add extra layers of protection, such as a firewall inside our code.
 And it's possible to do it inside the PL code without complex out-of-proc virtualization.
+
+## Code Portability
+
+Often, code that relies on direct I/O is much harder to port when our I/O system is changed. There could be different reasons why it's changed like the system is changed or we would like to use the same code on another system.
 
 ## Typing
 
