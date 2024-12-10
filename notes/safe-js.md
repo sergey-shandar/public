@@ -25,6 +25,13 @@ As mentioned before, CA and digital signatures can reduce the risk. However, the
 
 The safe subset of JavaScript doesn't have side effects and must be validated that it doesn't have them before running. Of course, it doesn't guarantee that the code can't have security issues, but it can significantly reduce risk and eliminate the whole class of attacks.
 
+## Virtualization and Isolation
+
+Removing direct access to I/O from a language also allows much better virtualization of code, when we can call any function and provide  
+That alone allows much better testing and mocking of scenarios, which is almost impossible with a program with direct access to I/O. We can also achieve 100% code coverage.
+- We can also add extra layers of protection, such as a firewall inside our code.
+And it's possible to do it inside the PL code without complex out-of-proc virtualization.
+
 ## Typing
 
 FunctionalScript allows building a much safer version of the structural type system and better type inference than TypeScript.
