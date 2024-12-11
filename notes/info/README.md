@@ -28,6 +28,8 @@ state|encoding
 
 `(1 + 4)/3 = 5/3 = 1 + 2/3` bits
 
+It is less compact than arithmetic encoding because the states are not evenly distributed. It works better if the `0` state is the most probable.
+
 ## Probability
 
 It's a measure of our ignorance (0% and 100% - absolute knowledge, 50% - absolute ignorance), so it's subjective, not objective. For example, poker.
