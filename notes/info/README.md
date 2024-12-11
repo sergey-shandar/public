@@ -44,6 +44,14 @@ We can use it to generate a normal distribution. However, it is not efficient be
 
 Normal distribution on a plane. Form a circle?
 
+## Two Envelopes Paradox
+
+https://en.wikipedia.org/wiki/Two_envelopes_problem
+
+## No grids in N-dimensional space when N>1
+
+Sequences (1-dimensional space) are allowed. Two and more dimensional discrete spaces can't have grids without preferred directions. However, there could be a solution without a grid. For example, https://en.wikipedia.org/wiki/Causal_sets. 
+
 ## Finite Bit Sequences
 
 A set of all finite bit sequences is mapped to a set of natural numbers.
