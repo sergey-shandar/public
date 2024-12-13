@@ -45,9 +45,9 @@ type StorageApi = {
 
 ## Chain
 
-But what if our hash is not constructed as a tree? Actually, almost all known cryptographic hash algorithms create trees. For example, the SHA2 algorithm creates a chain, which is also a tree but a very unbalanced one where all right nodes are leaves. So, these trees are still suitable for downloading with a quick verification. In this case, we download files backward. Most of the time, the result of `getChunk` will look like this `[Hash, Data].`
+But what if our hash is not constructed as a tree? Actually, almost all known cryptographic hash algorithms create trees. For example, the SHA2 algorithm creates a chain, which is also a tree but a very unbalanced one where all right nodes are leaves. So, these trees are still suitable for downloading with a quick verification. In this case, we download files backward. Most of the time, the result of `getChunk` will look like this `[Hash, Data].` 
 
-The server should prepare a list of intermediate hashes for this solution for each chunk.
+The server should prepare a list of intermediate hashes for this solution for each chunk. After that our last `StrorageApi` can work for any knon hash type.
 
 This solution is not new, for example: 
 
@@ -63,7 +63,31 @@ If we keep separate storages for each type of hash algorithm, we may have a lot 
 ## Hash Alias Table
 
 ```
-RAH -> RIH
+A -> I
 ```
 
-## Communication Between two CAS systems
+The easiest way would be to return this internal hash, so client can use it to request data using native tree.
+
+```ts
+type HashType = string
+type StorageApi = {
+  nativeHashType: () => HashType
+  // returns a native hash or `undefined` if the given hash is unknown.
+  getNativeHash: ({ type: HashType, hash: Hash }) => undefined | Hash  
+  getChunk: (hash: Hash) => undefined | (Data|Hash)[]
+}
+```
+
+While this information can be regenerated for all root blocks, it can be very expensive to regenerate the table for each request. So the server may keep the table for a while.
+
+## In Untrusted Enviroment
+
+If our server works in untrusted enviroment, then a client may not trust the new hash returned from a server. In this case, a server may prepare 
+
+```
+Node00 =                    [Data000, Data001, ...]
+Node01 = (AHash01, Offset), [Data010, Data010, ...]
+
+Node10 =                    [Node00, Node01, ...]
+Node11 = (AHash10, Offset), [Node00, Node01, ...]
+```
