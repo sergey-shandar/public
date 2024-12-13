@@ -1,6 +1,6 @@
 # Sergey Shandar
 
-[![CC BY NC ND 4.0](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-nd.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+[![CC BY-NC-ND 4.0](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-nd.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 I'm focused on developing the content-addressable internet (CAi). The core CAi principles are
 - **Addressing Immutable Data:** Using cryptographic hashes of content as an address.
