@@ -58,6 +58,4 @@ But it can help us to solve another problem.
 
 ## Alien Hash
 
-If we keep a separate storage for each type of hash algorithm, we may have a lot of duplication. It means that our system prefers to use only one hash type internally. How can it serve different hash types?
-
-
+If we keep separate storages for each type of hash algorithm, we may have a lot of duplication. This means that our system prefers to use only one hash type internally. How can it serve different hash types?
