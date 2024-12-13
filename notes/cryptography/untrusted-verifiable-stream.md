@@ -13,7 +13,16 @@ type StorageApi = {
 }
 ```
 
-We start with `i = 0` and continue incrementing it on a size of data until we receive `undefined.`
+We start with `i = 0` and continue incrementing it on a size of data until we receive `undefined.` And if we trust the server but would like to verify we can add a hash as a checksum (most protocols already do this).
+
+```ts
+type Hash = bigint
+type Data = UInt8Array
+
+type StorageApi = {
+  getChunk: (hash: Hash, i: offset) => undefined | { data: Data, checksum: Hash }
+}
+```
 
 ## Embed A Hash Of Chunk
 
