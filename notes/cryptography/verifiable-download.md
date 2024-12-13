@@ -88,7 +88,6 @@ If our server works in untrusted enviroment, then a client may not trust the new
 |---------|---------------------------------|----------------|
 | IHash00 |                                 | (Hash\|Data)[] |
 | IHash01 | (AHash01, Offset)               | (Hash\|Data)[] |
-```
 
 ```ts
 type HashType = string
