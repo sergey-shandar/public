@@ -45,9 +45,9 @@ type StorageApi = {
 
 ## Chain
 
-But what if our hash is not constructed as a tree? Actually, almost all known cryptographic hash algorithms create trees. For example, the SHA2 algorithm creates a chain, which is also a tree but a very unbalanced one where all right nodes are leaves. So, these trees are still suitable for downloading with a quick verification. In this case, we download files backward. 
+But what if our hash is not constructed as a tree? Actually, almost all known cryptographic hash algorithms create trees. For example, the SHA2 algorithm creates a chain, which is also a tree but a very unbalanced one where all right nodes are leaves. So, these trees are still suitable for downloading with a quick verification. In this case, we download files backward. Most of the time, the result of `getChunk` will look like this `[Hash, Data].`
 
-For this solution, the server should prepare a list of intermediate hashes for each chunk.
+The server should prepare a list of intermediate hashes for this solution for each chunk.
 
 This solution is not new, for example: 
 
@@ -59,3 +59,13 @@ But it can help us to solve another problem.
 ## Alien Hash
 
 If we keep separate storages for each type of hash algorithm, we may have a lot of duplication. This means that our system prefers to use only one hash type internally. How can it serve different hash types?
+
+## Hash Alias Table
+
+```
+RAH -> (RIH,PAH)
+
+PAH -> (PIH,OFFSET,PAH)
+```
+
+## Communication Between two CAS systems
