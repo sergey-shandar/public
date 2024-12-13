@@ -91,12 +91,13 @@ If our server works in untrusted enviroment, then a client may not trust the new
 
 ```ts
 type HashType = string
+type HashUrl = { type: HashType, hash: Hash }
 type StorageApi = {
   nativeHashType: () => HashType
   // returns a native hash or `undefined` if the given hash is unknown.
-  getNativeHash: ({ type: HashType, hash: Hash }) => undefined | Hash  
+  getNativeHash: (hashUrl: HashUrl) => undefined | Hash  
   getChunk: (hash: Hash) => undefined | (Data|Hash)[]
   //
-  getAlienChunk: ({ type: HashType, root: Hash }, nativeHash: Hash) => { start?: { alienHash: Hash, offset: bigint }, data: (Hash|Data)[] }
+  getAlienChunk: (hashUrl: HashUrl, nativeHash: Hash) => { start?: { alienHash: Hash, offset: bigint }, data: (Hash|Data)[] }
 }
 ```
