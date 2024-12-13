@@ -98,6 +98,6 @@ type StorageApi = {
   getNativeHash: (hashUrl: HashUrl) => undefined | Hash  
   getChunk: (hash: Hash) => undefined | (Data|Hash)[]
   //
-  getAlienChunk: (hashUrl: HashUrl, nativeHash: Hash) => { start?: { alienHash: Hash, offset: bigint }, data: (Hash|Data)[] }
+  getAlienChunk: (hashUrl: HashUrl, nativeHash: Hash) => { offset?: { alienHash: Hash, offset: bigint }, data: (Hash|Data)[] }
 }
 ```
