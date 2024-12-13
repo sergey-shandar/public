@@ -63,9 +63,7 @@ If we keep separate storages for each type of hash algorithm, we may have a lot 
 ## Hash Alias Table
 
 ```
-RAH -> (RIH,PAH)
-
-PAH -> (PIH,OFFSET,PAH)
+RAH -> RIH
 ```
 
 ## Communication Between two CAS systems
