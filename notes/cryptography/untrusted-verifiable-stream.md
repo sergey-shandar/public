@@ -1,4 +1,4 @@
-# Veriafable Download
+# Compact Verifable Streaming in Untrusted Environment
 
 One of the good properties of cryptographically strong hash is that a known hash value can be used to verify that the content we download from the Internet matches the original file's content. But here's the problem: we need to download the whole file to ensure its content is correct. It's not a big deal if the file is only a few kilobytes, but it can be not good if the file is enormous, e.g., several gigabytes. 
 
