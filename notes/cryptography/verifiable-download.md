@@ -82,12 +82,10 @@ While this information can be regenerated for all root blocks, it can be very ex
 
 ## In Untrusted Enviroment
 
-If our server works in untrusted enviroment, then a client may not trust the new hash returned from a server. In this case, a server may prepare 
+If our server works in untrusted enviroment, then a client may not trust the new hash returned from a server. The server should prepeare temporary mapping data.
 
-```
-Node00 =                    [Data000, Data001, ...]
-Node01 = (AHash01, Offset), [Data010, Data010, ...]
-
-Node10 =                    [Node00, Node01, ...]
-Node11 = (AHash10, Offset), [Node00, Node01, ...]
+|         | Specific for a particular AHash | Permanent     |
+|---------|---------------------------------|---------------|
+| IHash00 |                                 | (Hash|Data)[] |
+| IHash01 | (AHash01, Offset)               | (Hash|Data)[] |
 ```
