@@ -84,8 +84,20 @@ While this information can be regenerated for all root blocks, it can be very ex
 
 If our server works in untrusted enviroment, then a client may not trust the new hash returned from a server. The server should prepeare temporary mapping data.
 
-|         | Specific for a particular AHash | Permanent     |
-|---------|---------------------------------|---------------|
-| IHash00 |                                 | (Hash|Data)[] |
-| IHash01 | (AHash01, Offset)               | (Hash|Data)[] |
+|         | Specific for a particular AHash | Permanent      |
+|---------|---------------------------------|----------------|
+| IHash00 |                                 | (Hash\|Data)[] |
+| IHash01 | (AHash01, Offset)               | (Hash\|Data)[] |
+```
+
+```ts
+type HashType = string
+type StorageApi = {
+  nativeHashType: () => HashType
+  // returns a native hash or `undefined` if the given hash is unknown.
+  getNativeHash: ({ type: HashType, hash: Hash }) => undefined | Hash  
+  getChunk: (hash: Hash) => undefined | (Data|Hash)[]
+  //
+  getAlienChunk: ({ type: HashType, root: Hash }, nativeHash: Hash) => { start?: { alienHash: Hash, offset: bigint }, data: (Hash|Data)[] }
+}
 ```
