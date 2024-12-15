@@ -10,6 +10,8 @@ It may seem that the last freedom contradicts previous personal digital rights. 
 
 Because of centralization and incompatabilities beetween decentralized networks (e.g. blockchains) we have huge fragmentation of our data. Currently, we have to have multiple accounts on different services and decentralized networks and my list of contacts is such a mess. Everytime you open an account on a new network you have to rebuild all your contacts again and again.  
 
+Users have rights to start their own chain/graph of records, transactions, other data blocks and merge it with others at any time they like.
+
 So, what are the problems with the digital space? For me, the most significant problems are data/identity ownership and trust.
 
 ## AI
