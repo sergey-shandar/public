@@ -2,10 +2,13 @@
 
 ## 1. Linear (Deterministic)
 
-## 2. Tree (Probabilistic, Multiverse)
+There are no differences between the past and the future. The amount of information is the same at every step.
 
-Never merge.
+## 2. Tree/DAQ (Probabilistic, Multiverse)
 
-## 3. DAQ (Quantum Multiverse)
+Try all possible variations. It has an arrow of time.
 
-Can merge back.
+When we introduce a random number, we can either:
+
+- add a new state
+- replace the existing one (delete history)
