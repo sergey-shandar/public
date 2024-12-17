@@ -19,7 +19,7 @@ Current OSS projects that I'm working on
 ## Contacts
 
 - [Medium](https://medium.com/@sergeyshandar),
-- [Bluesky](https://bsky.app/profile/sergey-shandar.bsky.social)
+- [Bluesky](https://bsky.app/profile/sergey-shandar.bsky.social),
 - [LinkedIn](https://www.linkedin.com/in/sergeyshandar/),
 - [Mastodon](https://techhub.social/@functionalscript),
 - [DEV Community](https://dev.to/sergeyshandar),
