@@ -4,7 +4,7 @@
 
 There are no differences between the past and the future. The amount of information is the same at every step.
 
-## 2. Tree/DAQ (Probabilistic, Multiverse)
+## 2. Tree (Probabilistic, Multiverse)
 
 Try all possible variations. It has an arrow of time.
 
@@ -12,3 +12,7 @@ When we introduce a random number, we can either:
 
 - add a new state
 - replace the existing one (delete history)
+
+## 3. DAG
+
+States can merge
