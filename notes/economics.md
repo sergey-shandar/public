@@ -22,3 +22,7 @@
   1.  $1,000,000 with 100%,
   2.  $3,000,000 with 50%.
   Poor people will most likely make the first choice. Rich people can afford to take the second choice and win on average.
+
+## Anti investment economy
+
+An anti-investment economy is one in which businesses usually have enough money to participate in the economy. It is hard to find a business that would like to accept investment.
