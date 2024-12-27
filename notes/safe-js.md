@@ -32,6 +32,15 @@ That alone allows much better testing and mocking of scenarios, which is almost 
 - We can also add extra layers of protection, such as a firewall inside our code.
 And it's possible to do it inside the PL code without complex out-of-proc virtualization.
 
+## Internal Safety
+
+While different virtualization methods can protect a program from malicious code, we need more protection and isolation on for function level. FunctionalScript guarantee that any function you call may have only few side effect: - crash the program by either throwing an exception or trying allocate too much memory
+- run forever.
+However, it can't have direct access to I/O interfaces unless we explicitly pass the interfaces to the function. Of course, it may access it indirectly if your program has some other flaws. For example, ...
+Also, the behavior of the function is deterministic, it means, if once it has one behavior, then it will always have this behavior. Currently, a malicious module can behave differently in test and production environment.
+This property is important when we use third-party dependencies
+
+
 ## Code Portability
 
 Often, code that relies on direct I/O is much harder to port when our I/O system is changed. There could be different reasons why it's changed like the system is changed or we would like to use the same code on another system.
