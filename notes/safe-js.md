@@ -55,6 +55,8 @@ https://www.bleepingcomputer.com/news/security/solana-web3js-library-backdoored-
 
 ## Conclusion
 
+I don't describe anything new in the article especially for people who already use purely functional languages. But the problem is that these languages don't have wide adoption, not compatible with such popular environments like JavaScript and require complex build systems. While I like TypeScript, transpiling it to JavaScript is very painful. There are other purely functional languages that can transpile the logic to JavaScript but then again it is very hard to produce a library or framework on these languages that can be used in JavaScript applications. FunctionalScript code can be used by any JavaScript code without additional transformations. Assuming the code is modern ECMAScript standard with modules.
+
 So, if we would like to have good security and still use third-party modules (even through HTTPS), we should do this:
 
 1. content-addressable infrastructure:
