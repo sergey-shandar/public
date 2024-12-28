@@ -1,8 +1,61 @@
 # Why we must have a safe subset of JavaScript
 
-The short answer: **security**.
+We have hundreds of programming languages and even more compilers and build systems for these languages. Some of them are quite unsafe, and it is very difficult to prove that the code doesn't have unintentional bugs or intentional back-doors. Because of this, we periodically detect these problems that are already in production.
 
-With ESM importing using HTTPS should simplify development, so you don't need to worry about package managers, etc. However, there's a problem.
+- **By "design"**: log4j.
+- **Supply chain attacks:** Solana JavaScript.
+
+This kind of attack can lead to huge economic losses for individuals, organizations, and even countries.
+
+It's almost impossible to eliminate these attacks completely, but we can significantly reduce the risks of such attacks. There are examples of purely functional languages that can decrease such risks. But here's the problem: these programming languages are not widely adopted. There are several reasons why
+
+- main platforms, such as web browsers, mobile phones, and operating systems, don't support the safe FP out-of-the-box and may require additional build steps and module incompatibilities that reduce code reusability.
+- we don't have enough software engineers who are familiar with these languages and FP concepts.
+
+## Why PFP is more secure 
+
+...side-effects and I/O...
+
+## Package Management And Supply Chain Attacks
+
+When we use third-party libraries, there is always a risk of supply chain attacks. From another point of view, writing everything from scratch has its own risks, including security. This is especially true now when companies use AI-generated code that is very expensive to validate. Code reuse is very low in such systems. It's very expensive and unsafe to write code from scratch without reusing existing packages or validating AI-generated code. 
+
+CA validation works well for referencing immutable code, but it doesn't work very well for updates and security patches. The solution is digital signatures when we only use a new package when it's signed by authors and other trusted parties, e.g. code reviewers.  
+
+I think the way forward is to use third-party packages and AI that helps to find modules with existing algorithms instead of rewriting the same algorithms again and again.
+
+## CA package management systems 
+
+Content-addressable systems can reduce risks by locking tested third packages to specific hashes. 
+
+The next step is to have CA verification on the code level. Content-addressable programming languages like Unison are much more secure and can detect code altering much more easily.
+
+## Reality
+
+Reality is far away from ideal. We don't use FP languages; we don't use CA infrastructure and cryptographic proofs. The most popular programming language is JavaScript, and because JavaScript is the assembly language for the Web, it will not be replaced by other programming systems in the near future. So, how can we increase the security of our systems without rebuilding all platforms and re-educating software engineers? 
+
+## FunctionalScript
+
+FunctionalScript is a safe, purely functional subset of JavaScript.
+
+Safe means that third-party code can only have a limited impact and has limited access to I/O, only I/O that was provided by a caller of the function. If a function requires an IO interface, a program can always create a special virtual IO interface, which either has no connection to real I/O or monitors and filters I/O requests. The only known possible side effects are
+
+- the function can panic and stop the program by either consuming too much memory or throwing an exception
+- never return, run infinitely long.
+
+This possibility also allows us to test all functions and create virtual scenarios that are hard to reproduce with real I/O. 
+
+We've done research on how we can build such a subset that if JavaScript code belongs to the subset, then it's safe code. We call this subset FunctionalScript. Any JavaScript code can use the FunctionalScript code but FunctionalScript code can only reference other FunctionalScript code. 
+
+Isolation of IO makes the FunctionalScript not only safe but also much more cross-platform and scalable. Including usage in distributed and decentralized applications.
+
+We are working on a parser and a family of VMs. One of the VM will be content-addressable.
+
+------------------
+
+The short answer: **safety and security**.
+
+With ESM importing using HTTPS, development should be simplified, so you don't need to worry about package managers, etc. However, there's a problem.
 Major package managers, such as NPM and JSR, don't support it.
 
 ## What do we download?
