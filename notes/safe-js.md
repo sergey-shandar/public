@@ -45,7 +45,7 @@ Safe means that third-party code can only have a limited impact and has limited 
 
 This possibility also allows us to test all functions and create virtual scenarios that are hard to reproduce with real I/O. 
 
-We've done research on how we can build such a subset that if JavaScript code belongs to the subset, then it's safe code. We call this subset FunctionalScript. Any JavaScript code can use the FunctionalScript code but FunctionalScript code can only reference other FunctionalScript code. 
+We've done research on how we can build such a subset that if JavaScript code belongs to the subset, then it's safe code. We call this subset FunctionalScript. Any JavaScript code can use the FunctionalScript code, but the FunctionalScript code can only reference other FunctionalScript codes. 
 
 Isolation of IO makes the FunctionalScript not only safe but also much more cross-platform and scalable. Including usage in distributed and decentralized applications.
 
