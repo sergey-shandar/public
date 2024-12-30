@@ -14,7 +14,11 @@ It's almost impossible to eliminate these attacks completely, but we can signifi
 
 ## Why PFP is more secure 
 
-...side-effects and I/O...
+While different virtualization methods can protect a program from malicious code, PFP provides additional protection and isolation on the function level. FunctionalScript guarantees that any function you call may have only these two side effects: 
+- crash the program by either throwing an exception or trying to allocate too much memory,
+- never return, run forever.
+However, it can't have direct access to I/O interfaces unless we explicitly pass the interfaces to the function. Of course, it may access it indirectly if your program has some other flaws. For example, ...
+Also, the behavior of the function is deterministic, it means, if once it has one behavior, then it will always have this behavior. Currently, a malicious module can behave differently in test and production environment.
 
 ## Package Management And Supply Chain Attacks
 
@@ -87,11 +91,7 @@ And it's possible to do it inside the PL code without complex out-of-proc virtua
 
 ## Internal Safety
 
-While different virtualization methods can protect a program from malicious code, we need more protection and isolation on for function level. FunctionalScript guarantee that any function you call may have only few side effect: - crash the program by either throwing an exception or trying allocate too much memory
-- run forever.
-However, it can't have direct access to I/O interfaces unless we explicitly pass the interfaces to the function. Of course, it may access it indirectly if your program has some other flaws. For example, ...
-Also, the behavior of the function is deterministic, it means, if once it has one behavior, then it will always have this behavior. Currently, a malicious module can behave differently in test and production environment.
-This property is important when we use third-party dependencies
+
 
 
 ## Code Portability
