@@ -10,7 +10,8 @@ I usually use the `bigint` type in JavaScript and FunctionalScript as a vector o
 The simplest implementation is 
 
 ```ts
-const strBinLog2 = (v: bigint): bigint => BigInt(v.toString(2).length) - 1n
+const strBinLog2 = (v: bigint): bigint =>
+    BigInt(v.toString(2).length) - 1n
 ```
 
 This implementation allocates and fills 16 times more memory than the given `bigint` because JavaScript strings are UTF-16. For example, if our `bigint` has one million bits (125 KB), the function may allocate as much as 2 MB. The improved implementation uses base 16 (aka hex) and [Math.clz32](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/clz32) to calculate the remainder:
