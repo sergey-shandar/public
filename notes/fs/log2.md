@@ -84,4 +84,4 @@ const log2 = (v: bigint): bigint => {
 
 ## Benchmarks
 
-
+The `shift right` algorithm wins most of the times, a notable exception is FireFox on very big numbers `2 ^ 1_000_000`. 
