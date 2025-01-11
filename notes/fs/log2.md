@@ -84,4 +84,30 @@ const log2 = (v: bigint): bigint => {
 
 ## Benchmarks
 
-The `shift right` algorithm wins most of the times, a notable exception is FireFox on very big numbers `2 ^ 1_000_000`. 
+For small numbers (about `2 ** 1_000`):
+
+|Framework    |str32Log2|   log2|
+|-------------|---------|-------|
+|Bun          |     1293|**699**|
+|Deno 2       |      791|**452**|
+|Node 23      |      898|**538**|
+|Chrome (AMD) |      781|**593**|
+|Chrome (M1)  |      417|**285**|
+|Firefox (AMD)|     1056|**503**|
+|Firefox (M1) |      541|**348**|
+|Safari (M1)  |      741|**466**|
+
+For big numbers (about `2 ** 1_000_000`):
+
+|Engine       |str32Log2|   log2|
+|-------------|---------|-------|
+|Bun          |  **631**|   1110|
+|Deno 2       |      788|**206**|
+|Node 23      |      947|**226**|
+|Chrome (AMD) |  **532**|    551|
+|Chrome (M1)  |      283|**171**|
+|Firefox (AMD)|  **529**|   1443|
+|Firefox (M1) |  **338**|    847|
+|Safari  (M1) |      299|**203**|
+
+The `shift right` algorithm wins most of the time; notable exceptions are Firefox and Bun on very big numbers. The algorithm works very well for cryptographic algorithms, such as hash functions and elliptic curves, where buffers are about several kilo bits.
