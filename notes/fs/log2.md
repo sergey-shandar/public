@@ -110,4 +110,4 @@ For big numbers (about `2 ** 1_000_000`):
 |Firefox (M1) |  **338**|    847|
 |Safari  (M1) |      299|**203**|
 
-The `shift right` algorithm wins most of the time; notable exceptions are Firefox and Bun on very big numbers. The algorithm suits cryptographic algorithms, such as hash functions and elliptic curves, where buffers are about several kilobits.
+The performance metric is time and measured in milliseconds, so a lower value is better. The `shift right` algorithm wins most of the time; notable exceptions are Firefox and Bun on very big numbers. The algorithm suits cryptographic algorithms, such as hash functions and elliptic curves, where buffers are about several kilobits.
