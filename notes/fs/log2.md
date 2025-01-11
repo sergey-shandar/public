@@ -36,6 +36,8 @@ This version allocates slightly less memory than the previous implementation.
 
 ## 2. Shift Right
 
+JavaScript has a function called `Math.log2`, which can only work with the `number` type. We can use this function if we convert our type to a number, but the JavaScript `number` type is a fixed size [double-precision floating-point number](https://en.wikipedia.org/wiki/Double-precision_floating-point_format), so we can only use numbers that are less than 2<sup>1023</sup>.
+
 This algorithm uses 3 phases:
 
 1. **Fast doubling:** Uses exponential steps to narrow down the range of the most significant bit.
@@ -79,7 +81,7 @@ One requirement I must follow in the implementation is that the function must no
 
 ## Benchmarks
 
-For small numbers (about `2 ** 1_000`):
+For small numbers (about 2<sup>1,000</sup>):
 
 |Engine       |str32Log2|   log2|
 |-------------|---------|-------|
@@ -92,7 +94,7 @@ For small numbers (about `2 ** 1_000`):
 |Firefox (M1) |      541|**348**|
 |Safari (M1)  |      741|**466**|
 
-For big numbers (about `2 ** 1_000_000`):
+For big numbers (about 2<sup>1,000,000</sup>):
 
 |Engine       |str32Log2|   log2|
 |-------------|---------|-------|
