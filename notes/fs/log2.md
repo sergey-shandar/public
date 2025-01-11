@@ -40,8 +40,8 @@ JavaScript has a function called `Math.log2`, which can only work with the `numb
 
 This algorithm uses 3 phases:
 
-1. **Fast doubling:** This method uses exponential steps to narrow down the upper limit of the most significant bit. We start with 1023. If our `bigint` has more than 1023 bits, multiply our step by 2, then by 4, 8, etc.
-2. **Binary Search Phase:** Refines the result by halving the step size.
+1. **Fast doubling:** This method uses exponential steps to find the upper limit of the most significant bit. We start with 1023. If our `bigint` has more than 1023 bits, multiply our step by 2, then by 4, 8, etc.
+2. **Binary Search Phase:** Refines the result by halving the step size back to `1023`.
 3. **Remainder Phase:** Use [Math.log2](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log2) to find a logarithm of the remainder.
 
 ```ts
@@ -50,7 +50,7 @@ const log2 = (v: bigint): bigint => {
 
     // 1. Fast Doubling
     let result = -1n
-    // Start with the maximum shift compatible with `Number`. `2 ** 1024` may lead to `Inf`.
+    // Start with the maximum shift compatible with `number`.
     let i = 1023n
     while (true) {
         const n = v >> i
