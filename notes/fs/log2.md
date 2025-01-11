@@ -1,11 +1,9 @@
-# Fast log2 Algorithm for bigint in JavaScript
+# Improving log2 Algorithm for bigint in JavaScript
 
-I usually use the `bigint` type in JavaScript and FunctionalScript as a vector of bits, and I often need to know how many bits are in a specific `bigint` instance. Every JavaScript engine that has a `bigint` knows exactly what the size of a `bigint` instance is, but this functionality is not available in JavaScript API. Sadly, there is not even a proposal for such a function in ECMAScript. So, I have to write my own implementations. There is already a [thread on StackOverflow](https://stackoverflow.com/questions/54758130/how-to-obtain-the-amount-of-bits-of-a-bigint) that discusses multiple implementations. The main conclusion from the thread is there are two main families of possible implementations:
+I usually use the `bigint` type in JavaScript and FunctionalScript as a vector of bits, and I often need to know how many bits are in a specific `bigint` instance. Every JavaScript engine that has a `bigint` knows exactly what the size of a `bigint` instance is, but this functionality is not available in JavaScript API. Neither `log2`, which should return a number of bits minus `1`. Sadly, there is not even a proposal for such functions in ECMAScript. There is already a [thread on StackOverflow](https://stackoverflow.com/questions/54758130/how-to-obtain-the-amount-of-bits-of-a-bigint) that discusses multiple implementations. My main conclusion from the thread is there are two main families of possible implementations:
 
 1. Convert `bigint` to `string` and use the `length` of the string to calculate the number of bits in the original `bigint`.
 2. Shift right the `bigint` until it's become `0`.
-
-**Note:** a number of bits in a positive `bigint` equals `log2` of the value plus `1`. So, we will implement the `log2` first.
 
 ## 1. Converting to String
 
@@ -15,5 +13,75 @@ The simplest implementation is
 const strBinLog2 = (v: bigint): bigint => BigInt(v.toString(2).length) - 1n
 ```
 
-One of the problems with the function is that it has to allocate and fill a new string with a `length` equal to the number of bits in the original `bigint`. For example, if our `bigint` has one million bits (125 KB), the function may allocate as much as 2 MB, because every character in JavaScript string is two bytes (UTF-16). To reduce the allocation size and speed up the process, we can change the base to hex. The `length` of the new string will give as 
+This implementation allocates and fills 16 times more memory than the given `bigint` because JavaScript strings are UTF-16. For example, if our `bigint` has one million bits (125 KB), the function may allocate as much as 2 MB. The improved implementation uses base 16 (aka hex) and `Math.clz32` to calculate the remainder:
+
+```ts
+const strHexLog2 = (v: bigint): bigint => {
+    const len = (BigInt(v.toString(16).length) - 1n) << 2n
+    return len + 31n - BigInt(Math.clz32(Number(v >> len)))
+}
+```
+
+This version allocates 4 times more than the given `bigint`. However, we can make it even better because [bigint.toString](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt/toString#parameters) supports radix up to `36`. Let's use `32`:
+
+```ts
+const str32Log2 = (v: bigint): bigint => {
+    const len = (BigInt(v.toString(32).length) - 1n) * 5n
+    return len + 31n - BigInt(Math.clz32(Number(v >> len)))
+}
+```
+
+This version allocates 3.2 times more.
+
+## 2. Shift Right
+
+This algorithm uses 3 phases:
+
+1. **Fast doubling:** uses exponential steps to narrow down the range of the most significant bit.
+2. **Binary Search Phase:** refines the result by halving the step size.
+3. **Remainder Phase:** Use `Math.log2` to find a logarithm of the remainder.
+
+```ts
+const log2 = (v: bigint): bigint => {
+    if (v <= 0n) { return -1n }
+
+    // 1.
+    let result = -1n
+    // note: 1024 may lead to `Inf`
+    let i = 1023n
+    while (true) {
+        const n = v >> i
+        if (n === 0n) {
+            // overshot
+            break
+        }
+        v = n
+        result += i
+        i <<= 1n
+    }
+
+    // 2.
+    // We know that `v` is not 0 so it doesn't make sense to check `n` when `i` is 0.
+    // Because of this, We check if `i` is greater than 1023 before we divide it by 2.
+    while (i !== 1023n) {
+        i >>= 1n
+        const n = v >> i
+        if (n !== 0n) {
+            result += i
+            v = n
+        }
+    }
+
+    // 3.
+    // We know that `v` is less than `1n << 1024` so we can calculate a remainder using
+    // `Math.log2`.
+    const rem = BigInt(Math.log2(Number(v)) | 0)
+    // (v >> rem) is either `0` or `1`, and it's used as a correction for
+    // Math.log2 rounding.
+    return result + rem + (v >> rem)
+}
+```
+
+## Benchmarks
+
 
