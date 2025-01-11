@@ -36,7 +36,7 @@ This version allocates slightly less memory than the previous implementation.
 
 ## 2. Shift Right
 
-JavaScript has a function called `Math.log2`, which can only work with the `number` type. We can use this function if we convert our type to a number, but the JavaScript `number` type is a fixed size [double-precision floating-point number](https://en.wikipedia.org/wiki/Double-precision_floating-point_format#Exponent_encoding) and can't accept numbers that are bigger than 1023 bits.
+JavaScript has a function called `Math.log2`, which can only work with the `number` type. We can use this function if we convert our type to a number, but the JavaScript `number` type is a fixed size [double-precision floating-point number](https://en.wikipedia.org/wiki/Double-precision_floating-point_format#Exponent_encoding) and can't accept numbers that are bigger than 1023 bits. In the first two phases, we reduce our `bigint` to less than `1023` bits.
 
 This algorithm uses 3 phases:
 
