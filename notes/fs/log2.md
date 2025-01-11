@@ -39,7 +39,7 @@ This algorithm uses 3 phases:
 
 1. **Fast doubling:** uses exponential steps to narrow down the range of the most significant bit.
 2. **Binary Search Phase:** refines the result by halving the step size.
-3. **Remainder Phase:** Use `Math.log2` to find a logarithm of the remainder.
+3. **Remainder Phase:** use `Math.log2` to find a logarithm of the remainder.
 
 ```ts
 const log2 = (v: bigint): bigint => {
