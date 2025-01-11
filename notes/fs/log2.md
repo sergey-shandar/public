@@ -1,4 +1,4 @@
-# Improving Log2 Algorithm for BigInt in JavaScript
+# Improving the Log2 Algorithm for BigInt in JavaScript
 
 I usually use the `bigint` type in JavaScript and FunctionalScript as a vector of bits, and I often need to know how many bits are in a specific `bigint` instance. Every JavaScript engine that has a `bigint` knows exactly what the size of a `bigint` instance is, but this functionality is not available in JavaScript API. Neither `log2`, which should return a number of bits minus `1`. Sadly, there is not even a proposal for such functions in ECMAScript. There is already a [thread](https://stackoverflow.com/questions/54758130/how-to-obtain-the-amount-of-bits-of-a-bigint) on StackOverflow that discusses multiple implementations. The main conclusion from the thread is there are two main families of possible implementations:
 
