@@ -81,7 +81,7 @@ One requirement I must follow in the implementation is that the function must no
 
 For small numbers (about `2 ** 1_000`):
 
-|Framework    |str32Log2|   log2|
+|Engine       |str32Log2|   log2|
 |-------------|---------|-------|
 |Bun          |     1293|**699**|
 |Deno 2       |      791|**452**|
