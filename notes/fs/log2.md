@@ -75,6 +75,8 @@ const log2 = (v: bigint): bigint => {
 }
 ```
 
+One requirement I must follow in the implementation is that the function must not use global mutable variables, such as cache, to satisfy FunctionalScript design principles. 
+
 ## Benchmarks
 
 For small numbers (about `2 ** 1_000`):
