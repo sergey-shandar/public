@@ -36,11 +36,11 @@ This version allocates slightly less memory than the previous implementation.
 
 ## 2. Shift Right
 
-JavaScript has a function called `Math.log2`, which can only work with the `number` type. We can use this function if we convert our type to a number, but the JavaScript `number` type is a fixed size [double-precision floating-point number](https://en.wikipedia.org/wiki/Double-precision_floating-point_format), so we can only use numbers that are less than 2<sup>1023</sup>.
+JavaScript has a function called `Math.log2`, which can only work with the `number` type. We can use this function if we convert our type to a number, but the JavaScript `number` type is a fixed size [double-precision floating-point number](https://en.wikipedia.org/wiki/Double-precision_floating-point_format#Exponent_encoding) and can't accept numbers that are bigger than 1023 bits.
 
 This algorithm uses 3 phases:
 
-1. **Fast doubling:** Uses exponential steps to narrow down the range of the most significant bit.
+1. **Fast doubling:** This method uses exponential steps to narrow down the upper limit of the most significant bit. We start with 1023. If our `bigint` has more than 1023 bits, multiply our step by 2, then by 4, 8, etc.
 2. **Binary Search Phase:** Refines the result by halving the step size.
 3. **Remainder Phase:** Use [Math.log2](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log2) to find a logarithm of the remainder.
 
