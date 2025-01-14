@@ -22,10 +22,12 @@ $x^2 ≡ c \pmod p$, and $x$ is unknown.
 |$x^i$  |1|$x$|$x^2$|   |±1           |$±x$         |   |$x^{-1}$|1            |$x$|$x^2$        |
 |$c^j$  |1|   |$c$  |   |             |             |   |        |1            |   |$c$          |
 
-If $(p+1) \bmod 4 = 0$ then the roots are $±c^\frac{p+1}4$.
+If $(p+1) \bmod 4 = 0$ then the roots are $±c^\frac{p+1}4$. 
 
 |$i$    |0|1  |    2|...|$\frac{p-1}2$|$\frac{p+1}2$  |...|$p-2$   |$p-1$        |$p$|$p+1$        |
 |-------|-|---|-----|---|-------------|---------------|---|--------|-------------|---|-------------|
 |$j=i/2$|0|   |    1|   |             |$\frac{p+1}4$  |   |        |$\frac{p-1}2$|   |$\frac{p+1}2$|
 |$x^i$  |1|$x$|$x^2$|   |±1           |$±x$           |   |$x^{-1}$|1            |$x$|$x^2$        |
 |$c^j$  |1|   |$c$  |   |             |$c^\frac{p+1}4$|   |        |1            |   |$c$          |
+
+Such numbers $p \bmod 4 = 3$ are called [Gaussian Primes](https://en.wikipedia.org/wiki/Gaussian_integer#Gaussian_primes).
