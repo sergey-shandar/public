@@ -1,5 +1,9 @@
 # Decentralized Digital Space
 
+There are a lot of discussions about decentralized internet, no-vendor lock-in, independent social networks, and so on. But how do you recognize which service gives you freedom and which is just hypocrisy and lies? I've formulated several principles that real decentralized service should work on to give users freedom in the digital space. It can work as a test; if a service doesn't satisfy some of these requirements, then it doesn't give you real ownership of your data.
+
+These principles are primarily for me, and I would really appreciate feedback.
+
 Goals:
 
 - no-vendor lock-in. Everything you create belongs to you.
