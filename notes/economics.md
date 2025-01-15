@@ -26,3 +26,20 @@
 ## Anti-investment economy
 
 An anti-investment economy is one in which businesses usually have enough money to participate in the economy. It is hard to find a business that would like to accept investment. That also means that investors are more proactive. Money is primarily used to buy products and services instead of investing in them. 
+
+## Accumulated average progressive tax
+
+If in our system, we have this table:
+
+<100$  => 0%
+>=100$ => 10%
+
+Currently:
+
+- First year: $200 => $10 tax ($100 + $100)
+- Second year: $0 => $0 tax
+
+It should be:
+
+- First year: $200 => $10 tax ($100 + $100)
+- Second year: $0 => -$10 tax, because on average, the person received only $100.
