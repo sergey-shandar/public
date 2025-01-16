@@ -11,9 +11,11 @@ The hash is one byte and equals to the character.
 
 ## Level 1. Nodes contains multiple leaves/bytes.
 
-**Text # 1:** `Java` `Scri` `pt ` `is ` `a ` `we` `ird` ` pro` `gr` `amm` `ing` ` la` `ng` `ua` `ge.`
+**Text # 1:**
+[X] `Java` `Scri` `pt ` `is ` `a `
+[ ] `we` `ird` ` pro` [X] `gr` `amm` `ing` ` la` `ng` `ua` `ge.`
 
-**Text # 2:** `Java` `Scri` `pt ` `is ` `a ` `str` `ang` `e ` `pro` `gr` `amm` `ing` ` la` `ng` `ua` `ge.`
+**Text # 2:** [X] `Java` `Scri` `pt ` `is ` `a ` [ ] `str` `ang` `e ` `pro` [X] `gr` `amm` `ing` ` la` `ng` `ua` `ge.`
 
 ## Level 2. Nodes with nodes with leaves.
 
