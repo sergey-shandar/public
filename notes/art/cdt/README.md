@@ -1,25 +1,27 @@
 # Content Dependent Tree (CDT)
 
-## Level 0. Leaves are bytes
+In this example, a node may contain multiple (more than 2) child nodes.
+
+## Level 0. Leaves are bytes/characters
 
 `JavaScript is a weird programming language.`
 
-The hash is one byte and equal to the one character.
+The hash is one byte and equals to the character.
 
-## Level 1. Nodes with leaves.
+## Level 1. Nodes contains multiple leaves/bytes.
 
 `Java` `Scri` `pt ` `is ` `a ` `we` `ird` ` pro` `gr` `amm` `ing` ` la` `ng` `ua` `ge.`
 
 The hash is an MSB first sequence. hash(`Java`) = 0x4A617661
 
-## Stage 2. Nodes with nodes with leaves.
+## Level 2. Nodes with nodes with leaves.
 
 - `Java` `Scri` `pt ` `is `
 - `a ` `we` `ird`
 - ` pro` `gr`
 - `amm` `ing` ` la` `ng` `ua` `ge.`
 
-## Stage 3. Nodes with nodes with leaves.
+## Level 3.
 
 - #4A...
   - `Java` `Scri` `pt ` `is `
@@ -27,3 +29,13 @@ The hash is an MSB first sequence. hash(`Java`) = 0x4A617661
   - ` pro` `gr`
 - #61...
   - `amm` `ing` ` la` `ng` `ua` `ge.`
+
+## Level 4. Root.
+
+- #4A...
+  - #4A...
+    - `Java` `Scri` `pt ` `is `
+    - `a ` `we` `ird`
+    - ` pro` `gr`
+  - #61...
+    - `amm` `ing` ` la` `ng` `ua` `ge.`
