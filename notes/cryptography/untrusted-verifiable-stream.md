@@ -1,6 +1,6 @@
-# Compact Verifable Streaming in Untrusted Environment
+# Compact Verifiable Streaming in Untrusted Environment
 
-One of the good properties of cryptographically strong hash is that a known hash value can be used to verify that the content we download from the Internet matches the original file's content. But here's the problem: we need to download the whole file to ensure its content is correct. It's not a big deal if the file is only a few kilobytes, but it can be not good if the file is enormous, e.g., several gigabytes. 
+One of the good properties of cryptographically strong hash is that a known hash value can be used to verify that the content we download from the Internet matches the original file's content. But here's the problem: we need to download the whole file to ensure its content is correct. It's not a big deal if the file is only a few kilobytes, but it can be not good if the file is enormous, e.g., several gigabytes.
 
 Interface
 
@@ -54,11 +54,11 @@ type StorageApi = {
 
 ## Chain
 
-But what if our hash is not constructed as a tree? Actually, almost all known cryptographic hash algorithms create trees. For example, the SHA2 algorithm creates a chain, which is also a tree but a very unbalanced one where all right nodes are leaves. So, these trees are still suitable for downloading with a quick verification. In this case, we download files backward. Most of the time, the result of `getChunk` will look like this `[Hash, Data].` 
+But what if our hash is not constructed as a tree? Actually, almost all known cryptographic hash algorithms create trees. For example, the SHA2 algorithm creates a chain, which is also a tree but a very unbalanced one where all right nodes are leaves. So, these trees are still suitable for downloading with a quick verification. In this case, we download files backward. Most of the time, the result of `getChunk` will look like this `[Hash, Data].`
 
 The server should prepare a list of intermediate hashes for this solution for each chunk. After that our last `StrorageApi` can work for any knon hash type.
 
-This solution is not new, for example: 
+This solution is not new, for example:
 
 - https://bsky.app/profile/retr0.id/post/3ld4kgbjxw22r (Dec 2024),
 - https://discuss.ipfs.tech/t/supporting-large-ipld-blocks/15093 (Aug 2022).
@@ -82,16 +82,16 @@ type HashType = string
 type StorageApi = {
   nativeHashType: () => HashType
   // returns a native hash or `undefined` if the given hash is unknown.
-  getNativeHash: ({ type: HashType, hash: Hash }) => undefined | Hash  
+  getNativeHash: ({ type: HashType, hash: Hash }) => undefined | Hash
   getChunk: (hash: Hash) => undefined | (Data|Hash)[]
 }
 ```
 
 While this information can be regenerated for all root blocks, it can be very expensive to regenerate the table for each request. So the server may keep the table for a while.
 
-## In Untrusted Enviroment
+## In Untrusted Environment
 
-If our server works in untrusted enviroment, then a client may not trust the new hash returned from a server. The server should prepeare temporary mapping data.
+If our server works in untrusted environment, then a client may not trust the new hash returned from a server. The server should prepeare temporary mapping data.
 
 |         | Specific for a particular AHash | Permanent      |
 |---------|---------------------------------|----------------|
@@ -104,7 +104,7 @@ type HashUrl = { type: HashType, hash: Hash }
 type StorageApi = {
   nativeHashType: () => HashType
   // returns a native hash or `undefined` if the given hash is unknown.
-  getNativeHash: (hashUrl: HashUrl) => undefined | Hash  
+  getNativeHash: (hashUrl: HashUrl) => undefined | Hash
   getChunk: (hash: Hash) => undefined | (Data|Hash)[]
   //
   getAlienChunk: (hashUrl: HashUrl, nativeHash: Hash) => { offset?: { alienHash: Hash, offset: bigint }, data: (Hash|Data)[] }
