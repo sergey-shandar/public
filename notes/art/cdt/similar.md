@@ -7,9 +7,9 @@ In this example, a node may contain multiple (more than 2) child nodes.
 `JavaScript is a weird programming language.`
 `JavaScript is a strange programming language.`
 
-The hash is one byte and equals to the character.
+The hash is one byte and equals the character.
 
-## Level 1. Nodes contains multiple leaves/bytes.
+## Level 1. Nodes contain multiple leaves/bytes.
 
 **Text # 1:**
 [X] `Java` `Scri` `pt ` `is ` `a `
