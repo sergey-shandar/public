@@ -1,3 +1,5 @@
+// XOR Hash Map
+
 /** @typedef {readonly[number, number]} Record */
 
 /** @typedef {readonly[number, number, number]} Record3 */
