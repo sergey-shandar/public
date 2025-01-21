@@ -93,3 +93,31 @@ Ai + Bi => i.
 3010 3011[3012]3013 | 3110 3111 3112 3113 |[3210]3211 3212 3213 | 3310 3311 3312 3313
 3020[3021]3022 3023 |[3120]3121 3122 3123 | 3220 3221 3222 3223 | 3320 3321 3322 3323
 3030 3031 3032 3033 | 3130 3131 3132 3133 | 3230 3231 3232 3233 | 3330 3331 3332 3333
+
+## Using Elliptic Curves
+
+These keys are temporary.
+
+Alice:
+- Private Key: Sa
+- Public Key: Pa
+Bob Private Key:
+- Private Key: Sb
+- Public Key: Pb
+
+Alice takes 52 cards `C = [0, 1, ..., 51]` and encrypt each card with Sa, shuffle and then publish it for Bob: `Ca = [Ca0, Ca1, ...]`.
+Bob takes the Ca and encrypt each card with `Cab = [Cab0, Cab1, ...]`.
+
+Additional:
+- each card may have additional random values.
+
+Then Alice and Bob agrees to take two cards each from the array, for example `Cab0, Cab1` for Alice and `Cab2, Cab3` for Bob.
+
+Bob decrypt `Cab0` and `Cab1` for Alice by applying `-Sb` so Alice received `Ca{a0}` and `Ca{a1}`.
+Alice decrypts these cards `C{a0}, C{a1}` and now knows the result.
+
+The same way Bob received his cards `C{b0}, C{b1}`.
+
+Community cards are open by decrypting and then publishing the cards by both parties in any order.
+
+https://en.wikipedia.org/wiki/Mental_poker
