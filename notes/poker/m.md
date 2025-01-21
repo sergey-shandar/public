@@ -121,3 +121,28 @@ The same way Bob received his cards `C{b0}, C{b1}`.
 Community cards are open by decrypting and then publishing the cards by both parties in any order.
 
 https://en.wikipedia.org/wiki/Mental_poker
+
+1. c = shuffle & encrypt by A => cA
+  = shuffle and encrypt by B => cAB
+
+  open for B: Alice decrypt cAB[i] and give cB[i] to B.
+  open for A: Bob decrypt cAB[i] and give cA[i] to A.
+  open for everyone: in any order.
+
+2. c = shuffle & encrypt by A   => cA
+  = shuffle and encrypt by B => cAB
+  = decrypt by A (`cB`) and encrypt by [A0, ...] => CXAB
+  = decrypt by B (`cA`) and encrypt by [B0, ...] => CXAXB
+
+Why do we need `[A0, ...]`? We can postpone the process until we need to open the card for one of the party.
+
+1. `cAB[0]` =>
+    - Alice converts it to `cB[0]` by removing `A` and give it to Bob.
+
+2. `cAB[0]` =>
+    Bob converts it to `cAXB[0]` by adding `B0` and give it to Alice.
+    Alice converts it to `cXB[0]` by removing `A` and give it to Bob.
+        Bob knows `cAB[0]`, `cXB[0]`, `c[0]` and can calculate `cB[0]` by removing `B0` and adding `B`.
+        Alice knows `cXB[0]` and can calculate `cB[0]` by removing `A` from `cAB[0]`.
+
+The only advantage I see is that the last person doesn't publish `cAB` but he knows it.
