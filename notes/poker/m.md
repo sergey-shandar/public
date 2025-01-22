@@ -145,4 +145,4 @@ Why do we need `[A0, ...]`? We can postpone the process until we need to open th
         Bob knows `cAB[0]`, `cXB[0]`, `c[0]` and can calculate `cB[0]` by removing `B0` and adding `B`.
         Alice knows `cXB[0]` and can calculate `cB[0]` by removing `A` from `cAB[0]`.
 
-The only advantage I see is that the last person doesn't publish `cAB` but he knows it.
+The only advantage I see is that if the last person doesn't publish `cAB` but he knows it.
