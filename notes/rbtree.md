@@ -1,4 +1,8 @@
-# List
+## BTrees
+
+## List
+
+**TypeScript:**
 
 ```ts
 type List<T> = Node<T> | null
@@ -8,10 +12,12 @@ type Node<T> = {
 }
 ```
 
+**Rust**
+
 ```rust
 enum List<T> {
   None,
-  Some<Node<T>>
+  Some<&Node<T>>
 }
 
 // or
