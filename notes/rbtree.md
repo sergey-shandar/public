@@ -17,7 +17,7 @@ type Node<T> = {
 ```rust
 enum List<T> {
   None,
-  Some<&Node<T>>
+  Some<&Node<T>> // compilation error but it doesn't matter for the article.
 }
 
 // or
