@@ -17,11 +17,11 @@ type Node<T> = {
 ```rust
 enum List<T> {
   None,
-  Some<&Node<T>> // compilation error but it doesn't matter for the article purpose.
+  Some<&Node<T>> // compilation error, but it doesn't matter for the article's purpose.
 }
 
 // or
-type List<T> = Option<Node<T>>;
+type List<T> = Option<&Node<T>>;
 
 struct Node<T> {
   value: T
@@ -31,7 +31,20 @@ struct Node<T> {
 
 ## Tree
 
+```ts
+type Tree<T> = Node<T> | null
+type Node<T> = {
+  readonly left: Tree<T>
+  readonly value: T
+  readonlt right: Tree<T>
+}
 ```
-  - computer
-- in
+
+```rust
+type Tree<T> = Option<&Node<T>>;
+struct Node<T> {
+    left: Tree<T>
+    value: T
+    right: Tree<T>
+}
 ```
