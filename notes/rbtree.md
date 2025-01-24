@@ -28,3 +28,10 @@ struct Node<T> {
   next: List<T>
 }
 ```
+
+## Tree
+
+```
+  - computer
+- in
+```
