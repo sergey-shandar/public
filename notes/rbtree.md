@@ -57,7 +57,7 @@ type Node<T> = Leaf1<T> | Leaf2<T> | Node1<T> | Node2<T>
 type Leaf1<T> = readonly[T]
 type Leaf2<T> = readonly[T, T]
 type Node1<T> = readonly[Node<T>, T, Node<T>]
-type Node2<T> = eadonly[Node<T>, T, Node<T>, T, Node<T>]
+type Node2<T> = readonly[Node<T>, T, Node<T>, T, Node<T>]
 ```
 
 ```rust
