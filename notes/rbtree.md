@@ -48,3 +48,28 @@ struct Node<T> {
     right: Tree<T>,
 }
 ```
+
+## BTree
+
+```ts
+type Root<T> = Node<T> | null
+type Node<T> = Leaf1<T> | Leaf2<T> | Node1<T> | Node2<T>
+type Leaf1<T> = readonly[T]
+type Leaf2<T> = readonly[T, T]
+type Node1<T> = readonly[Node<T>, T, Node<T>]
+type Node2<T> = eadonly[Node<T>, T, Node<T>, T, Node<T>]
+```
+
+```rust
+enum Node<T> {
+    Leaf1(Leaf1<T>),
+    Leaf2(Leaf2<T>),
+    Node1(Node1<T>),
+    Node2(Node2<T>),
+}
+
+struct Leaf1<T>(T);
+struct Leaf2<T>(T,T);
+struct Node1<T>(&Node<T>, T, &Node<T>);
+struct Node2<T>(&Node<T>, T, &Node<T>, T, &Node<T>);
+```
