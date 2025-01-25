@@ -8,7 +8,7 @@ In this manifesto I tried to formulate what kind of digital rights we can expect
   - support for links with a strong, cryptographic hash function.
   - additional points if the system supports multiple well-known hash functions.
 
-2. Users should be able keep and synchronize their data to personal devices. **Solution:**
+2. Users should be able keep and synchronize their data to personal devices. This ability should reduce fragmentation. **Solution:**
   - Synchronization to a content-addressable storage.
   - Additional points for:
     - if the storage can be synchronized with other services.
@@ -48,13 +48,13 @@ In this manifesto I tried to formulate what kind of digital rights we can expect
 
 ---------------------
 
-Digital freedom, in this manifesto, means the right to own data and digital identities and share and communicate with others without third parties. It also means the freedom to ignore information from others. Freedom to be left alone, such as living offline, in subnetworks, or rare synchronization with the internet. Freedom to create decentralized communities without unelected centralized power. Freedom of choice to use different algorithms for searching and filtering information. Freedom for digital privacy, such as encrypted data storage and communication.
+Digital freedom, in this manifesto, means the right to own data and digital identities and share and communicate with others without third parties. It also means the freedom to ignore information from others. Freedom to be left alone, such as living offline, in subnetwork, or rare synchronization with the internet. Freedom to create decentralized communities without unelected centralized power. Freedom of choice to use different algorithms for searching and filtering information. Freedom for digital privacy, such as encrypted data storage and communication.
 
 Also, businesses and communities should have the freedom to refuse services to anyone.
 
 It may seem that the last freedom contradicts previous personal digital rights. And that's true for centralized services. If you are using a centralized service, I can lose your digital identity, data, and contacts if the centralized service rejects you. However, I will try to show that we can have both. You may lose some comfort and services, but the service will not be able to take your digital identity, data, and connections if it uses the principles described above.
 
-Because of centralization and incompatabilities beetween decentralized networks (e.g. blockchains) we have huge fragmentation of our data. Currently, we have to have multiple accounts on different services and decentralized networks and my list of contacts is such a mess. Everytime you open an account on a new network you have to rebuild all your contacts again and again.
+Because of centralization and incompatibilities between decentralized networks (e.g. blockchains) we have huge fragmentation of our data. Currently, we have to have multiple accounts on different services and decentralized networks and my list of contacts is such a mess. Every time you open an account on a new network you have to rebuild all your contacts again and again.
 
 Users have rights to start their own chain/graph of records, transactions, other data blocks and merge it with others at any time they like.
 
@@ -121,3 +121,11 @@ See also https://emilyliu.me/blog/open-network, https://docs.bsky.app/docs/advan
 
 I will continue to work on solutions to the problems. If you are interested in sponsoring, investing, or helping to solve the problems in other ways, let me know.
 
+---
+
+Structure:
+
+- Problems
+- Rights and Freedoms
+- Solutions to unlock the rights
+- nolock.social solution
