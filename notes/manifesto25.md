@@ -1,6 +1,6 @@
 # Manifesto
 
-We live in the digital world were we keep our data on centralized services, with vendor lock-ins, with constant change in policies where your data (including your contacts) can disappear at any time because of these changes. There are a lot of initiatives and promises to change the situation, such as Fedeverse, Nostr, Bluesky, and various blockchain-based social networks. But how can we be sure that this new technology are really different and gives user digital rights?
+We live in the digital world were we keep our data on centralized services, with vendor lock-ins, with constant change in policies where your data (including your contacts) can disappear at any time because of these changes. There are a lot of initiatives and promises to change the situation, such as Fediverse, Nostr, Bluesky, and various blockchain-based social networks. But how can we be sure that this new technology are really different and gives user digital rights?
 
 In this manifesto I tried to formulate what kind of digital rights we can expect from the new services and what are the technical properties that can provide these rights.
 
