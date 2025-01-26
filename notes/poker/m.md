@@ -146,3 +146,22 @@ Why do we need `[A0, ...]`? We can postpone the process until we need to open th
         Alice knows `cXB[0]` and can calculate `cB[0]` by removing `A` from `cAB[0]`.
 
 The only advantage I see is that if the last person doesn't publish `cAB` but he knows it.
+
+## Cards
+
+a * P0 = P1
+b * P1 = P2 = a * b * P0
+ar * P2 = P3 = b * P0
+br * P3 = P0
+
+a * Q0 = Q1
+
+B doesn't know a.
+B knows P0 and P1, such as a * P0 = P1.
+B knows Q1.
+B doesn't know Q0.
+How can B find Q0?
+
+Q1 = a * Q0, P1 = a * P1
+
+Q1 + P1 = a * (P0 + Q0)
