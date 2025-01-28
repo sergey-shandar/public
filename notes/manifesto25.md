@@ -1,50 +1,83 @@
 # Manifesto
 
-We live in the digital world were we keep our data on centralized services, with vendor lock-ins, with constant change in policies where your data (including your contacts) can disappear at any time because of these changes. There are a lot of initiatives and promises to change the situation, such as Fediverse, Nostr, Bluesky, and various blockchain-based social networks. But how can we be sure that this new technology are really different and gives user digital rights?
+We live in the digital world where we keep our data on centralized services, with vendor lock-ins, and with constant policy changes, where your data (including your contacts) can disappear at any time because of these changes. There are a lot of initiatives and promises to change the situation, such as [Fediverse](https://en.wikipedia.org/wiki/Fediverse), [Nostr](https://en.wikipedia.org/wiki/Nostr), [Bluesky](https://en.wikipedia.org/wiki/Bluesky), and various blockchain-based social networks. But how can we be sure that one of the new technologies is really different and gives users digital rights and freedom?
 
-In this manifesto I tried to formulate what kind of digital rights we can expect from the new services and what are the technical properties that can provide these rights.
+In this article, I formulated what kind of digital rights we can expect from new services and what technical properties the services should have to support these rights. This article is not limited to social networks but is about our complete presence in the digital world, interaction with others, trust, and handling and retaining data.
 
-1. Users should be able to reference data using a universal links that uniquely and permanently identify the data. Once it's referenced, the data can't be tampered. **Solution:** using cryptographic hash functions. **Points:**
-  - support for links with a strong, cryptographic hash function.
-  - additional points if the system supports multiple well-known hash functions.
+## 1. Permanent Links
 
-2. Users should be able keep and synchronize their data to personal devices. This ability should reduce fragmentation. **Solution:**
-  - Synchronization to a content-addressable storage.
-  - Additional points for:
-    - if the storage can be synchronized with other services.
-    - if the storage is a generic Content Addressable Storage. It means it can contain data from different systems, e.g. Git, blockchains, etc. For example, Git and IPFS are not generic content-addressable storage. BlockSet and IPLD are generic CASes.
-    - conflict-less protocol agnostic CAS synchronization. For example, while supports multiple protocols, Git synchronization is not conflict-less. This is important when we trying to synchronize massive storages offline or with limited internet access.
+Users should be able to reference data using universal links that uniquely and permanently identify it. Once we have such a link, it should always reference the original data. 
 
-3. Users should be able to create and use only few identities that don't depend on centralized services. **Solution:**
-  - Decentralized Identities.
-  - Additional Points:
-    - support for multiple DID algorithms.
-    - using the same DID for different services.
-    - service recognize associated centralize and decentralized identities.
+**Solution:** The system should support [cryptographic hash functions](https://en.wikipedia.org/wiki/Cryptographic_hash_function) as a reference to data. 
 
-4. Users should be able to confirm authorship of content. **Solution:**
-  - Digital Signatures
-  - Additional points for:
-    - Trusted time stamps
-    - support for additional meta information for content such as licensing.
-    - Support for multiple digital signature algorithms
-    - Support for multiple trusted time-stamp authorities.
-    - Support for decentralized trusted time-stamp, such as blockchain with a consensus algorithm.
-  Signed and timestamp data is called a source of truth. Any data that is generate from the source of truth is called derived data and can be used for optimization.
+There are plenty of cryptographic hash functions. A system that supports multiple well-known hash algorithms deserves additional points.
 
-5. Users should have rights to name things as they like without a centralized ot decentralized authorities. **Solution:**
-   - Relative names. Everyone is the center of the Universe.
-   - Additional point, a service allows to use a relative, such as `Alice/id/Bob/id/Charlie/CharliesProject`.
+## 2. Data Synchronization
 
-6. Users should have rights to not receive information from untrusted sources. **Solution:**
-   - relative trust, For example, a user may have only check from 2nd or 3rd circle of connections.
-   - Additional Points:
-     - support for relative/subjective weight ratings for different subjects.
-  Solving the problem we can build community based trust and effectively fights with spam and misinformation when we can track a source.
+Users should be able to keep and synchronize their data on personal devices. 
 
-7. Users have rights to write code and applications that can deterministically transform data from the source of truth.
-   **Solution:** Content-Addressable Programming Language. See Unison, FunctionalScript.
-   This kind of operation can produced data that is conditional signed. It can be used for transforming old signed, timestamped data into new formats for future proofing.
+**Solution:** Synchronization to a personal [content-addressable storage](https://en.wikipedia.org/wiki/Content-addressable_storage).
+
+Additional points for:
+
+- If the storage can be synchronized with other services, then there is no need to manually synchronize our data by copying and pasting the same data across different services. This should significantly reduce the fragmentation of our digital presence.
+- If the storage is a generic Content Addressable Storage. This means it can contain data from different systems. For example, [Git](https://en.wikipedia.org/wiki/Git) is not generic content-addressable storage. [BlockSet](https://github.com/datablockset/blockset) is a generic CAS.
+- conflict-less protocol-agnostic CAS synchronization. For example, while Git supports multiple protocols, Git synchronization is not conflict-less. This is important when we are trying to synchronize massive storage offline or with limited network access.
+
+## 3. Decentralized Identity
+
+Users should be able to create and use only a few identities that don't depend on centralized services. 
+
+**Solution:** [Decentralized Identifier](https://en.wikipedia.org/wiki/Decentralized_identifier).
+
+Additional Points for:
+
+- The same DID can be used for different services.
+- Support for multiple DID algorithms.
+- Service recognizes associated decentralized and centralized identities.
+
+## 4. Content Authorship
+
+Users should be able to confirm the authorship of their content. 
+
+**Solution:** [Digital Signatures](https://en.wikipedia.org/wiki/Digital_signature) and [Trusted timestamping](https://en.wikipedia.org/wiki/Trusted_timestamping). A user's content with a signature and a trusted timestamp can be used as proof of authorship.
+
+Additional points for:
+
+- Support for multiple digital signature algorithms.
+- Support for additional meta information for content such as licensing.
+- Support for multiple trusted time-stamp authorities.
+- Support for decentralized trusted time-stamps, such as blockchain with a consensus algorithm.
+
+Signed and timestamp data is immutable and called a **source of truth**. Any data generated from the source of truth is called derived data and can mutated and used for search optimization.
+
+## 5. Right to Name and Define
+
+Users should have the right to name things without a centralized or decentralized authority. 
+
+**Solution:** Relative names. Everyone can have their own dictionary. Everyone is the center of the Universe.
+
+Additional points are deserved if a user can use dictionaries of others to form complex names, similar to a file path, such as `Alice/Bob/Charlie/CharlieProject`.
+
+## 6. Right to Ignore
+
+Users should have the right to ignore information from untrusted sources and not interact with them. 
+
+**Solution:** trusted connections. For example, a user may opt-in to receive information from their 2nd or 3rd circle of connections.
+
+Additional Points for
+
+- Support for relative/subjective weight ratings for different topics. We are all different, so a user may trust a doctor for medical recommendations but not so much in stock market topics.
+
+By solving the problem, we can effectively fight spam, misinformation, and deepfakes. It will also allow us to build and participate in multiple digital communities with trusted connections and interactions.
+
+## 7. Deterministic Data Transformation
+
+Users can authorize code and applications to deterministically transform data from the source of truth. This means that every time we run the same code on the same data, we must receive the same result. 
+
+**Solution:** Content-addressable programming Languages, such as [Unison](https://www.unison-lang.org/) and [FunctionalScript](https://github.com/functionalscript/functionalscript). Pure functional programming languages can also be used, but content-addressable programming languages are much better suited for the role.
+
+This operation can produce conditionally signed data by transforming old signed, timestamped data into new formats for future-proofing.
 
 ---------------------
 
