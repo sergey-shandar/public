@@ -75,6 +75,6 @@ By solving the problem, we can effectively fight spam, misinformation, and deepf
 
 Users can authorize code and applications to deterministically transform data from the source of truth. This means that every time we run the same code on the same data, we must receive the same result. 
 
-**Solution:** Content-addressable programming Languages, such as [Unison](https://www.unison-lang.org/) and [FunctionalScript](https://github.com/functionalscript/functionalscript). Pure functional programming languages can also be used, but content-addressable programming languages are much better suited for the role.
+**Solution:** Content-addressable programming Languages, such as [Unison](https://www.unison-lang.org/) and [FunctionalScript](https://github.com/functionalscript/functionalscript). Purely functional programming languages can also be used, but content-addressable programming languages are much better suited for the role.
 
 This operation can produce conditionally signed data by transforming old signed, timestamped data into new formats for future-proofing.
