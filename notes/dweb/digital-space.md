@@ -78,3 +78,7 @@ Users can authorize code and applications to deterministically transform data fr
 **Solution:** Content-addressable programming Languages, such as [Unison](https://www.unison-lang.org/) and [FunctionalScript](https://github.com/functionalscript/functionalscript). Purely functional programming languages can also be used, but content-addressable programming languages are much better suited for the role.
 
 This operation can produce conditionally signed data by transforming old signed, timestamped data into new formats for future-proofing.
+
+notes:
+- examples of what if we don't have it
+- it's not about DWeb or even about Web3 as we know it. it's a about a generic digital spaces that can split and merge.
