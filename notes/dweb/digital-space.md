@@ -49,7 +49,7 @@ Additional points for:
 - Support for multiple trusted time-stamp authorities.
 - Support for decentralized trusted time-stamps, such as blockchain with a consensus algorithm.
 
-Signed and timestamp data is immutable and called a **source of truth**. Any data generated from the source of truth is called derived data and can mutated and used for search optimization.
+Signed and timestamp data is immutable and called a source of truth. Any data generated from the source of truth is called derived data and can be mutated and used for search optimization and other purposes.
 
 ## 5. Right to Name and Define
 
