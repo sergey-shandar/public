@@ -22,7 +22,7 @@ Additional points for:
 
 - If the storage can be synchronized with other services, then there is no need to manually synchronize our data by copying and pasting the same data across different services. This should significantly reduce the fragmentation of our digital presence.
 If the storage is a generic Content Addressable Storage (CAS), it can contain data from different systems. For example, [Git](https://en.wikipedia.org/wiki/Git) is not a generic content-addressable storage. [BlockSet](https://github.com/datablockset/blockset) is a generic CAS.
-- Conflictless protocol-agnostic CAS synchronization. For example, while Git supports multiple protocols, Git synchronization is not conflict-less. Conflictless CAS synchronization is important to maintain when synchronizing massive storage offline or with limited network access.
+- Conflictless protocol-agnostic CAS synchronization. For example, while Git supports multiple protocols, Git synchronization is not conflict-less. Conflictless CAS synchronization is important when synchronizing massive storage offline or with limited network access.
 
 ## 3. Decentralized Identity
 
@@ -34,7 +34,7 @@ Additional points for:
 
 - If the same DID can be used for different services.
 - If a service supports multiple DID algorithms.
-- If a service Service recognizes associated decentralized and centralized identities.
+- If a service recognizes associated decentralized and centralized identities.
 
 ## 4. Content Authorship
 
