@@ -13,7 +13,9 @@ An object with only two possible states can be mapped into one bit, while an obj
 - In how many states can two objects be? It's a [product](https://en.wikipedia.org/wiki/Product_(mathematics)) of their states. For example, the number of states in two bits is 4, 2 by 2.
 - How can we know that an object is indivisible? If an object has a [prime number](https://en.wikipedia.org/wiki/Prime_number) of states, then this object is indivisible.
 
-If we are building a universe that conserves a number of states in objects, similar to the (conservation of mass-energy)[[https://en.wikipedia.org/wiki/Conservation_of_mass](https://www.britannica.com/science/conservation-of-mass-energy)] in our world, then our indivisible objects are objects that have a prime number of states.
+If we are building a universe that conserves a number of states in objects, similar to the [conservation laws](https://en.wikipedia.org/wiki/Conservation_law) in our world, then our indivisible objects are objects that have a prime number of states and a divisible object has a number of states which equals to a product of its subobject states. For example, an object that has 6 states can be divided into two objects with 2 states and 3 states.
+
+One main difference is that in our world when we create one object from two, we usually add their properties rather than multiplying them. For example, two 1 kg watermelons have a 2 kg mass. 
 
 
 
