@@ -17,7 +17,7 @@ If we are building a universe that conserves a number of states in objects, simi
 
 One main difference is that in our world when we create one object from two, we usually add their properties rather than multiplying them. For example, two 1 kg watermelons have a 2 kg mass. 
 
-
+---
 
 Information in bits. A number of states are more precise. The system with one state doesn't hold any information. 
 
