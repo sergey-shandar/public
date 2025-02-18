@@ -4,7 +4,7 @@ One question I sometimes ask myself is, based on knowledge about our world and l
 
 This article is based on a series of questions I asked myself and the most simple questions I could come up with. If you find mistakes in my answers or have a better answer, please let me know in the comments. In this case, the answer that is correct, simpler, and more precise is better.
 
-- _What are the main building blocks of any universe we can imagine?_ It's information. 
+- What are the main building blocks of any universe we can imagine? It's information. 
 - How do we measure information? Usually, we measure information in [bytes](https://en.wikipedia.org/wiki/Byte). For example, my computer has a memory of 8 [gigabytes](https://en.wikipedia.org/wiki/Gigabyte), which equals about 8 billion bytes.
 - Can we divide the byte into smaller parts? Yes, we can. Each byte contains 8 [bits](https://en.wikipedia.org/wiki/Bit).
 An object with only two possible states can be mapped into one bit, while an object with only one state doesn't carry any information. So, one bit is the smallest indivisible unit of information.
