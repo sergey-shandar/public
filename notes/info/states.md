@@ -32,7 +32,7 @@ This article is based on a series of basic questions I asked myself and the simp
 
   A. If an object has a [prime number](https://en.wikipedia.org/wiki/Prime_number) of states, then the object is indivisible, elementary, and fundamental.
 
-In summary, if we are building a universe that conserves a number of states in objects—similar to the [conservation laws](https://en.wikipedia.org/wiki/Conservation_law) in the real world—then our elementary objects are those that have a prime number of states, and a composed object has a number of states that equals the product of its subobject states. For example, an object with six states can be divided into two objects with two and three states.
+In summary, if we are building a universe that conserves a number of states in objects, similar to the [conservation laws](https://en.wikipedia.org/wiki/Conservation_law) in the real world, then our elementary objects are those that have a prime number of states, and a composed object has a number of states that equals the product of its subobject states. For example, an object with six states can be divided into two objects with two and three states.
 
 - _Q. Can we use the number of object states as a characteristic similar to mass or energy in the real world?_
 
