@@ -34,7 +34,9 @@ This article is based on a series of basic questions I asked myself and the most
 
 In summary, If we are building a universe that conserves a number of states in objects, similar to the [conservation laws](https://en.wikipedia.org/wiki/Conservation_law) in the real world, then our elementary objects are objects that have a prime number of states, and a composed object has a number of states that equals the product of its subobject states. For example, an object with six states can be divided into two objects with two and three states.
 
-- Can we use a number of object states as a characteristic similar to mass or energy in the real world? The main difference is that in the real world when we create an object from two objects, we usually add such properties as a mass rather than multiplying them. For example, two 1 kg watermelons weigh 2 kg. To fix this, we can take a [logarithm](https://en.wikipedia.org/wiki/Logarithm) of a number of states. It doesn't matter what base of the logarithm we took because it is just a linear coefficient.
+- Q. Can we use a number of object states as a characteristic similar to mass or energy in the real world?
+
+- A. The main difference is that in the real world when we create an object from two objects, we usually add such properties as a mass rather than multiplying them. For example, two 1 kg watermelons weigh 2 kg. To fix this, we can take a [logarithm](https://en.wikipedia.org/wiki/Logarithm) of a number of states. It doesn't matter what base of the logarithm we took because it is just a linear coefficient.
 
 If our imaginary universe has only one type of elementary object, for example, with two states, we can take the number as a base of the logarithm. This way, the logarithm of object states will always be a [natural number](https://en.wikipedia.org/wiki/Natural_number), excluding zero. For example, if our elementary object is a bit, then the logarithm with base 2 gives us a number of bits in the object. If an imaginary universe has multiple elementary objects, we can take an object with the smallest number of states as a reference point for our logarithm base.  
 
