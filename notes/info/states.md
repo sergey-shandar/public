@@ -1,6 +1,6 @@
 # Building Imaginary Universes. Etude 1. Information
 
-One question I sometimes ask myself is, based on knowledge about the real world and logic, what kind of universes are possible?
+One question I sometimes ask myself is: based on knowledge about the real world and logic, what kind of universes are possible?
 
 This article is based on a series of basic questions I asked myself and the most simple answers I could come up with. If you find mistakes in my answers or have better answers, please let me know in the comments. In this case, the answer that is correct, simpler, and more precise is better.
 
@@ -17,9 +17,11 @@ In summary, if we are building a universe that conserves a number of states in o
 
 - Can we use a number of object states as a characteristic similar to mass or energy in the real world? The main difference is that in the real world when we create an object from two objects, we usually add such properties as a mass rather than multiplying them. For example, two 1 kg watermelons weigh 2 kg. To fix this, we can take a [logarithm](https://en.wikipedia.org/wiki/Logarithm) of a number of states. It doesn't matter what base of the logarithm we took because it is just a linear coefficient.
 
-If our imaginary universe has only one type of elementary object, for example, with two states, we can take the number as a base of the logarithm. This way, the logarithm of object states will always be a [natural number](https://en.wikipedia.org/wiki/Natural_number), excluding zero. For example, if our elementary object is a bit, then the logarithm with base 2 gives us a number of bits in the object. If an imaginary universe has multiple elementary objects, we can take an object with the smallest number of states as a reference point for our logarithm base.
+If our imaginary universe has only one type of elementary object, for example, with two states, we can take the number as a base of the logarithm. This way, the logarithm of object states will always be a [natural number](https://en.wikipedia.org/wiki/Natural_number), excluding zero. For example, if our elementary object is a bit, then the logarithm with base 2 gives us a number of bits in the object. If an imaginary universe has multiple elementary objects, we can take an object with the smallest number of states as a reference point for our logarithm base.  
 
-So, what kind of masses of elementary objects can this imaginary universe have?
+If you would like a small homework, prove the following statement: if we use the logarithm of state counts to measure mass, the mass of an elementary object divided by the mass of another elementary object is always a [transcendental number](https://en.wikipedia.org/wiki/Transcendental_number).
+
+
 
 ---
 
