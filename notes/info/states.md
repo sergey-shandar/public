@@ -69,6 +69,14 @@ If our imaginary universe has only one type of elementary object, for example wi
 
 $$\ln(6) = \ln(2 \cdot 3) = \ln(2) + \ln(3)$$
 
+```mermaid
+flowchart LR
+  subgraph "ln(6) kg"
+    0["ln(2) kg"]
+    1["ln(3) kg"]
+  end
+```
+
 If you would like a small homework, prove the following statement: if we use the logarithm of state counts to measure mass, the mass of an elementary object divided by the mass of another elementary object is always a [transcendental number](https://en.wikipedia.org/wiki/Transcendental_number).
 
 ---
