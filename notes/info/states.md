@@ -4,37 +4,37 @@ One question I sometimes ask myself is: based on knowledge about the real world 
 
 This article is based on a series of basic questions I asked myself and the most simple answers I could come up with. If you find mistakes in my answers or have better answers, please let me know in the comments. In this case, the answer that is correct, simpler, and more precise is better.
 
-- Q. What are the main building blocks of any universe we can imagine?
+- _Q. What are the main building blocks of any universe we can imagine?_
 
   A. It's information. 
 
-- Q. How do we measure information?
+- _Q. How do we measure information?_
 
   A. Usually, we measure information in [bytes](https://en.wikipedia.org/wiki/Byte). For example, my computer has a memory of 8 [gigabytes](https://en.wikipedia.org/wiki/Gigabyte), which equals about 8 billion bytes.
 
-- Q. Can we divide the byte into smaller parts? Yes, we can. Each byte contains 8 [bits](https://en.wikipedia.org/wiki/Bit).
+- _Q. Can we divide the byte into smaller parts? Yes, we can. Each byte contains 8 [bits](https://en.wikipedia.org/wiki/Bit)._
 
   A. An object with only two possible states can be mapped into one bit, while an object with only one state doesn't carry any information. So, one bit is the smallest indivisible unit of information.
 
-- Q. Can we build a universe using only bits?
+- _Q. Can we build a universe using only bits?_
 
   A. Perhaps, yes. At least all modern computers operate with bits, and we can model many things using them.
 
-- Q. Can we have other indivisible units of information?
+- _Q. Can we have other indivisible units of information?_
 
   A. Actually, yes. For example, an [object with three states](https://en.wikipedia.org/wiki/Ternary_numeral_system) can't fit into one bit, but an object with two bits has four states and can't fit into our three-state object. In the real world, we call them [elementary particles](https://en.wikipedia.org/wiki/Elementary_particle). For our imaginary universe, let's call them elementary objects because a particle in the real world could mean much more than an object with a finite number of states.
 
-- Q. How many states have an object composed of multiple elementary particles?
+- _Q. How many states have an object composed of multiple elementary particles?_
 
   A. It's a [product](https://en.wikipedia.org/wiki/Product_(mathematics)) of a number of elementary object states. For example, we can calculate how many states are in 3 bits by multiplying two (the number of states) three times (the number of elementary particles).
 
-- Q. How can we know that an object is elementary?
+- _Q. How can we know that an object is elementary?_
 
   A. If an object has a [prime number](https://en.wikipedia.org/wiki/Prime_number) of states, then the object is indivisible, elementary and fundamental.
 
 In summary, If we are building a universe that conserves a number of states in objects, similar to the [conservation laws](https://en.wikipedia.org/wiki/Conservation_law) in the real world, then our elementary objects are objects that have a prime number of states, and a composed object has a number of states that equals the product of its subobject states. For example, an object with six states can be divided into two objects with two and three states.
 
-- Q. Can we use a number of object states as a characteristic similar to mass or energy in the real world?
+- _Q. Can we use a number of object states as a characteristic similar to mass or energy in the real world?_
 
 - A. The main difference is that in the real world when we create an object from two objects, we usually add such properties as a mass rather than multiplying them. For example, two 1 kg watermelons weigh 2 kg. To fix this, we can take a [logarithm](https://en.wikipedia.org/wiki/Logarithm) of a number of states. It doesn't matter what base of the logarithm we took because it is just a linear coefficient.
 
