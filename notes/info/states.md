@@ -12,7 +12,7 @@ This article is based on a series of basic questions I asked myself and the simp
 
   A. Usually, we measure information in [bytes](https://en.wikipedia.org/wiki/Byte). For example, my computer has a memory of 8 [gigabytes](https://en.wikipedia.org/wiki/Gigabyte), which equals about 8 billion bytes.
 
-- _Q. Can we divide the byte into smaller parts? Yes, we can. Each byte contains 8 [bits](https://en.wikipedia.org/wiki/Bit)._ 
+- _Q. Can we divide the byte into smaller parts? Yes, we can. Each byte contains 8 [bits](https://en.wikipedia.org/wiki/Bit)._
 
   A. An object with only two possible states can be mapped into one bit, while an object with only one state doesn't carry any information. So, one bit is the smallest indivisible unit of information.
 
