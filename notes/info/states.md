@@ -15,7 +15,7 @@ An object with only two possible states can be mapped into one bit, while an obj
 
 If we are building a universe that conserves a number of states in objects, similar to the [conservation laws](https://en.wikipedia.org/wiki/Conservation_law) in our world, then our indivisible objects are objects that have a prime number of states and a divisible object has a number of states which equals to a product of its subobject states. For example, an object that has 6 states can be divided into two objects with 2 states and 3 states.
 
-One main difference is that in our world when we create one object from two, we usually add their properties rather than multiplying them. For example, two 1 kg watermelons have a 2 kg mass. 
+One main difference is that in our world when we create an object from two objects, we usually add such properties as mass rather than multiplying them. For example, two 1 kg watermelons have a 2 kg mass. To fix this, we can take a logorithm of a number states. 
 
 ---
 
