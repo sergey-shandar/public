@@ -67,7 +67,7 @@ flowchart LR
 
 If our imaginary universe has only one type of elementary object, for example with two states, we can take that number as the base of the logarithm. This way, the logarithm of object states will always be a [natural number](https://en.wikipedia.org/wiki/Natural_number), excluding zero. For example, if our elementary object is a bit, then the logarithm with base 2 gives us the number of bits in the object. If an imaginary universe has multiple elementary objects, we can take an object with the smallest number of states as a reference point for our logarithm base.
 
-$$\ln(6) = \ln(2 \times 3) = \ln(2) + \ln(3)$$
+$$\ln(6) = \ln(2 \cdot 3) = \ln(2) + \ln(3)$$
 
 If you would like a small homework, prove the following statement: if we use the logarithm of state counts to measure mass, the mass of an elementary object divided by the mass of another elementary object is always a [transcendental number](https://en.wikipedia.org/wiki/Transcendental_number).
 
