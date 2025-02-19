@@ -16,6 +16,16 @@ This article is based on a series of basic questions I asked myself and the simp
 
   A. Yes, we can. Each byte contains 8 [bits](https://en.wikipedia.org/wiki/Bit). An object with only two possible states can be mapped into one bit, while an object with only one state doesn't carry any information. So, one bit is the smallest indivisible unit of information.
 
+  ```mermaid
+  flowchart LR
+    subgraph byte: 256 states
+      0[bit #0: 2 states]
+      1[bit #1: 2 states]
+      2[...]
+      7[bit #7: 2 states]
+    end
+  ```
+
 - _Q. Can we build a universe using only bits?_
 
   A. Perhaps, yes. At least all modern computers operate with bits, and we can model many things using them.
@@ -28,11 +38,28 @@ This article is based on a series of basic questions I asked myself and the simp
 
   A. It's a [product](https://en.wikipedia.org/wiki/Product_(mathematics)) of the number of elementary object states. For example, we can calculate how many states are in 3 bits by multiplying 2 (the number of states) three times (the number of elementary particles).
 
+  ```mermaid
+  flowchart LR
+    subgraph 8 states
+      0[2 states]
+      1[2 states]
+      2[2 states]
+    end
+  ```  
+
 - _Q. How can we know that an object is elementary?_
 
   A. If an object has a [prime number](https://en.wikipedia.org/wiki/Prime_number) of states, then the object is indivisible, elementary, and fundamental.
 
 In summary, if we are building a universe that conserves a number of states in objects, similar to the [conservation laws](https://en.wikipedia.org/wiki/Conservation_law) in the real world, then our elementary objects are those that have a prime number of states, and a composed object has a number of states that equals the product of its subobject states. For example, an object with six states can be divided into two objects with two and three states.
+
+```mermaid
+flowchart LR
+  subgraph 6 states
+    0[2 states]
+    1[3 states]
+  end
+```  
 
 - _Q. Can we use the number of object states as a characteristic similar to mass or energy in the real world?_
 
