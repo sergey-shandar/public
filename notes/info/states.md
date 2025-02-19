@@ -17,6 +17,8 @@ If we are building a universe that conserves a number of states in objects, simi
 
 One main difference is that in our world when we create an object from two objects, we usually add such properties as mass rather than multiplying them. For example, two 1 kg watermelons have a 2 kg mass. To fix this, we can take a logorithm of a number states. It doesn't matter what based of the logarithm we took because it is just a linear coefficient.
 
+If our universe has only one elementary partical, for example with two states, then we can take a number as a base for the logarithm. In case of two states, the logarithm with base 2 gives us a number of bits in the system. For other systems, where we have more than one indivisible elementary partical we can take the smallest partical as a reference point.
+
 ---
 
 Information in bits. A number of states are more precise. The system with one state doesn't hold any information. 
