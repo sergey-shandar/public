@@ -19,10 +19,10 @@ This article is based on a series of basic questions I asked myself and the simp
   ```mermaid
   flowchart LR
     subgraph byte: 256 states
-      0[bit #0: 2 states]
-      1[bit #1: 2 states]
-      2[...]
-      7[bit #7: 2 states]
+      0((bit #0<br>2 states))
+      1((bit #1<br>2 states))
+      2((...))
+      7((bit #7<br>2 states))
     end
   ```
 
@@ -41,9 +41,9 @@ This article is based on a series of basic questions I asked myself and the simp
   ```mermaid
   flowchart LR
     subgraph 8 states
-      0[2 states]
-      1[2 states]
-      2[2 states]
+      0((2 states))
+      1((2 states))
+      2((2 states))
     end
   ```  
 
@@ -56,8 +56,8 @@ In summary, if we are building a universe that conserves a number of states in o
 ```mermaid
 flowchart LR
   subgraph 6 states
-    0[2 states]
-    1[3 states]
+    0((2 states))
+    1((3 states))
   end
 ```  
 
@@ -71,9 +71,9 @@ $$\ln(6) = \ln(2 \cdot 3) = \ln(2) + \ln(3)$$
 
 ```mermaid
 flowchart LR
-  subgraph "ln(6) kg"
-    0["ln(2) kg"]
-    1["ln(3) kg"]
+  subgraph "ln(6) ≈ 1.8"
+    0(("ln(2)<br> ≈ 0.7"))
+    1(("ln(3)<br> ≈ 1.1"))
   end
 ```
 
