@@ -17,3 +17,7 @@ I think a lot about how to structure the foundation for the new decentralized we
 5. **Networks Of Trust**. It's based on DISOT. This is where the fun and opportunities are. It's about weighted subjective trust, reducing information noise, and playing a positive-sum game with others.
 
 I have a clear understanding of how to implement 1 and 2 that is future-proof. There is still a lot of work to be done on 3. 
+
+## How can we build a digital infrastructure based on the proof principle?
+
+That is the main challenge. While many proofs, such as cryptographically strong hash functions, have already been intensely investigated, other areas, such as [ZK proofs](https://en.wikipedia.org/wiki/Zero-knowledge_proof), are pretty new.
