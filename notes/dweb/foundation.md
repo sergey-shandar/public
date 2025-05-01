@@ -1,8 +1,6 @@
 The main principle of the truly decentralized network is proofs instead of protocols.
 
-A proof has two parts: a statement we would like to prove and the algorithm (a purely mathematical function) that accepts data and returns `true`, if the data confirms the statement, or `false` otherwise. 
-
-This allows for working offline or in isolated networks.
+A proof has two parts: a statement to prove and the algorithm (a purely mathematical function) that accepts data and returns `true`, if the data confirms the statement, or `false` otherwise. 
 
 ## Structure
 
