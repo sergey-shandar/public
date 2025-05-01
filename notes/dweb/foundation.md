@@ -1,8 +1,8 @@
 The main principle of the truly decentralized network is proofs instead of protocols.
 
-A proof has two parts: a statement to prove and the algorithm (a purely mathematical function) that accepts data and returns `true`, if the data confirms the statement, or `false` otherwise. 
+A proof has two parts: a statement to prove and the algorithm (a purely mathematical function) that accepts data and returns `true`, if the data confirms the statement, or `false` otherwise. `f(statement, data) -> boolean`.
 
-In such systems, the function doesn't rely on other factors, such as where, when and how we recieve the data.  
+In such systems, the function doesn't depend on other factors, such as where, when, and how we receive the data. The function is pure (fully deterministic). It means that it always returns the same result for the same statement and data.
 
 ## Structure
 
