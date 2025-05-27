@@ -58,7 +58,11 @@ Content-addressable. The main problems it solves:
 - trust, if we need to upgrade version,
 - always work, even if some services are offline.
 
-Content-addressable with data structuring also solves other problems such as
+Content-addressable with data structuring also solves other problems, such as
 
 - how much data do we need to send
 - how much code is the same.
+
+Granularity can be as small as one bit, combining knowing and unknowing structuring.
+
+Working with such code, learning, and using it requires much less informational noise for humans and machine learning.
