@@ -52,4 +52,13 @@ But they still don't solve the problems.
 
 ## How it should be done.
 
-Content-addressable.
+Content-addressable. The main problems it solves:
+
+- reproducibility,
+- trust, if we need to upgrade version,
+- always work, even if some services are offline.
+
+Content-addressable with data structuring also solves other problems such as
+
+- how much data do we need to send
+- how much code is the same.
