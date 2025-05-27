@@ -48,7 +48,7 @@ But they still don't solve the problems.
 
 - it's still a centralized service,
 - introduce additional files `package.json`,
-- version and dependency hell, with such problem as diamond dependencies.
+- version and dependency hell, with problems such as diamond dependencies.
 
 ## How it should be done.
 
