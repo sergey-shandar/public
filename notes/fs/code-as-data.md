@@ -24,4 +24,32 @@ Looks good, and in theory, we can save it with a specific file name and use it i
   export default add(10)
   ```
 
-Ok, looks good. Can we now send `add10` to someone else? And now we open a gate to hell. Because we need to send all dependencies as well. For example as a zip archive.
+Ok, looks good. Can we now send `add10` to someone else? And now we open a gate to hell. Because we need to send all dependencies as well. For example, as a zip archive, or publish dependencies somewhere and then use URLs.
+
+- `https://example.com/add.js`:
+  ```js
+  export default a => b => a + b
+  ```
+- `add10.js`:
+  ```js
+  import add from 'https://example.com/add.js'
+  export default add(10)
+  ```
+
+But this is mutable. If the owner of example.com deletes or changes the content of the `add.js` file, our program will no longer work, may not work correctly, or, even worse, execute malicious code.
+
+The package managers are trying hard to solve the problem by introducing:
+
+- additional configuration files, such as `pacakge.json`,
+- lock files, `package-lock.json`.
+- version.
+
+But they still don't solve the problems.
+
+- it's still a centralized service,
+- introduce additional files `package.json`,
+- version and dependency hell, with such problem as diamond dependencies.
+
+## How it should be done.
+
+Content-addressable.
