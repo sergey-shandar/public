@@ -10,16 +10,20 @@
 
 (15 mins)
 
-1. Prove that the data is what we are looking for. A hash function.
+1. Prove that the data is what we are looking for.
+   A hash function. For example, `sha256`, `sha512`, `sha3-256`, etc.
+   And links, similar to HTTPS. For example, `sha256:35fe45...`. But this link is forever.
 
-2. Prove that the message is from a party.
+3. Prove that the message is from a party.
 - Example with a guard.
   ```
-  Bob in prison.
-  A guard give him a message from Alice.
+  Bob is in prison.
+  A guard gave him a message from Alice.
   How can Bob be sure that the message is from Alice? He can't trust a guard (transport layer).
-  Private, public key cryptography. 
+  Private-public key cryptography. 
   ```
+
+  Algorithms: elliptic curves, `secp256k1` is used in Bitcoin. Others, including post-quantum cryptography (PQC) and NIST approved.
 
 3. Trusted time stamps.
 
@@ -27,36 +31,44 @@
 
 - Incompatibilities between different decentralized systems, for example, BlueSky and Nostr. How can we solve it if we can't change history (signed time stamp)? Options:
   1. An application understands multiple formats from different systems.
-  2. 
+  2. A kind of smart contract language for deterministic computations that allows for transforming signed data on a user's machine. If a user agrees with the script, then they can see data from other networks:
+     ```
+     - script (as a data transformation function) `f`
+     - signed data `x`
+     - result: `f(x)`
+     ```
 
 ## What can we build on top of it? 
 
 (10 mins)
 
-1. Versioning.
+DISOT: Decentralized Immutable Source Of Truth
 
-2. Relative names (choose the names you like for yourself and your friends). Everyone is in the center `root` of their own Universe. There is no more cybersquatting, no more paying for domain names, and no need to pay blockchain fees for "decentralized" domains. How it works, example:
+1. Versioning. The way to add mutability to immutable decentralized storage. 
+
+2. Relative names (choose the names you like for yourself, your friends, and others). Everyone is at the center `root` of their own Universe. There is no more cybersquatting, don't care about name conflicts, no more paying for domain names, and no need to pay blockchain fees for "decentralized" domains. How it works, example:
    - signed by `0164`
      ```js
      {
-       Alice: 0164,
-       Bod: 56f4,
+       Alice: 'p256k1:0164`,
+       Bod: 'p256k1:56f4',
      }
      ```
    - signed by `56f4`
      ```js
      {
-       Alice: 0164,
-       MyLove: 0164,
-       Bob: 56f4,
-       Charlie: 7945,
+       Alice: 'p256k1:0164',
+       MyLove: 'p256k1:0164',
+       Bob: 'p256k1:56f4',
+       Charlie: 'p256k1:7945',
+       Document2025: 'sha256:9351',
      }
      ```
    - signed by `7945`
-     ```
+     ```js
      {
-       Charles: 7945,
-       Bob: 56f4,       
+       Charles: 'p256k1:7945',
+       Bob: 'p256k1:56f4',       
      }
      ```
    Examples:
@@ -65,6 +77,7 @@
    0164/Bob/Charlie -> 7945
    0164/Bob/MyLove -> 0164
    ```
+   
 3. Trusted Networks.
 
 4. Collective security.
@@ -77,7 +90,6 @@
 - **FunctionalScript** is a purely functional, content-addressable subset of JavaScript. It's a kind of generic smart contract language with familiar JavaScript syntax and semantics. JavaScript in Web3 and DWeb, which could help smooth the transition from Web2 to Decentralized Web (DWeb). 
 
 ---
-
 
 - Proofs vs protocols. Protocol agnostic.
 - Limited authorities:
