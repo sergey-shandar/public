@@ -4,7 +4,12 @@
 
 - Noise. Noise is expensive. The task of an engineer is simplification, increasing the signal-to-noise ratio.
 - Abstraction layers. We use it all the time, we don't need to know how a specific car works to drive it. But some basic knowledge can help.
-- What's wrong with current decentralized systems? We speak about protocols as the transport layer. An abstraction layer that we would like to have is "Doesn't matter how we receive the message, if we can prove statements about the message".
+- What's wrong with current decentralized systems? We speak about protocols as the transport layer. An abstraction layer that we would like to have is "Doesn't matter how we receive the message, if we can prove statements about the message"
+
+Properties of desired systems:
+- independent from anything else. A person can start to create and publish data at any time, anywhere
+- merging
+- future-proofs
 
 ## Simple Proofs 
 
