@@ -52,15 +52,15 @@ DISOT: Decentralized Immutable Source Of Truth
 1. Versioning. The way to add mutability to immutable decentralized storage. 
 
 2. Relative names (choose the names you like for yourself, your friends, and others). Everyone is at the center `root` of their own Universe. There is no more cybersquatting, don't care about name conflicts, no more paying for domain names, and no need to pay blockchain fees for "decentralized" domains. How it works, example:
-   - signed by `0164`
+   - Alice `0164`
      ```js
      { Alice: ':0164`, Bod: ':56f4' }
      ```
-   - signed by `56f4`
+   - Bob `56f4` 
      ```js
      { Alice: ':0164', MyLove: ':0164', Bob: ':56f4', Charlie: ':7945', Doc2025: ':9351' }
      ```
-   - signed by `7945`
+   - Charlie `7945`
      ```js
      { Charles: ':7945', Bob: ':56f4' }
      ```
