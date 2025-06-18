@@ -64,11 +64,11 @@ DISOT: Decentralized Immutable Source Of Truth
      ```js
      { Charles: ':7945', Bob: ':56f4' }
      ```
-   Examples:
+   Rela:
    ```
-   0164/Bob -> 56f4
-   0164/Bob/Charlie -> 7945
-   0164/Bob/MyLove -> 0164
+   /Bob -> 56f4
+   /Bob/Charlie -> 7945
+   /Bob/MyLove -> 0164
    ```
    
 3. Trusted Networks.
