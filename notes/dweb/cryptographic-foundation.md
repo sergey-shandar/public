@@ -58,11 +58,11 @@ DISOT: Decentralized Immutable Source Of Truth
      ```
    - signed by `56f4`
      ```js
-     { Alice: ':0164', MyLove: ':0164', Bob: ':56f4', Charlie: ':7945', Doc2025: ':9351', }
+     { Alice: ':0164', MyLove: ':0164', Bob: ':56f4', Charlie: ':7945', Doc2025: ':9351' }
      ```
    - signed by `7945`
      ```js
-     { Charles: ':7945', Bob: ':56f4', }
+     { Charles: ':7945', Bob: ':56f4' }
      ```
    Examples:
    ```
