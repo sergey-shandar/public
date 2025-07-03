@@ -7,8 +7,12 @@ Content Addressable Storage
 ### 1.1. CAS Interface
 
 ```ts
+type Data = Uint8Array
+type Hash = bigint
+type Nullable<T> = T | null
+
 interface Cas {
-  getData(hash: bigint): Uint8Array|undefined
+  getData(hash: Hash): Nullable<Data>
 }
 ```
 
@@ -16,14 +20,18 @@ Additional functions
 
 ```ts
 interface CasInstance extends Cas {
-  list(): bigint[]
-  add(data: Uint8Array): bigint
+  list(): Hash[]
+  add(data: Data): Hash
 }
 ```
 
-### 1.2. Selecting a hash function
+### 1.2. Hash Function
 
-[SHA256](https://en.wikipedia.org/wiki/SHA-2). It's still considered cryptographically strong; many software libraries support it. Modern processors have hardware acceleration for the algorithm.
+```ts
+type ComputeHash = (data: Data) => Hash
+```
+
+We select [SHA256](https://en.wikipedia.org/wiki/SHA-2). It's still considered cryptographically strong; many software libraries support it. Modern processors have hardware acceleration for the algorithm.
 
 ### 1.3. CAS Implementation
 
