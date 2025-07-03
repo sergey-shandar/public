@@ -23,9 +23,7 @@ interface Cas2 extends Cas {
 
 ### 1.2. CAS Implementation
 
-A directory with a name `cas`.
-
-Each data block is a file. The file name is a hash in hex. For example
+The `cas` directory contains all blocks. Each data block is a file. The file name is a hexadecimal hash. For example
 
 ```
 cas/
