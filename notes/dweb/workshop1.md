@@ -15,7 +15,7 @@ interface Cas {
 Additional functions
 
 ```ts
-interface Cas2 extends Cas {
+interface CasInstance extends Cas {
   list(): bigint[]
   add(data: Uint8Array): bigint
 }
