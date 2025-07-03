@@ -37,7 +37,7 @@ cas/
 
 ## 2. DISOT
 
-Decentralized Immutable Source Of Truth.
+Decentralized Immutable Source Of Truth. Known formats:
 
 - blog post format:
   ```ts
