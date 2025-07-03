@@ -38,6 +38,8 @@ cas.sha256/
 
 ## 2. DISOT
 
+Decentralized Immutable Source Of Truth.
+
 - blog post format:
   ```ts
   type BlogPost = {
