@@ -8,7 +8,6 @@ Content Addressable Storage
 
 ```ts
 interface Cas {
-  method: string
   getData(hash: bigint): Uint8Array|undefined
 }
 ```
@@ -24,12 +23,12 @@ interface Cas2 extends Cas {
 
 ### 1.2. CAS Implementation
 
-A directory with a prefix `cas.` and a hash method name. For example, for `SHA256` we will have a directory `cas.sha256`.
+A directory with a name `cas`.
 
 Each data block is a file. The file name is a hash in hex. For example
 
 ```
-cas.sha256/
+cas/
   17c94a0b6bb9ff1872e2f71ae2369be0e58000146d2e00f9f65ec38ffad347f9
   3e0f9d4c6b2e01d8a4a5fd9bc55dcf187a264a6d6e7e9fd28440de8a16236b3c
   962dc357e37c9bbd5e8088885e85f3f7c6e1b4eaf3e8c298b1ed7c259e297fba
