@@ -55,4 +55,4 @@ Read from a CAS all blocks and create a static HTML page.
 ## 4. Publish
 
 1. Upload CAS as DISOT.
-2. Upload human-readable HTML as cache.
+2. Upload the generated human-readable HTML as cache.
