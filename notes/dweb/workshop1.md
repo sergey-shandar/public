@@ -48,9 +48,9 @@ Decentralized Immutable Source Of Truth.
 - signature format
 - trusted timestamp
 
-## 3. Cache (Rendering)
+## 3. Caching and Rendering
 
-Read from a CAS all blocks and create a static HTML page.
+Read all blocks from a CAS and create a static HTML page.
 
 ## 4. Publish
 
