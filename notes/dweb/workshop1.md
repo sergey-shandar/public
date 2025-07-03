@@ -48,11 +48,11 @@ Decentralized Immutable Source Of Truth.
 - signature format
 - trusted timestamp
 
-## 3. Render
+## 3. Cache (Rendering)
 
 Read from a CAS all blocks and create a static HTML page.
 
 ## 4. Publish
 
 1. Upload CAS as DISOT.
-2. Upload human-readable HTML.
+2. Upload human-readable HTML as cache.
