@@ -81,3 +81,8 @@ Read all blocks from a CAS and create a static HTML page.
 cas/
 index.html
 ```
+
+## 5. Additional Advanced Tasks
+
+1. Replace the hex representation of hashes with Crockford's base32.
+2. Split file names into subdirectories to reduce the number of files in one directory. For example, `ab/cd/ef01...`. Considering that hashes are distributed evenly, we can have only a few layers. For example, two letters of base32 give us a maximum of 1024 directories. Two levels of directories have about one million possible subdirectories. With two levels of directories, we can store approximately 1 billion files, where each directory contains around 1000 entities (files or directories).
