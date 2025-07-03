@@ -21,7 +21,11 @@ interface CasInstance extends Cas {
 }
 ```
 
-### 1.2. CAS Implementation
+### 1.2. Selecting a hash function
+
+[SHA256](https://en.wikipedia.org/wiki/SHA-2). It's still considered cryptographically strong; many software libraries support it. Modern processors have hardware acceleration for the algorithm.
+
+### 1.3. CAS Implementation
 
 The `cas` directory contains all blocks. Each data block is a file. The file name is a hexadecimal hash. For example
 
@@ -47,6 +51,14 @@ Decentralized Immutable Source Of Truth. Known formats:
   ```
 - signature format
 - trusted timestamp
+
+### 2.1. Selecting DID Method
+
+Elliptic curves. Secp256k1, the same one that is used in Bitcoin, Nostr, and Bluesky.
+
+### 2.2. Selecting a time-stamping server.
+
+Should support Secp256k1 or another elliptic curve algorithm.
 
 ## 3. Caching and Rendering
 
