@@ -1,12 +1,12 @@
 # Workshop 1
 
-## CAS. 
+## 1. CAS 
 
-### CAS Interface
+### 1.1. CAS Interface
 
 ```ts
 interface Cas {
-  method: string // For example, "sha256"
+  method: string
   getData(hash: bigint): Uint8Array|undefined
 }
 ```
@@ -20,7 +20,7 @@ interface Cas2 extends Cas {
 }
 ```
 
-### CAS Implementation
+### 1.2. CAS Implementation
 
 A directory with a prefix `cas.` and a hash method name. For example, for `SHA256` we will have a directory `cas.sha256`.
 
@@ -36,12 +36,17 @@ cas.sha256/
   fbdac13e8fc909dd479d622128d7889e38943d7125b9e6a77a732f1feefcbe3c
 ```
 
-## DISOT
+## 2. DISOT
 
-- blog post format. JSON
-- signatures
-- trusted timestamps
+- blog post format:
+  ```ts
+  type BlogPost = {
+      blogPost: string
+  }
+  ```
+- signature format
+- trusted timestamp
 
-## Render
+## 3. Render
 
-Read from a CAS all records and create a static HTML page.
+Read from a CAS all blocks and create a static HTML page.
