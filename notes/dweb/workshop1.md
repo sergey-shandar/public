@@ -38,7 +38,7 @@ We select [SHA256](https://en.wikipedia.org/wiki/SHA-2). It's still considered c
 The `cas` directory contains all blocks. Each data block is a file. The file name is a hexadecimal hash. For example
 
 ```
-cas/
+cas/sha256/
   17c94a0b6bb9ff1872e2f71ae2369be0e58000146d2e00f9f65ec38ffad347f9
   3e0f9d4c6b2e01d8a4a5fd9bc55dcf187a264a6d6e7e9fd28440de8a16236b3c
   962dc357e37c9bbd5e8088885e85f3f7c6e1b4eaf3e8c298b1ed7c259e297fba
@@ -85,4 +85,7 @@ index.html
 ## 5. Additional Advanced Tasks
 
 1. Replace the hex representation of hashes with Crockford's base32.
-2. Split file names into subdirectories to reduce the number of files in one directory. For example, `ab/cd/ef01...`. Considering that hashes are distributed evenly, we can have only a few layers. For example, two letters of base32 give us a maximum of 1024 directories. Two levels of directories have about one million possible subdirectories. With two levels of directories, we can store approximately 1 billion files, where each directory contains around 1000 entities (files or directories).
+2. Split file names into subdirectories to reduce the number of files in one directory. For example, `ab/cd/ef01...`. Considering that hashes are distributed evenly, we can have only a few layers. For example, two letters of base32 give us a maximum of 1024 directories. Two levels of directories have about one million possible subdirectories. With two levels of directories, we can store approximately 1 billion files, where each directory contains around 1000 entities (files or directories). Our application should be able to read from any file structure.
+3. A program should be able to discover the `cas/` directory in parent directories.
+4. Implement CDT hash function instead of SHA256.
+5. 
