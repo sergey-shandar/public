@@ -62,7 +62,10 @@ Decentralized Immutable Source Of Truth. Known formats:
 
 ### 2.1. Selecting DID Method
 
-Elliptic curves. Secp256k1, the same one that is used in Bitcoin, Nostr, and Bluesky.
+Elliptic curves. [Secp256k1](https://neuromancer.sk/std/secg/secp256k1), the same one that is used in Bitcoin, Nostr, and Bluesky.
+
+1. A function to generate a private key `privateKey`. For `secp256k1`, it should be 256 random bits. Use [Crypto.getRandomValues()](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues). For example `const privateKey = crypto.getRandomValues(new Uint8Array(32))`.
+2. Calculate the `publicKey` by `G.mul(privateKey)`.
 
 ### 2.2. Selecting a time-stamping server.
 
