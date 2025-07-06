@@ -64,6 +64,11 @@ Decentralized Immutable Source Of Truth. Known formats:
 - signature format
 - trusted timestamp
 
+```mermaid
+graph RL
+    TSASignature --> Signature --> Content
+```
+
 ### 2.1. DID
 
 ```ts
