@@ -64,7 +64,7 @@ Decentralized Immutable Source Of Truth. Known formats:
 - signature format
 - trusted timestamp
 
-### 2.1. Selecting DID Method
+### 2.1. DID
 
 ```ts
 interface Did {
