@@ -80,8 +80,8 @@ type BlogPost = {
 interface Did {
     newPrivateKey(): string
     publicKey(privateKey: string): string
-    sign(privateKey: string, messageHash: string): string
-    verify(publicKey: string, messageHash: string, signature: string): boolean
+    sign(privateKey: string, contentHash: string): string
+    verify(publicKey: string, contentHash: string, signature: string): boolean
 }
 ```
 
@@ -99,6 +99,16 @@ Implementation of `new`:
    ```ts
    secp256k1.mul(secp256k1.G, privateKey)
    ```
+
+A digital signature format:
+
+```ts
+type Signature = {
+    publicKey: string
+    contentHash: string
+    signature: string
+}
+```
 
 ### 2.3. Selecting a time-stamping server.
 
@@ -124,3 +134,4 @@ index.html
 2. Split file names into subdirectories to reduce the number of files in one directory. For example, `ab/cd/ef01...`. Considering that hashes are distributed evenly, we can have only a few layers. For example, two letters of base32 give us a maximum of 1024 directories. Two levels of directories have about one million possible subdirectories. With two levels of directories, we can store approximately 1 billion files, where each directory contains around 1000 entities (files or directories). Our application should be able to read from any file structure.
 3. A program should be able to discover the `cas/` directory in parent directories.
 4. Implement CDT hash function instead of SHA256.
+5. Replace TTP with [OpenTimestamps](https://en.wikipedia.org/wiki/OpenTimestamps).
