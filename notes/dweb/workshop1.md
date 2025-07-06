@@ -55,21 +55,26 @@ Note that we don't add any metadata, such as file type, to the data blocks! It's
 
 Decentralized Immutable Source Of Truth. Known formats:
 
-- blog post format:
-  ```ts
-  type BlogPost = {
-      blogPost: string
-  }
-  ```
-- signature format
-- trusted timestamp
+1. content,
+2. signature format,
+3. trusted timestamp.
 
 ```mermaid
 graph TD
     TrustedTimeStamp --> Signature --> Content
 ```
 
-### 2.1. DID
+### 2.1. Content
+
+Blog post format:
+
+```ts
+type BlogPost = {
+    blogPost: string
+}
+```
+
+### 2.2. DID
 
 ```ts
 interface Did {
@@ -95,7 +100,7 @@ Implementation of `new`:
    secp256k1.mul(secp256k1.G, privateKey)
    ```
 
-### 2.2. Selecting a time-stamping server.
+### 2.3. Selecting a time-stamping server.
 
 Should support Secp256k1 or another elliptic curve algorithm.
 
