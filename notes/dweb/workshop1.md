@@ -67,12 +67,11 @@ Decentralized Immutable Source Of Truth. Known formats:
 ### 2.1. Selecting DID Method
 
 ```ts
-type PublicPrivateKey = {
-    privateKey: string
-    publicKey: string
-}
 interface Did {
-    new(): PublicPrivateKey
+    newPrivateKey(): string
+    publicKey(privateKey: string): string
+    sign(privateKey: string, messageHash: string): string
+    verify(publicKey: string, messageHash: string, signature: string): boolean
 }
 ```
 
