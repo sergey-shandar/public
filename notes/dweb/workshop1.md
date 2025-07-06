@@ -49,7 +49,7 @@ cas/sha256/
   fbdac13e8fc909dd479d622128d7889e38943d7125b9e6a77a732f1feefcbe3c
 ```
 
-Note, we don't add any meta information to the data blocks.
+Note that we don't add any metadata, such as file type, to the data blocks!
 
 ## 2. DISOT
 
