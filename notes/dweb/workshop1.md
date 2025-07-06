@@ -1,5 +1,7 @@
 # Workshop 1
 
+Technological stack: TypeScript, ECMAScript modules, Node.js 24 with type striping.
+
 ## 1. CAS 
 
 Content Addressable Storage
