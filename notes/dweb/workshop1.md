@@ -4,7 +4,7 @@ Technological stack: TypeScript, ECMAScript modules, Node.js 24 with type stripi
 
 ## 1. CAS 
 
-Content Addressable Storage
+Content Addressable Storage.
 
 ### 1.1. CAS Interface
 
@@ -49,6 +49,8 @@ cas/sha256/
   fbdac13e8fc909dd479d622128d7889e38943d7125b9e6a77a732f1feefcbe3c
 ```
 
+Note, we don't add any meta information to the data blocks.
+
 ## 2. DISOT
 
 Decentralized Immutable Source Of Truth. Known formats:
@@ -64,15 +66,29 @@ Decentralized Immutable Source Of Truth. Known formats:
 
 ### 2.1. Selecting DID Method
 
-Elliptic curves. [Secp256k1](https://neuromancer.sk/std/secg/secp256k1), the same one that is used in Bitcoin, Nostr, and Bluesky.
+```ts
+type PublicPrivateKey = {
+    privateKey: string
+    publicKey: string
+}
+interface Did {
+    new(): PublicPrivateKey
+}
+```
+
+Elliptic curves. [Secp256k1](https://neuromancer.sk/std/secg/secp256k1), the same one that is used in Bitcoin, Nostr, and Bluesky. 
+- A private key is a scalar value, and it has a size of 256 bits.
+- A public key is a point on an elliptic curve and has a size of 257 bits.
+
+Implementation of `new`:
 
 1. A function to generate a private key `privateKey`. For `secp256k1`, it should be 256 random bits. Use [Crypto.getRandomValues()](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues). For example
    ```ts
-   const privateKey = crypto.getRandomValues(new Uint8Array(32))
+   crypto.getRandomValues(new Uint8Array(32))
    ```
 3. Calculate the `publicKey`. For example
    ```ts
-   const publicKey = secp256k1.mul(secp256k1.G, privateKey)
+   secp256k1.mul(secp256k1.G, privateKey)
    ```
 
 ### 2.2. Selecting a time-stamping server.
