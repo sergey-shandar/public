@@ -1,5 +1,15 @@
 # Econimic Principles
 
+I will try to leave all emotions outside of the article and look at economic from pure mathematical and logical point of view.
+
+Systems, where we need money to buy things and services. Honestly, I don't know a country where people don't use currencies to get things and services. There could be some limitations what you can and can't buy legally in a specific countries.
+
+Where do people get money? 
+
+
+---
+
+
 - Motivation:
   - more earn => more received
 - An economic target for  society (constant improvement):
