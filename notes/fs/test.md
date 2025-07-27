@@ -42,6 +42,11 @@ export default {
 }
 ```
 
-Note, that in ECMAScript the property name `throw` is assign to the function. See https://tc39.es/ecma262/#sec-setfunctionname.
+Note that in ECMAScript, the property name `throw` is assigned to the function. See https://tc39.es/ecma262/#sec-setfunctionname.
 
-Such conventions allow programatically generate complex test.
+Such conventions allow for the programmatic generation of complex tests.
+
+## Extensions
+
+FunctionalScript is a language w/o side effects, and the current conventions work very well. We may add support for iterators (including generators). 
+For JavaScript, it would make sense to add support for asynchronous
