@@ -69,8 +69,21 @@ graph TD
 Blog post format:
 
 ```ts
+// https://creativecommons.org/share-your-work/cclicenses/
+type License =
+  "CC-BY 4.0" |
+  "CC BY-SA 4.0" |
+  "CC BY-NC 4.0" |
+  "CC BY-NC-SA 4.0" |
+  "CC BY-ND 4.0" |
+  "CC BY-NC-ND 4.0" |
+  "CC0 1.0"
 type BlogPost = {
-    blogPost: string
+    // The assumption is that if there's a known public licence, it's public content.
+    // If there's no licence, we must not publish it.
+    license?: License,
+    authors?: string[], 
+    blogPost: string,
 }
 ```
 
