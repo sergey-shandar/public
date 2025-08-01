@@ -7,6 +7,13 @@ Why?
 - **Fight with fragmentation.** Most modern decentralized systems still follow the same paradigm inherited from centralized systems: define a protocol and data format and release software that works with these protocols and formats. That produces fragmentation. In rare cases, we see protocol bridges. We need a paradigm shift. How it should be done: We store all data in CAS and use CAS as a Decentralized Immutable Source Of Truth (DISOT). It could be blockchain blocks, IPFS files, Git commits, Nost/BlueSky messages. CAS doesn't care. Different applications should attempt to parse the data; if they encounter blocks that cannot be parsed, they should skip those blocks. Applications may add new blocks to CAS, but obviously, they can't mutate existing blocks (by definition of CAS). See [IPLD](https://ipld.io/).
 - **Cache.** To make parsing and indexing faster, some applications and services may use different types of databases to cache what has already been parsed. However, they should still reference CAS, since this is the primary source of truth. These DBs should be considered as derived data, and we should be able to restore them from CAS (our DISOT).
 
+In this workshop, we will
+
+1. Create CAS (as DISOT),
+2. Define formats for blog posts, licensing, digital signatures, and trusted time stamps.
+3. Render CAS content as static HTML.
+4. Publish the HTML pages and public blocks from the CAS.
+
 **Technological stack:** TypeScript, ECMAScript modules, Node.js 24 with type striping.
 
 ## 1. CAS 
