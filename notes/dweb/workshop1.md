@@ -79,13 +79,14 @@ type License =
   "CC BY-NC-ND 4.0" |
   "CC0 1.0"
 type BlogPost = {
-    // The assumption is that if there's a known public licence, it's public content.
-    // If there's no licence, we must not publish it.
     license?: License,
     authors?: string[], 
     blogPost: string,
 }
 ```
+
+The assumption is that if there's a known public licence, it's public content.
+If there's no licence, we must not publish it.
 
 ### 2.2. DID
 
