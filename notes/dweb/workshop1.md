@@ -74,6 +74,11 @@ cas/
 
 Note that we don't add any metadata, such as file type, to the data blocks! It's more like [IPLD](https://ipld.io/) than [IPFS](https://en.wikipedia.org/wiki/InterPlanetary_File_System).
 
+Write a simple console program that has these commands:
+
+- `add <FILE>` - adding a new block to CAS and prints a hash of the file
+- `get <HASH> <FILE>` - getting a block with the `<HASH>` and save it into the `<FILE>`.
+
 ## 2. DISOT
 
 Decentralized Immutable Source Of Truth. Known formats:
