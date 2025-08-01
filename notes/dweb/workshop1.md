@@ -14,7 +14,9 @@ In this workshop, we will
 3. Render CAS content as static HTML.
 4. Publish the HTML pages and public blocks from the CAS.
 
-**Technological stack:** TypeScript, ECMAScript modules, Node.js 24 with type striping.
+**Technological stack:** TypeScript, ECMAScript modules, Node.js 24 with type striping. However, feel free to use anything else.
+
+You can use AI agents.
 
 ## 1. CAS 
 
