@@ -53,10 +53,10 @@ We select [SHA256](https://en.wikipedia.org/wiki/SHA-2). It's still considered c
 
 ### 1.3. CAS Implementation
 
-The `cas` directory contains all blocks. Each data block is a file. The file name is a hexadecimal hash. For example
+The `cas/` directory contains all blocks. Each data block is a file. The file name is a hexadecimal hash. For example
 
 ```
-cas/sha256/
+cas/
   17c94a0b6bb9ff1872e2f71ae2369be0e58000146d2e00f9f65ec38ffad347f9
   3e0f9d4c6b2e01d8a4a5fd9bc55dcf187a264a6d6e7e9fd28440de8a16236b3c
   962dc357e37c9bbd5e8088885e85f3f7c6e1b4eaf3e8c298b1ed7c259e297fba
