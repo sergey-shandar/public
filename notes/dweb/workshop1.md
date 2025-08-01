@@ -12,7 +12,7 @@ In this workshop, we will
 1. Create CAS (as DISOT),
 2. Define formats for blog posts, licensing, digital signatures, and trusted time stamps.
 3. Render CAS content as static HTML.
-4. Publish the HTML pages and public blocks from the CAS.
+4. Publish the HTML pages and public blocks from the CAS on a website.
 
 **Technological stack:** TypeScript, ECMAScript modules, Node.js 24 with type striping. However, feel free to use anything else.
 
