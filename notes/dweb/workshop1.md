@@ -2,7 +2,7 @@
 
 Why?
 
-- **Data ownership.** Especially, it's crucial for historical data.
+- **Data ownership.** Especially, it's crucial for historical data; your old posts, images, videos, code, etc. Where is it now?
 - **Software-level transparency.** You can write your own software, especially now that there are a lot of AI agents.
 - **Fight with fragmentation.** Most modern decentralized systems still follow the same paradigm inherited from centralized systems: define a protocol and data format and release software that works with these protocols and formats. That produces fragmentation. In rare cases, we see protocol bridges. We need a paradigm shift. How it should be done: We store all data in CAS and use CAS as a Decentralized Immutable Source Of Truth (DISOT). It could be blockchain blocks, IPFS files, Git commits, Nost/BlueSky messages. CAS doesn't care. Different applications should attempt to parse the data; if they encounter blocks that cannot be parsed, they should skip those blocks. Applications may add new blocks to CAS, but obviously, they can't mutate existing blocks (by definition of CAS). See [IPLD](https://ipld.io/).
 - **Cache.** To make parsing and indexing faster, some applications and services may use different types of databases to cache what has already been parsed. However, they should still reference CAS, since this is the primary source of truth. These DBs should be considered as derived data, and we should be able to restore them from CAS (our DISOT).
