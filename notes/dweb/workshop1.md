@@ -76,7 +76,7 @@ Decentralized Immutable Source Of Truth. Known formats:
 3. trusted timestamp.
 
 ```mermaid
-graph TD
+graph RL
     TrustedTimeStamp --> Signature --> Content
 ```
 
