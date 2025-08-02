@@ -1,4 +1,4 @@
-# Workshop 1
+# Workshop 1: Creating a Decentralized Self-Publishing Platform
 
 ## Why?
 
@@ -7,9 +7,7 @@
 
 ## What?
 
-We are trying to create a simple computer program (together) - that you get other write yourself using an AI tool if you want.. that will publish decentralized blogging system (kind of like Wordpress).
-
-So like a decentralized word press, but you get to own the data, the software program and also where it goes. (So you can post it to any other system you want).
+So like a decentralized WordPress, but you get to own the data, the software program, and also where it goes. (So you can post it to any other system you want).
 
 - **Software-level transparency.** You can write your own software, especially now that there are a lot of AI agents.
 - **Cache.** To make parsing and indexing faster, some applications and services may use different types of databases to cache what has already been parsed. However, they should still reference CAS, since this is the primary source of truth. These DBs should be considered as derived data, and we should be able to restore them from CAS (our DISOT).
