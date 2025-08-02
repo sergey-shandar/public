@@ -31,6 +31,8 @@ Content Addressable Storage.
 
 ### 1.1. CAS Interface
 
+Write a library and CLI with the following interfaces...
+
 ```ts
 type Data = Uint8Array
 type Hash = bigint
