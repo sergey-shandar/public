@@ -1,4 +1,4 @@
-# Decentralized Self-Publishing Platform from Scratch. Workshop 1.
+# Building Decentralized Self-Publishing Platform from Scratch. Workshop 1.
 
 ## Why?
 
