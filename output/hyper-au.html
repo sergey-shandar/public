@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<style>
+    span,
+    button {
+        font-size: 1000%
+    }
+    * {
+        text-align: center;
+        font-family: monospace;
+    }
+</style>
+<body>
+    <p>
+        <button id="prev">&lt;</button>
+        <span id="header"></span>
+        <button id="next">&gt;</button>
+    </p>
+    <p>
+        <span id="time"></span>
+    </p>
+    <button id="button"></button>
+    <script>
+        const periodList = [
+            // 1 h
+            ['1/2', 10],
+            ['2/4', 10],
+            ['3/6', 10],
+            ['4/8', 10],
+            //
+            ['break', 10],
+            // 2 h
+            ['5/10', 10],
+            ['7/14', 10],
+            ['10/20', 10],
+            ['15/30', 10],
+            //
+            ['break, color-up 1, add-on 1K x2', 30],
+            // 3 h
+            ['20/40', 15],
+            ['30/60', 15],
+            ['50/100', 15],
+            ['75/150', 15],
+            //
+            ['break, color-up 5', 15],
+            // 4 h
+            ['100/200', 15],
+            ['150/300', 15],
+            ['200/400', 15],
+            ['300/600', 15],
+            //
+            ['break, color-up 25', 15],
+            // 5 h
+            ['500/1000', 15],
+            ['700/1400', 15],
+            ['1000/2000', 15],
+            ['1500/3000', 15],
+            //
+            ['break, color-up 100', 15],
+            // 6 h
+            ['2000/4000', 15],
+            ['3000/6000', 15],
+            ['5000/10000', 15],
+            ['7500/15000', 15],
+        ]
+        //
+        const headerElement = document.getElementById('header')
+        const timeElement = document.getElementById('time')
+        const buttonElement = document.getElementById('button')
+        let timer
+        let i = 0
+        let time
+        document.getElementById('prev').onclick = () => {
+            --i
+            if (i < 0) { i = 0 }
+            initHeader()
+        }
+        document.getElementById('next').onclick = () => {
+            ++i
+            initHeader()
+        }
+        const dr = a => b => [(a / b) | 0, a % b]
+        const showTime = () => {
+            const [m, s] = dr(time)(60)
+            const [s1, s0] = dr(s)(10)
+            timeElement.innerText = `${m}:${s1}${s0}`
+        }
+        const initHeader = () => {
+            const [header, totalTime] = periodList[i]
+            headerElement.innerText = header
+            time = totalTime * 60
+        }
+        const initButton = ({ text, onclick }) => {
+            buttonElement.innerText = text
+            buttonElement.onclick = onclick
+            showTime()
+        }
+        const stopInit = () => initButton({ text: 'Start', onclick: start })
+        const stop = () => {
+            stopInit()
+            clearInterval(timer)
+        }
+        const start = () => {
+            initButton({ text: 'Stop', onclick: stop })
+            timer = setInterval(() => {
+                --time
+                if (time === 0) {
+                    ++i
+                    initHeader()
+                }
+                showTime()
+            }, 1000)
+        }
+        //
+        initHeader()
+        stopInit()
+    </script>
+</body>
+
+</html>
