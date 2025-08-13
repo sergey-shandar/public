@@ -11,7 +11,7 @@ The first principle is that if Charlie earns more than Bob, then Charlie must re
 
 Also, all income should be considered the same for tax purposes. Doesn't matter if it comes from salary, business profit, or bank interest. We should not open doors for tax optimizations.
 
-Examples that violate the principle: benefit cliff.
+Examples of violations include a benefit cliff, where a slight increase in earnings results in a sharp drop in benefits. In this case, people lose motivation to earn more money legally.
 
 ### The second principle: Basic human rights
 
@@ -23,7 +23,7 @@ If Charlie earns more than Bob, he must pay at least the same tax percentage.
 
 Examples of violations: social security tax.
 
-The progressive taxes work well to fight the growing inequality in wealth redistribution when the working class is getting poorer and poorer every year. The best candidates are `y = K * log(1 + x/K) + U`. 
+The progressive taxes work well to fight the growing inequality in wealth redistribution when the working class is getting poorer and poorer every year. The best candidates are `y = K * log(1 + x/K) + U`, where `K` is a scale factor. 
 
 ## The fourth principle: Accumulated tax
 
