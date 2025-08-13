@@ -26,7 +26,7 @@ xychart-beta
     title "Wellfare Trap"
     x-axis "Gross Income" [0, 1, 2, 3, 4]
     y-axis "Net Income" 
-    line [1.5, 0.8, 1.6, 2.4, 3.2]
+    line [1, 0.8, 1.6, 2.4, 3.2]
 ```
 
 ## The Second Principle: Basic Human Rights
