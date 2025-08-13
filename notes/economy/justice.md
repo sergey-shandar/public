@@ -14,9 +14,9 @@ Examples of violations include a [benefit cliff](https://en.wikipedia.org/wiki/W
 ```mermaid
 xychart-beta
     title "Welfare Trap"
-    x-axis "Gross Income" [0, 1, 2, 3, 4]
-    y-axis "Net Income" 0 --> 3
-    line [1, 0.7, 1.4, 2.1, 2.8]
+    x-axis "Gross Income" [0, 1000, 2000, 3000, 4000]
+    y-axis "Net Income" 0 --> 3000
+    line [1000, 700, 1400, 2100, 2800]
 ```
 
 Let's introduce a function `f` that converts a gross income `x` to the net income `y`.  The first principle says that the function `y = f(x)` is a non-decreasing function.
@@ -24,14 +24,12 @@ Let's introduce a function `f` that converts a gross income `x` to the net incom
 ```mermaid
 xychart-beta
     title "Gross income growth increases net income"
-    x-axis "Gross Income" [0, 1, 2, 3, 4]
-    y-axis "Net Income" 0 --> 3
-    line [0, 0.7, 1.4, 2.1, 2.8]
+    x-axis "Gross Income" [0, 1000, 2000, 3000, 4000]
+    y-axis "Net Income" 0 --> 3000
+    line [0, 700, 1400, 2100, 2800]
 ```
 
 Also, all income should be considered the same for tax purposes. It doesn't matter if it comes from salary, business profit, or bank interest. We should not open doors for tax optimizations.
-
-
 
 ## The Second Principle: Basic Human Rights
 
@@ -40,9 +38,9 @@ Every person has a right to live. It means at least basic things: breath, food, 
 ```mermaid
 xychart-beta
     title "UBI"
-    x-axis "Gross Income" [0, 1, 2, 3, 4]
-    y-axis "Net Income" 0 --> 3
-    line [1, 1.4, 1.8, 2.2, 2.6]
+    x-axis "Gross Income" [0, 1000, 2000, 3000, 4000]
+    y-axis "Net Income" 0 --> 3000
+    line [1000, 1400, 1800, 2200, 2600]
 ```
 
 ## The Third Principle: Progressive Taxes
@@ -56,9 +54,9 @@ The progressive taxes work well to fight the growing inequality in wealth redist
 ```mermaid
 xychart-beta
     title "Progressive Taxes With UBI"
-    x-axis "Gross Income" [0, 1, 2, 3, 4]
-    y-axis "Net Income" 0 --> 3
-    line [1, 1.7, 2.1, 2.4, 2.6]
+    x-axis "Gross Income" [0, 1000, 2000, 3000, 4000]
+    y-axis "Net Income" 0 --> 3000
+    line [1000, 1700, 2100, 2400, 2600]
 ```
 
 ## The Fourth Principle: Accumulated Tax
