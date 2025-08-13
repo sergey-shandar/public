@@ -33,6 +33,14 @@ xychart-beta
 
 Every person has a right to live. It means at least basic things: breath, food, accommodation, and basic health care. Even people in prison receive these fundamental rights. Why don't law-abiding individuals have these rights? Why do we force people to break a law to have these fundamental rights? The statement is that people should have at least the same benefits that they can receive in jail. Then, we can't start with zero; we must have UBI if we agree with these first two principles. `y = f(x) + U`, where `U` is UBI.
 
+```mermaid
+xychart-beta
+    title "UBI"
+    x-axis "Gross Income" [0, 1, 2, 3, 4]
+    y-axis "Net Income" 
+    line [1, 1.5, 2, 2.5, 3]
+```
+
 ## The Third Principle: Progressive taxes
 
 If Charlie earns more than Bob, he must pay at least the same tax percentage.
