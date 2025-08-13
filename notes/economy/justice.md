@@ -13,7 +13,7 @@ Examples of violations include a [benefit cliff](https://en.wikipedia.org/wiki/W
 
 ```mermaid
 xychart-beta
-    title "Wellfare Trap"
+    title "Welfare Trap"
     x-axis "Gross Income" [0, 1, 2, 3, 4]
     y-axis "Net Income" 0 --> 3
     line [1, 0.7, 1.4, 2.1, 2.8]
@@ -29,7 +29,7 @@ xychart-beta
     line [0, 0.7, 1.4, 2.1, 2.8]
 ```
 
-Also, all income should be considered the same for tax purposes. Doesn't matter if it comes from salary, business profit, or bank interest. We should not open doors for tax optimizations.
+Also, all income should be considered the same for tax purposes. It doesn't matter if it comes from salary, business profit, or bank interest. We should not open doors for tax optimizations.
 
 
 
