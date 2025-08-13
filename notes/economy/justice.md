@@ -24,7 +24,7 @@ Examples of violations: social security tax.
 
 The progressive taxes work well to fight the growing inequality in wealth redistribution when the working class is getting poorer and poorer every year. The best candidates are `y = K * log(1 + x/K) + U`. 
 
-## The fourth principle. Accumulated tax
+## The fourth principle: Accumulated tax
 
 If Bob received the same total amount as Charlie for the same period, they should pay the same taxes in total. For example, if Bob received $50K for the first year, and then $50K for the second year, and Charlie received $90K for the first year and the $10K for the second year, they should pay the same taxes for two years.
 
