@@ -6,7 +6,7 @@ No matter what you do, your economic state depends a lot on chance. And the prob
 ## The first principle: more earnings means more receiving
 
 Let's take two people, Bob and Charlie. They are absolutely identical in everything except income.
-The first principle is that if Charlie earns more than Bob, then Charlie must receive at least as much as Bob after taxes. Let's call `x` how much a person earns and `y` how much a person gets. Now, the function `y = f(x)` is a non-decreasing function.
+The first principle is that if Charlie earns more than Bob, then Charlie must receive at least as much as Bob after taxes. Let's call `x` how much a person earns and `y` how much a person gets. Let's introduce a function `f` that converts an income `x` to the received money `y`. The principle says that the function `y = f(x)` is a non-decreasing function.
 
 Also, all income should be considered the same for tax purposes. Doesn't matter if it comes from salary, business profit, or bank interest. We should not open doors for tax optimizations.
 
@@ -14,7 +14,7 @@ Examples that violate the principle: benefit cliff.
 
 ### The second principle: Basic human rights
 
-Every person has a right to live. It means at least basic things: breath, food, accommodation, and basic health care. Even people in prison receive these basic rights. Why don't law-abiding individuals have these rights? Why do we force people to break a law to have these basic rights? The statement is that people should have at least the same benefits that they can receive in jail. Then, we can't start with zero; we must have UBI if we agree with these first two principles. `y = f(x) + U`, where `U` is UBI.
+Every person has a right to live. It means at least basic things: breath, food, accommodation, and basic health care. Even people in prison receive these fundamental rights. Why don't law-abiding individuals have these rights? Why do we force people to break a law to have these basic rights? The statement is that people should have at least the same benefits that they can receive in jail. Then, we can't start with zero; we must have UBI if we agree with these first two principles. `y = f(x) + U`, where `U` is UBI.
 
 ## The third principle: Progressive taxes
 
