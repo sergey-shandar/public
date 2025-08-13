@@ -51,7 +51,15 @@ If Charlie earns more than Bob, he must pay at least the same tax percentage.
 
 Examples of violations: social security tax.
 
-The progressive taxes work well to fight the growing inequality in wealth redistribution when the working class is getting poorer and poorer every year. The best candidates are `y = K * log(1 + x/K) + U`, where `K` is a scale factor. 
+The progressive taxes work well to fight the growing inequality in wealth redistribution when the working class is getting poorer and poorer every year. One of the best candidates is `y = K * log(1 + x/K) + U`, where `K` is a scale factor.
+
+```mermaid
+xychart-beta
+    title "Progressive Taxes With UBI"
+    x-axis "Gross Income" [0, 1, 2, 3, 4]
+    y-axis "Net Income" 0 --> 3
+    line [1, 1.7, 2.1, 2.4, 2.6]
+```
 
 ## The Fourth Principle: Accumulated tax
 
