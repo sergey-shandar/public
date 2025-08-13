@@ -45,7 +45,7 @@ xychart-beta
     line [1, 1.4, 1.8, 2.2, 2.6]
 ```
 
-## The Third Principle: Progressive taxes
+## The Third Principle: Progressive Taxes
 
 If Charlie earns more than Bob, he must pay at least the same tax percentage.
 
@@ -61,7 +61,7 @@ xychart-beta
     line [1, 1.7, 2.1, 2.4, 2.6]
 ```
 
-## The Fourth Principle: Accumulated tax
+## The Fourth Principle: Accumulated Tax
 
 If Bob received the same total amount as Charlie for the same period, they should pay the same taxes in total. For example, if Bob received $50K for the first year, and then $50K for the second year, and Charlie received $90K for the first year and the $10K for the second year, they should pay the same taxes for two years.
 
