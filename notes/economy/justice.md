@@ -49,7 +49,7 @@ If Charlie earns more than Bob, he must pay at least the same tax percentage.
 
 Examples of violations: Social Security tax in the US.
 
-The progressive taxes work well to fight the growing inequality in wealth redistribution when the working class is getting poorer and poorer every year. One of the best candidates is `y = K * log(1 + x/K) + U`, where `K` is a scale factor. The `log` function always grows, and it doesn't have a growth limit (like some asymptotic functions do).
+The progressive taxes work well to fight the growing inequality in wealth redistribution when the working class is getting poorer and poorer every year. One of the best candidates is `y = K * log(1 + x/K) + U`, where `K` is a scale factor. The `log` function always grows (the first principle), and it doesn't have a growth limit (like some asymptotic functions do).
 
 ```mermaid
 xychart-beta
