@@ -7,17 +7,7 @@ Here, I formulated principles that should fix some of the problems. These princi
 ## The First Principle: Gross Income Growth Must Increase Net Income
 
 Let's take two people, Bob and Charlie. They are absolutely identical in everything except gross income (pre-taxes).
-The first principle is that if Charlie earns more than Bob, then Charlie must receive at least as much as Bob after taxes (net income). Let's call `x` how much a person earns and `y` how much a person gets. Let's introduce a function `f` that converts an income `x` to the received money `y`. The principle says that the function `y = f(x)` is a non-decreasing function.
-
-```mermaid
-xychart-beta
-    title "Gross income growth increases net income"
-    x-axis "Gross Income" [0, 1, 2, 3, 4]
-    y-axis "Net Income" 
-    line [0, 0.8, 1.6, 2.4, 3.2]
-```
-
-Also, all income should be considered the same for tax purposes. Doesn't matter if it comes from salary, business profit, or bank interest. We should not open doors for tax optimizations.
+The first principle is that if Charlie earns more than Bob, then Charlie must receive at least as much as Bob after taxes (net income).
 
 Examples of violations include a [benefit cliff](https://en.wikipedia.org/wiki/Welfare_trap), where a slight increase in earnings results in a sharp drop in benefits. In this case, people lose motivation to earn more money legally.
 
@@ -25,9 +15,23 @@ Examples of violations include a [benefit cliff](https://en.wikipedia.org/wiki/W
 xychart-beta
     title "Wellfare Trap"
     x-axis "Gross Income" [0, 1, 2, 3, 4]
-    y-axis "Net Income" 
-    line [1, 0.8, 1.6, 2.4, 3.2]
+    y-axis "Net Income" 0 --> 3
+    line [1, 0.7, 1.4, 2.1, 2.8]
 ```
+
+Let's introduce a function `f` that converts a gross income `x` to the net income `y`.  The first principle says that the function `y = f(x)` is a non-decreasing function.
+
+```mermaid
+xychart-beta
+    title "Gross income growth increases net income"
+    x-axis "Gross Income" [0, 1, 2, 3, 4]
+    y-axis "Net Income" 0 --> 3
+    line [0, 0.7, 1.4, 2.1, 2.8]
+```
+
+Also, all income should be considered the same for tax purposes. Doesn't matter if it comes from salary, business profit, or bank interest. We should not open doors for tax optimizations.
+
+
 
 ## The Second Principle: Basic Human Rights
 
@@ -37,8 +41,8 @@ Every person has a right to live. It means at least basic things: breath, food, 
 xychart-beta
     title "UBI"
     x-axis "Gross Income" [0, 1, 2, 3, 4]
-    y-axis "Net Income" 
-    line [1, 1.5, 2, 2.5, 3]
+    y-axis "Net Income" 0 --> 3
+    line [1, 1.4, 1.8, 2.2, 2.6]
 ```
 
 ## The Third Principle: Progressive taxes
