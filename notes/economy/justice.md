@@ -61,8 +61,8 @@ xychart-beta
 
 ## The Fourth Principle: Accumulated Tax
 
-If Bob received the same total amount as Charlie for the same period, they should pay the same taxes in total. For example, if Bob received $50K for the first year, and then $50K for the second year, and Charlie received $90K for the first year and the $10K for the second year, they should pay the same taxes for two years.
+If Bob received the same total amount as Charlie for the same period, they should pay the same taxes in total. For example, if Bob received $50K for the first year, and then $50K for the second year, and Charlie received $90K for the first year and then $10K for the second year, they should pay the same taxes for two years.
 
-This opens an interesting perspective, people who worked all their lives will receive a tax return as soon as they lose their job or decide to retire. So, it can replace a pension or add additional money for retired people.
+This opens an interesting perspective: people who have worked their entire lives will receive tax returns as soon as they lose their jobs or decide to retire. So, it can replace a pension or provide extra net income for retired people.
 
 Another option is a student who may live on UBI during their studies and then pay less taxes for the first few years when they accept a high-paying job.
