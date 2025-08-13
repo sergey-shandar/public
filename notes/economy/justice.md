@@ -14,8 +14,8 @@ Examples of violations include a [benefit cliff](https://en.wikipedia.org/wiki/W
 ```mermaid
 xychart-beta
     title "Welfare Trap"
-    x-axis "Gross Income" [0, 1000, 2000, 3000, 4000]
-    y-axis "Net Income" 0 --> 3000
+    x-axis "Gross Income ($)" [0, 1000, 2000, 3000, 4000]
+    y-axis "Net Income ($)" 0 --> 3000
     line [1000, 700, 1400, 2100, 2800]
 ```
 
