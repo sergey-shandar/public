@@ -6,7 +6,7 @@ Here, I formulated principles that should fix some of the problems. These princi
 
 ## The First Principle: Gross Income Growth Must Increase Net Income
 
-Let's take two people, Bob and Charlie. They are absolutely identical in everything except gross income (pre-taxes).
+Let's take two people, Bob and Charlie. They are absolutely identical in everything except gross income (pre-tax).
 The first principle is that if Charlie earns more than Bob, then Charlie must receive at least as much as Bob after taxes (net income).
 
 Examples of violations include a [benefit cliff](https://en.wikipedia.org/wiki/Welfare_trap), where a slight increase in earnings results in a sharp drop in benefits. In this case, people lose motivation to earn more money legally.
