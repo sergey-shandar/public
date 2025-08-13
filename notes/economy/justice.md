@@ -4,7 +4,7 @@ We have a lot of computational power, but our tax systems have not evolved to ma
 
 Here, I formulated principles that should fix some of the problems. These principles are obvious and relatively easy to implement in our digital epoch.
 
-## The First Principle: More earnings means more receiving
+## The First Principle: Income Growth Must Increase Net Benefits
 
 Let's take two people, Bob and Charlie. They are absolutely identical in everything except income.
 The first principle is that if Charlie earns more than Bob, then Charlie must receive at least as much as Bob after taxes. Let's call `x` how much a person earns and `y` how much a person gets. Let's introduce a function `f` that converts an income `x` to the received money `y`. The principle says that the function `y = f(x)` is a non-decreasing function.
