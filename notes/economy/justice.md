@@ -1,4 +1,4 @@
-# Economic Justice in the Digital Age
+# Economic Justice In The Digital Age
 
 We have a lot of computational power, but our tax systems have not evolved to match digital-age capabilities. Often, these old systems have a negative impact on economies, lives, and societies. With AI’s ability to concentrate wealth and disrupt job markets, these flaws may accelerate.
 
