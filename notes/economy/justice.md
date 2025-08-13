@@ -1,6 +1,6 @@
 # Economic Justice In The Digital Age
 
-We have a lot of computational power, but our tax systems have not evolved to match digital-age capabilities. Often, these old systems have a negative impact on economies, lives, and societies. With AI’s ability to concentrate wealth and disrupt job markets, these flaws may accelerate.
+We have a lot of computational power, but our tax systems have not evolved much. Often, these old systems have a negative impact on economies, lives, and societies. With AI’s ability to concentrate wealth and disrupt job markets, these flaws may accelerate.
 
 Here, I formulated principles that should fix some of the problems. These principles are obvious and relatively easy to implement in our digital epoch.
 
