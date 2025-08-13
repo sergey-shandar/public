@@ -19,7 +19,7 @@ xychart-beta
 
 Also, all income should be considered the same for tax purposes. Doesn't matter if it comes from salary, business profit, or bank interest. We should not open doors for tax optimizations.
 
-Examples of violations include a benefit cliff, where a slight increase in earnings results in a sharp drop in benefits. In this case, people lose motivation to earn more money legally.
+Examples of violations include a [benefit cliff](https://en.wikipedia.org/wiki/Welfare_trap), where a slight increase in earnings results in a sharp drop in benefits. In this case, people lose motivation to earn more money legally.
 
 ## The Second Principle: Basic Human Rights
 
