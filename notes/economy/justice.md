@@ -21,7 +21,7 @@ Also, all income should be considered the same for tax purposes. Doesn't matter 
 
 Examples of violations include a benefit cliff, where a slight increase in earnings results in a sharp drop in benefits. In this case, people lose motivation to earn more money legally.
 
-### The Second Principle: Basic Human Rights
+## The Second Principle: Basic Human Rights
 
 Every person has a right to live. It means at least basic things: breath, food, accommodation, and basic health care. Even people in prison receive these fundamental rights. Why don't law-abiding individuals have these rights? Why do we force people to break a law to have these fundamental rights? The statement is that people should have at least the same benefits that they can receive in jail. Then, we can't start with zero; we must have UBI if we agree with these first two principles. `y = f(x) + U`, where `U` is UBI.
 
