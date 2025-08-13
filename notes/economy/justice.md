@@ -1,7 +1,7 @@
 # Economic Justice in the Digital Age
 
 We have a lot of computational power, but we still use archaic, unfair taxation systems that destroy economies, lives, and societies. Current systems look more like a casino than a positive-sum game. 
-No matter what you do, your economic state depends a lot on chance. Here, I formulated principles that should fix some of the problems. These principles are obvious and relatively easy to implement in our digital epoch.
+No matter what you do, your economic state depends a lot on chance. And the problem can get much, much worse with AI. Here, I formulated principles that should fix some of the problems. These principles are obvious and relatively easy to implement in our digital epoch.
 
 ## The first principle: more earnings means more receiving
 
