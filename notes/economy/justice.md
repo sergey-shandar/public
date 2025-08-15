@@ -66,3 +66,8 @@ If Bob received the same total amount as Charlie for the same period, they shoul
 This opens an interesting perspective: people who have worked their entire lives will receive tax returns as soon as they lose their jobs or decide to retire. So, it can replace a pension or provide extra net income for retired people.
 
 Another option is a student who may live on UBI during their studies and then pay less taxes for the first few years when they accept a high-paying job.
+
+## Review
+
+- [ ] Change graph line color.
+- [ ] 
