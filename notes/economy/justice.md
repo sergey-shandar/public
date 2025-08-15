@@ -17,7 +17,7 @@ xychart-beta
     x-axis "Gross Income ($)" [0, 1000, 2000, 3000, 4000]
     y-axis "Net Income ($)" 0 --> 3000
     line [0]
-    line [1000, 700, 1400, 2100, 2700]
+    line [1000, 700, 1400, 2100, 2800]
 ```
 
 Let's introduce a function `f` that converts a gross income `x` to the net income `y`.  The first principle says that the function `y = f(x)` is a non-decreasing function.
@@ -27,6 +27,7 @@ xychart-beta
     title "Gross income growth increases net income"
     x-axis "Gross Income ($)" [0, 1000, 2000, 3000, 4000]
     y-axis "Net Income ($)" 0 --> 3000
+    line [0]
     line [0, 700, 1400, 2100, 2800]
 ```
 
@@ -41,6 +42,7 @@ xychart-beta
     title "UBI"
     x-axis "Gross Income ($)" [0, 1000, 2000, 3000, 4000]
     y-axis "Net Income ($)" 0 --> 3000
+    line [0]
     line [1000, 1400, 1800, 2200, 2600]
 ```
 
@@ -57,6 +59,7 @@ xychart-beta
     title "Progressive Taxes With UBI"
     x-axis "Gross Income ($)" [0, 1000, 2000, 3000, 4000]
     y-axis "Net Income ($)" 0 --> 3000
+    line [0]
     line [1000, 1700, 2100, 2400, 2600]
 ```
 
