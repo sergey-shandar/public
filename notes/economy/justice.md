@@ -12,23 +12,25 @@ The first principle is that if Charlie earns more than Bob, then Charlie must re
 Examples of violations include a [benefit cliff](https://en.wikipedia.org/wiki/Welfare_trap), where a slight increase in earnings results in a sharp drop in benefits. In this case, people lose motivation to earn more money legally.
 
 ```mermaid
-%%{init: {'theme':'default'}}%%
+%%{init: {'theme':'base', 'themeVariables': {'xyChart': {'plotColorPalette': '#ff6b6b,#4ecdc4,#45b7d1,#96ceb4,#ffeaa7,#fd79a8,#a29bfe,#6c5ce7'}}}}%%
 xychart-beta
     title "Welfare Trap"
     x-axis "Gross Income ($)" [0, 1000, 2000, 3000, 4000]
     y-axis "Net Income ($)" 0 --> 3000
     line "Net Income" [1000, 700, 1400, 2100, 2800]
+    bar "Benefit Loss" [0, 300, 0, 0, 0]
 ```
 
 Let's introduce a function `f` that converts a gross income `x` to the net income `y`.  The first principle says that the function `y = f(x)` is a non-decreasing function.
 
 ```mermaid
-%%{init: {'theme':'default'}}%%
+%%{init: {'theme':'base', 'themeVariables': {'xyChart': {'plotColorPalette': '#4ecdc4,#45b7d1,#96ceb4,#ffeaa7,#fd79a8,#a29bfe,#6c5ce7'}}}}%%
 xychart-beta
     title "Gross income growth increases net income"
     x-axis "Gross Income ($)" [0, 1000, 2000, 3000, 4000]
     y-axis "Net Income ($)" 0 --> 3000
     line "Net Income" [0, 700, 1400, 2100, 2800]
+    line "Ideal (45° line)" [0, 1000, 2000, 3000, 4000]
 ```
 
 Also, all income should be considered the same for tax purposes. It doesn't matter if it comes from salary, business profit, or bank interest. We should not open doors for tax optimizations.
@@ -38,12 +40,13 @@ Also, all income should be considered the same for tax purposes. It doesn't matt
 Every person has a right to live. It means at least basic things: clean air, food, accommodation, and basic health care. Even people in prison receive these fundamental rights. Why don't law-abiding individuals have these rights? Why do we force people to break the law to have these fundamental rights? The statement is that people should have at least the same benefits that they can receive in jail. Then, we can't start with zero; we must have UBI if we agree with these first two principles. `y = f(x) + U`, where `U` is [Universal Basic Income](https://en.wikipedia.org/wiki/Universal_basic_income) and `U` must not depend on gross income.
 
 ```mermaid
-%%{init: {'theme':'default'}}%%
+%%{init: {'theme':'base', 'themeVariables': {'xyChart': {'plotColorPalette': '#45b7d1,#96ceb4,#ffeaa7,#fd79a8,#a29bfe,#6c5ce7'}}}}%%
 xychart-beta
     title "UBI"
     x-axis "Gross Income ($)" [0, 1000, 2000, 3000, 4000]
     y-axis "Net Income ($)" 0 --> 3000
     line "Net Income with UBI" [1000, 1400, 1800, 2200, 2600]
+    bar "UBI Component" [1000, 1000, 1000, 1000, 1000]
 ```
 
 ## The Third Principle: Progressive Taxes
@@ -55,12 +58,13 @@ Examples of violations: Social Security tax in the US.
 The progressive taxes work well to fight the growing inequality in wealth redistribution when the working class is getting poorer and poorer every year. One of the best candidates is `y = K * log(1 + x/K) + U`, where `K` is a scale factor. The `log` function always grows (the first principle), and it doesn't have a growth limit (like some asymptotic functions do).
 
 ```mermaid
-%%{init: {'theme':'default'}}%%
+%%{init: {'theme':'base', 'themeVariables': {'xyChart': {'plotColorPalette': '#96ceb4,#ffeaa7,#fd79a8,#a29bfe,#6c5ce7'}}}}%%
 xychart-beta
     title "Progressive Taxes With UBI"
     x-axis "Gross Income ($)" [0, 1000, 2000, 3000, 4000]
     y-axis "Net Income ($)" 0 --> 3000
-    line "Net Income" [1000, 1700, 2100, 2400, 2600]
+    line "Net Income (Progressive)" [1000, 1700, 2100, 2400, 2600]
+    line "Linear Tax Reference" [1000, 1500, 2000, 2500, 3000]
 ```
 
 ## The Fourth Principle: Accumulated Tax
