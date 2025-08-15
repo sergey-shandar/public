@@ -16,7 +16,8 @@ xychart-beta
     title "Welfare Trap"
     x-axis "Gross Income ($)" [0, 1000, 2000, 3000, 4000]
     y-axis "Net Income ($)" 0 --> 3000
-    line [1000, 700, 1400, 2100, 2800]
+    line [0]
+    line [1000, 700, 1400, 2100, 2700]
 ```
 
 Let's introduce a function `f` that converts a gross income `x` to the net income `y`.  The first principle says that the function `y = f(x)` is a non-decreasing function.
