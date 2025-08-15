@@ -71,7 +71,3 @@ This opens an interesting perspective: people who have worked their entire lives
 
 Another option is a student who may live on UBI during their studies and then pay less taxes for the first few years when they accept a high-paying job.
 
-## Review
-
-- [ ] Change graph line color.
-- [ ] 
