@@ -65,7 +65,7 @@ xychart-beta
     line [1000, 1700, 2100, 2400, 2600]
 ```
 
-The government may adjust `K` and `U` periodically to address budget deficits, inflation, or unfair wealth redistribution.
+The government may adjust `K` and `U` periodically to manage budgets, curb inflation, or correct unfair wealth distribution..
 
 ## The Fourth Principle: Accumulated Tax
 
