@@ -2,7 +2,7 @@
 
 We have a lot of computational power, but our tax systems have not evolved much. Often, these old systems have a negative impact on economies, lives, and societies. With AI’s ability to concentrate wealth and disrupt job markets, these flaws are accelerating.
 
-Here, I formulated principles based on common sense and a sense of justice. I believe these principles, if applied properly, can fix some of the problems. These principles are obvious and relatively easy to implement in our digital epoch.
+Here, I’ve outlined principles based on common sense and a sense of justice. I believe that if these principles are applied properly, they can help address some of the problems. These principles are obvious and relatively easy to implement in our digital epoch.
 
 ## The First Principle: Gross Income Growth Increases Net Income
 
