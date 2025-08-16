@@ -65,7 +65,7 @@ xychart-beta
     line [1000, 1700, 2100, 2400, 2600]
 ```
 
-The government may adjust `K` and `U` periodically to fight budget deficit, inflation and unadequate wealth redistribution.
+The government may adjust `K` and `U` periodically to fight budget deficit, inflation and inadequate wealth redistribution.
 
 ## The Fourth Principle: Accumulated Tax
 
@@ -73,10 +73,12 @@ If Bob received the same total amount as Charlie for the same period, they shoul
 
 This principle prevents manipulation: whether someone earns more one year and less the next, or spreads income evenly across years, their total tax liability depends only on total income, regardless of when it is received.
 
-This opens an interesting perspective: people who have worked their entire lives will receive tax returns as soon as they lose their jobs or decide to retire. So, it can replace a pension or provide extra net income for retired people.
+This opens an interesting perspective: Workers would receive tax returns upon job loss or retirement.
 
 Another option is a student who may live on UBI during their studies and then pay less taxes for the first few years when they accept a high-paying job.
 
 ## Summary
 
-In general, these principles are trying to prevent gaming tax system by making it a positive sum game. There are so many ideas, details, and directions that we can take. However, these four principles are a starting point for a fairer, more resilient economy in the digital age. I welcome your feedback. Did I miss something important? How can we improve these principles?
+In general, these principles aim to prevent gaming of the tax system. So people can focus focus more on producing value and help make the economy the positive-sum game.
+
+There are so many ideas, details, and directions that we can take. However, these four principles are a starting point for a fairer, more resilient economy in the digital age. I welcome your feedback. Did I miss something important? How can we improve these principles?
