@@ -6,7 +6,7 @@ Here, I formulated principles based on common sense and a sense of justice. I be
 
 ## The First Principle: Gross Income Growth Increases Net Income
 
-Let's take two people, Bob and Charlie. They are identical in every respect except for gross income (before taxes).
+Consider two people, Bob and Charlie. They are identical in every respect except for gross income (before taxes).
 The first principle is that if Charlie earns more than Bob, then Charlie must receive at least as much as Bob after taxes (net income).
 
 Examples of violations include a [benefit cliff](https://en.wikipedia.org/wiki/Welfare_trap), where a slight increase in earnings results in a sharp drop in benefits. In this case, people lose motivation to earn more money legally.
