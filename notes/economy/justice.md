@@ -31,7 +31,7 @@ xychart-beta
     line [0, 700, 1400, 2100, 2800]
 ```
 
-Also, all income should be considered the same for tax purposes. It doesn't matter if it comes from salary, business profit, or bank interest. We should not open doors for tax optimizations.
+Also, all income should be considered the same for tax purposes. It doesn’t matter whether it comes from salary, business profit, or interest. We should not open doors for tax optimizations.
 
 ## The Second Principle: Basic Human Rights
 
@@ -79,4 +79,4 @@ Another option is a student who may live on UBI during their studies and then pa
 
 ## Summary
 
-We must remember that the economy is not about money but about producing value. Value creation is the fuel of the economic engine; money is its oil. These principles aim to prevent gaming of the tax system and help turn the economy into a positive-sum game in which people can focus on creating real value. They are a starting point for building a fairer, more resilient economy in the digital age. I welcome your feedback: Did I miss something important? How can we improve these principles together?
+We must remember that the economy is not about money but about producing value. Value creation is the fuel of the economic engine; money is the oil that keeps it running. These principles aim to prevent gaming of the tax system and turn the economy into a positive-sum game, where people can focus on creating real value rather than exploiting loopholes. They are a starting point for building a fairer, more resilient economy in the digital age. I welcome your feedback: Did I miss something important? How can we improve these principles together?
