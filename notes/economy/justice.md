@@ -24,7 +24,7 @@ Let's introduce a function `f` that converts a gross income `x` to the net incom
 
 ```mermaid
 xychart-beta
-    title "Gross income growth increases net income"
+    title "Gross Income Growth Increases Net Income"
     x-axis "Gross Income ($)" [0, 1000, 2000, 3000, 4000]
     y-axis "Net Income ($)" 0 --> 3000
     line [0]
@@ -54,7 +54,7 @@ If Charlie earns more than Bob, he must pay at least the same tax percentage.
 
 Examples of violations: Social Security tax in the US.
 
-The progressive taxes work well to fight the growing inequality in wealth redistribution when the working class is getting poorer and poorer every year. One of the best candidates is `y = K * log(1 + x/K) + U`, where `K` is a scale factor. The logarithmic function always grows, ensuring the first principle holds, and it does not asymptotically flatten like some other functions. At the same time, logarithmic functions grow very slowly at high income levels.
+The progressive taxes work well to fight the growing inequality in wealth redistribution when the working class is getting poorer and poorer every year. One of the best candidates is `y = K * log(1 + x/K) + U`, where `K` is a scale factor. The logarithmic function always grows, ensuring the first principle holds, and it does not asymptotically flatten like some other functions. At the same time, Logarithmic functions grow very slowly at high income levels, which ensures diminishing returns without capping growth.
 
 ```mermaid
 xychart-beta
