@@ -52,7 +52,7 @@ If Charlie earns more than Bob, he must pay at least the same tax percentage.
 
 Examples of violations: Social Security tax in the US.
 
-The progressive taxes work well to fight the growing inequality in wealth redistribution when the working class is getting poorer and poorer every year. One of the best candidates is `y = K * log(1 + x/K) + U`, where `K` is a scale factor. The `log` function always grows (the first principle), and it doesn't have a growth limit (like some asymptotic functions do).
+The progressive taxes work well to fight the growing inequality in wealth redistribution when the working class is getting poorer and poorer every year. One of the best candidates is `y = K * log(1 + x/K) + U`, where `K` is a scale factor. The logarithmic function always grows, ensuring the first principle holds, and it does not asymptotically flatten like some other functions. At the same time, logorithmic functions grow very slow on big numbers.
 
 ```mermaid
 xychart-beta
@@ -67,10 +67,12 @@ xychart-beta
 
 If Bob received the same total amount as Charlie for the same period, they should pay the same taxes in total. For example, if Bob received $50K for the first year, and then $50K for the second year, and Charlie received $90K for the first year and then $10K for the second year, they should pay the same taxes for two years.
 
+This principle prevents manipulation: whether someone earns more one year and less the next, or spreads income evenly across years, their total tax liability remains the same as long as the total income is equal.
+
 This opens an interesting perspective: people who have worked their entire lives will receive tax returns as soon as they lose their jobs or decide to retire. So, it can replace a pension or provide extra net income for retired people.
 
 Another option is a student who may live on UBI during their studies and then pay less taxes for the first few years when they accept a high-paying job.
 
 ## Summary
 
-There are so many ideas, details, and directions that we can take. However, I would love to hear your opinion about that. Did I miss something important? Can we improve the principles? Please leave feedback, share.
+There are so many ideas, details, and directions that we can take. However, these four principles are a starting point for a fairer, more resilient economy in the digital age. I welcome your feedback. Did I miss something important? How can we improve these principles?
