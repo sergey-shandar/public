@@ -71,3 +71,6 @@ This opens an interesting perspective: people who have worked their entire lives
 
 Another option is a student who may live on UBI during their studies and then pay less taxes for the first few years when they accept a high-paying job.
 
+## Summary
+
+There are so many ideas, details, and directions that we can take. However, I would love to hear your opinion about that. Did I miss something important? Can we improve the principles? 
