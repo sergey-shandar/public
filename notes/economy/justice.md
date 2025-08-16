@@ -54,7 +54,7 @@ If Charlie earns more than Bob, he must pay at least the same tax percentage.
 
 Examples of violations: Social Security tax in the US.
 
-The progressive taxes work well to fight the growing inequality in wealth redistribution when the working class is getting poorer and poorer every year. One of the best candidates is `y = K * log(1 + x/K) + U`, where `K` is a scale factor. The logarithmic function always grows, ensuring the first principle holds, and it does not asymptotically flatten like some other functions. At the same time, logarithmic functions grow very slowly at high income levels, which ensures diminishing returns without capping growth.
+The progressive taxes work well to fight the growing inequality in wealth redistribution when the working class is getting poorer and poorer every year. One of the best candidates is `y = K * log(1 + x/K) + U`, where `K` is a scale factor. The logarithmic function always grows, ensuring the first principle holds, and it does not asymptotically flatten like some other functions. At the same time, logarithmic functions grow very slowly at high income levels, ensuring diminishing returns without imposing a cap.
 
 ```mermaid
 xychart-beta
@@ -65,7 +65,7 @@ xychart-beta
     line [1000, 1700, 2100, 2400, 2600]
 ```
 
-The government may adjust K and U periodically to address budget deficits, inflation, or inequitable wealth distribution.
+The government may adjust `K` and `U` periodically to address budget deficits, inflation, or inequitable wealth distribution.
 
 ## The Fourth Principle: Accumulated Tax
 
@@ -73,10 +73,10 @@ If Bob received the same total amount as Charlie for the same period, they shoul
 
 This principle prevents manipulation: whether someone earns more one year and less the next, or spreads income evenly across years, their total tax liability depends only on total income, regardless of when it is received.
 
-This opens an interesting perspective: Workers would receive tax returns upon job loss or retirement.
+This opens an interesting perspective: workers would receive tax returns upon job loss or retirement.
 
 Another option is a student who may live on UBI during their studies and then pay less taxes for the first few years when they accept a high-paying job.
 
 ## Summary
 
-In general, these principles aim to prevent gaming of the tax system and help turn the economy into a positive-sum game, where people can focus on creating real value. They are only a starting point for a fairer, more resilient economy in the digital age. I welcome your feedback. Did I miss something important? How can we improve these principles together?”
+In general, these principles aim to prevent gaming of the tax system and help turn the economy into a positive-sum game in which people can focus on creating real value. They are only a starting point for a fairer, more resilient economy in the digital age. I welcome your feedback. Did I miss something important? How can we improve these principles together?
