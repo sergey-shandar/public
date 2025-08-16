@@ -79,6 +79,4 @@ Another option is a student who may live on UBI during their studies and then pa
 
 ## Summary
 
-In general, these principles aim to prevent gaming of the tax system. So people can focus focus more on producing value and help make the economy the positive-sum game.
-
-There are so many ideas, details, and directions that we can take. However, these four principles are a starting point for a fairer, more resilient economy in the digital age. I welcome your feedback. Did I miss something important? How can we improve these principles?
+In general, these principles aim to prevent gaming of the tax system and help turn the economy into a positive-sum game, where people can focus on creating real value. They are only a starting point for a fairer, more resilient economy in the digital age. I welcome your feedback. Did I miss something important? How can we improve these principles together?”
