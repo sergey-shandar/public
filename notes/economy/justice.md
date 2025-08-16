@@ -79,4 +79,4 @@ Another option is a student who may live on UBI during their studies and then pa
 
 ## Summary
 
-The economy is not fundamentally about money but about producing value. Value creation is the fuel of the economic engine; money is the oil that keeps it running. These principles aim to prevent gaming of the tax system and turn the economy into a positive-sum game, where people can focus on creating real value rather than exploiting loopholes. They are a starting point for building a fairer, more resilient economy in the digital age. I welcome your feedback: Did I miss something important? How can we improve these principles?
+The economy is not fundamentally about money but about producing value. Value creation is the fuel of the economic engine; money is the oil that keeps it running. These principles aim to prevent gaming of the tax system and turn the economy into a positive-sum game in which people can focus on creating real value rather than exploiting loopholes. They are a starting point for building a fairer, more resilient economy in the digital age. I welcome your feedback: Did I miss something important? How can we improve these principles?
