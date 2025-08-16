@@ -69,7 +69,7 @@ The government may adjust `K` and `U` periodically to manage budgets, curb infla
 
 ## The Fourth Principle: Accumulated Tax
 
-If Bob received the same total amount as Charlie for the same period, they should pay the same taxes in total. For example, if Bob received $50K for the first year, and then $50K for the second year, and Charlie received $90K for the first year and then $10K for the second year, they should pay the same taxes for two years.
+If Bob received the same total amount as Charlie for the same period, they should pay the same taxes in total. For example, if Bob received $50K for the first year, and then $50K for the second year, and Charlie received $90K for the first year, and then $10K for the second year, they should pay the same taxes for two years.
 
 This principle prevents manipulation: whether someone earns more one year and less the next, or spreads income evenly across years, their total tax liability depends only on total income, regardless of when it is received. This also means workers receive tax returns when they lose their jobs or retire.
 
