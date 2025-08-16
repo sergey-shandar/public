@@ -79,4 +79,6 @@ Another option is a student who may live on UBI during their studies and then pa
 
 ## Summary
 
+We always need to remember that the economy is not about money, it's about producing value. Producing value is a fuel of the economic engine; money is oil. 
+
 In general, these principles aim to prevent gaming of the tax system and help turn the economy into a positive-sum game in which people can focus on creating real value. They are only a starting point for a fairer, more resilient economy in the digital age. I welcome your feedback. Did I miss something important? How can we improve these principles together?
