@@ -31,7 +31,7 @@ xychart-beta
     line [0, 700, 1400, 2100, 2800]
 ```
 
-Also, all income should be considered the same for tax purposes. It doesn’t matter whether it comes from salary, business profit, or interest. We should not open doors for tax optimizations.
+Also, all income should be considered the same for tax purposes. It doesn’t matter whether it comes from salary, business profit, or interest. We should not allow loopholes for tax optimization.
 
 ## The Second Principle: Basic Human Rights
 
