@@ -35,7 +35,7 @@ Also, all income should be considered the same for tax purposes. It doesn’t ma
 
 ## The Second Principle: Basic Human Rights
 
-Every person has a right to live. It means at least basic things: clean air, food, accommodation, and basic health care. Even people in prison receive these fundamental rights. Why don't law-abiding individuals have these rights? Why should people have to break the law to access these basic rights? The statement is that people should have at least the same benefits that they can receive in jail. Then, if we agree with these first two principles, we cannot start at zero; we must implement [Universal Basic Income](https://en.wikipedia.org/wiki/Universal_basic_income) (UBI). 
+Every person has a right to live. It means at least basic things: clean air, food, accommodation, and basic health care. Even people in prison receive these fundamental rights. Why should law-abiding individuals be denied these rights? Why should people have to break the law to access these basic rights? The statement is that people should have at least the same benefits that they can receive in jail. Then, if we agree with these first two principles, we cannot start at zero; we must implement [Universal Basic Income](https://en.wikipedia.org/wiki/Universal_basic_income) (UBI). 
 
 `y = f(x) + U`, where `U` is UBI. `U` may vary with objective, non-income factors such as age or disability, but it must never depend on earned income.
 
