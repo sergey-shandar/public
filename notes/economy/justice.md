@@ -35,7 +35,7 @@ Also, all income should be considered the same for tax purposes. It doesn’t ma
 
 ## The Second Principle: Basic Human Rights
 
-Every person has a right to live. It means at least basic things: clean air, food, accommodation, and basic health care. Even people in prison receive these fundamental rights. Why don't law-abiding individuals have these rights? Why do we force people to break the law to have these fundamental rights? The statement is that people should have at least the same benefits that they can receive in jail. Then, if we agree with these first two principles, we cannot start at zero; we must implement [Universal Basic Income](https://en.wikipedia.org/wiki/Universal_basic_income) (UBI). 
+Every person has a right to live. It means at least basic things: clean air, food, accommodation, and basic health care. Even people in prison receive these fundamental rights. Why don't law-abiding individuals have these rights? Why should people have to break the law to access these basic rights? The statement is that people should have at least the same benefits that they can receive in jail. Then, if we agree with these first two principles, we cannot start at zero; we must implement [Universal Basic Income](https://en.wikipedia.org/wiki/Universal_basic_income) (UBI). 
 
 `y = f(x) + U`, where `U` is UBI. `U` may vary with objective, non-income factors such as age or disability, but it must never depend on earned income.
 
@@ -65,7 +65,7 @@ xychart-beta
     line [1000, 1700, 2100, 2400, 2600]
 ```
 
-The government may adjust `K` and `U` periodically to address budget deficits, inflation, or inequitable wealth distribution.
+The government may adjust `K` and `U` periodically to address budget deficits, inflation, or unfair wealth redistribution.
 
 ## The Fourth Principle: Accumulated Tax
 
@@ -79,4 +79,4 @@ Another option is a student who may live on UBI during their studies and then pa
 
 ## Summary
 
-We must remember that the economy is not about money but about producing value. Value creation is the fuel of the economic engine; money is the oil that keeps it running. These principles aim to prevent gaming of the tax system and turn the economy into a positive-sum game, where people can focus on creating real value rather than exploiting loopholes. They are a starting point for building a fairer, more resilient economy in the digital age. I welcome your feedback: Did I miss something important? How can we improve these principles together?
+The economy is not fundamentally about money but about producing value. Value creation is the fuel of the economic engine; money is the oil that keeps it running. These principles aim to prevent gaming of the tax system and turn the economy into a positive-sum game, where people can focus on creating real value rather than exploiting loopholes. They are a starting point for building a fairer, more resilient economy in the digital age. I welcome your feedback: Did I miss something important? How can we improve these principles?
