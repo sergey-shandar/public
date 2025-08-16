@@ -75,4 +75,4 @@ Another option is a student who may live on UBI during their studies and then pa
 
 ## Summary
 
-There are so many ideas, details, and directions that we can take. However, these four principles are a starting point for a fairer, more resilient economy in the digital age. I welcome your feedback. Did I miss something important? How can we improve these principles?
+In general, these principles are trying to prevent gaming tax system by making in a positive sum game. There are so many ideas, details, and directions that we can take. However, these four principles are a starting point for a fairer, more resilient economy in the digital age. I welcome your feedback. Did I miss something important? How can we improve these principles?
