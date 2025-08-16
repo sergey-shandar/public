@@ -35,7 +35,7 @@ Also, all income should be considered the same for tax purposes. It doesn’t ma
 
 ## The Second Principle: Basic Human Rights
 
-Every person has a right to live. It means at least basic things: clean air, food, accommodation, and basic health care. Even people in prison receive these fundamental rights. Why should law-abiding individuals be denied these rights or have to break the law to access them? The statement is that people should have at least the same benefits that they can receive in jail. Then, if we agree with these first two principles, we cannot start at zero; we must implement [Universal Basic Income](https://en.wikipedia.org/wiki/Universal_basic_income) (UBI). 
+Every person has a right to live. It means at least basic things: clean air, food, accommodation, and basic health care. Even people in prison receive these fundamental rights. Why should law-abiding individuals be denied these rights or forced to break the law to access them? The statement is that people should have at least the same benefits that they can receive in jail. Then, if we agree with these first two principles, we cannot start at zero; we must implement [Universal Basic Income](https://en.wikipedia.org/wiki/Universal_basic_income) (UBI). 
 
 `y = f(x) + U`, where `U` is UBI. `U` may vary with objective, non-income factors such as age or disability, but it must never depend on earned income.
 
@@ -65,15 +65,13 @@ xychart-beta
     line [1000, 1700, 2100, 2400, 2600]
 ```
 
-The government may adjust `K` and `U` periodically to manage budgets, curb inflation, or correct unfair wealth distribution..
+The government may adjust `K` and `U` periodically to manage budgets, curb inflation, and address unfair wealth distribution.
 
 ## The Fourth Principle: Accumulated Tax
 
 If Bob received the same total amount as Charlie for the same period, they should pay the same taxes in total. For example, if Bob received $50K for the first year, and then $50K for the second year, and Charlie received $90K for the first year and then $10K for the second year, they should pay the same taxes for two years.
 
-This principle prevents manipulation: whether someone earns more one year and less the next, or spreads income evenly across years, their total tax liability depends only on total income, regardless of when it is received.
-
-This opens an interesting perspective: workers would receive tax returns upon job loss or retirement.
+This principle prevents manipulation: whether someone earns more one year and less the next, or spreads income evenly across years, their total tax liability depends only on total income, regardless of when it is received. This also means workers receive tax returns when they lose their jobs or retire.
 
 Another option is a student who may live on UBI during their studies and then pay less taxes for the first few years when they accept a high-paying job.
 
