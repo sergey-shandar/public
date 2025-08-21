@@ -45,7 +45,7 @@ Symmetry: If one system interacts with another, then they both have the same imp
 
 This operation is not just reversible, it's symmetrical in time. Applying twice, we receive the same result. 
 
-Two systems that don't have common dividers don't interact. Mostly because such operations break symmetry.
+If two systems that don't have common dividers don't interact (mostly because such operations break symmetry), then they become invisible to each other, and the Universe splits into two Universes that don't interact with each other.
 
 ## 2. Tree (Probabilistic, Multiverse)
 
