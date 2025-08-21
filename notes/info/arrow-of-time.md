@@ -25,17 +25,27 @@ The period is a product of all unique prime states.
 Possible periods:
 
 ```
-_ _   _ _ _     __ __    __ __ __    __    __    __ __ __       __       __ 
-2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
+_ _   _   _        __    __          __    __          __                __    __       
+_ _   _ _ _     __ __    __ __ __    __    __    __ __ __       __       __    __    __ __ __
+2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35
 ```
 
 ### 2. Interaction
 
 To save information, all transformations must be reversible.
 
-Two systems that don't have common dividers can't interact w/o losing information.
+Symmetry: If one system interacts with another, then they both have the same impact on each other. The simplest interaction is a swap:
 
-Imagine two systems: `S2` and `S3` with `2` and `3` states.
+```
+00 <=> 00
+01 <=> 10
+10 <=> 01
+11 <=> 11
+```
+
+This operation is not just reversible, it's symmetrical in time. Applying twice, we receive the same result. 
+
+Two systems that don't have common dividers don't interact. Mostly because such operations break symmetry.
 
 ## 2. Tree (Probabilistic, Multiverse)
 
