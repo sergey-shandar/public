@@ -4,6 +4,8 @@
 
 There are no differences between the past and the future. The amount of information is the same at every step.
 
+As described in the previous article, a system that has `N` possible states can be split into multiple sub-systems `N0`, `N1`, ... `NM`, where `N = N0 * N1 * ... * NM`.  
+
 ## 2. Tree (Probabilistic, Multiverse)
 
 Try all possible variations. It has an arrow of time.
