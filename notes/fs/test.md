@@ -8,9 +8,21 @@ I remember in Visual Studio you had to select which one to use `xUnit`, `NUnit`,
 
 Similar story in other languages. Sometimes, even worse, for example, in JavaScript, every engine `Node.js`, `Deno`, and `Bun` has their own test framework. Of course, if you develop a library, you may want to avoid it and use one of the popular open source frameworks, but then again, you never know what will happen with this framework in the future, and whether it will be compatible with some new systems and engines.
 
-What if we can run our test code on any test framework? 
+For FunctionalScript, we have an even bigger problem. We want our tests to be written in FunctionalScript, but in FunctionalScript code, you can't reference any JavaScript, only a small subset. That means that we can't reference existing JS test frameworks from FunctionScript code.  
 
-The first requirement would be that such test code should never ever depend on test frameworks.
+```
+|Test Code| -> |Our Code|
+|         |
+|         | -> |Amazing Test Framework|
+```
+
+Solution: What if we can write our test code without dependencies, but run it on any test framework? 
+
+The first requirement is that such test code should never depend on test frameworks.
+
+```
+|Test Code| -> |Our Code|
+```
 
 ---
 
