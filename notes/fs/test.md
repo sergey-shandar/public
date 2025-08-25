@@ -1,12 +1,16 @@
 # Agnosticism of Testing Frameworks 
 
-Personal: if you write tests, most likely you used some test framework, it could be
+Personal: 
 
-I remember on .Net you had to select which one to use, `xUnit`, `NUnit`, `System.Test`. The biggest problem is that once you choose one, you are stuck with it for the entire project. And when you would like to change it, you will need to refactor all your tests. Now, the test framework has become an obligation.
+if you write tests, most likely you used some test framework.
+
+I remember in Visual Studio you had to select which one to use `xUnit`, `NUnit`, `System.Test`. I always struggle to answer the question; I have a lot of "what if" in my head. The biggest problem is that once you choose one, you are stuck with it for the entire lifetime of the project. And when you would like to change it, you will need to refactor all your tests. Now, the test framework has become an obligation.
 
 Similar story in other languages. Sometimes, even worse, for example, in JavaScript, every engine `Node.js`, `Deno`, and `Bun` has their own test framework. Of course, if you develop a library, you may want to avoid it and use one of the popular open source frameworks, but then again, you never know what will happen with this framework in the future, and whether it will be compatible with some new systems and engines.
 
-What if we can run our test code on any test framework? The first requirement would be that such test code should never ever depend on test frameworks.
+What if we can run our test code on any test framework? 
+
+The first requirement would be that such test code should never ever depend on test frameworks.
 
 ---
 
