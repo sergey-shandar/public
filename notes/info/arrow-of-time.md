@@ -1,5 +1,7 @@
 # Type of systems
 
+Reversibility. If the state is reversible, it must contain at least the same amount of information as the previous state.
+
 ## 1. Linear Global Time with Deterministic 
 
 There are no differences between the past and the future. The amount of information is the same at every step.
