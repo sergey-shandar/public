@@ -1,13 +1,33 @@
 # Building Decentralized Self-Publishing Platform from Scratch. Workshop 1.
 
+## Slide that shows
+
+- FidoNet,
+- Personal Website, E-Mails.
+- WordPress, LiveJournal, MySpace, Facebook, Twitter, Cloud Data Storage (AWS, Azure, GCP), Centralized version control: CVS, Subversion.
+- Attempts to fix:
+  - Decentralized version control systems: Git, Mercurial.
+  - Decentralized Storage: IPFS.
+  - Social Networks: Mastodon/ActivityPub, SSB, Nostr, Bluesky/ATProto.
+
+Where are you in the ocean? Where is your data? Where are your contacts, old friends? Where are their data and communications with them? It's all fragmented. Do new decentralized systems, such as ATProto, Nostr, and SSB, fix the problem? They try, but they have invented new things that are not compatible with the historical data. The problem is that we focus too much on protocol, like we do with Web2, but we need to focus on offline proofs. It doesn't matter how we receive the data, as long as we can prove important statements about the data, such as who created the data and when.
+
+Two main properties of decentralized systems:
+- global addressing, using cryptographic hashes. The hash is the document's address. If we don't have the document with such a hash, we can ask others if they have it, and we can use different protocols to do that. The important thing is that we can prove when we receive the document that it's a correct document.
+- decentralized identity using public-private key cryptography.
+
+Yes, we still need communication protocols and digital connections, but our data should be protocol-agnostic.
+
+The modern Internet is still Web 2: centralized domains, Web Browsers that don't understand decentralized addresses or protocols without extensions. This significantly slows down decentralization and compromises users' digital rights. In this workshop, we would like to develop a system that keeps our data in future-proof storage and generates a view as a static Web2 website. It's Ok if we delete the site, change hosting, and domain; our data is still globally addressable. In the future, we may use different applications and protocols to view the data, but we don't need to "migrate" the data. This is what we call DISOT (Decentralized Immutable Source Of Truth).
+
 ## Why?
 
 - **Data ownership.** Especially, it's crucial for historical data; your old posts, images, videos, code, etc. Where is it now?
-- **Fight with fragmentation.** Most modern decentralized systems still follow the same paradigm inherited from centralized systems: define a protocol and data format and release software that works with these protocols and formats. That produces fragmentation. In rare cases, we see protocol bridges. We need a paradigm shift. How it should be done: We store all data in CAS and use CAS as a Decentralized Immutable Source Of Truth (DISOT). It could be blockchain blocks, IPFS files, Git commits, Nost/BlueSky messages. CAS doesn't care. Different applications should attempt to parse the data blocks; if they encounter blocks that cannot be parsed, they should skip those blocks. Applications may add new blocks to CAS, but obviously, they can't mutate existing blocks (by definition of CAS). See [IPLD](https://ipld.io/).
+- **Fight with fragmentation.** Most modern decentralized systems still follow the same paradigm inherited from centralized systems: define a protocol and data format and release software that works with these protocols and formats. That produces fragmentation. In rare cases, we see protocol bridges. We need a paradigm shift. How it should be done: We store all data in CAS and use CAS as a Decentralized Immutable Source Of Truth (DISOT). It could be blockchain blocks, IPFS files, Git commits, SSB/Nost/BlueSky messages. CAS doesn't care. Different applications should attempt to parse the data blocks; if they encounter blocks that cannot be parsed, they should skip those blocks. Applications may add new blocks to CAS, but obviously, they can't mutate existing blocks (by definition of CAS). See [IPLD](https://ipld.io/).
 
 ## What?
 
-So like a decentralized WordPress, but you get to own the data, the software program, and also where it goes. (So you can post it to any other system you want).
+So like a decentralized WordPress, but you get to own the data, the software, and also where it goes. (So you can post it to any other system you want).
 
 - **Software-level transparency.** You can write your own software, especially now that there are a lot of AI agents.
 - **Cache.** To make parsing and indexing faster, some applications and services may use different types of databases to cache what has already been parsed. However, they should still reference CAS, since this is the primary source of truth. These DBs should be considered as derived data, and we should be able to restore them from CAS (our DISOT).
