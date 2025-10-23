@@ -13,7 +13,7 @@ Because the same content has the same address in such system, we can effectively
 
 diagram.
 
-When we add new information to one storage, in the worst case, we can compare a list of hashes from another one and synchronize only missing hashes. However, we can do even more optimal than that.
+When we add new information to one storage, in the worst case, we can compare a list of hashes from another one and synchronize only missing hashes. However, we can do even more optimal than that if we compare hashes of lists or parts of the list. Other optimization may include time and block relation.
 
 Content addresses works very well if we would like to reference immutable content. But what if we would like find the newest version of the content. We can define a newer revision of a content as a content which references the old one using the content address.
 
